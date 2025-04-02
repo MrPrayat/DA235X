@@ -119,12 +119,18 @@ def synthesize_final_json(page_results: list) -> dict:
         "  \"EnergyData\": null,\n"
         "  \"LastRenovation\": null,\n"
         "  \"RadonLevels\": null\n"
+        "  \"RenovationNeeds\": null\n"
+        "  \"HeatingSystem\": null\n"
+        "  \"VentilationType\": null\n"
         "}\n"
         "```\n"
         "Here is the list of page-level JSONs:\n\n"
         f"{json.dumps(page_results, indent=2, ensure_ascii=False)}\n\n"
         "Now return the final merged JSON object:"
     )
+    # # Uncomment the following lines to debug the prompt and page results
+    # print("Synthesizing from page-level results:")
+    # print(json.dumps(page_results, indent=2, ensure_ascii=False))
 
     response = client.chat.completions.create(
         model="gpt-4o-mini",
@@ -178,7 +184,10 @@ def extract_fields_from_pdf_multipage(url: str) -> dict:
         "- \"BuildingDescription\": A general description of the building’s structure, type, or age.\n"
         "- \"EnergyData\": Information related to energy performance or usage, if available.\n"
         "- \"LastRenovation\": Date or description of the most recent renovation.\n"
-        "- \"RadonLevels\": Reported radon level or a statement about radon presence, if mentioned.\n\n"
+        "- \"RadonLevels\": Reported radon level or a statement about radon presence, if mentioned.\n"
+        "- \"RenovationNeeds\": Clear indication that renovation is required or recommended.\n"
+        "- \"HeatingSystem\": Described heating system (e.g. fjärrvärme).\n"
+        "- \"VentilationType\": Described ventilation type (e.g. självdrag).\n\n"
         "Return the extracted values in **exactly** the following JSON format. If a field is missing, set it to null. Do not include any explanation, headers, or commentary.\n"
         "```json\n"
         "{\n"
@@ -192,6 +201,9 @@ def extract_fields_from_pdf_multipage(url: str) -> dict:
         "  \"EnergyData\": null,\n"
         "  \"LastRenovation\": null,\n"
         "  \"RadonLevels\": null\n"
+        "  \"RenovationNeeds\": null\n"
+        "  \"HeatingSystem\": null\n"
+        "  \"VentilationType\": null\n"
         "}\n"
         "```"
     )
