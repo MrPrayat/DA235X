@@ -204,7 +204,7 @@ def run_pdf_test():
     For each URL, it checks if the PDF is text-based. If image-based, it tries to extract structured data.
     The results for each test are printed to the console.
     """
-    test_amount = 1  # Set the number of tests to run
+    test_amount = 50  # Set the number of tests to run
 
     with open("inspection_urls.csv", mode="r", encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
@@ -212,14 +212,16 @@ def run_pdf_test():
             if index >= test_amount:
                 break
             url = row["url"]
-            print(f"\n---\nID {row['id']} – Checking: {url}")
+            # print(f"\n---\nID {row['id']} – Checking: {url}")
             text_based = is_text_pdf(url)
-            print(f"Is text-based: {text_based}")
+            # print(f"Is text-based: {text_based}")
             if not text_based:
-                extracted = extract_fields_from_pdf_multipage(url)
-                print(f"Extracted for ID {row['id']}:\n{json.dumps(extracted, indent=2, ensure_ascii=False)}")
+                # extracted = extract_fields_from_pdf_multipage(url)
+                # print(f"Extracted for ID {row['id']}:\n{json.dumps(extracted, indent=2, ensure_ascii=False)}")
+                print(f"ID: {row['id']}, URL: {url}")
             else:
-                print("Skipping text-based PDF.")
+                continue
+                # print("Skipping text-based PDF.")
 
 
 def main():
