@@ -10,6 +10,7 @@ import time
 import random
 from pdf2image import convert_from_bytes
 from PIL import Image
+from schema import FIELDS, FIELD_DEFINITIONS
 
 
 client = OpenAI()
@@ -98,6 +99,11 @@ def synthesize_final_json(page_results: list) -> dict:
     """
     Given a list of page-level JSONs, ask GPT-4o-mini to synthesize them into one coherent JSON.
     """
+    print("Synthesizing from page-level results:")
+
+    field_lines = [f'- "{key}": {FIELD_DEFINITIONS[key]}' for key in FIELDS]
+    json_template = "{\n" + ",\n".join([f'  "{key}": null' for key in FIELDS]) + "\n}"
+
     prompt = (
         "You are given a list of partial JSON outputs extracted from different pages of a housing inspection report.\n"
         "Each JSON may contain correct or incorrect values, or have missing fields.\n"
@@ -105,31 +111,17 @@ def synthesize_final_json(page_results: list) -> dict:
         "Definitions:\n"
         "- Use the most complete and accurate value for each field.\n"
         "- If a field is present in multiple JSONs, prefer the one that looks most correct.\n"
-        "- If a field is missing in all, set it to null.\n"
-        "- Return exactly the following format, with no comments:\n\n"
-        "```json\n"
-        "{\n"
-        "  \"CadastralDesignation\": null,\n"
-        "  \"PostalAddress\": null,\n"
-        "  \"WaterLeakage\": null,\n"
-        "  \"InspectionCompany\": null,\n"
-        "  \"InspectionDate\": null,\n"
-        "  \"ExpirationDate\": null,\n"
-        "  \"BuildingDescription\": null,\n"
-        "  \"EnergyData\": null,\n"
-        "  \"LastRenovation\": null,\n"
-        "  \"RadonLevels\": null\n"
-        "  \"RenovationNeeds\": null\n"
-        "  \"HeatingSystem\": null\n"
-        "  \"VentilationType\": null\n"
-        "}\n"
-        "```\n"
-        "Here is the list of page-level JSONs:\n\n"
+        "- If a field is missing in all, set it to null.\n\n"
+        "Field definitions:\n"
+        + "\n".join(field_lines) +
+        "\n\nReturn the final output in the following format:\n"
+        "```json\n" + json_template + "\n```\n"
+        f"Here is the list of page-level JSONs:\n\n"
         f"{json.dumps(page_results, indent=2, ensure_ascii=False)}\n\n"
         "Now return the final merged JSON object:"
     )
+
     # # Uncomment the following lines to debug the prompt and page results
-    # print("Synthesizing from page-level results:")
     # print(json.dumps(page_results, indent=2, ensure_ascii=False))
 
     response = client.chat.completions.create(
@@ -169,43 +161,19 @@ def extract_fields_from_pdf_multipage(url: str) -> dict:
     if not images:
         print("No images extracted from PDF.")
         return {}
+    
+    field_lines = [f'- "{key}": {FIELD_DEFINITIONS[key]}' for key in FIELDS]
+    json_template = "{\n" + ",\n".join([f'  "{key}": null' for key in FIELDS]) + "\n}"
 
     prompt_text = (
         "You are analyzing a page from a Swedish housing inspection report. "
         "Extract the following fields if they are clearly visible. "
         "If a field is missing or unreadable, set its value to null.\n\n"
         "Field definitions:\n"
-        "- \"CadastralDesignation\": The full legal property name (*fastighetsbeteckning*), including områdesnamn, blocknummer, and enhetsnummer. Example: \"Törnevalla Skäckelstad 2:7\".\n"
-        "- \"PostalAddress\": The full postal address, typically including street name, postal code, and city. Do not confuse this with the fastighetsbeteckning.\n"
-        "- \"WaterLeakage\": Any mention of water damage, smygläckage, or moisture issues. Include the full sentence or summary.\n"
-        "- \"InspectionCompany\": The company name that performed the inspection (e.g., Anticimex).\n"
-        "- \"InspectionDate\": The date the inspection was performed, in format YYYY-MM-DD.\n"
-        "- \"ExpirationDate\": The date until which the inspection report is valid (giltighetstid), in format YYYY-MM-DD.\n"
-        "- \"BuildingDescription\": A general description of the building’s structure, type, or age.\n"
-        "- \"EnergyData\": Information related to energy performance or usage, if available.\n"
-        "- \"LastRenovation\": Date or description of the most recent renovation.\n"
-        "- \"RadonLevels\": Reported radon level or a statement about radon presence, if mentioned.\n"
-        "- \"RenovationNeeds\": Clear indication that renovation is required or recommended.\n"
-        "- \"HeatingSystem\": Described heating system (e.g. fjärrvärme).\n"
-        "- \"VentilationType\": Described ventilation type (e.g. självdrag).\n\n"
-        "Return the extracted values in **exactly** the following JSON format. If a field is missing, set it to null. Do not include any explanation, headers, or commentary.\n"
-        "```json\n"
-        "{\n"
-        "  \"CadastralDesignation\": null,\n"
-        "  \"PostalAddress\": null,\n"
-        "  \"WaterLeakage\": null,\n"
-        "  \"InspectionCompany\": null,\n"
-        "  \"InspectionDate\": null,\n"
-        "  \"ExpirationDate\": null,\n"
-        "  \"BuildingDescription\": null,\n"
-        "  \"EnergyData\": null,\n"
-        "  \"LastRenovation\": null,\n"
-        "  \"RadonLevels\": null\n"
-        "  \"RenovationNeeds\": null\n"
-        "  \"HeatingSystem\": null\n"
-        "  \"VentilationType\": null\n"
-        "}\n"
-        "```"
+        + "\n".join(field_lines) +
+        "\n\nReturn the extracted values in **exactly** the following JSON format. "
+        "If a field is missing, set it to null. Do not include any explanation, headers, or commentary.\n"
+        "```json\n" + json_template + "\n```"
     )
 
 
