@@ -1,0 +1,25 @@
+{
+    "pdf_id": "your_pdf_id_here",
+    "model_output": {
+      "CadastralDesignation": null,
+      "PostalAddress": null,
+      "WaterLeakage": null,
+      "InspectionCompany": null,
+      "InspectionDate": null,
+      "EnergyData": null,
+      "LastRenovation": null,
+      "RadonLevels": null,
+      "RenovationNeeds": null
+    },
+    "ground_truth": {
+      "CadastralDesignation": null,
+      "PostalAddress": null,
+      "WaterLeakage": null,
+      "InspectionCompany": null,
+      "InspectionDate": null,
+      "EnergyData": null,
+      "LastRenovation": null,
+      "RadonLevels": null,
+      "RenovationNeeds": null
+    }
+  }
