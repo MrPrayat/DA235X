@@ -15,30 +15,36 @@ from schema import FIELDS, FIELD_DEFINITIONS
 
 client = OpenAI()
 
-def is_text_pdf(url: str) -> bool:
+def is_text_pdf(url: str, min_chars=5000) -> bool:
     """
-    Determines whether a PDF, fetched from the provided URL, is text-based or image-based.
-    Returns True if the PDF is text-based (i.e., contains no non-whitespace text), 
-    and False if no text is found or an error occurs.
+    Determines if a PDF is text-based by counting meaningful visible characters.
+    Returns True only if enough visible text is found (e.g., 200+ characters total).
     """
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=10)
         response.raise_for_status()
-    except requests.RequestException as error:
-        print(f"Error fetching PDF: {error}")
-        return False
-
-    pdf_data = io.BytesIO(response.content)
-    try:
+        pdf_data = io.BytesIO(response.content)
         doc = fitz.open("pdf", stream=pdf_data)
-    except Exception as error:
-        print(f"Error opening PDF: {error}")
-        return False
 
-    for page in doc:
-        if page.get_text().strip():
-            return True
-    return False
+        total_visible_chars = 0
+
+        for page in doc:
+            blocks = page.get_text("blocks")
+            for block in blocks:
+                text = block[4].strip()
+                if len(text) >= 15:  # Only count substantial lines
+                    total_visible_chars += len(text)
+
+            # Early exit if already clearly text-based
+            if total_visible_chars >= min_chars:
+                return True
+
+    except Exception as e:
+        print(f"Error checking PDF: {e}")
+
+    return False  # Default: treat as image-based if uncertain
+
+
 
 def get_images_from_pdf(pdf_bytes, dpi=200):
     """
@@ -200,9 +206,8 @@ def extract_fields_from_pdf_multipage(url: str) -> dict:
 def run_pdf_test():
     """
     Tests a specified number of PDF URLs for being text-based or image-based and attempts data extraction.
-    The function opens the CSV file "inspection_urls.csv" which should contain 'id' and 'url' columns.
-    For each URL, it checks if the PDF is text-based. If image-based, it tries to extract structured data.
-    The results for each test are printed to the console.
+    Determines whether a PDF is text-based by checking for a significant amount of visible text.
+    Returns True if the PDF contains meaningful, visible text; False otherwise.
     """
     test_amount = 50  # Set the number of tests to run
 
