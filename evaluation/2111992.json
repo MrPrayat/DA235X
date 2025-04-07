@@ -1,0 +1,23 @@
+{
+  "pdf_id": "2111992",
+  "model_output": {
+    "CadastralDesignation": "Stockholm Munin 5 & 6",
+    "PostalAddress": "Hagagatan 52, 52 A, 54, 54A",
+    "WaterLeakage": "Vid ett tidigare besök noteras smärre fuktgenomslag mot gatan i Munin 5's källaryttervägg.",
+    "InspectionCompany": "Projektledarhuset AB",
+    "InspectionDate": "2018-10-05",
+    "LastRenovation": "Utrustning i värmeundercentralen är utbytt 2011",
+    "RadonLevels": "Radonmätningar med utfall under godkända gränsvärden har utförts.",
+    "RenovationNeeds": "återstående äldre badrum renoveras, fönster renoveras, kvarvarande äldre VA-installationer och elinstallationer bytas ut, värmeventiler bytas ut, gårdsfasaderna renoveras samt i övrigt visst löpande underhåll genomföras."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Stockholm Munin 5 > & 6",
+    "PostalAddress": "Hagagatan 52, 52A, 54, 54A",
+    "WaterLeakage": null,
+    "InspectionCompany": "Projektledarhuset",
+    "InspectionDate": "2018-10-05",
+    "LastRenovation": null,
+    "RadonLevels": null,
+    "RenovationNeeds": null
+  }
+}

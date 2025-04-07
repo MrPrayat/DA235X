@@ -1,0 +1,23 @@
+{
+  "pdf_id": "1633735",
+  "model_output": {
+    "CadastralDesignation": "Sundbyberg Terränglöparen 9",
+    "PostalAddress": "Lötsjövägen 9-99",
+    "WaterLeakage": "påtagliga läckage fördelade över hela garaget",
+    "InspectionCompany": "Projektledar Huset",
+    "InspectionDate": "2016-04-14",
+    "LastRenovation": "1969 -70",
+    "RadonLevels": "Utfall av eventuella radonmätningar har inte redovisats.",
+    "RenovationNeeds": "behov av renovering"
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Sundbyberg Terränglöparen 9",
+    "PostalAddress": "Lötsjövägen 1-99",
+    "WaterLeakage": "Gårdsbjälklag över garage med påtagliga läckage fördelade över hela garaget.",
+    "InspectionCompany": "Projektledarhuset",
+    "InspectionDate": "2016-04-17",
+    "LastRenovation": "Badrummens yt- och tätskikt 1998/1999",
+    "RadonLevels": null,
+    "RenovationNeeds": "Gårdsbjälklag i behov av renovering inom nära framtid."
+  }
+}

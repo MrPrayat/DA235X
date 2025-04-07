@@ -8,12 +8,41 @@ import base64
 import json
 import time
 import random
+import os
 from pdf2image import convert_from_bytes
 from PIL import Image
 from schema import FIELDS, FIELD_DEFINITIONS
 
 
 client = OpenAI()
+
+
+def save_evaluation_json(pdf_id: str, model_output: dict, output_folder="evaluation"):
+    """
+    Saves model_output to a JSON file in the evaluation/ directory with ground_truth set to null.
+    """
+    os.makedirs(output_folder, exist_ok=True)
+    out_path = os.path.join(output_folder, f"{pdf_id}.json")
+
+    # If file exists, load and preserve any existing ground_truth
+    if os.path.exists(out_path):
+        with open(out_path, "r", encoding="utf-8") as f:
+            existing_data = json.load(f)
+        existing_gt = existing_data.get("ground_truth", {field: None for field in FIELDS})  # Python None will become "null" in JSON once ewe use json.dump later on to populate the json files
+    else:
+        existing_gt = {field: None for field in FIELDS}
+
+    evaluation_data = {
+        "pdf_id": pdf_id,
+        "model_output": model_output,
+        "ground_truth": existing_gt
+    }
+
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(evaluation_data, f, indent=2, ensure_ascii=False)
+
+    print(f"Saved evaluation file: {out_path}")
+
 
 def is_text_pdf(url: str, min_chars=5000) -> bool:
     """
@@ -101,11 +130,12 @@ def call_openai_image_json(image: Image.Image, prompt: str, model: str = "gpt-4o
     return ""
 
 
-def synthesize_final_json(page_results: list) -> dict:
+def synthesize_final_json(page_results: list, model="gpt-4o-mini", retries=5, backoff=2) -> dict:
     """
     Given a list of page-level JSONs, ask GPT-4o-mini to synthesize them into one coherent JSON.
+    Retries if rate-limited.
     """
-    print("Synthesizing from page-level results:")
+    print("Synthesizing from page-level results...")
 
     field_lines = [f'- "{key}": {FIELD_DEFINITIONS[key]}' for key in FIELDS]
     json_template = "{\n" + ",\n".join([f'  "{key}": null' for key in FIELDS]) + "\n}"
@@ -127,24 +157,33 @@ def synthesize_final_json(page_results: list) -> dict:
         "Now return the final merged JSON object:"
     )
 
-    # # Uncomment the following lines to debug the prompt and page results
-    # print(json.dumps(page_results, indent=2, ensure_ascii=False))
+    for attempt in range(retries):
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0
+            )
 
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0
-    )
+            output = response.choices[0].message.content
+            if output.startswith("```json"):
+                output = output.strip("```json").strip("```").strip()
 
-    output = response.choices[0].message.content
-    if output.startswith("```json"):
-        output = output.strip("```json").strip("```").strip()
+            return json.loads(output)
 
-    try:
-        return json.loads(output)
-    except json.JSONDecodeError as e:
-        print("JSON decode failed in final synthesis. Output:\n", output)
-        return {}
+        except RateLimitError as e:
+            wait_time = backoff * (2 ** attempt) + random.uniform(0, 1)
+            print(f"Rate limit hit in synthesis (attempt {attempt+1}/{retries}). Retrying in {wait_time:.1f}s...")
+            time.sleep(wait_time)
+        except json.JSONDecodeError:
+            print("Could not decode JSON in final synthesis.")
+            return {}
+        except Exception as e:
+            print(f"GPT call failed in synthesis step: {e}")
+            break
+
+    return {}
+
 
 
 def extract_fields_from_pdf_multipage(url: str) -> dict:
@@ -202,37 +241,38 @@ def extract_fields_from_pdf_multipage(url: str) -> dict:
     return synthesize_final_json(all_results)
 
 
-
-def run_pdf_test():
+def run_pdf_tests():
     """
-    Tests a specified number of PDF URLs for being text-based or image-based and attempts data extraction.
-    Determines whether a PDF is text-based by checking for a significant amount of visible text.
-    Returns True if the PDF contains meaningful, visible text; False otherwise.
+    Runs extraction on a set of image-based PDFs and saves evaluation-ready JSON files.
     """
-    test_amount = 50  # Set the number of tests to run
+    test_amount = 1  # How many PDFs to process
 
     with open("inspection_urls.csv", mode="r", encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
         for index, row in enumerate(reader):
             if index >= test_amount:
                 break
+
+            pdf_id = row["id"]
             url = row["url"]
-            # print(f"\n---\nID {row['id']} – Checking: {url}")
-            text_based = is_text_pdf(url)
-            # print(f"Is text-based: {text_based}")
-            if not text_based:
-                # extracted = extract_fields_from_pdf_multipage(url)
-                # print(f"Extracted for ID {row['id']}:\n{json.dumps(extracted, indent=2, ensure_ascii=False)}")
-                print(f"ID: {row['id']}, URL: {url}")
-            else:
+
+            if is_text_pdf(url):
+                print(f"Skipping text-based PDF: {pdf_id}")
                 continue
-                # print("Skipping text-based PDF.")
+
+            print(f"\nExtracting fields from PDF ID: {pdf_id}")
+            model_output = extract_fields_from_pdf_multipage(url)
+
+            if model_output:
+                save_evaluation_json(pdf_id, model_output)
+            else:
+                print(f"Extraction failed or empty for ID {pdf_id}")
 
 
 def main():
     print("Main function started.")
     # Run PDF test on sample CSV URLs
-    run_pdf_test()
+    run_pdf_tests()
 
 
 if __name__ == "__main__":

@@ -4,12 +4,9 @@ FIELDS = [
     "WaterLeakage",
     "InspectionCompany",
     "InspectionDate",
-    "EnergyData",
     "LastRenovation",
     "RadonLevels",
-    "RenovationNeeds",
-    "HeatingSystem",
-    "VentilationType"
+    "RenovationNeeds"
 ]
 
 FIELD_DEFINITIONS = {
@@ -18,10 +15,7 @@ FIELD_DEFINITIONS = {
     "WaterLeakage": "Any mention of water damage, smygläckage, or moisture issues.",
     "InspectionCompany": "The company that performed the inspection (e.g., Anticimex).",
     "InspectionDate": "The date the inspection was performed, format: YYYY-MM-DD.",
-    "EnergyData": "Information about energy performance or consumption.",
     "LastRenovation": "Description or date of the most recent renovation.",
     "RadonLevels": "Measured or described radon levels, or statements about radon presence.",
     "RenovationNeeds": "Indications that renovation is required or recommended.",
-    "HeatingSystem": "Heating method such as fjärrvärme, direktverkande el, etc.",
-    "VentilationType": "Ventilation method (e.g., självdrag, mekanisk frånluft)."
 }
