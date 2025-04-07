@@ -1,23 +1,21 @@
 {
-    "pdf_id": "your_pdf_id_here",
-    "model_output": {
-      "CadastralDesignation": null,
-      "PostalAddress": null,
-      "WaterLeakage": null,
-      "InspectionCompany": null,
-      "InspectionDate": null,
-      "LastRenovation": null,
-      "RadonLevels": null,
-      "RenovationNeeds": null
-    },
-    "ground_truth": {
-      "CadastralDesignation": null,
-      "PostalAddress": null,
-      "WaterLeakage": null,
-      "InspectionCompany": null,
-      "InspectionDate": null,
-      "LastRenovation": null,
-      "RadonLevels": null,
-      "RenovationNeeds": null
-    }
+  "pdf_id": "pdf_id_template",
+  "model_output": {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "WaterLeakage": null,
+    "RenovationNeeds": null,
+    "InspectionCompany": null,
+    "RadonPresence": null,
+    "AsbestosPresence": null
+  },
+  "ground_truth": {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "WaterLeakage": null,
+    "RenovationNeeds": null,
+    "InspectionCompany": null,
+    "RadonPresence": null,
+    "AsbestosPresence": null
   }
+}
