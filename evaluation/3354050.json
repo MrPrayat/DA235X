@@ -1,22 +1,22 @@
 {
-  "pdf_id": "3075757",
+  "pdf_id": "3354050",
   "model_output": {
-    "CadastralDesignation": "Linköping Vindruvan 18",
-    "InspectionDate": "2021-05",
+    "CadastralDesignation": "Åkerby 3:4",
+    "InspectionDate": "2023-10",
     "WaterLeakage": {
       "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_källare": true,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_fasad": false
+      "mentions_fasad": true
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": true,
-      "balcony": true,
-      "källare": false,
+      "fasad": true,
+      "balcony": false,
+      "källare": true,
       "bjälklag": false
     },
     "AsbestosPresence": {
@@ -30,19 +30,20 @@
     }
   },
   "ground_truth": {
-    "CadastralDesignation": "Linköping Vindruvan 18",
-    "InspectionDate": "2021-05",
+    "CadastralDesignation": "Åkerby 3:4",
+    "InspectionDate": "2023-10",
     "WaterLeakage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": false
+      "mentions_bjälklag": false,
+      "mentions_fasad": true
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
+      "fasad": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false

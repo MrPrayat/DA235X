@@ -17,6 +17,36 @@ from schema import FIELDS, FIELD_DEFINITIONS
 client = OpenAI()
 
 
+def normalize_model_output(output):
+    """
+    Ensures model_output always contains all expected fields with proper nested structure.
+    """
+    def normalize_field(value, template):
+        if isinstance(template, dict):
+            return {k: value.get(k) if isinstance(value, dict) and k in value else None for k in template}
+        return value if value is not None else None
+
+    normalized = {}
+    for field in FIELDS:
+        template = json.loads(json.dumps(generate_default_ground_truth({field: FIELD_DEFINITIONS.get(field)}).get(field)))
+        normalized[field] = normalize_field(output.get(field), template)
+
+    return normalized
+
+
+def generate_default_ground_truth(model_output):
+    """
+    Creates a ground truth dictionary with the same structure as the model_output,
+    but with all values set to null.
+    """
+    def nullify(value):
+        if isinstance(value, dict):
+            return {k: None for k in value}
+        return None
+
+    return {field: nullify(model_output.get(field)) for field in FIELDS}
+
+
 def save_evaluation_json(pdf_id: str, model_output: dict, output_folder="evaluation"):
     """
     Saves model_output to a JSON file in the evaluation/ directory with ground_truth set to null.
@@ -28,9 +58,10 @@ def save_evaluation_json(pdf_id: str, model_output: dict, output_folder="evaluat
     if os.path.exists(out_path):
         with open(out_path, "r", encoding="utf-8") as f:
             existing_data = json.load(f)
-        existing_gt = existing_data.get("ground_truth", {field: None for field in FIELDS})  # Python None will become "null" in JSON once ewe use json.dump later on to populate the json files
+        existing_gt = existing_data.get("ground_truth", generate_default_ground_truth(model_output))
     else:
-        existing_gt = {field: None for field in FIELDS}
+        existing_gt = generate_default_ground_truth(model_output)
+
 
     evaluation_data = {
         "pdf_id": pdf_id,
@@ -147,7 +178,7 @@ def synthesize_final_json(page_results: list, model="gpt-4o-mini", retries=5, ba
         "Definitions:\n"
         "- Use the most complete and accurate value for each field.\n"
         "- If a field is present in multiple JSONs, prefer the one that looks most correct.\n"
-        "- If a field is missing in all, set it to null.\n\n"
+        "- If a field is missing in all, set it to false.\n\n"
         "Field definitions:\n"
         + "\n".join(field_lines) +
         "\n\nReturn the final output in the following format:\n"
@@ -213,36 +244,38 @@ def extract_fields_from_pdf_multipage(url: str) -> dict:
     prompt_text = (
         "You are analyzing a page from a Swedish housing inspection report. "
         "Extract the following fields if they are clearly visible. "
-        "If a field is missing or unreadable, set its value to null.\n\n"
++       "If a field is not mentioned or not applicable, set it to false."
 
         "Field definitions:\n"
         + "\n".join(field_lines) + "\n\n"
 
         "Instructions:\n"
         "- Return the extracted values in **exactly** the JSON format shown below.\n"
-        "- For all fields, use null if the information is not present or readable.\n"
+        "- For all fields, use false if the information is not present or readable.\n\n"
 
         "- For InspectionDate:\n"
-        "  • Only return the year and month in format YYYY-MM (e.g., '2023-11').\n"
-        "  • If multiple dates are mentioned, prefer the **earliest inspection date**.\n\n"
+        "  • Only extract the **year and month**, in the format YYYY-MM.\n\n"
 
         "- For WaterLeakage:\n"
-        "  • Use an object with exactly these keys:\n"
-        "    - mentions_garage, mentions_källare, mentions_roof, mentions_balcony, mentions_bjälklag, mentions_fasad\n"
-        "  • Set each to true/false/null based on whether water-related issues are clearly mentioned for that location.\n\n"
+        "  • Use the object format with fixed keys:\n"
+        "    - mentions_garage, mentions_källare, mentions_roof,\n"
+        "    - mentions_balcony, mentions_bjälklag, mentions_fasad.\n"
+        "    - Each value must be true if that area has water-related issues, otherwise false."
 
         "- For RenovationNeeds:\n"
-        "  • Use an object with exactly these keys:\n"
-        "    - roof, garage, facade, balcony, källare, bjälklag\n"
-        "  • Set the value to true if renovation is clearly and explicitly needed.\n"
-        "  • Set to null if the area is not mentioned or no issue is found.\n\n"
+        "  • Use the fixed keys: roof, garage, fasad, balcony, källare, bjälklag.\n"
+        "  • Set to true only if there is a **clear statement** that renovation is needed.\n"
+        "  • Set to false if not mentioned or if no issue is reported.\n\n"
 
-        "- For AsbestosPresence and RadonPresence:\n"
-        "  • 'presence': true if the material is mentioned at all, false if explicitly ruled out, null if not mentioned.\n"
-        "  • 'Measured': true if a test or numeric measurement is mentioned, otherwise false or null.\n"
-        "  • RadonPresence also includes 'level': include the numeric radon value if mentioned, else set to null.\n\n"
+        "- For AsbestosPresence:\n"
+        "  • 'presence': true if asbestos is mentioned, false if unmentioned.\n"
+        "  • 'Measured': true if there is explicit mention of measurement or testing.\n\n"
 
-        "Return the result in exactly the following JSON format:\n"
+        "- For RadonPresence:\n"
+        "  • 'presence': true if radon is mentioned, false if unmentioned.\n"
+        "  • 'Measured': true only if a radon level is given.\n\n"
+
+        "Return exactly the following JSON format:\n"
         "```json\n" + json_template + "\n```"
     )
 
@@ -261,7 +294,7 @@ def extract_fields_from_pdf_multipage(url: str) -> dict:
         except json.JSONDecodeError:
             print(f"Page {i+1}: Could not parse JSON. Raw output:\n{raw}")
 
-    # Merge all the results (prioritizing first non-null value for each field)
+    # Merge all the results
     return synthesize_final_json(all_results)
 
 
@@ -279,22 +312,24 @@ def run_pdf_tests(test_amount: int, skip: bool) -> None:
             pdf_id = row["id"]
             url = row["url"]
 
+            if is_text_pdf(url):
+                print(f"Skipping text-based PDF: {pdf_id}")
+                continue
+
             if skip:
                 # Skip if already evaluated for testing purposes
                 evaluation_path = os.path.join("evaluation", f"{pdf_id}.json")
                 if os.path.exists(evaluation_path):
                     print(f"Already evaluated: {pdf_id} — Skipping.")
+                    pdfs_read += 1  # so that we can skip the test amount
                     continue
-
-            if is_text_pdf(url):
-                print(f"Skipping text-based PDF: {pdf_id}")
-                continue
 
             print(f"\nExtracting fields from PDF ID: {pdf_id} with url: {url}")
             model_output = extract_fields_from_pdf_multipage(url)
 
             if model_output:
-                save_evaluation_json(pdf_id, model_output)
+                normalized_output = normalize_model_output(model_output)
+                save_evaluation_json(pdf_id, normalized_output)
                 pdfs_read += 1
             else:
                 print(f"Extraction failed or empty for ID {pdf_id}")
@@ -303,7 +338,7 @@ def run_pdf_tests(test_amount: int, skip: bool) -> None:
 def main():
     print("Main function started.")
     # Run PDF test on sample CSV URLs
-    run_pdf_tests(4, False) #amounts of image-based PDFs to process
+    run_pdf_tests(4, True) #amounts of image-based PDFs to process
 
 
 if __name__ == "__main__":

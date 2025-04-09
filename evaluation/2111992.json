@@ -4,20 +4,20 @@
     "CadastralDesignation": "Stockholm Munin 5 & 6",
     "InspectionDate": "2018-10",
     "WaterLeakage": {
-      "mentions_garage": null,
+      "mentions_garage": false,
       "mentions_källare": true,
-      "mentions_roof": null,
-      "mentions_balcony": null,
-      "mentions_bjälklag": null,
-      "mentions_fasad": null
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_fasad": false
     },
     "RenovationNeeds": {
-      "roof": null,
-      "garage": null,
-      "facade": null,
-      "balcony": null,
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
       "källare": true,
-      "bjälklag": null
+      "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
@@ -26,24 +26,24 @@
     "RadonPresence": {
       "Measured": true,
       "presence": true,
-      "level": null
+      "level": false
     }
   },
   "ground_truth": {
     "CadastralDesignation": "Stockholm Munin 5 & 6",
     "InspectionDate": "2018-10",
     "WaterLeakage": {
-      "mentions_garage": null,
+      "mentions_garage": false,
       "mentions_källare": true,
-      "mentions_roof": null,
-      "mentions_balcony": null,
-      "mentions_bjälklag": null
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false
     },
     "RenovationNeeds": {
       "roof": true,
-      "garage": null,
+      "garage": false,
       "facade": true,
-      "balcony": null,
+      "balcony": false,
       "källare": true,
       "bjälklag": true
     },
@@ -54,7 +54,7 @@
     "RadonPresence": {
       "Measured": true,
       "presence": true,
-      "level": null
+      "level": false
     }
   }
 }

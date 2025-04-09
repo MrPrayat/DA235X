@@ -4,18 +4,18 @@
     "CadastralDesignation": "Sundbyberg Terränglöparen 9",
     "InspectionDate": "2016-04",
     "WaterLeakage": {
-      "mentions_garage": null,
+      "mentions_garage": false,
       "mentions_källare": true,
-      "mentions_roof": null,
-      "mentions_balcony": null,
-      "mentions_bjälklag": null,
-      "mentions_fasad": null
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_fasad": false
     },
     "RenovationNeeds": {
-      "roof": null,
+      "roof": false,
       "garage": true,
-      "facade": null,
-      "balcony": null,
+      "facade": false,
+      "balcony": false,
       "källare": true,
       "bjälklag": true
     },
@@ -26,7 +26,7 @@
     "RadonPresence": {
       "Measured": false,
       "presence": false,
-      "level": null
+      "level": false
     }
   },
   "ground_truth": {
@@ -41,20 +41,20 @@
     },
     "RenovationNeeds": {
       "roof": true,
-      "garage": null,
+      "garage": false,
       "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
     },
     "AsbestosPresence": {
-      "Measured": null,
+      "Measured": false,
       "presence": true
     },
     "RadonPresence": {
       "Measured": false,
-      "presence": null,
-      "level": null
+      "presence": false,
+      "level": false
     }
   }
 }

@@ -1,23 +1,23 @@
 {
-  "pdf_id": "3075757",
+  "pdf_id": "3442085",
   "model_output": {
-    "CadastralDesignation": "Linköping Vindruvan 18",
-    "InspectionDate": "2021-05",
+    "CadastralDesignation": "Douglasvägen 54",
+    "InspectionDate": "2024-03",
     "WaterLeakage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_fasad": false
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": true,
-      "balcony": true,
+      "fasad": false,
+      "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
@@ -30,22 +30,23 @@
     }
   },
   "ground_truth": {
-    "CadastralDesignation": "Linköping Vindruvan 18",
-    "InspectionDate": "2021-05",
+    "CadastralDesignation": "Fågelsången 2",
+    "InspectionDate": "2024-03",
     "WaterLeakage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": false
+      "mentions_bjälklag": false,
+      "mentions_fasad": false
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
+      "fasad": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,

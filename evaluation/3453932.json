@@ -1,8 +1,8 @@
 {
-  "pdf_id": "3075757",
+  "pdf_id": "3453932",
   "model_output": {
-    "CadastralDesignation": "Linköping Vindruvan 18",
-    "InspectionDate": "2021-05",
+    "CadastralDesignation": "Ortala 4:17",
+    "InspectionDate": "2024-03",
     "WaterLeakage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -12,10 +12,10 @@
       "mentions_fasad": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
-      "facade": true,
-      "balcony": true,
+      "fasad": true,
+      "balcony": false,
       "källare": false,
       "bjälklag": false
     },
@@ -30,19 +30,20 @@
     }
   },
   "ground_truth": {
-    "CadastralDesignation": "Linköping Vindruvan 18",
-    "InspectionDate": "2021-05",
+    "CadastralDesignation": "Ortala 4:17",
+    "InspectionDate": "2024-03",
     "WaterLeakage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": false
+      "mentions_bjälklag": false,
+      "mentions_fasad": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
-      "facade": false,
+      "fasad": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -53,8 +54,7 @@
     },
     "RadonPresence": {
       "Measured": false,
-      "presence": false,
-      "level": false
+      "presence": false
     }
   }
 }
