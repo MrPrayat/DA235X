@@ -5,17 +5,15 @@
     "InspectionDate": null,
     "WaterLeakage": null,
     "RenovationNeeds": null,
-    "InspectionCompany": null,
-    "RadonPresence": null,
-    "AsbestosPresence": null
+    "AsbestosPresence": null,
+    "RadonPresence": null
   },
   "ground_truth": {
     "CadastralDesignation": null,
     "InspectionDate": null,
     "WaterLeakage": null,
     "RenovationNeeds": null,
-    "InspectionCompany": null,
-    "RadonPresence": null,
-    "AsbestosPresence": null
+    "AsbestosPresence": null,
+    "RadonPresence": null
   }
 }

@@ -1,0 +1,60 @@
+{
+  "pdf_id": "2998892",
+  "model_output": {
+    "CadastralDesignation": "Kärran 69:110",
+    "InspectionDate": "2020-12",
+    "WaterLeakage": {
+      "mentions_garage": null,
+      "mentions_källare": null,
+      "mentions_roof": true,
+      "mentions_balcony": true,
+      "mentions_bjälklag": null,
+      "mentions_fasad": true
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": null,
+      "facade": true,
+      "balcony": null,
+      "källare": null,
+      "bjälklag": null
+    },
+    "AsbestosPresence": {
+      "Measured": null,
+      "presence": null
+    },
+    "RadonPresence": {
+      "Measured": null,
+      "presence": null,
+      "level": null
+    }
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Kärra 69:110",
+    "InspectionDate": "2020-12",
+    "WaterLeakage": {
+      "mentions_garage": null,
+      "mentions_källare": null,
+      "mentions_roof": true,
+      "mentions_balcony": true,
+      "mentions_bjälklag": null
+    },
+    "RenovationNeeds": {
+      "roof": null,
+      "garage": null,
+      "facade": null,
+      "balcony": null,
+      "källare": null,
+      "bjälklag": null
+    },
+    "AsbestosPresence": {
+      "Measured": null,
+      "presence": null
+    },
+    "RadonPresence": {
+      "Measured": null,
+      "presence": null,
+      "level": null
+    }
+  }
+}

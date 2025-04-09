@@ -214,13 +214,37 @@ def extract_fields_from_pdf_multipage(url: str) -> dict:
         "You are analyzing a page from a Swedish housing inspection report. "
         "Extract the following fields if they are clearly visible. "
         "If a field is missing or unreadable, set its value to null.\n\n"
+
         "Field definitions:\n"
-        + "\n".join(field_lines) +
-        "\n\nReturn the extracted values in **exactly** the following JSON format. "
-        "If a field is missing, set it to null. Do not include any explanation, headers, or commentary.\n"
+        + "\n".join(field_lines) + "\n\n"
+
+        "Instructions:\n"
+        "- Return the extracted values in **exactly** the JSON format shown below.\n"
+        "- For all fields, use null if the information is not present or readable.\n"
+
+        "- For InspectionDate:\n"
+        "  • Only return the year and month in format YYYY-MM (e.g., '2023-11').\n"
+        "  • If multiple dates are mentioned, prefer the **earliest inspection date**.\n\n"
+
+        "- For WaterLeakage:\n"
+        "  • Use an object with exactly these keys:\n"
+        "    - mentions_garage, mentions_källare, mentions_roof, mentions_balcony, mentions_bjälklag, mentions_fasad\n"
+        "  • Set each to true/false/null based on whether water-related issues are clearly mentioned for that location.\n\n"
+
+        "- For RenovationNeeds:\n"
+        "  • Use an object with exactly these keys:\n"
+        "    - roof, garage, facade, balcony, källare, bjälklag\n"
+        "  • Set the value to true if renovation is clearly and explicitly needed.\n"
+        "  • Set to null if the area is not mentioned or no issue is found.\n\n"
+
+        "- For AsbestosPresence and RadonPresence:\n"
+        "  • 'presence': true if the material is mentioned at all, false if explicitly ruled out, null if not mentioned.\n"
+        "  • 'Measured': true if a test or numeric measurement is mentioned, otherwise false or null.\n"
+        "  • RadonPresence also includes 'level': include the numeric radon value if mentioned, else set to null.\n\n"
+
+        "Return the result in exactly the following JSON format:\n"
         "```json\n" + json_template + "\n```"
     )
-
 
     all_results = []
 
@@ -241,30 +265,37 @@ def extract_fields_from_pdf_multipage(url: str) -> dict:
     return synthesize_final_json(all_results)
 
 
-def run_pdf_tests():
+def run_pdf_tests(test_amount: int, skip: bool) -> None:
     """
     Runs extraction on a set of image-based PDFs and saves evaluation-ready JSON files.
     """
-    test_amount = 1  # How many PDFs to process
-
+    pdfs_read = 0
     with open("inspection_urls.csv", mode="r", encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
-        for index, row in enumerate(reader):
-            if index >= test_amount:
+        for _, row in enumerate(reader):
+            if pdfs_read >= test_amount:
                 break
 
             pdf_id = row["id"]
             url = row["url"]
 
+            if skip:
+                # Skip if already evaluated for testing purposes
+                evaluation_path = os.path.join("evaluation", f"{pdf_id}.json")
+                if os.path.exists(evaluation_path):
+                    print(f"Already evaluated: {pdf_id} — Skipping.")
+                    continue
+
             if is_text_pdf(url):
                 print(f"Skipping text-based PDF: {pdf_id}")
                 continue
 
-            print(f"\nExtracting fields from PDF ID: {pdf_id}")
+            print(f"\nExtracting fields from PDF ID: {pdf_id} with url: {url}")
             model_output = extract_fields_from_pdf_multipage(url)
 
             if model_output:
                 save_evaluation_json(pdf_id, model_output)
+                pdfs_read += 1
             else:
                 print(f"Extraction failed or empty for ID {pdf_id}")
 
@@ -272,7 +303,7 @@ def run_pdf_tests():
 def main():
     print("Main function started.")
     # Run PDF test on sample CSV URLs
-    run_pdf_tests()
+    run_pdf_tests(4, False) #amounts of image-based PDFs to process
 
 
 if __name__ == "__main__":
