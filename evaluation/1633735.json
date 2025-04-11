@@ -33,7 +33,8 @@
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true
+      "mentions_bjälklag": true,
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": true,

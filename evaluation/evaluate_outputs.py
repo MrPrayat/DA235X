@@ -2,14 +2,15 @@ import os
 import json
 from collections import defaultdict
 import pandas as pd
+import datetime
 
 EVAL_FOLDER = "evaluation"
 
 
 def log_run_to_csv(results, run_name, notes="", log_file="evaluation_log.csv"):
-    import pandas as pd
-    import datetime
-
+    """
+    Logs the evaluation results to a CSV file.
+    """
     # Calculate summary stats
     total_tp = sum(c['tp'] for c in results.values())
     total_fp = sum(c['fp'] for c in results.values())
@@ -62,6 +63,10 @@ def evaluate_field_level(samples):
         truth = sample["ground_truth"]
 
         for key in truth:
+
+            if key == "SummaryInsights":  # Skip because interesting for Booli but fuzzy to evaluate
+                continue
+
             pred = model.get(key)
             actual = truth.get(key)
 
@@ -131,4 +136,4 @@ print(f"Total Precision: {table['Precision'].mean():.2f}")
 print(f"Total Recall: {table['Recall'].mean():.2f}")
 print(f"Total F1 Score: {table['F1 Score'].mean():.2f}")
 
-log_run_to_csv(results, run_name="Post-RadonRemoval", notes="Removed radon, clarified boolean semantics")
+log_run_to_csv(results, run_name="more_annotations", notes="re-evaluations with more annotations")

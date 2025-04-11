@@ -23,7 +23,7 @@ FIELD_DEFINITIONS = {
         "\n- 'mentions_roof': true/false"
         "\n- 'mentions_balcony': true/false"
         "\n- 'mentions_bjälklag': true/false"
-        "\n- 'mentions_fasad': true/false"
+        "\n- 'mentions_facade': true/false"
     ),
 
     "RenovationNeeds": (

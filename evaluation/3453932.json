@@ -26,28 +26,27 @@
     "SummaryInsights": "Takets äldre del är i dåligt skick och behöver omläggas snart. Fasadpanelen på husets äldre del har rötskador och bör åtgärdas. Takets utvändiga täckning behöver åtgärdas för att minska risken för fuktskador."
   },
   "ground_truth": {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": "Ortala 4:17",
+    "InspectionDate": "2024-03",
     "WaterLeakage": {
-      "mentions_garage": null,
-      "mentions_källare": null,
-      "mentions_roof": null,
-      "mentions_balcony": null,
-      "mentions_bjälklag": null,
-      "mentions_facade": null
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": null,
-      "garage": null,
-      "facade": null,
-      "balcony": null,
-      "källare": null,
-      "bjälklag": null
+      "roof": true,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
     },
     "AsbestosPresence": {
-      "Measured": null,
-      "presence": null
-    },
-    "SummaryInsights": null
+      "Measured": false,
+      "presence": false
+    }
   }
 }

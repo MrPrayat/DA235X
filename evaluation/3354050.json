@@ -34,12 +34,12 @@
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_fasad": true
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "fasad": false,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false

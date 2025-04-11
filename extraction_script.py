@@ -44,7 +44,11 @@ def generate_default_ground_truth(model_output):
             return {k: None for k in value}
         return None
 
-    return {field: nullify(model_output.get(field)) for field in FIELDS}
+    return {
+        field: nullify(model_output.get(field))
+        for field in FIELDS
+        if field != "SummaryInsights"  # Skip ground truth for SummaryInsights since we won't evaluate it
+    }
 
 
 def save_evaluation_json(pdf_id: str, model_output: dict, output_folder="evaluation"):
@@ -238,7 +242,10 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     if not images:
         print("No images extracted from PDF.")
         return {}
-    
+    elif len(images) < 5:
+        print(f"Skipping PDF with ID {pdf_id}: too short ({len(images)} pages).")
+        return {}
+
     field_lines = [f'- "{key}": {FIELD_DEFINITIONS[key]}' for key in FIELDS]
     json_template = "{\n" + ",\n".join([f'  "{key}": null' for key in FIELDS]) + "\n}"
 
