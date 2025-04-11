@@ -6,13 +6,13 @@
     "WaterLeakage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_fasad": false
+      "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": true,
       "balcony": true,
@@ -23,11 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "RadonPresence": {
-      "Measured": false,
-      "presence": false,
-      "level": false
-    }
+    "SummaryInsights": "Fasaden har färg som släpper och mindre röta, vilket bör åtgärdas. Balkongen har mindre röta i räcket. Yttertaket har skadade takpannor som behöver ses över."
   },
   "ground_truth": {
     "CadastralDesignation": "Linköping Vindruvan 18",
@@ -50,11 +46,6 @@
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
-    },
-    "RadonPresence": {
-      "Measured": false,
-      "presence": false,
-      "level": false
     }
   }
 }

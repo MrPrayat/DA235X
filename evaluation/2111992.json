@@ -9,25 +9,21 @@
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_fasad": false
+      "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
-      "facade": false,
-      "balcony": false,
+      "facade": true,
+      "balcony": true,
       "källare": true,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": true
     },
-    "RadonPresence": {
-      "Measured": true,
-      "presence": true,
-      "level": false
-    }
+    "SummaryInsights": "Renovering av gårdsbjälklag och källargolv planeras till 2019 respektive 2024. Putsrenovering av fasader och underhåll av balkonger sker 2019. Ommålning av plåttak är planerad till 2028."
   },
   "ground_truth": {
     "CadastralDesignation": "Stockholm Munin 5 & 6",
@@ -50,11 +46,6 @@
     "AsbestosPresence": {
       "Measured": false,
       "presence": true
-    },
-    "RadonPresence": {
-      "Measured": true,
-      "presence": true,
-      "level": false
     }
   }
 }

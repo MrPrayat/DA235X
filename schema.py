@@ -4,7 +4,7 @@ FIELDS = [
     "WaterLeakage",
     "RenovationNeeds",
     "AsbestosPresence",
-    "RadonPresence"
+    "SummaryInsights"
 ]
 
 FIELD_DEFINITIONS = {
@@ -21,7 +21,7 @@ FIELD_DEFINITIONS = {
         "\n- 'mentions_roof': true/false"
         "\n- 'mentions_balcony': true/false"
         "\n- 'mentions_bjälklag': true/false"
-        "\n- 'mentions_fasad': true/false"
+        "\n- 'mentions_facade': true/false"
     ),
 
     "RenovationNeeds": (
@@ -35,9 +35,9 @@ FIELD_DEFINITIONS = {
         "- 'presence': true if mentioned, false if explicitly ruled out"
     ),
 
-    "RadonPresence": (
-        "An object with the following keys: \n"
-        "- 'Measured': true if a numeric radon value is given, otherwise false\n"
-        "- 'presence': true if mentioned, false if explicitly ruled out"
+    "SummaryInsights": (
+        "A short freeform summary in Swedish (1–3 sentences) of the three most important maintenance or renovation actions recommended in the inspection report. "
+        "If no major actions are recommended, summarize that as well. The tone should be neutral and helpful."
     )
+
 }

@@ -121,7 +121,7 @@ def encode_image(image: Image.Image) -> str:
     image.save(buffered, format="PNG")
     return base64.b64encode(buffered.getvalue()).decode("utf-8")
 
-def call_openai_image_json(image: Image.Image, prompt: str, model: str = "gpt-4o-mini", retries=5, backoff=2) -> str:
+def call_openai_image_json(image: Image.Image, prompt: str, model: str = "gpt-4o", retries=5, backoff=2) -> str:
     """
     Calls the OpenAI chat completions API with a text prompt and image input.
     The prompt instructs the model to extract structured information from the image.
@@ -161,9 +161,9 @@ def call_openai_image_json(image: Image.Image, prompt: str, model: str = "gpt-4o
     return ""
 
 
-def synthesize_final_json(page_results: list, model="gpt-4o-mini", retries=5, backoff=2) -> dict:
+def synthesize_final_json(page_results: list, model="gpt-4o", retries=5, backoff=2) -> dict:
     """
-    Given a list of page-level JSONs, ask GPT-4o-mini to synthesize them into one coherent JSON.
+    Given a list of page-level JSONs, ask GPT-4o to synthesize them into one coherent JSON.
     Retries if rate-limited.
     """
     print("Synthesizing from page-level results...")
@@ -175,13 +175,14 @@ def synthesize_final_json(page_results: list, model="gpt-4o-mini", retries=5, ba
         "You are given a list of partial JSON outputs extracted from different pages of a housing inspection report.\n"
         "Each JSON may contain correct or incorrect values, or have missing fields.\n"
         "Your job is to reason through them and return a single, best-version JSON object.\n\n"
-        "Definitions:\n"
-        "- Use the most complete and accurate value for each field.\n"
-        "- If a field is present in multiple JSONs, prefer the one that looks most correct.\n"
-        "- If a field is missing in all, set it to false.\n\n"
+        "Instructions:\n"
+        "- For all fields, use the most complete and accurate value.\n"
+        "- If a field is missing in all pages, return a reasonable default.\n"
+        "- **Always include 'SummaryInsights', even if no insights are found.**\n"
+        "- Return in exactly the JSON format shown below.\n\n"
         "Field definitions:\n"
         + "\n".join(field_lines) +
-        "\n\nReturn the final output in the following format:\n"
+        "\n\nReturn the final merged JSON:\n"
         "```json\n" + json_template + "\n```\n"
         f"Here is the list of page-level JSONs:\n\n"
         f"{json.dumps(page_results, indent=2, ensure_ascii=False)}\n\n"
@@ -217,7 +218,7 @@ def synthesize_final_json(page_results: list, model="gpt-4o-mini", retries=5, ba
 
 
 
-def extract_fields_from_pdf_multipage(url: str) -> dict:
+def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     """
     Extracts structured data from all pages of an image-based PDF:
       1. Convert each page to image.
@@ -257,23 +258,27 @@ def extract_fields_from_pdf_multipage(url: str) -> dict:
         "  • Only extract the **year and month**, in the format YYYY-MM.\n\n"
 
         "- For WaterLeakage:\n"
-        "  • Use the object format with fixed keys:\n"
-        "    - mentions_garage, mentions_källare, mentions_roof,\n"
-        "    - mentions_balcony, mentions_bjälklag, mentions_fasad.\n"
-        "    - Each value must be true if that area has water-related issues, otherwise false."
+        "    • Use the object format with fixed keys:\n"
+        "        - mentions_garage, mentions_källare, mentions_roof, mentions_balcony, mentions_bjälklag, mentions_facade.\n"
+        "    • Each value must be true if water damage or moisture issues are clearly mentioned in that location, else false.\n\n"
+
 
         "- For RenovationNeeds:\n"
-        "  • Use the fixed keys: roof, garage, fasad, balcony, källare, bjälklag.\n"
-        "  • Set to true only if there is a **clear statement** that renovation is needed.\n"
-        "  • Set to false if not mentioned or if no issue is reported.\n\n"
+        "   • Only use the following fixed keys: 'roof', 'garage', 'facade', 'balcony', 'källare', 'bjälklag'.\n"
+        "   • Set each value to true only if there is a **clear and direct statement** indicating the need for renovation in that area.\n"
+        "   • Use true for phrases like 'slitage', 'dåligt skick', 'bör åtgärdas', or specific plans/timelines for future renovation.\n"
+        "   • If the area is mentioned but no issue is present, or if it is not mentioned at all, set to false.\n\n"
+
 
         "- For AsbestosPresence:\n"
         "  • 'presence': true if asbestos is mentioned, false if unmentioned.\n"
         "  • 'Measured': true if there is explicit mention of measurement or testing.\n\n"
 
-        "- For RadonPresence:\n"
-        "  • 'presence': true if radon is mentioned, false if unmentioned.\n"
-        "  • 'Measured': true only if a radon level is given.\n\n"
+        "- For SummaryInsights:\n"
+        "  • Write a short free-text summary of 1–3 clearly stated renovation actions.\n"
+        "  • Use plain Swedish, max 1–2 sentences.\n"
+        "  • Only include this if specific, actionable renovations are mentioned.\n"
+        "  • Set to null if nothing actionable is described.\n"
 
         "Return exactly the following JSON format:\n"
         "```json\n" + json_template + "\n```"
@@ -293,8 +298,13 @@ def extract_fields_from_pdf_multipage(url: str) -> dict:
             all_results.append(parsed)
         except json.JSONDecodeError:
             print(f"Page {i+1}: Could not parse JSON. Raw output:\n{raw}")
+            all_results.append({"error": "Could not parse", "raw_output": raw})
 
-    # Merge all the results
+    # ✅ NEW: Save per-page logs to disk
+    os.makedirs("page_logs", exist_ok=True)
+    with open(f"page_logs/{pdf_id}_pages.json", "w", encoding="utf-8") as f:
+        json.dump(all_results, f, indent=2, ensure_ascii=False)
+
     return synthesize_final_json(all_results)
 
 
@@ -325,7 +335,7 @@ def run_pdf_tests(test_amount: int, skip: bool) -> None:
                     continue
 
             print(f"\nExtracting fields from PDF ID: {pdf_id} with url: {url}")
-            model_output = extract_fields_from_pdf_multipage(url)
+            model_output = extract_fields_from_pdf_multipage(pdf_id, url)
 
             if model_output:
                 normalized_output = normalize_model_output(model_output)
@@ -337,8 +347,10 @@ def run_pdf_tests(test_amount: int, skip: bool) -> None:
 
 def main():
     print("Main function started.")
-    # Run PDF test on sample CSV URLs
-    run_pdf_tests(4, True) #amounts of image-based PDFs to process
+    # Run PDF test on sample CSV URLs with 
+    # 1st arg being the amount of PDFs to process
+    # 2nd arg being whether to skip already evaluated PDFs
+    run_pdf_tests(8, False) 
 
 
 if __name__ == "__main__":

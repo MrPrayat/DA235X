@@ -9,12 +9,12 @@
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_fasad": true
+      "mentions_facade": true
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
-      "fasad": true,
+      "facade": true,
       "balcony": false,
       "källare": true,
       "bjälklag": false
@@ -23,11 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "RadonPresence": {
-      "Measured": false,
-      "presence": false,
-      "level": false
-    }
+    "SummaryInsights": "Fasaden har sprickor och mindre putssläpp som bör åtgärdas. Ett hörn på en takpanna är trasig och behöver repareras. Källaren har puts- och färgsläpp samt missfärgning på väggar som bör åtgärdas."
   },
   "ground_truth": {
     "CadastralDesignation": "Åkerby 3:4",
@@ -51,11 +47,6 @@
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
-    },
-    "RadonPresence": {
-      "Measured": false,
-      "presence": false,
-      "level": false
     }
   }
 }

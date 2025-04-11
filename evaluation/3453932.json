@@ -6,44 +6,15 @@
     "WaterLeakage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_fasad": false
-    },
-    "RenovationNeeds": {
-      "roof": true,
-      "garage": false,
-      "fasad": true,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "RadonPresence": {
-      "Measured": false,
-      "presence": false,
-      "level": false
-    }
-  },
-  "ground_truth": {
-    "CadastralDesignation": "Ortala 4:17",
-    "InspectionDate": "2024-03",
-    "WaterLeakage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_fasad": false
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": true,
       "garage": false,
-      "fasad": false,
+      "facade": true,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -52,9 +23,31 @@
       "Measured": false,
       "presence": false
     },
-    "RadonPresence": {
-      "Measured": false,
-      "presence": false
-    }
+    "SummaryInsights": "Takets äldre del är i dåligt skick och behöver omläggas snart. Fasadpanelen på husets äldre del har rötskador och bör åtgärdas. Takets utvändiga täckning behöver åtgärdas för att minska risken för fuktskador."
+  },
+  "ground_truth": {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "WaterLeakage": {
+      "mentions_garage": null,
+      "mentions_källare": null,
+      "mentions_roof": null,
+      "mentions_balcony": null,
+      "mentions_bjälklag": null,
+      "mentions_facade": null
+    },
+    "RenovationNeeds": {
+      "roof": null,
+      "garage": null,
+      "facade": null,
+      "balcony": null,
+      "källare": null,
+      "bjälklag": null
+    },
+    "AsbestosPresence": {
+      "Measured": null,
+      "presence": null
+    },
+    "SummaryInsights": null
   }
 }

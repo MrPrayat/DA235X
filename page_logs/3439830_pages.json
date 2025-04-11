@@ -1,6 +1,30 @@
-{
-  "pdf_id": "3439830",
-  "model_output": {
+[
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "WaterLeakage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
     "CadastralDesignation": "Silbodals-Backa 1:51",
     "InspectionDate": "2023-10",
     "WaterLeakage": {
@@ -23,23 +47,23 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Inga större underhållsåtgärder rekommenderas för närvarande, då inga problem har identifierats i inspektionsrapporten."
+    "SummaryInsights": null
   },
-  "ground_truth": {
-    "CadastralDesignation": "Silbodals-Backa 1:51",
-    "InspectionDate": "2023-10",
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "WaterLeakage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_fasad": false
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "fasad": false,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -47,6 +71,7 @@
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
-    }
+    },
+    "SummaryInsights": null
   }
-}
+]
