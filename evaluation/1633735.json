@@ -30,7 +30,7 @@
     "InspectionDate": "2016-04",
     "WaterLeakage": {
       "mentions_garage": true,
-      "mentions_källare": true,
+      "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": true

@@ -331,7 +331,6 @@ def run_pdf_tests(test_amount: int, skip: bool) -> None:
                 evaluation_path = os.path.join("evaluation", f"{pdf_id}.json")
                 if os.path.exists(evaluation_path):
                     print(f"Already evaluated: {pdf_id} — Skipping.")
-                    pdfs_read += 1  # so that we can skip the test amount
                     continue
 
             print(f"\nExtracting fields from PDF ID: {pdf_id} with url: {url}")
@@ -350,7 +349,7 @@ def main():
     # Run PDF test on sample CSV URLs with 
     # 1st arg being the amount of PDFs to process
     # 2nd arg being whether to skip already evaluated PDFs
-    run_pdf_tests(8, False) 
+    run_pdf_tests(2, True) 
 
 
 if __name__ == "__main__":

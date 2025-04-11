@@ -5,6 +5,44 @@ import pandas as pd
 
 EVAL_FOLDER = "evaluation"
 
+
+def log_run_to_csv(results, run_name, notes="", log_file="evaluation_log.csv"):
+    import pandas as pd
+    import datetime
+
+    # Calculate summary stats
+    total_tp = sum(c['tp'] for c in results.values())
+    total_fp = sum(c['fp'] for c in results.values())
+    total_fn = sum(c['fn'] for c in results.values())
+    precision = total_tp / (total_tp + total_fp) if (total_tp + total_fp) > 0 else 0
+    recall = total_tp / (total_tp + total_fn) if (total_tp + total_fn) > 0 else 0
+    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
+    accuracy = total_tp / (total_tp + total_fp + total_fn) if (total_tp + total_fp + total_fn) > 0 else 0
+
+    new_row = {
+        "timestamp": datetime.datetime.now().isoformat(),
+        "run_name": run_name,
+        "notes": notes,
+        "true_positives": total_tp,
+        "false_positives": total_fp,
+        "false_negatives": total_fn,
+        "accuracy": round(accuracy, 4),
+        "precision": round(precision, 4),
+        "recall": round(recall, 4),
+        "f1_score": round(f1, 4)
+    }
+
+    # Append to CSV
+    try:
+        df = pd.read_csv(log_file)
+    except FileNotFoundError:
+        df = pd.DataFrame()
+
+    df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+    df.to_csv(log_file, index=False)
+    print(f"✅ Logged run to {log_file}")
+
+
 def update_counts(key, pred, actual, results):
     if actual is None:
         return
@@ -15,6 +53,7 @@ def update_counts(key, pred, actual, results):
     else:
         results[key]["fp"] += 1
         results[key]["fn"] += 1
+
 
 def evaluate_field_level(samples):
     results = defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0})
@@ -91,3 +130,5 @@ print(f"Total Accuracy: {table['Accuracy'].mean():.2f}")
 print(f"Total Precision: {table['Precision'].mean():.2f}")
 print(f"Total Recall: {table['Recall'].mean():.2f}")
 print(f"Total F1 Score: {table['F1 Score'].mean():.2f}")
+
+log_run_to_csv(results, run_name="Post-RadonRemoval", notes="Removed radon, clarified boolean semantics")
