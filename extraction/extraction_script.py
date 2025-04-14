@@ -11,11 +11,10 @@ import random
 import os
 from pdf2image import convert_from_bytes
 from PIL import Image
-from schema import FIELDS, FIELD_DEFINITIONS
+from schema.schema import FIELDS, FIELD_DEFINITIONS
 
 
 client = OpenAI()
-
 
 def normalize_model_output(output):
     """
@@ -51,9 +50,9 @@ def generate_default_ground_truth(model_output):
     }
 
 
-def save_evaluation_json(pdf_id: str, model_output: dict, output_folder="evaluation"):
+def save_evaluation_json(pdf_id: str, model_output: dict, output_folder="data/evaluation"):
     """
-    Saves model_output to a JSON file in the evaluation/ directory with ground_truth set to null.
+    Saves model_output to a JSON file in the data/evaluation/ directory with ground_truth set to null.
     """
     os.makedirs(output_folder, exist_ok=True)
     out_path = os.path.join(output_folder, f"{pdf_id}.json")
@@ -327,19 +326,19 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
             all_results.append({"error": "Could not parse", "raw_output": raw})
 
     # ✅ NEW: Save per-page logs to disk
-    os.makedirs("page_logs", exist_ok=True)
-    with open(f"page_logs/{pdf_id}_pages.json", "w", encoding="utf-8") as f:
+    os.makedirs("data/page_logs", exist_ok=True)
+    with open(f"data/page_logs/{pdf_id}_pages.json", "w", encoding="utf-8") as f:
         json.dump(all_results, f, indent=2, ensure_ascii=False)
 
     return synthesize_final_json(all_results)
 
 
-def run_pdf_tests(test_amount: int, skip: bool) -> None:
+def run_pdf_tests(test_amount: int, skip: bool, inspection_urls_path: str) -> None:
     """
     Runs extraction on a set of image-based PDFs and saves evaluation-ready JSON files.
     """
     pdfs_read = 0
-    with open("inspection_urls.csv", mode="r", encoding="utf-8-sig") as csvfile:
+    with open(inspection_urls_path, mode="r", encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
         for _, row in enumerate(reader):
             if pdfs_read >= test_amount:
@@ -354,7 +353,7 @@ def run_pdf_tests(test_amount: int, skip: bool) -> None:
 
             if skip:
                 # Skip if already evaluated for testing purposes
-                evaluation_path = os.path.join("evaluation", f"{pdf_id}.json")
+                evaluation_path = os.path.join("data/evaluation", f"{pdf_id}.json")
                 if os.path.exists(evaluation_path):
                     print(f"Already evaluated: {pdf_id} — Skipping.")
                     continue
@@ -370,11 +369,11 @@ def run_pdf_tests(test_amount: int, skip: bool) -> None:
                 print(f"Extraction failed or empty for ID {pdf_id}")
 
 
-def extract_specific_pdfs(pdf_ids: list[str], csv_path="inspection_urls.csv") -> None:
+def extract_specific_pdfs(pdf_ids: list[str], inspection_urls_path: str) -> None:
     """
     Re-runs extraction only for specific PDF IDs (regardless of existing files).
     """
-    with open(csv_path, mode="r", encoding="utf-8-sig") as csvfile:
+    with open(inspection_urls_path, mode="r", encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             pdf_id = row["id"]
@@ -393,15 +392,18 @@ def extract_specific_pdfs(pdf_ids: list[str], csv_path="inspection_urls.csv") ->
 
 
 def main():
+    inspection_urls_path = "data/inspection_urls.csv"
+
     print("Main function started.")
     # Run PDF test on sample CSV URLs with 
     # 1st arg being the amount of PDFs to process
     # 2nd arg being whether to skip already evaluated PDFs
-    # run_pdf_tests(2, True) 
+    # run_pdf_tests(2, True, inspection_urls_path) 
 
     print("Manual re-extract mode")
-    extract_specific_pdfs(["3578724"])
+    extract_specific_pdfs(["3578724"], inspection_urls_path)
 
 
 if __name__ == "__main__":
     main()
+

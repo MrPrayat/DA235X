@@ -6,7 +6,6 @@ import datetime
 
 EVAL_FOLDER = "evaluation"
 
-
 def log_run_to_csv(results, run_name, notes="", log_file="evaluation_log.csv"):
     """
     Logs the evaluation results to a CSV file.
