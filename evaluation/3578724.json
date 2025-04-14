@@ -8,7 +8,7 @@
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_bjälklag": false,
       "mentions_facade": true
     },
     "RenovationNeeds": {
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takpannorna är inte ramspikade och trasiga takpannor noterades. Fasadpanelen har färgsläpp och är rötskadad vid stuprör. Yttertaket och fasaden har behov av renovering på grund av åldersslitage och rötskador."
+    "SummaryInsights": "Takpannorna är inte ramspikade och trasiga takpannor noterades. Fasadpanelen har rötskador och färgsläpp. Äldre tak och fasad behöver åtgärdas på grund av risk för fuktskador och röta."
   },
   "ground_truth": {
     "CadastralDesignation": "Täby Gullrankan 20",

@@ -140,4 +140,4 @@ print(f"Total Precision: {table['Precision'].mean():.2f}")
 print(f"Total Recall: {table['Recall'].mean():.2f}")
 print(f"Total F1 Score: {table['F1 Score'].mean():.2f}")
 
-log_run_to_csv(results, run_name="2_pdfs", notes="Checking latest 2 PDFs for evaluation")
+log_run_to_csv(results, run_name="no_appendix", notes="Clean run with no appendix")

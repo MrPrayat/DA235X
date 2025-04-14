@@ -221,6 +221,20 @@ def synthesize_final_json(page_results: list, model="gpt-4o", retries=5, backoff
     return {}
 
 
+def is_appendix_page_gpt(image: Image.Image) -> bool:
+    appendix_filter_prompt = (
+        "You're reviewing a page from a Swedish housing inspection report. "
+        "Does this page clearly indicate that it is an appendix, annex, or contains general terms like 'Bilaga', 'Villkor', or 'Appendix' \n"
+        "that are usually found in the latter pages of a document?\n"
+        "Note that 'innehållsförteckning' is not an appendix but a table of contents.\n\n"
+        "Respond only with one word:\n"
+        "- 'yes' if it's an appendix or general conditions page,\n"
+        "- 'no' otherwise."
+    )
+
+    raw_response = call_openai_image_json(image, appendix_filter_prompt)
+    return "yes" in raw_response.lower()
+
 
 def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     """
@@ -294,6 +308,11 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     all_results = []
 
     for i, page_img in enumerate(images):
+        print(f"Checking if page {i+1} is an appendix...")
+        if is_appendix_page_gpt(page_img):
+            print(f"Page {i+1} flagged as appendix. Skipping the rest of PDF {pdf_id}.")
+            break
+    
         print(f"Processing page {i+1}/{len(images)}...")
         raw = call_openai_image_json(page_img, prompt_text)
 
@@ -351,12 +370,37 @@ def run_pdf_tests(test_amount: int, skip: bool) -> None:
                 print(f"Extraction failed or empty for ID {pdf_id}")
 
 
+def extract_specific_pdfs(pdf_ids: list[str], csv_path="inspection_urls.csv") -> None:
+    """
+    Re-runs extraction only for specific PDF IDs (regardless of existing files).
+    """
+    with open(csv_path, mode="r", encoding="utf-8-sig") as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            pdf_id = row["id"]
+            if pdf_id not in pdf_ids:
+                continue
+
+            url = row["url"]
+            print(f"\nRe-extracting PDF ID: {pdf_id} with url: {url}")
+            model_output = extract_fields_from_pdf_multipage(pdf_id, url)
+
+            if model_output:
+                normalized_output = normalize_model_output(model_output)
+                save_evaluation_json(pdf_id, normalized_output)
+            else:
+                print(f"❌ Extraction failed or was skipped for ID {pdf_id}")
+
+
 def main():
     print("Main function started.")
     # Run PDF test on sample CSV URLs with 
     # 1st arg being the amount of PDFs to process
     # 2nd arg being whether to skip already evaluated PDFs
-    run_pdf_tests(2, True) 
+    # run_pdf_tests(2, True) 
+
+    print("Manual re-extract mode")
+    extract_specific_pdfs(["3578724"])
 
 
 if __name__ == "__main__":

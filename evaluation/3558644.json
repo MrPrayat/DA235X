@@ -8,7 +8,7 @@
       "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -20,10 +20,10 @@
       "bjälklag": false
     },
     "AsbestosPresence": {
-      "Measured": true,
+      "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Vattenläckage upptäcktes i källaren och bjälklaget. Ingen asbest närvarande enligt mätningar."
+    "SummaryInsights": "Inga större problem upptäcktes under inspektionen. Vattenläckage noterades i källaren, men inga omedelbara renoveringsbehov identifierades."
   },
   "ground_truth": {
     "CadastralDesignation": "Källsätter 1:1",
