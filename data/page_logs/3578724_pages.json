@@ -1,6 +1,6 @@
 [
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": "Täby Gullrankan 20",
     "InspectionDate": "2024-08",
     "WaterLeakage": {
       "mentions_garage": false,
@@ -147,7 +147,7 @@
       "Measured": true,
       "presence": false
     },
-    "SummaryInsights": "Takpannorna är inte ramspikade och trasiga takpannor noterades. Fasadpanelen är rötskadad och färgsläpp noterades."
+    "SummaryInsights": "Tak och fasad behöver åtgärdas på grund av slitage och rötskador."
   },
   {
     "CadastralDesignation": "Täby Gullrankan 20",

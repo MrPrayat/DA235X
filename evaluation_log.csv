@@ -3,3 +3,4 @@ timestamp,run_name,notes,true_positives,false_positives,false_negatives,accuracy
 2025-04-11T16:41:12.995210,more_annotations,re-evaluations with more annotations,242,54,56,0.6875,0.8176,0.8121,0.8148
 2025-04-14T13:29:57.991719,2_pdfs,Checking latest 2 PDFs for evaluation,50,10,10,0.7143,0.8333,0.8333,0.8333
 2025-04-14T14:26:08.475278,no_appendix,Clean run with no appendix,52,8,8,0.7647,0.8667,0.8667,0.8667
+2025-04-14T17:39:01.066981,mid_refactor_test,Testing evaluation script mid refactor,244,54,54,0.6932,0.8188,0.8188,0.8188

@@ -20,10 +20,10 @@
       "bjälklag": false
     },
     "AsbestosPresence": {
-      "Measured": false,
+      "Measured": true,
       "presence": false
     },
-    "SummaryInsights": "Takpannorna är inte ramspikade och trasiga takpannor noterades. Fasadpanelen har rötskador och färgsläpp. Äldre tak och fasad behöver åtgärdas på grund av risk för fuktskador och röta."
+    "SummaryInsights": "Tak och fasad behöver åtgärdas på grund av slitage och rötskador."
   },
   "ground_truth": {
     "CadastralDesignation": "Täby Gullrankan 20",
