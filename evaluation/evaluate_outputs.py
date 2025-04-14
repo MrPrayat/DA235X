@@ -108,14 +108,18 @@ def build_results_table(results):
 def load_eval_files():
     data = []
     for filename in os.listdir(EVAL_FOLDER):
-        if filename.endswith(".json") and filename != "pdf_id_template.json":
+        if filename.endswith(".json"):
             with open(os.path.join(EVAL_FOLDER, filename), encoding="utf-8") as f:
                 sample = json.load(f)
                 data.append(sample)
     return data
 
 
-samples = load_eval_files()
+#samples = load_eval_files()
+# Sample below loads the latest 2 files in the evaluation folder
+# This is useful for testing and debugging
+# For another set of files, you can change the key in the sorted function
+samples = sorted(load_eval_files(), key=lambda s: s["pdf_id"], reverse=True)[:2]
 results = evaluate_field_level(samples)
 table = build_results_table(results)
 
@@ -136,4 +140,4 @@ print(f"Total Precision: {table['Precision'].mean():.2f}")
 print(f"Total Recall: {table['Recall'].mean():.2f}")
 print(f"Total F1 Score: {table['F1 Score'].mean():.2f}")
 
-log_run_to_csv(results, run_name="more_annotations", notes="re-evaluations with more annotations")
+log_run_to_csv(results, run_name="2_pdfs", notes="Checking latest 2 PDFs for evaluation")
