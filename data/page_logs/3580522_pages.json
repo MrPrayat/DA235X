@@ -1,6 +1,6 @@
 [
   {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
     "WaterLeakage": {
       "mentions_garage": false,
@@ -25,7 +25,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": null,
     "InspectionDate": "2024-08",
     "WaterLeakage": {
       "mentions_garage": false,
@@ -50,7 +50,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
     "WaterLeakage": {
       "mentions_garage": false,
@@ -75,7 +75,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": null,
     "InspectionDate": "2024-08",
     "WaterLeakage": {
       "mentions_garage": false,
@@ -100,7 +100,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
     "WaterLeakage": {
       "mentions_garage": false,
@@ -125,7 +125,32 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": null,
+    "InspectionDate": "2024-08",
+    "WaterLeakage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": true,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Fasaden har små sprickor och färgsläpp som bör åtgärdas."
+  },
+  {
+    "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
     "WaterLeakage": {
       "mentions_garage": false,
@@ -138,7 +163,7 @@
     "RenovationNeeds": {
       "roof": true,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -147,10 +172,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takpannorna är inte ramspikade och trasiga takpannor noterades. Fasadpanelen är rötskadad och färgsläpp noterades."
+    "SummaryInsights": "Takfotsbräda sitter löst och bör åtgärdas. Pulpettak är en riskkonstruktion."
   },
   {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
     "WaterLeakage": {
       "mentions_garage": false,
@@ -175,7 +200,82 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": "Arnö 1:80",
+    "InspectionDate": "2024-08",
+    "WaterLeakage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Arnö 1:80",
+    "InspectionDate": "2024-08",
+    "WaterLeakage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Arnö 1:80",
+    "InspectionDate": "2024-08",
+    "WaterLeakage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
     "WaterLeakage": {
       "mentions_garage": false,
@@ -183,12 +283,12 @@
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -197,10 +297,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket och fasaden behöver renoveras på grund av åldersslitage och rötskador."
+    "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": null,
     "InspectionDate": "2024-08",
     "WaterLeakage": {
       "mentions_garage": false,

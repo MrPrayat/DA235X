@@ -14,6 +14,7 @@ from utils.helpers import (
     is_appendix_page_gpt,
     normalize_model_output,
     generate_default_ground_truth,
+    synthesize_final_json,
 )
 
 
@@ -43,62 +44,6 @@ def save_evaluation_json(pdf_id: str, model_output: dict, output_folder="data/ev
         json.dump(evaluation_data, f, indent=2, ensure_ascii=False)
 
     print(f"Saved evaluation file: {out_path}")
-
-
-def synthesize_final_json(page_results: list, model="gpt-4o", retries=5, backoff=2) -> dict:
-    """
-    Given a list of page-level JSONs, ask GPT-4o to synthesize them into one coherent JSON.
-    Retries if rate-limited.
-    """
-    print("Synthesizing from page-level results...")
-
-    field_lines = [f'- "{key}": {FIELD_DEFINITIONS[key]}' for key in FIELDS]
-    json_template = "{\n" + ",\n".join([f'  "{key}": null' for key in FIELDS]) + "\n}"
-
-    prompt = (
-        "You are given a list of partial JSON outputs extracted from different pages of a housing inspection report.\n"
-        "Each JSON may contain correct or incorrect values, or have missing fields.\n"
-        "Your job is to reason through them and return a single, best-version JSON object.\n\n"
-        "Instructions:\n"
-        "- For all fields, use the most complete and accurate value.\n"
-        "- If a field is missing in all pages, return a reasonable default.\n"
-        "- **Always include 'SummaryInsights', even if no insights are found.**\n"
-        "- Return in exactly the JSON format shown below.\n\n"
-        "Field definitions:\n"
-        + "\n".join(field_lines) +
-        "\n\nReturn the final merged JSON:\n"
-        "```json\n" + json_template + "\n```\n"
-        f"Here is the list of page-level JSONs:\n\n"
-        f"{json.dumps(page_results, indent=2, ensure_ascii=False)}\n\n"
-        "Now return the final merged JSON object:"
-    )
-
-    for attempt in range(retries):
-        try:
-            response = client.chat.completions.create(
-                model=model,
-                messages=[{"role": "user", "content": prompt}],
-                temperature=0
-            )
-
-            output = response.choices[0].message.content
-            if output.startswith("```json"):
-                output = output.strip("```json").strip("```").strip()
-
-            return json.loads(output)
-
-        except RateLimitError as e:
-            wait_time = backoff * (2 ** attempt) + random.uniform(0, 1)
-            print(f"Rate limit hit in synthesis (attempt {attempt+1}/{retries}). Retrying in {wait_time:.1f}s...")
-            time.sleep(wait_time)
-        except json.JSONDecodeError:
-            print("Could not decode JSON in final synthesis.")
-            return {}
-        except Exception as e:
-            print(f"GPT call failed in synthesis step: {e}")
-            break
-
-    return {}
 
 
 def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
@@ -255,21 +200,3 @@ def extract_specific_pdfs(pdf_ids: list[str], inspection_urls_path: str) -> None
                 save_evaluation_json(pdf_id, normalized_output)
             else:
                 print(f"❌ Extraction failed or was skipped for ID {pdf_id}")
-
-
-def main():
-    inspection_urls_path = "data/inspection_urls.csv"
-
-    print("Main function started.")
-    # Run PDF test on sample CSV URLs with 
-    # 1st arg being the amount of PDFs to process
-    # 2nd arg being whether to skip already evaluated PDFs
-    # run_pdf_tests(2, True, inspection_urls_path) 
-
-    print("Manual re-extract mode")
-    extract_specific_pdfs(["3578724"], inspection_urls_path)
-
-
-if __name__ == "__main__":
-    main()
-

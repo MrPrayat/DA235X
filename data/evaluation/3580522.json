@@ -1,7 +1,7 @@
 {
-  "pdf_id": "3578724",
+  "pdf_id": "3580522",
   "model_output": {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
     "WaterLeakage": {
       "mentions_garage": false,
@@ -9,7 +9,7 @@
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": true,
@@ -23,18 +23,18 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket och fasaden behöver renoveras på grund av åldersslitage och rötskador. Takpannorna är inte ramspikade och trasiga takpannor noterades. Fasadpanelen är rötskadad och färgsläpp noterades."
+    "SummaryInsights": "Takfotsbräda sitter löst och bör åtgärdas. Pulpettak är en riskkonstruktion. Fasaden har små sprickor och färgsläpp som bör åtgärdas."
   },
   "ground_truth": {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
     "WaterLeakage": {
-      "mentions_garage": true,
+      "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": true,
