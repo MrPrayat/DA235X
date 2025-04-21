@@ -1,7 +1,7 @@
 [
   {
-    "CadastralDesignation": "Arnö 1:80",
-    "InspectionDate": "2024-08",
+    "CadastralDesignation": "Röjeln 6",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -25,8 +25,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": "2024-08",
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -50,8 +50,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Arnö 1:80",
-    "InspectionDate": "2024-08",
+    "CadastralDesignation": "Röjeln 6",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -75,8 +75,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": "2024-08",
+    "CadastralDesignation": "Röjeln 6",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -100,8 +100,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Arnö 1:80",
-    "InspectionDate": "2024-08",
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -125,8 +125,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": "2024-08",
+    "CadastralDesignation": "Röjeln 6",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -138,7 +138,7 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -147,11 +147,36 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden har små sprickor och färgsläpp som bör åtgärdas."
+    "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Arnö 1:80",
-    "InspectionDate": "2024-08",
+    "CadastralDesignation": "Röjeln 6",
+    "InspectionDate": "2024-11",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Röjeln 6",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -172,11 +197,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takfotsbräda sitter löst och bör åtgärdas. Pulpettak är en riskkonstruktion."
+    "SummaryInsights": "Yttertaket har äldre pannor med moss påväxt och underlagspappen är torr och spröd. Hängrännorna behöver rensas på skräp."
   },
   {
-    "CadastralDesignation": "Arnö 1:80",
-    "InspectionDate": "2024-08",
+    "CadastralDesignation": "Röjeln 6",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -200,8 +225,58 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Arnö 1:80",
-    "InspectionDate": "2024-08",
+    "CadastralDesignation": "Röjeln 6",
+    "InspectionDate": "2024-11",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Diskbänkskåpet saknar tät botten och golvet i pannrummet sviktar med en gammal golvbrunn under laminatgolvet. Tvättstugan har en äldre rostskadad gjutjärnsgolvbrunn."
+  },
+  {
+    "CadastralDesignation": "Röjeln 6",
+    "InspectionDate": "2024-11",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Röjeln 6",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -225,8 +300,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Arnö 1:80",
-    "InspectionDate": "2024-08",
+    "CadastralDesignation": "Röjeln 6",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -250,8 +325,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Arnö 1:80",
-    "InspectionDate": "2024-08",
+    "CadastralDesignation": null,
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -275,8 +350,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Arnö 1:80",
-    "InspectionDate": "2024-08",
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -301,7 +376,7 @@
   },
   {
     "CadastralDesignation": null,
-    "InspectionDate": "2024-08",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

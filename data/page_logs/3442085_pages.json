@@ -2,7 +2,7 @@
   {
     "CadastralDesignation": "Fågelsången 2",
     "InspectionDate": "2024-03",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,

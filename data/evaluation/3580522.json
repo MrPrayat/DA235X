@@ -3,7 +3,7 @@
   "model_output": {
     "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": true,
@@ -28,7 +28,7 @@
   "ground_truth": {
     "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,

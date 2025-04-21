@@ -2,7 +2,7 @@
   {
     "CadastralDesignation": "Ortala 4:17",
     "InspectionDate": "2024-03",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -27,7 +27,7 @@
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -52,7 +52,7 @@
   {
     "CadastralDesignation": "Ortala 4:17",
     "InspectionDate": "2024-03",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -77,7 +77,7 @@
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -102,7 +102,7 @@
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -127,7 +127,7 @@
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -152,7 +152,7 @@
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -177,7 +177,7 @@
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -202,7 +202,7 @@
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -227,7 +227,7 @@
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -252,7 +252,7 @@
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -277,7 +277,7 @@
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": true,
@@ -302,7 +302,7 @@
   {
     "CadastralDesignation": null,
     "InspectionDate": "2024-03",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -327,7 +327,7 @@
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -352,7 +352,7 @@
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -377,7 +377,7 @@
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -402,7 +402,7 @@
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
-    "WaterLeakage": null,
+    "MoistureDamage": null,
     "RenovationNeeds": null,
     "AsbestosPresence": null,
     "SummaryInsights": null
@@ -410,7 +410,7 @@
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -435,7 +435,7 @@
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -460,7 +460,7 @@
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -485,7 +485,7 @@
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -510,7 +510,7 @@
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,

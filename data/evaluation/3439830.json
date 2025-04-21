@@ -3,7 +3,7 @@
   "model_output": {
     "CadastralDesignation": "Silbodals-Backa 1:51",
     "InspectionDate": "2023-10",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -28,7 +28,7 @@
   "ground_truth": {
     "CadastralDesignation": "Silbodals-Backa 1:51",
     "InspectionDate": "2023-10",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,

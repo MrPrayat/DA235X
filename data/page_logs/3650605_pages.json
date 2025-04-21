@@ -1,7 +1,7 @@
 [
   {
-    "CadastralDesignation": "Källsätter 1:1",
-    "InspectionDate": "2023-08",
+    "CadastralDesignation": "Katrinelund 1:46",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -25,8 +25,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": "2023-08",
+    "CadastralDesignation": "Katrinelund 1:46",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -50,8 +50,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -61,9 +61,9 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -72,17 +72,17 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Tak och fasad har underhållsbehov, inklusive tätning och målning. Tätning av genomföringar på taket rekommenderas."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": "Katrinelund 1:46",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -91,27 +91,27 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Förhöjda fuktvärden och mikrobiell påväxt har uppmätts mot blindbotten. Fortsatt teknisk undersökning av grund och bjälklag rekommenderas."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": "Katrinelund 1:46",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -122,56 +122,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": true,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": true,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
+    "SummaryInsights": "Otäthet vid genomföring på taket bör åtgärdas för att förhindra framtida vattenskador."
   }
 ]

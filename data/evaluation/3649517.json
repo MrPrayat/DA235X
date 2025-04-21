@@ -1,11 +1,11 @@
 {
-  "pdf_id": "3453932",
+  "pdf_id": "3649517",
   "model_output": {
-    "CadastralDesignation": "Ortala 4:17",
-    "InspectionDate": "2024-03",
+    "CadastralDesignation": "Hagfors Harven 2",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
@@ -15,29 +15,29 @@
       "roof": true,
       "garage": false,
       "facade": true,
-      "balcony": false,
-      "källare": false,
+      "balcony": true,
+      "källare": true,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takets äldre del är i dåligt skick och behöver omläggas snart. Fasadpanelen på husets äldre del har rötskador och bör åtgärdas. Takets utvändiga täckning behöver åtgärdas för att minska risken för fuktskador."
+    "SummaryInsights": "Yttertaket har uppnått sin tekniska livslängd och bör åtgärdas. Fasad och balkong har färgsläpp och saknar räcke, vilket kräver underhåll. Källaren är en riskkonstruktion med fukt- och mögelrisk, vilket kräver vidare utredning och eventuella åtgärder."
   },
   "ground_truth": {
-    "CadastralDesignation": "Ortala 4:17",
-    "InspectionDate": "2024-03",
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,

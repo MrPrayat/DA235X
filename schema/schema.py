@@ -1,7 +1,7 @@
 FIELDS = [
     "CadastralDesignation",
     "InspectionDate",
-    "WaterLeakage",
+    "MoistureDamage",
     "RenovationNeeds",
     "AsbestosPresence",
     "SummaryInsights"
@@ -14,9 +14,9 @@ FIELD_DEFINITIONS = {
         "The year and month when the inspection was conducted, in format YYYY-MM."
     ),
 
-    "WaterLeakage": (
+    "MoistureDamage": (
         "An object indicating whether water-related issues were found in specific structural locations."
-        "\nSet a field to true only if water leakage is clearly mentioned in that location."
+        "\nSet a field to true only if moi is clearly mentioned in that location."
         "\nOtherwise, set to false."
         "\n- 'mentions_garage': true/false"
         "\n- 'mentions_källare': true/false"
@@ -35,7 +35,7 @@ FIELD_DEFINITIONS = {
     "AsbestosPresence": (
         "An object with the following keys: \n"
         "- 'Measured': true if explicitly measured or tested, otherwise false\n"
-        "- 'presence': true if mentioned, false if explicitly ruled out"
+        "- 'presence': true if mentioned to be present in the facility, false if explicitly ruled out or not mentioned"
     ),
 
     "SummaryInsights": (

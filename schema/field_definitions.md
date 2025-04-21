@@ -14,7 +14,7 @@ The full legal name of the property, e.g., “Stockholm Marevik 23”.
 
 The date the inspection was conducted, in format **YYYY-MM** (year and month only).
 
-### `WaterLeakage`
+### `MoistureDamage`
 
 Object indicating whether water‑related issues appear in specific locations.
 
@@ -74,7 +74,7 @@ Set to `null` if no clear actions are described.
   "model_output": {
     "CadastralDesignation": "Stockholm Marevik 23",
     "InspectionDate": "2021-05",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
       "mentions_roof": false,

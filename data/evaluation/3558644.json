@@ -3,7 +3,7 @@
   "model_output": {
     "CadastralDesignation": "Källsätter 1:1",
     "InspectionDate": "2023-08",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
       "mentions_roof": false,
@@ -28,7 +28,7 @@
   "ground_truth": {
     "CadastralDesignation": "Källsätter 1:1",
     "InspectionDate": "2023-08",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
       "mentions_roof": false,

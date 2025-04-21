@@ -1,7 +1,7 @@
 [
   {
-    "CadastralDesignation": "Källsätter 1:1",
-    "InspectionDate": "2023-08",
+    "CadastralDesignation": "Brunnsnäs 1:92",
+    "InspectionDate": "2024-06",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -25,8 +25,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": "2023-08",
+    "CadastralDesignation": "Brunnsnäs 1:92",
+    "InspectionDate": "2024-06",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -50,8 +50,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": "Brunnsnäs 1:92",
+    "InspectionDate": "2024-06",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -75,8 +75,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": "Brunnsnäs 1:92",
+    "InspectionDate": "2024-06",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -100,62 +100,12 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": "Brunnsnäs 1:92",
+    "InspectionDate": "2024-06",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": true,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": true,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false

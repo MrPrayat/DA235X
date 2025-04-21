@@ -1,48 +1,48 @@
 {
-  "pdf_id": "3453932",
+  "pdf_id": "3626545",
   "model_output": {
-    "CadastralDesignation": "Ortala 4:17",
-    "InspectionDate": "2024-03",
+    "CadastralDesignation": "Unknown",
+    "InspectionDate": "Unknown",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
       "garage": false,
-      "facade": true,
-      "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "roof": false,
+      "balcony": false,
+      "bjälklag": false,
+      "facade": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takets äldre del är i dåligt skick och behöver omläggas snart. Fasadpanelen på husets äldre del har rötskador och bör åtgärdas. Takets utvändiga täckning behöver åtgärdas för att minska risken för fuktskador."
+    "SummaryInsights": "Inga specifika problem eller åtgärder identifierades i rapporten."
   },
   "ground_truth": {
-    "CadastralDesignation": "Ortala 4:17",
-    "InspectionDate": "2024-03",
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
       "garage": false,
-      "facade": false,
-      "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "roof": false,
+      "balcony": false,
+      "bjälklag": false,
+      "facade": false
     },
     "AsbestosPresence": {
       "Measured": false,

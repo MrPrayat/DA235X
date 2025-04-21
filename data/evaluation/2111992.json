@@ -3,7 +3,7 @@
   "model_output": {
     "CadastralDesignation": "Stockholm Munin 5 & 6",
     "InspectionDate": "2018-10",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
       "mentions_roof": false,
@@ -28,7 +28,7 @@
   "ground_truth": {
     "CadastralDesignation": "Stockholm Munin 5 & 6",
     "InspectionDate": "2018-10",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
       "mentions_roof": false,

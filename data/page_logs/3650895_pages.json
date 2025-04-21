@@ -1,7 +1,7 @@
 [
   {
-    "CadastralDesignation": "Linköping Vindruvan 18",
-    "InspectionDate": "2021-05",
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -26,7 +26,7 @@
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": "2021-05",
+    "InspectionDate": "2023-06",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -61,10 +61,10 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
-      "facade": true,
-      "balcony": true,
+      "facade": false,
+      "balcony": false,
       "källare": false,
       "bjälklag": false
     },
@@ -72,11 +72,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden har färg som släpper och mindre röta, vilket bör åtgärdas. Balkongen har mindre röta i räcket. Yttertaket har skadade takpannor som behöver ses över."
+    "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": "2023-06",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -97,32 +97,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": "2021-05",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": true,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
+    "SummaryInsights": "Brister har noterats i badrummet, särskilt kring rörgenomföringar och fall mot brunn. Åtgärder enligt branschregler rekommenderas."
   },
   {
     "CadastralDesignation": false,
@@ -175,8 +150,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -197,22 +172,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
-    "SummaryInsights": null
+    "SummaryInsights": "Det rekommenderas att förnya ytskiktet i badrummet, men tätskikt och keramik utgör fortfarande grunden för täthet och golvlutning. Brister i flytspackling och klinkersättning bör beaktas vid framtida renovering."
   }
 ]

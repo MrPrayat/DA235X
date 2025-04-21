@@ -3,7 +3,7 @@
   "model_output": {
     "CadastralDesignation": "Sundbyberg Terränglöparen 9",
     "InspectionDate": "2016-04",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": true,
       "mentions_källare": false,
       "mentions_roof": false,
@@ -28,7 +28,7 @@
   "ground_truth": {
     "CadastralDesignation": "Sundbyberg Terränglöparen 9",
     "InspectionDate": "2016-04",
-    "WaterLeakage": {
+    "MoistureDamage": {
       "mentions_garage": true,
       "mentions_källare": false,
       "mentions_roof": false,

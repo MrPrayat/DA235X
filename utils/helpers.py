@@ -14,7 +14,7 @@ from openai import OpenAI, RateLimitError
 # === GPT Helpers ===
 client = OpenAI()
 
-def call_openai_image_json(image: Image.Image, prompt: str, model: str = "gpt-4o", retries=5, backoff=2) -> str:
+def call_openai_image_json(image: Image.Image, prompt: str, model: str = "gpt-4.1", retries=5, backoff=2) -> str:
     """
     Calls the OpenAI chat completions API with a text prompt and image input.
     The prompt instructs the model to extract structured information from the image.

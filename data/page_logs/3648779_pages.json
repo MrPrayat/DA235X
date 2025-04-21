@@ -1,7 +1,7 @@
 [
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": "Bandverket 68",
+    "InspectionDate": "2022-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -25,8 +25,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Silbodals-Backa 1:51",
-    "InspectionDate": "2023-10",
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -50,8 +50,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": "2022-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -61,9 +61,9 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -72,6 +72,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Takets låglutning bör beaktas och fasaden har lokala rötskador samt mindre underhållsbehov."
   }
 ]

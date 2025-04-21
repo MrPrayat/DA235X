@@ -1,20 +1,20 @@
 {
-  "pdf_id": "3453932",
+  "pdf_id": "3650895",
   "model_output": {
-    "CadastralDesignation": "Ortala 4:17",
-    "InspectionDate": "2024-03",
+    "CadastralDesignation": null,
+    "InspectionDate": "2023-06",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -23,21 +23,21 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takets äldre del är i dåligt skick och behöver omläggas snart. Fasadpanelen på husets äldre del har rötskador och bör åtgärdas. Takets utvändiga täckning behöver åtgärdas för att minska risken för fuktskador."
+    "SummaryInsights": "Brister har noterats i badrummet, särskilt kring rörgenomföringar och fall mot brunn. Åtgärder enligt branschregler rekommenderas. Det rekommenderas att förnya ytskiktet i badrummet, men tätskikt och keramik utgör fortfarande grunden för täthet och golvlutning. Brister i flytspackling och klinkersättning bör beaktas vid framtida renovering."
   },
   "ground_truth": {
-    "CadastralDesignation": "Ortala 4:17",
-    "InspectionDate": "2024-03",
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,

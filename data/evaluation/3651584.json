@@ -1,11 +1,11 @@
 {
-  "pdf_id": "2998892",
+  "pdf_id": "3651584",
   "model_output": {
-    "CadastralDesignation": "Kärra 69:110",
-    "InspectionDate": "2020-12",
+    "CadastralDesignation": "Gaddebo 1:4",
+    "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": true,
       "mentions_balcony": true,
       "mentions_bjälklag": true,
@@ -16,25 +16,25 @@
       "garage": false,
       "facade": true,
       "balcony": true,
-      "källare": false,
+      "källare": true,
       "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takpappen är äldre och har begränsad livslängd, vilket kan leda till fuktskador. Fasadpanel och fönsteromfattningar har lokalt målningsbehov. Bjälklaget har fuktskador och bör åtgärdas för att förhindra mikrobiell tillväxt."
+    "SummaryInsights": "Fasaden har färgsläpp, torrsprickor och rötskador och rekommenderas målas och underhållas. Fuktskador och färgsläpp har noterats på vind och balkong, och åtgärder för att förbättra vattenavvisande förmåga rekommenderas. Källarens utvändiga fuktskydd behöver förbättras på grund av puts- och färgsläpp på källarväggar."
   },
   "ground_truth": {
-    "CadastralDesignation": "Kärra 69:110",
-    "InspectionDate": "2020-12",
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
-      "mentions_balcony": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,

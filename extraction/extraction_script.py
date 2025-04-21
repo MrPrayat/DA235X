@@ -88,7 +88,7 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
         "- For InspectionDate:\n"
         "  • Only extract the **year and month**, in the format YYYY-MM.\n\n"
 
-        "- For WaterLeakage:\n"
+        "- For MoistureDamage:\n"
         "    • Use the object format with fixed keys:\n"
         "        - mentions_garage, mentions_källare, mentions_roof, mentions_balcony, mentions_bjälklag, mentions_facade.\n"
         "    • Each value must be true if water damage or moisture issues are clearly mentioned in that location, else false.\n\n"
