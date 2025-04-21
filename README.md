@@ -1,10 +1,3 @@
-# DA235X
-Master Thesis
-
-Körning av koden i extraction_script.py kräver installation av OpenAI SDK och export av API-nyckel enligt instruktioner här: https://platform.openai.com/docs/libraries?desktop-os=windows&language=python
-
-
-
 # 🧾 Extraction Scripts
 
 This folder contains scripts for running PDF extraction of housing inspection reports using GPT-4o.
@@ -42,7 +35,7 @@ Replace the array with any PDF IDs you need to reprocess.
 
 ## 📂 `batch_extraction.py`
 
-Use this to process multiple PDFs in bulk based on inspection report CSV.
+Use this to process multiple PDFs in bulk based on your CSV.
 
 ### Example usage
 
@@ -56,6 +49,7 @@ Inside the script, configure:
 run_pdf_tests(
     test_amount=5,        # number of PDFs to run
     skip_existing=True,   # skip already extracted PDFs
+    csv_path="data/inspection_urls.csv"
 )
 ```
 
@@ -64,4 +58,43 @@ run_pdf_tests(
 
 ---
 
-> 🔧 **Tip:** For any shared logic (GPT calls, image preprocessing, normalization), see `utils/helpers.py`.
+> 🔧 **Tip:** For any shared logic (GPT calls, image preprocessing, normalization), see `utils/helpers.py`. This keeps the core scripts lean and focused.
+
+
+---
+
+## 📊 Evaluation & Logging
+
+After running any extraction batch, evaluation metrics are appended to `data/logs/evaluation_log.csv`.
+
+### Quick commands
+
+```bash
+# Re‑compute metrics over *all* annotated PDFs and log a new row
+python -m evaluation.evaluate_outputs \
+       --run_name "<your-note>" \
+       --notes    "<what changed>"
+
+# View a rolling summary of recent runs (default 7‑day window)
+python -m evaluation.log_summary                # table only
+python -m evaluation.log_summary --plot         # table **+** matplotlib plot
+```
+
+A typical summary looks like:
+
+```
+🕑  Recent runs
+2025‑04‑14 14:26  no_appendix            F1  86.7 %  P 86.7 %  R 86.7 %
+...
+🏆  Best run so far: no_appendix  –  F1 86.7 %
+```
+
+All logs live in **`data/logs/`** so they stay version‑controlled with the repo but don’t clutter the main folders.
+
+---
+
+> ℹ️  **Next steps**
+>
+> * commit‑5 refactor finished – remember to update the root‐level `README.md` if paths change again.
+> * feel free to add more CLI flags (e.g. `--today`, `--since <date>`) to `evaluation/log_summary.py` as needed.
+
