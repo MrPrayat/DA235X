@@ -26,8 +26,8 @@
     "SummaryInsights": "Takets låglutning bör beaktas och fasaden har lokala rötskador samt mindre underhållsbehov."
   },
   "ground_truth": {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Bandverket 68",
+    "InspectionDate": "2022-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -39,7 +39,7 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
       "källare": false,
       "bjälklag": false

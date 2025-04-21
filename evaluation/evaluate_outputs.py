@@ -139,4 +139,4 @@ print(f"Total Precision: {table['Precision'].mean():.2f}")
 print(f"Total Recall: {table['Recall'].mean():.2f}")
 print(f"Total F1 Score: {table['F1 Score'].mean():.2f}")
 
-log_run_to_csv(results, run_name="mid_refactor_test", notes="Testing evaluation script mid refactor")
+log_run_to_csv(results, run_name="post_refactor_10_more", notes="After refactor and 10 more samples")

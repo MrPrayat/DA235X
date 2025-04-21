@@ -26,8 +26,8 @@
     "SummaryInsights": "Brister har noterats i badrummet, särskilt kring rörgenomföringar och fall mot brunn. Åtgärder enligt branschregler rekommenderas. Det rekommenderas att förnya ytskiktet i badrummet, men tätskikt och keramik utgör fortfarande grunden för täthet och golvlutning. Brister i flytspackling och klinkersättning bör beaktas vid framtida renovering."
   },
   "ground_truth": {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Roslagsgatan 21",
+    "InspectionDate": "2023-06",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

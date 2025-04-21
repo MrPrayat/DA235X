@@ -66,7 +66,7 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     if not images:
         print("No images extracted from PDF.")
         return {}
-    elif len(images) < 5:
+    elif len(images) < 3:
         print(f"Skipping PDF with ID {pdf_id}: too short ({len(images)} pages).")
         return {}
 

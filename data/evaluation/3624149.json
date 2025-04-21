@@ -26,12 +26,12 @@
     "SummaryInsights": "Inga större problem upptäcktes under inspektionen, men det finns en vattenläcka på taket som bör åtgärdas."
   },
   "ground_truth": {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Brunnsnäs 1:92",
+    "InspectionDate": "2024-06",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false

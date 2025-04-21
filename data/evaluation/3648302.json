@@ -26,10 +26,10 @@
     "SummaryInsights": "Yttertaket har äldre pannor med moss påväxt och underlagspappen är torr och spröd. Hängrännorna behöver rensas på skräp. Diskbänkskåpet saknar tät botten och golvet i pannrummet sviktar med en gammal golvbrunn under laminatgolvet. Tvättstugan har en äldre rostskadad gjutjärnsgolvbrunn."
   },
   "ground_truth": {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Röjeln 6",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
-      "mentions_garage": false,
+      "mentions_garage": true,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,

@@ -5,3 +5,4 @@ timestamp,run_name,notes,true_positives,false_positives,false_negatives,accuracy
 2025-04-14T14:26:08.475278,no_appendix,Clean run with no appendix,52,8,8,0.7647,0.8667,0.8667,0.8667
 2025-04-14T17:39:01.066981,mid_refactor_test,Testing evaluation script mid refactor,244,54,54,0.6932,0.8188,0.8188,0.8188
 2025-04-21T10:24:09.457255,second_mid_refactor_tests,Testing evaluation script path,272,56,56,0.7083,0.8293,0.8293,0.8293
+2025-04-21T14:59:54.296312,post_refactor_10_more,After refactor and 10 more samples,521,106,107,0.7098,0.8309,0.8296,0.8303

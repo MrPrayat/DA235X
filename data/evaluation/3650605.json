@@ -26,18 +26,18 @@
     "SummaryInsights": "Tak och fasad har underhållsbehov, inklusive tätning och målning. Tätning av genomföringar på taket rekommenderas. Förhöjda fuktvärden och mikrobiell påväxt har uppmätts mot blindbotten. Fortsatt teknisk undersökning av grund och bjälklag rekommenderas."
   },
   "ground_truth": {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Katrinelund 1:46",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": false,
       "balcony": false,
