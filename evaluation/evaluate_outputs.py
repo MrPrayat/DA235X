@@ -43,12 +43,20 @@ def log_run_to_csv(results, run_name, notes="", log_file="data/logs/evaluation_l
     print(f"✅ Logged run to {log_file}")
 
 
+def norm(x):
+    """
+    Normalize the input by stripping whitespace and converting to lowercase.
+    This is useful for string comparisons.
+    """
+    return x.strip().lower() if isinstance(x, str) else x
+
+
 def update_counts(key, pred, actual, results):
     if actual is None:
         return
     if pred is None:
         results[key]["fn"] += 1
-    elif pred == actual:
+    elif norm(pred) == norm(actual): # Normalize for comparison
         results[key]["tp"] += 1
     else:
         results[key]["fp"] += 1
@@ -139,4 +147,4 @@ print(f"Total Precision: {table['Precision'].mean():.2f}")
 print(f"Total Recall: {table['Recall'].mean():.2f}")
 print(f"Total F1 Score: {table['F1 Score'].mean():.2f}")
 
-log_run_to_csv(results, run_name="post_refactor_10_more", notes="After refactor and 10 more samples")
+log_run_to_csv(results, run_name="50_annotated_PDFs", notes="Nothing to add")

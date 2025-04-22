@@ -5,9 +5,9 @@ import time
 import random
 import requests
 import fitz
+import json
 from pdf2image import convert_from_bytes
 from PIL import Image
-import json
 from schema.schema import FIELDS, FIELD_DEFINITIONS
 from openai import OpenAI, RateLimitError
 
@@ -127,7 +127,7 @@ def encode_image(image: Image.Image) -> str:
     return base64.b64encode(buffered.getvalue()).decode("utf-8")
 
 
-def is_text_pdf(url: str, min_chars=5000) -> bool:
+def is_text_pdf(url: str, min_chars=3500) -> bool:
     """
     Determines if a PDF is text-based by counting meaningful visible characters.
     Returns True only if enough visible text is found (e.g., 200+ characters total).
@@ -218,3 +218,4 @@ def generate_default_ground_truth(model_output):
         for field in FIELDS
         if field != "SummaryInsights"  # Skip ground truth for SummaryInsights since we won't evaluate it
     }
+
