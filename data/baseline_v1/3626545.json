@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3626545",
+  "model_output": {
+    "CadastralDesignation": "Unknown",
+    "InspectionDate": "Unknown",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "garage": false,
+      "källare": false,
+      "roof": false,
+      "balcony": false,
+      "bjälklag": false,
+      "facade": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inga specifika problem eller åtgärder identifierades i rapporten."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Sundbyberg Sparven 15",
+    "InspectionDate": "2024-04",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "garage": false,
+      "källare": false,
+      "roof": false,
+      "balcony": true,
+      "bjälklag": false,
+      "facade": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    }
+  }
+}

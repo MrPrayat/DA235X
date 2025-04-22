@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3651958",
+  "model_output": {
+    "CadastralDesignation": "Bo 24:22",
+    "InspectionDate": "2024-12",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Kompletterande besiktning av yttertak och carporttak rekommenderas när taken är fria från snö/is och säker uppstigningsanordning ordnas."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Bo 24:22",
+    "InspectionDate": "2024-12",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    }
+  }
+}

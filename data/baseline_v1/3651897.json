@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3651897",
+  "model_output": {
+    "CadastralDesignation": "Rönninge 1:537",
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Taket har äldre standard och teknisk livslängd anses vara passerad, bör ses över. Äldre fönsterkassetter förekommer och kan behöva åtgärdas. Köket renoverades 2015, fasaden målades om 2017 och nytt tak utfördes 2021. Ny balkongräcke installerades 2018."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Rönninge 1:537",
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    }
+  }
+}

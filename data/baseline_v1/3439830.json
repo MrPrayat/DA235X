@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3439830",
+  "model_output": {
+    "CadastralDesignation": "Silbodals-Backa 1:51",
+    "InspectionDate": "2023-10",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inga större underhållsåtgärder rekommenderas för närvarande, då inga problem har identifierats i inspektionsrapporten."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Silbodals-Backa 1:51",
+    "InspectionDate": "2023-10",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    }
+  }
+}

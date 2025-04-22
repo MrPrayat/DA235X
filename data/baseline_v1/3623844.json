@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3623844",
+  "model_output": {
+    "CadastralDesignation": "Bolby 18:4",
+    "InspectionDate": "2024-09",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": true,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": "Fasadpanelen och plåttaket har underhållsbehov och viss rötskada har noterats. Plåttaket är äldre och teknisk livslängd är uppnådd. Eternit i grundplintar innehåller asbest och kräver fackmannamässig hantering vid rivning."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Bolby 18:4",
+    "InspectionDate": "2024-09",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": true,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    }
+  }
+}
