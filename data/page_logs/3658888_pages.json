@@ -97,10 +97,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tvättstugan har äldre ytskikt/tätskikt och det finns ökad risk för vattenskador, åtgärd rekommenderas."
+    "SummaryInsights": "Tvättstugan har äldre ytskikt/tätskikt och det finns ökad risk för vattenskador, åtgärd av tätskikt rekommenderas."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -122,7 +122,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Golvbrunnen i duschen är inte utbytt i samband med renovering och bör åtgärdas för att undvika framtida fuktskador."
+    "SummaryInsights": "Golvbrunnen i källarens dusch är inte utbytt i samband med renovering och bör åtgärdas för att undvika framtida fuktskador."
   },
   {
     "CadastralDesignation": false,

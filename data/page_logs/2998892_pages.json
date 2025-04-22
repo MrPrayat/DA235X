@@ -25,8 +25,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -50,8 +50,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -76,7 +76,7 @@
   },
   {
     "CadastralDesignation": "Södra Ligården 28",
-    "InspectionDate": null,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -100,8 +100,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -150,8 +150,8 @@
     "SummaryInsights": "Fasadpanel och fönsteromfattningar har lokalt målningsbehov. Träkonstruktioner riskerar fuktskador på grund av sämre vattenavvisande förmåga."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -200,8 +200,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -225,8 +225,8 @@
     "SummaryInsights": "Bjälklaget har fuktskador och bör åtgärdas för att förhindra mikrobiell tillväxt."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -250,7 +250,7 @@
     "SummaryInsights": "Fuktskador kan uppstå i badrummet på grund av felmonterat tätskikt. Balkongen behöver förbättrad avrinning för att undvika vattenskador."
   },
   {
-    "CadastralDesignation": null,
+    "cadastraldesignation": false,
     "InspectionDate": "2020-12",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -275,8 +275,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -300,8 +300,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -325,8 +325,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -375,8 +375,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

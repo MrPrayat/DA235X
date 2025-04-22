@@ -76,7 +76,7 @@
   },
   {
     "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -151,7 +151,7 @@
   },
   {
     "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

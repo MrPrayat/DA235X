@@ -325,7 +325,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
+    "cadastraldesignation": false,
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -375,7 +375,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
+    "cadastraldesignation": false,
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,

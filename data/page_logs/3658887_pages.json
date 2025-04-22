@@ -50,8 +50,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -125,8 +125,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -150,8 +150,8 @@
     "SummaryInsights": "Fasaden har vanligt underhållsbehov och behöver målas."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -175,8 +175,8 @@
     "SummaryInsights": "Yttertaket är äldre och har begränsad livslängd, vilket kan leda till fuktskador. Taket bör ses över och eventuellt åtgärdas."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -225,8 +225,8 @@
     "SummaryInsights": "Fuktskador och mikrobiell lukt har noterats i källaren, och en fördjupad undersökning rekommenderas för att bedöma orsak och omfattning."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

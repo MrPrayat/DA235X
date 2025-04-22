@@ -150,8 +150,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -275,8 +275,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

@@ -97,31 +97,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Brister har noterats i badrummet, särskilt kring rörgenomföringar och fall mot brunn. Åtgärder enligt branschregler rekommenderas."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
     "SummaryInsights": null
   },
   {
@@ -172,6 +147,31 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Det rekommenderas att förnya ytskiktet i badrummet, men tätskikt och keramik utgör fortfarande grunden för täthet och golvlutning. Brister i flytspackling och klinkersättning bör beaktas vid framtida renovering."
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Det rekommenderas att förnya ytskiktet i badrummet, men tätskikt och keramik utgör fortfarande grunden för täthet. Brister i flytspackling och klinkersättning bör åtgärdas vid framtida renovering."
   }
 ]

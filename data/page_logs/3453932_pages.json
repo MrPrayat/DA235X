@@ -25,8 +25,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -75,8 +75,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -100,8 +100,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -125,8 +125,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -150,8 +150,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -175,8 +175,8 @@
     "SummaryInsights": "Fasadpanelen på husets äldre del har rötskador och bör åtgärdas."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -200,8 +200,8 @@
     "SummaryInsights": "Takets äldre del är i dåligt skick och behöver omläggas snart. Den tillbyggda delen kräver förbättrande åtgärder vid vinkelrännan."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -275,8 +275,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -300,7 +300,7 @@
     "SummaryInsights": "Takets utvändiga täckning behöver åtgärdas för att minska risken för fuktskador. Badrummets tätskikt är gammalt och kan behöva renoveras för att förhindra läckage."
   },
   {
-    "CadastralDesignation": null,
+    "cadastraldesignation": false,
     "InspectionDate": "2024-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -325,8 +325,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -400,8 +400,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": null,
     "RenovationNeeds": null,
     "AsbestosPresence": null,
@@ -458,8 +458,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -483,8 +483,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

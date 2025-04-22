@@ -2,7 +2,7 @@
   "pdf_id": "3651738",
   "model_output": {
     "CadastralDesignation": "Stockholm Vattuormen 34",
-    "InspectionDate": "Unknown",
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

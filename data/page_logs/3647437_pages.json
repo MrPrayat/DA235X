@@ -47,11 +47,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Höga fuktvärden och vattenpölar har konstaterats i trossbotten och krypgrund. Åtgärder som föreslås är ozonbehandling, byte av isolering och trossbotten samt installation av krypgrundsavfuktare."
+    "SummaryInsights": "Åtgärdsförslag inkluderar ozonbehandling av krypgrunden, byte av isolering och trossbotten om lukt kvarstår samt installation av krypgrundsavfuktare."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -72,7 +72,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Otätheter mellan grundmuren och syllen samt fuktproblem i bjälklaget bör åtgärdas."
+    "SummaryInsights": "Otätheter mellan grundmur och syll samt fuktproblem i bjälklaget bör åtgärdas."
   },
   {
     "CadastralDesignation": false,

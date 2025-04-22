@@ -1,7 +1,7 @@
 [
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -75,8 +75,8 @@
     "SummaryInsights": "Källarens gillestuga har höga fuktnivåer och rekommenderas att ventileras mekaniskt. Utvändigt fuktskydd i källaren är bristfälligt och bör åtgärdas."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -125,8 +125,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -150,8 +150,8 @@
     "SummaryInsights": "Fasadpanelen är i behov av målning och underhåll för att öka livslängden på fasadbeklädnaden."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": true,
       "mentions_källare": false,
@@ -200,8 +200,8 @@
     "SummaryInsights": "Altanräcke och träkonstruktioner är i behov av målning och underhåll. Elanläggningen i huset är äldre och bör kontrolleras av elektriker."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -275,7 +275,7 @@
     "SummaryInsights": "Renovering av tvättstuga/pannrum/dusch rekommenderas på grund av dåligt skick och skador i tätskiktet. Källarens utvändiga fuktskydd bör förbättras."
   },
   {
-    "CadastralDesignation": null,
+    "cadastraldesignation": false,
     "InspectionDate": "2024-10",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -325,8 +325,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -375,8 +375,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

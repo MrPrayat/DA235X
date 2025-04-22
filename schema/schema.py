@@ -8,10 +8,12 @@ FIELDS = [
 ]
 
 FIELD_DEFINITIONS = {
-    "CadastralDesignation": "The full legal name of the property, e.g., 'Stockholm Marevik 23'.",
+    "CadastralDesignation": "The full legal name of the property, e.g., 'Stockholm Marevik 23'.\n"
+    "If the name is not found, set to false",
 
     "InspectionDate": (
-        "The year and month when the inspection was conducted, in format YYYY-MM."
+        "The year and month when the inspection was conducted, in format YYYY-MM.\n"
+        "If the date is not found, set to false.\n"
     ),
 
     "MoistureDamage": (

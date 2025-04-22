@@ -150,8 +150,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -175,8 +175,8 @@
     "SummaryInsights": "Altanräcke och träkonstruktioner är i behov av målning och underhåll."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -275,8 +275,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -300,8 +300,8 @@
     "SummaryInsights": "Fasadpanelen är i behov av målning och underhåll. Sprickor och färgsläpp finns i sockeln, vilket kan kräva åtgärd."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -325,8 +325,8 @@
     "SummaryInsights": "Dörrar och fönster är i behov av målning och underhåll. Fals på stuprör bör vändas ut från fasaden för att undvika skador."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -350,7 +350,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
+    "cadastraldesignation": false,
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,

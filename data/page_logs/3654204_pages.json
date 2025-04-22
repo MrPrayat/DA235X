@@ -104,8 +104,8 @@
     "raw_output": "{\n  \"CadastralDesignation\": false,\n  \"InspectionDate\": false,\n  \"MoistureDamage\": {\n    \"mentions_garage\": false,\n    \"mentions_källare\": false,\n    \"mentions_roof\": false,\n    \"mentions_balcony\": false,\n    \"mentions_bjälklag\": false,\n    \"mentions_facade\": false\n  },\n  \"RenovationNeeds\": {\n    \"roof\": false,\n    \"garage\": false,\n    \"facade\": false,\n    \"balcony\": false,\n    \"källare\": false,\n    \"bjälklag\": false\n  },\n  \"AsbestosPresence\": {\n    \"Measured\": false,\n    \"presence\": false\n  },\n  \"SummaryInsights\": null\n}\n```\n**Motivation:**\n- CadastralDesignation: Not mentioned on this page.\n- InspectionDate: Not mentioned on this page.\n- MoistureDamage: No explicit mention of moisture damage in garage, källare, roof, balcony, bjälklag, or facade. Issues are described in krypgrund (crawl space), which is not one of the requested keys.\n- RenovationNeeds: No direct recommendation for renovation in the specified areas. Crawl space needs dehumidification, but this is not one of the fixed keys.\n- AsbestosPresence: No mention of asbestos or measurement.\n- SummaryInsights: No actionable renovation for the specified areas; only advice for crawl space climate."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -154,8 +154,8 @@
     "SummaryInsights": "Fasadpanelen, vindskivor och trädeltaljer är i behov av målning och underhåll för att förebygga fukt- och rötskador."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -204,8 +204,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "cadastraldesignation": false,
+    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

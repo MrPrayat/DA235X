@@ -1,7 +1,7 @@
 {
   "pdf_id": "3647437",
   "model_output": {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2023-09",
     "MoistureDamage": {
       "mentions_garage": false,

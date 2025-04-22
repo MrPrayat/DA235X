@@ -86,15 +86,10 @@ A typical summary looks like:
 🕑  Recent runs
 2025‑04‑14 14:26  no_appendix            F1  86.7 %  P 86.7 %  R 86.7 %
 ...
-🏆  Best run so far: no_appendix  –  F1 86.7 %
+🏆  Best run so far:  50_annotated_PDFs  (2025-04-22 14:21)  –  F1  86.6 %,  P  86.8 %,  R  86.5 %
 ```
 
 All logs live in **`data/logs/`** so they stay version‑controlled with the repo but don’t clutter the main folders.
 
 ---
-
-> ℹ️  **Next steps**
->
-> * commit‑5 refactor finished – remember to update the root‐level `README.md` if paths change again.
-> * feel free to add more CLI flags (e.g. `--today`, `--since <date>`) to `evaluation/log_summary.py` as needed.
 

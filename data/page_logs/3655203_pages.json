@@ -25,7 +25,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -97,10 +97,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Rivning av golvets keramiska ytskikt och tätskikt samt avfuktning av betongplatta rekommenderas. Väggens keramiska ytskikt ska också rivas på grund av ålder."
+    "SummaryInsights": "Rivning av golv och väggar rekommenderas samt avfuktning av betongplattan under cirka tre veckor."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -147,10 +147,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Rivning och avfuktning av golv rekommenderas på grund av skada."
+    "SummaryInsights": "Rivning och avfuktning av golv rekommenderas på en yta av 2,0 m². Profilsockel ska demonteras och återmonteras."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
