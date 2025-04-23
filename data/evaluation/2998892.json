@@ -17,13 +17,13 @@
       "facade": true,
       "balcony": true,
       "källare": false,
-      "bjälklag": true
+      "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takpappen är äldre och har begränsad livslängd, vilket kan leda till fuktskador. Fasadpanel och fönsteromfattningar har lokalt målningsbehov. Bjälklaget har fuktskador och bör åtgärdas för att förhindra mikrobiell tillväxt."
+    "SummaryInsights": "Taket, fasaden och balkongen har brister och rekommenderas åtgärdas för att undvika fukt- och rötskador. Fuktskydd saknas på vissa ställen och underhåll av träkonstruktioner är viktigt. Inga asbestfynd har noterats."
   },
   "ground_truth": {
     "CadastralDesignation": "Kärra 69:110",

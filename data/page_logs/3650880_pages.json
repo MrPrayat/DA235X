@@ -136,7 +136,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -147,11 +147,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Kompletterande besiktning av taket rekommenderas när det är fritt från snö och is."
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -175,56 +175,6 @@
     "SummaryInsights": "Altanräcke och träkonstruktioner är i behov av målning och underhåll."
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Duschutrymmet har äldre ytskikt/tätskikt vilket ökar risken för vattenskador. Fuktspärr saknas runt genomföringar i köket, installation av fuktskydd rekommenderas."
-  },
-  {
     "CadastralDesignation": false,
     "InspectionDate": false,
     "MoistureDamage": {
@@ -272,11 +222,61 @@
       "Measured": false,
       "presence": false
     },
+    "SummaryInsights": "Duschutrymmet har äldre ytskikt/tätskikt vilket ökar risken för vattenskador. I köket rekommenderas installation av fuktskydd för att upptäcka eventuella läckage."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
     "SummaryInsights": null
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -297,11 +297,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen är i behov av målning och underhåll. Sprickor och färgsläpp finns i sockeln, vilket kan kräva åtgärd."
+    "SummaryInsights": "Fasadpanelen är i behov av målning och underhåll. Sprickor och färgsläpp finns i sockeln, vilket bör åtgärdas."
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -311,7 +311,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -322,11 +322,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Dörrar och fönster är i behov av målning och underhåll. Fals på stuprör bör vändas ut från fasaden för att undvika skador."
+    "SummaryInsights": "Målning och underhåll rekommenderas för dörrar och fönster. Kompletterande besiktning av yttertaket rekommenderas när snö och is är borta."
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -350,7 +350,7 @@
     "SummaryInsights": null
   },
   {
-    "cadastraldesignation": false,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,

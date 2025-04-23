@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Fasadpanelen och plåttaket har underhållsbehov och viss rötskada har noterats. Plåttaket är äldre och teknisk livslängd är uppnådd. Eternit i grundplintar innehåller asbest och kräver fackmannamässig hantering vid rivning."
+    "SummaryInsights": "Fasaden och yttertaket är i behov av åtgärder på grund av ålder och risk för fuktrelaterade skador. Eternit i grundplintar innehåller asbest och kräver fackmannamässig hantering vid rivning."
   },
   "ground_truth": {
     "CadastralDesignation": "Bolby 18:4",

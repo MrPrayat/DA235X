@@ -140,11 +140,9 @@ print(f"Total Fields Evaluated: {len(results)}")
 print(f"Total True Positives: {sum(counts['tp'] for counts in results.values())}")
 print(f"Total False Positives: {sum(counts['fp'] for counts in results.values())}")
 print(f"Total False Negatives: {sum(counts['fn'] for counts in results.values())}")
-# We don’t count TN because we never penalize or reward the model for not guessing fields that were never annotated.
-# This is standard practice in NER, form extraction, and key-value document understanding.
 print(f"Total Accuracy: {table['Accuracy'].mean():.2f}")
 print(f"Total Precision: {table['Precision'].mean():.2f}")
 print(f"Total Recall: {table['Recall'].mean():.2f}")
 print(f"Total F1 Score: {table['F1 Score'].mean():.2f}")
 
-log_run_to_csv(results, run_name="50_annotated_PDFs", notes="Nothing to add")
+log_run_to_csv(results, run_name="baseline_GPT4.1", notes="Re-evaluation using GPT-4.1 model")

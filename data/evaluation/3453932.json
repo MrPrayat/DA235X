@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takets äldre del är i dåligt skick och behöver omläggas snart. Fasadpanelen på husets äldre del har rötskador och bör åtgärdas. Takets utvändiga täckning behöver åtgärdas för att minska risken för fuktskador."
+    "SummaryInsights": "Taket är i sämre skick och behöver läggas om inom snar framtid. Fasadpanelen har rötskador och bör åtgärdas. Plint/stolpe under altan har förskjutits och står snett; entrédel/farstu har sjunkit och lutar."
   },
   "ground_truth": {
     "CadastralDesignation": "Ortala 4:17",

@@ -54,7 +54,7 @@ def call_openai_image_json(image: Image.Image, prompt: str, model: str = "gpt-4.
     return ""
 
 
-def synthesize_final_json(page_results: list, model="gpt-4o", retries=5, backoff=2) -> dict:
+def synthesize_final_json(page_results: list, model="gpt-4.1", retries=5, backoff=2) -> dict:
     """
     Given a list of page-level JSONs, ask GPT-4o to synthesize them into one coherent JSON.
     Retries if rate-limited.

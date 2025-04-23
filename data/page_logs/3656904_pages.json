@@ -197,7 +197,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tätskikt saknas på flera ställen, bland annat i tvättstuga, duschrum och under varmvattenberedaren. Kvalitetsdokument saknas för våtrum."
+    "SummaryInsights": "Tätskikt saknas på flera ställen i våtrum och under varmvattenberedaren, vilket bör åtgärdas. Kvalitetsdokument saknas för våtrum."
   },
   {
     "CadastralDesignation": "Erikssund 2:4",
@@ -222,7 +222,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Badrummet är äldre och saknar kvalitetsdokument, och tätskiktet bakom kakel och klinker är inte besiktningsbart. I köket saknas tät botten i diskbänkskåpet och droppskydd under kyl/frys."
+    "SummaryInsights": "Badrummet är äldre och saknar kvalitetsdokument, och tät botten saknas i diskbänkskåpet i köket."
   },
   {
     "CadastralDesignation": "Erikssund 2:4",
@@ -272,7 +272,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Kvalitetsdokument saknas för tätskikt i pannrum och duschrum. Brunnsduk är trasig i duschzonen och tätskikt under kakel och klinker är inte besiktningsbart."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": "Erikssund 2:4",
@@ -286,18 +286,18 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fuktskador och mikrobiella skador har noterats i tak- och bjälklagskonstruktioner, och åtgärder rekommenderas för att minska risken för fortsatt skada."
   },
   {
     "CadastralDesignation": "Erikssund 2:4",

@@ -8,12 +8,12 @@
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": true,
-      "garage": false,
+      "garage": true,
       "facade": false,
       "balcony": false,
       "källare": false,
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket har äldre pannor med moss påväxt och underlagspappen är torr och spröd. Hängrännorna behöver rensas på skräp. Diskbänkskåpet saknar tät botten och golvet i pannrummet sviktar med en gammal golvbrunn under laminatgolvet. Tvättstugan har en äldre rostskadad gjutjärnsgolvbrunn."
+    "SummaryInsights": "Yttertaket har äldre pannor med moss påväxt och underlagspappen är torr och spröd. Självdragsventiler saknas i garage och bör åtgärdas. Lågt lutande tak är en riskkonstruktion och kan behöva ses över."
   },
   "ground_truth": {
     "CadastralDesignation": "Röjeln 6",

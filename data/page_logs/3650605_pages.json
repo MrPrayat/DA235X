@@ -25,7 +25,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Katrinelund 1:46",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -58,7 +58,7 @@
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": true,
@@ -76,7 +76,7 @@
   },
   {
     "CadastralDesignation": "Katrinelund 1:46",
-    "InspectionDate": "2024-11",
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -97,7 +97,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Förhöjda fuktvärden och mikrobiell påväxt har uppmätts mot blindbotten. Fortsatt teknisk undersökning av grund och bjälklag rekommenderas."
+    "SummaryInsights": "Förhöjda fuktvärden och mikrobiell påväxt har uppmätts i grunden och mot blindbotten. Fortsatt teknisk undersökning av grund och bjälklag rekommenderas."
   },
   {
     "CadastralDesignation": "Katrinelund 1:46",
@@ -122,6 +122,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Otäthet vid genomföring på taket bör åtgärdas för att förhindra framtida vattenskador."
+    "SummaryInsights": "Otäthet vid genomföring på taket bör åtgärdas för att förhindra fuktskador."
   }
 ]

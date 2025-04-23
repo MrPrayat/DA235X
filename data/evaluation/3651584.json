@@ -12,7 +12,7 @@
       "mentions_facade": true
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": true,
       "balcony": true,
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden har färgsläpp, torrsprickor och rötskador och rekommenderas målas och underhållas. Fuktskador och färgsläpp har noterats på vind och balkong, och åtgärder för att förbättra vattenavvisande förmåga rekommenderas. Källarens utvändiga fuktskydd behöver förbättras på grund av puts- och färgsläpp på källarväggar."
+    "SummaryInsights": "Flera områden visar tecken på fukt- och rötskador, särskilt i källare, bjälklag, tak och balkong. Underhåll och renovering rekommenderas för fasad, balkong, källare och bjälklag för att förebygga ytterligare skador. Kompletterande besiktning och åtgärder för våtrum och fuktskydd bör utföras."
   },
   "ground_truth": {
     "CadastralDesignation": "Gaddebo 1:4",

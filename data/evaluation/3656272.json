@@ -16,14 +16,14 @@
       "garage": false,
       "facade": false,
       "balcony": false,
-      "källare": true,
+      "källare": false,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Puts- och färgsläpp på vissa väggar i källaren samt utreglad vägg i tvättstugan bör åtgärdas."
+    "SummaryInsights": "Ingen fukt- eller asbestproblematik noterades, men viss fukt påträffades i källaren. Inga omedelbara renoveringsbehov rekommenderas."
   },
   "ground_truth": {
     "CadastralDesignation": "Höckerkulla 2:31",

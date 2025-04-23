@@ -12,18 +12,18 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Kvalitetsdokument saknas för tätskikt i flera områden, inklusive pannrum och duschrum. Tätskikt saknas på flera ställen, och brunnsduk är trasig i duschzonen. Badrummet är äldre och saknar kvalitetsdokument."
+    "SummaryInsights": "Fuktskador och mikrobiella skador har noterats i tak- och bjälklagskonstruktioner, och åtgärder rekommenderas för att minska risken för fortsatt skada. Tätskikt saknas på flera ställen i våtrum och under varmvattenberedaren, vilket bör åtgärdas. Badrummet är äldre och saknar kvalitetsdokument."
   },
   "ground_truth": {
     "CadastralDesignation": "Erikssund 2:4",

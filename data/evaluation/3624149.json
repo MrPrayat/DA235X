@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Inga större problem upptäcktes under inspektionen, men det finns en vattenläcka på taket som bör åtgärdas."
+    "SummaryInsights": "Fuktproblem har noterats i taket, men inga omedelbara renoveringsbehov har identifierats. Ingen asbest har påträffats eller testats. Övriga delar av byggnaden uppvisar inga tydliga skador."
   },
   "ground_truth": {
     "CadastralDesignation": "Brunnsnäs 1:92",

@@ -75,8 +75,29 @@
     "SummaryInsights": null
   },
   {
-    "error": "Could not parse",
-    "raw_output": "{\n  \"CadastralDesignation\": false,\n  \"InspectionDate\": false,\n  \"MoistureDamage\": {\n    \"mentions_garage\": false,\n    \"mentions_källare\": false,\n    \"mentions_roof\": false,\n    \"mentions_balcony\": false,\n    \"mentions_bjälklag\": false,\n    \"mentions_facade\": false\n  },\n  \"RenovationNeeds\": {\n    \"roof\": false,\n    \"garage\": false,\n    \"facade\": false,\n    \"balcony\": false,\n    \"källare\": false,\n    \"bjälklag\": false\n  },\n  \"AsbestosPresence\": {\n    \"Measured\": false,\n    \"presence\": false\n  },\n  \"SummaryInsights\": null\n}\n```"
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": true,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": true,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Åtgärder har utförts för att hantera fuktproblem i garage och bjälklag, inklusive installation av ventiler och utbyte av isolering och reglar."
   },
   {
     "CadastralDesignation": false,
@@ -129,8 +150,8 @@
     "SummaryInsights": null
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

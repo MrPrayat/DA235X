@@ -12,7 +12,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": true,
       "balcony": true,
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen och dörrar är i behov av målning och underhåll för att öka livslängden. Tröskelplåtar bör monteras för att minska risken för fukt- och rötskador. Altanräcke och träkonstruktioner är i behov av målning och underhåll. Duschutrymmet har äldre ytskikt/tätskikt vilket ökar risken för vattenskador. Fuktspärr saknas runt genomföringar i köket, installation av fuktskydd rekommenderas."
+    "SummaryInsights": "Fasadpanelen, dörrar och altanräcke är i behov av målning och underhåll. Kompletterande besiktning av taket rekommenderas när snö och is är borta. Duschutrymmet har äldre ytskikt/tätskikt och installation av fuktskydd i köket rekommenderas."
   },
   "ground_truth": {
     "CadastralDesignation": "Österbybruk 1:344",

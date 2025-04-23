@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renoveringsbehov finns för underlagstak/bjälkar/vägg samt takbeklädnad. Tak och fasad behöver underhållas för att förebygga fuktskador. Installera vattenfelsbrytare för att förebygga vattenskador."
+    "SummaryInsights": "Fuktskador har noterats i källare, tak och fasad. Underhåll och renovering rekommenderas för tak, bjälklag, fasad och källare. Kontroll av avloppsslang och installation av vattentät inlåda under diskbänken bör utföras för att förebygga framtida skador."
   },
   "ground_truth": {
     "CadastralDesignation": "Apan 19",

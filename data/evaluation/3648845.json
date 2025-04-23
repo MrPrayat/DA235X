@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Inga större problem upptäcktes under inspektionen. Inga fukt- eller asbestproblem noterades, och inga omedelbara renoveringsbehov identifierades."
+    "SummaryInsights": "Inga fuktskador eller renoveringsbehov noterades vid besiktningen. Ingen asbest påträffades eller mättes. Fastigheten är i gott skick."
   },
   "ground_truth": {
     "CadastralDesignation": "Kringlan 3",

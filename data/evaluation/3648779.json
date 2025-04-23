@@ -12,7 +12,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": true,
       "balcony": false,
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takets låglutning bör beaktas och fasaden har lokala rötskador samt mindre underhållsbehov."
+    "SummaryInsights": "Fasaden har mindre underhållsbehov och röta förekommer lokalt. Färgsläpp förekommer på vissa delar av sockeln."
   },
   "ground_truth": {
     "CadastralDesignation": "Bandverket 68",

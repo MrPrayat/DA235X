@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket och fasaden behöver renoveras på grund av åldersslitage och rötskador. Takpannorna är inte ramspikade och trasiga takpannor noterades. Fasadpanelen är rötskadad och färgsläpp noterades."
+    "SummaryInsights": "Yttertaket och fasaden har åldersrelaterade skador och bör åtgärdas för att förhindra fuktskador. Fasadpanel har lokal rötskada och färgsläpp som behöver renoveras. Äldre våtrum har vissa brister, såsom olämpligt placerat fönster och väggnära golvbrunn."
   },
   "ground_truth": {
     "CadastralDesignation": "Täby Gullrankan 20",

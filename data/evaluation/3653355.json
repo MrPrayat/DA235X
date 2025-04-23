@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket är över 40 år gammalt och mossa noteras på delar av taket, vilket indikerar behov av åtgärd. Takets tätskikt är äldre och bör åtgärdas för att minska risken för fuktskador. Våtutrymmenas standard är gammal och ökar risken för läckage."
+    "SummaryInsights": "Takets tätskikt är äldre och bör åtgärdas för att undvika framtida fuktskador. Våtutrymmenas skick ökar risken för läckage och rekommenderas att ses över."
   },
   "ground_truth": {
     "CadastralDesignation": "Bärnstenen 9",

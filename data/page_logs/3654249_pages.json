@@ -122,11 +122,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fuktskada har åtgärdats vid takkupans entrésida med ny råspont, papp och läkt samt nya vindskivor. Området närmast huset rekommenderas att vara fritt från växtlighet för att undvika framtida fuktskador."
+    "SummaryInsights": "Fuktskada har åtgärdats vid taket med ny råspont, papp och läkt samt nya vindskivor. Området närmast huset rekommenderas att vara fritt från växtlighet för att undvika framtida fuktskador."
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -147,7 +147,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen är i behov av målning och underhåll för att förhindra fuktskador. Äldre isolerglasfönster kan behöva bytas ut på grund av sämre tätning."
+    "SummaryInsights": "Fasadpanelen är i behov av målning och underhåll. Äldre fönster kan behöva åtgärdas på grund av sämre tätning."
   },
   {
     "CadastralDesignation": false,
@@ -172,11 +172,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Taket är äldre och har minskat motstånd mot vatteninträngning, vilket kan leda till fuktskador. Det rekommenderas att mossa tas bort från takpannorna."
+    "SummaryInsights": "Taket är äldre och har minskat motstånd mot vatteninträngning, vilket kan leda till fuktskador. Det rekommenderas att ta bort mossa från takpannorna för att öka livslängden på taket."
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -188,7 +188,7 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": true,
       "källare": false,
       "bjälklag": false
@@ -197,7 +197,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Målning och underhåll rekommenderas för altan och balkong. Området närmast byggnader rekommenderas att vara fritt från växtlighet."
+    "SummaryInsights": "Målning och underhåll rekommenderas för altan och balkong. Området närmast byggnader bör hållas fritt från växtlighet för att undvika fuktskador."
   },
   {
     "CadastralDesignation": false,
@@ -222,7 +222,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Det finns behov av underhåll på fönster, dörr och fasadpanel samt åtgärder på taket, inklusive borttagning av mossa för att minska risken för fuktskador."
+    "SummaryInsights": "Taket har brister och bör åtgärdas för att minska risken för fuktskador. Underhållsbehov finns på fönster, dörr och fasadpanel."
   },
   {
     "CadastralDesignation": false,
@@ -250,8 +250,8 @@
     "SummaryInsights": null
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -275,8 +275,8 @@
     "SummaryInsights": null
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -297,7 +297,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Rörgenomföring i vägg under kommod saknar väggbricka och WC-stolen är lös, vilket innebär ökad risk för fuktskador och bör åtgärdas."
+    "SummaryInsights": "Rörgenomföring i vägg under kommod saknar väggbricka och WC-stolen är lös, vilket innebär risk för fuktskador och bör åtgärdas."
   },
   {
     "CadastralDesignation": false,
@@ -350,8 +350,8 @@
     "SummaryInsights": null
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

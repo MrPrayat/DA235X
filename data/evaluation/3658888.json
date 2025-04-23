@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tvättstugan har äldre ytskikt/tätskikt och det finns ökad risk för vattenskador, åtgärd av tätskikt rekommenderas. Golvbrunnen i källarens dusch är inte utbytt i samband med renovering och bör åtgärdas för att undvika framtida fuktskador."
+    "SummaryInsights": "Tvättstugan och källarens dusch har äldre ytskikt och golvbrunn som bör åtgärdas för att minska risken för framtida fuktskador."
   },
   "ground_truth": {
     "CadastralDesignation": "Ortdrivaren 5",

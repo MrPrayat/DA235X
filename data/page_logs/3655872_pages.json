@@ -1,7 +1,7 @@
 [
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -72,11 +72,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Källarens gillestuga har höga fuktnivåer och rekommenderas att ventileras mekaniskt. Utvändigt fuktskydd i källaren är bristfälligt och bör åtgärdas."
+    "SummaryInsights": "Fuktproblem har noterats i källarens gillestuga och utvändigt fuktskydd är bristfälligt. Rekommendation ges att ventilera vissa konstruktioner mekaniskt och att hålla eventuella problem under uppsikt."
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -125,8 +125,8 @@
     "SummaryInsights": null
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -150,10 +150,10 @@
     "SummaryInsights": "Fasadpanelen är i behov av målning och underhåll för att öka livslängden på fasadbeklädnaden."
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
-      "mentions_garage": true,
+      "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
@@ -197,11 +197,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Altanräcke och träkonstruktioner är i behov av målning och underhåll. Elanläggningen i huset är äldre och bör kontrolleras av elektriker."
+    "SummaryInsights": "Altanräcke och träkonstruktioner behöver målas eller underhållas. Elanläggningen är äldre och bör kontrolleras av elektriker."
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -222,7 +222,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fuktskydd saknas i kökets diskbänkskåp och under kyl och frys, vilket bör åtgärdas genom installation av fuktskydd."
+    "SummaryInsights": "Fuktskydd saknas i kökets diskbänkskåp och under kyl och frys, installation av fuktskydd rekommenderas."
   },
   {
     "CadastralDesignation": false,
@@ -247,7 +247,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renovering av badrum rekommenderas på grund av ålder och slitage. Fördjupad undersökning av källarens golvkonstruktion rekommenderas på grund av förhöjda fuktvärden."
+    "SummaryInsights": "Renovering av badrum rekommenderas på grund av ålder och slitage. Fördjupad undersökning av källarens golvkonstruktion föreslås på grund av förhöjda fuktvärden."
   },
   {
     "CadastralDesignation": false,
@@ -272,10 +272,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renovering av tvättstuga/pannrum/dusch rekommenderas på grund av dåligt skick och skador i tätskiktet. Källarens utvändiga fuktskydd bör förbättras."
+    "SummaryInsights": "Renovering av tvättstuga/pannrum/dusch rekommenderas på grund av dåligt skick och skador i tätskikt. Källarens utvändiga fuktskydd bör förbättras."
   },
   {
-    "cadastraldesignation": false,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-10",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -304,10 +304,10 @@
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -325,8 +325,8 @@
     "SummaryInsights": null
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -375,8 +375,8 @@
     "SummaryInsights": null
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

@@ -1,6 +1,6 @@
 [
   {
-    "CadastralDesignation": "Hagfors Harven 2",
+    "CadastralDesignation": "HAGFORS HARVEN 2",
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
@@ -147,14 +147,14 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket har uppnått sin tekniska livslängd och bör åtgärdas. Fasad och balkong har färgsläpp och saknar räcke, vilket kräver underhåll."
+    "SummaryInsights": "Yttertaket bedöms vara äldre och har trasiga tegelpannor, bör åtgärdas. Fasad och balkong har färgsläpp och saknar räcke, vilket kräver underhåll."
   },
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Kondensspår och misstänkt in-läckage på råspont i taket bör utredas vidare. Källaren har flera tecken på slitage och skador, inklusive färg- och putssläpp samt trasig glasruta."
+    "SummaryInsights": "Kondens- och missfärgningsspår på råspont i taket bör utredas vidare. Flera ytskikt och väggar i källaren har färg- och puts-släpp samt missfärgningar, vilket indikerar behov av åtgärder."
   },
   {
     "CadastralDesignation": false,
@@ -197,6 +197,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket är äldre och har mossa på takpannor, vilket innebär ökad risk för fuktskador och bör åtgärdas. Källaren är en riskkonstruktion med fukt- och mögelrisk, vilket kräver vidare utredning och eventuella åtgärder."
+    "SummaryInsights": "Yttertaket är äldre och har mossa, vilket ökar risken för fuktskador och bör åtgärdas. Källaren är en riskkonstruktion med fukt- och mögelrisk, och fortsatt teknisk utredning rekommenderas för mörkfärgad råspont på vinden."
   }
 ]

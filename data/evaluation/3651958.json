@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Kompletterande besiktning av yttertak och carporttak rekommenderas när taken är fria från snö/is och säker uppstigningsanordning ordnas."
+    "SummaryInsights": "Kompletterande besiktning av yttertak och carporttak rekommenderas när taken är fria från snö/is. Skyddsbåge saknas vid befintlig gavelstege. Fuktpåverkan har noterats i bjälklaget."
   },
   "ground_truth": {
     "CadastralDesignation": "Bo 24:22",

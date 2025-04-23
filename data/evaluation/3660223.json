@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3660223",
+  "model_output": {
+    "CadastralDesignation": "Lidingö 9:68",
+    "InspectionDate": "2024-02",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": true,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Fasaden har rötskador och behöver bytas ut och målas. Det finns fuktproblem i källaren och på vinden, och åtgärder rekommenderas för att byta ut organiskt material samt täta vindsluckan. Taket och källaren har renoveringsbehov, och äldre installationer såsom golvbrunn och avstängningsventiler bör bytas ut vid framtida renovering."
+  },
+  "ground_truth": {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    }
+  }
+}

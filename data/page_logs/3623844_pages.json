@@ -76,31 +76,6 @@
   },
   {
     "CadastralDesignation": "Bolby 18:4",
-    "Inspectiondate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Bolby 18:4",
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
@@ -134,6 +109,31 @@
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Bolby 18:4",
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": true,
@@ -147,11 +147,11 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Fasadpanelen och plåttaket har underhållsbehov och viss rötskada har noterats. Plåttaket är äldre och teknisk livslängd är uppnådd."
+    "SummaryInsights": "Fasadpanelen och plåttaket har underhållsbehov och viss rötskada har noterats. Åtgärder rekommenderas för att förlänga livslängden."
   },
   {
     "CadastralDesignation": "Bolby 18:4",
-    "Inspectiondate": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Duschrum har uppnått sin tekniska livslängd och rekommenderas för åtgärd. Fuktspärr saknas under kyl/frys och diskbänk, vilket bör åtgärdas."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": "Bolby 18:4",
@@ -197,7 +197,7 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Fasadpanel och yttertak bedöms vara äldre och i risk för fuktrelaterade skador, åtgärder för takets plåtskruvar rekommenderas. Eternit i grundplintar innehåller asbest och kräver fackmannamässig hantering vid rivning."
+    "SummaryInsights": "Fasaden och yttertaket bedöms vara i behov av åtgärder på grund av ålder och risk för fuktrelaterade skador. Eternit i grundplintar innehåller asbest och kräver fackmannamässig hantering vid rivning."
   },
   {
     "CadastralDesignation": "Bolby 18:4",

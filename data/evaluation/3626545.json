@@ -12,18 +12,18 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "garage": false,
-      "källare": false,
       "roof": false,
+      "garage": false,
+      "facade": false,
       "balcony": false,
-      "bjälklag": false,
-      "facade": false
+      "källare": false,
+      "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Inga specifika problem eller åtgärder identifierades i inspektionsrapporten."
+    "SummaryInsights": "Inga särskilda anmärkningar eller rekommendationer kunde identifieras från tillgänglig information."
   },
   "ground_truth": {
     "CadastralDesignation": "Sundbyberg Sparven 15",

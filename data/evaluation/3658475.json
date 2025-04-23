@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takpannor är slitna och har delvis moss­påväxt, och takbeklädnaden är äldre med brister. Förhöjda fuktvärden i källaren rekommenderas utredas vidare. Torrsprickor finns i fasadens trädelar ovan fönster."
+    "SummaryInsights": "Takbeklädnaden är äldre och bör åtgärdas på grund av risk för fuktskador. Förhöjda fuktvärden i källaren rekommenderas fördjupad undersökning. Torrsprickor förekommer i fasaden, framförallt ovan fönster."
   },
   "ground_truth": {
     "CadastralDesignation": false,

@@ -1,7 +1,7 @@
 {
   "pdf_id": "3649517",
   "model_output": {
-    "CadastralDesignation": "Hagfors Harven 2",
+    "CadastralDesignation": "HAGFORS Harven 2",
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket har uppnått sin tekniska livslängd och bör åtgärdas. Fasad och balkong har färgsläpp och saknar räcke, vilket kräver underhåll. Källaren är en riskkonstruktion med fukt- och mögelrisk, vilket kräver vidare utredning och eventuella åtgärder."
+    "SummaryInsights": "Yttertaket är äldre och har mossa samt trasiga pannor, vilket ökar risken för fuktskador och bör åtgärdas. Källaren är en riskkonstruktion med fukt- och mögelrisk, och flera ytskikt har färg- och puts-släpp. Fasad och balkong kräver underhåll på grund av färgsläpp och saknat räcke."
   },
   "ground_truth": {
     "CadastralDesignation": "Hagfors Harven 2",

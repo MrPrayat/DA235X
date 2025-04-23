@@ -75,8 +75,8 @@
     "SummaryInsights": "Det finns ett underhållsbehov av utvändiga konstruktioner."
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -147,7 +147,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fuktskador kan förekomma i golvbjälklaget ovan grundkonstruktionen på grund av naturlig fuktpåverkan. Kompletterande besiktning rekommenderas när inspektionsluckor installerats."
+    "SummaryInsights": "Kompletterande besiktning rekommenderas för torpargrund och bjälklag på grund av risk för fuktskador och mikrobiella angrepp."
   },
   {
     "CadastralDesignation": false,
@@ -172,11 +172,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden har färgsläpp, torrsprickor och rötskador och rekommenderas målas och underhållas. Dörrar har liknande brister och bör målas och underhållas för att öka livslängden."
+    "SummaryInsights": "Målning och underhåll rekommenderas för fasad och dörrar, samt byte av rötskadade brädor vid ommålning."
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -211,7 +211,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": true,
@@ -222,36 +222,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fuktskador och färgsläpp har noterats på vind och balkong, och åtgärder för att förbättra vattenavvisande förmåga rekommenderas."
+    "SummaryInsights": "Färgläpp, sprickor och rötskador noterades på farstukvist och balkong, vilket bör åtgärdas för att förhindra ytterligare fukt- och rötskador."
   },
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Komplettera fuktskyddet i diskbänkskåpet och under vinylen för att lättare upptäcka eventuella läckage."
-  },
-  {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -297,7 +272,32 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fuktfläckar och missfärgningar noterades i innertak i garderoben. Våtutrymmet har äldre ytskikt och flera brister, vilket ökar risken för vattenskador."
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Våtrummet har äldre ytskikt och flera brister, vilket ökar risken för vattenskador. Åtgärder rekommenderas för att säkerställa tätskiktets funktion."
   },
   {
     "CadastralDesignation": false,
@@ -322,7 +322,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Källarens utvändiga fuktskydd behöver förbättras på grund av puts- och färgsläpp på källarväggar. Trädetaljer i kontakt med betonggolv och källarvägg bör bytas ut vid misstanke om fuktskador."
+    "SummaryInsights": "Källarens utvändiga fuktskydd behöver förbättras och trädeltaljer i kontakt med betonggolv och källarvägg bör bytas ut vid misstanke om fuktskador."
   },
   {
     "CadastralDesignation": false,
@@ -375,8 +375,8 @@
     "SummaryInsights": null
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -425,8 +425,8 @@
     "SummaryInsights": null
   },
   {
-    "cadastraldesignation": false,
-    "Inspectiondate": false,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
