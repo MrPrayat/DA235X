@@ -26,12 +26,12 @@
     "SummaryInsights": "Fuktskydd under kyl/frys och vattentät in­klädnad i diskbänkskåp bör åtgärdas. Bristfällig ventilation i flera utrymmen rekommenderas att ses över. Vid renovering av tak och källare bör särskilda åtgärder vidtas enligt branschregler."
   },
   "ground_truth": {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Vallentuna-Mörby 1:76",
+    "InspectionDate": "2021-08",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false

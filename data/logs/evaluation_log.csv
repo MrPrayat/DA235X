@@ -10,3 +10,5 @@ timestamp,run_name,notes,true_positives,false_positives,false_negatives,accuracy
 2025-04-22T14:24:46.189840,baseline_v1,Sanity check,1296,198,202,0.7642,0.8675,0.8652,0.8663
 2025-04-22T17:05:13.353156,null_to_false,Rewrote field definitions to avoid null or unknown values,1296,202,202,0.7624,0.8652,0.8652,0.8652
 2025-04-23T15:52:45.712753,baseline_GPT4.1,Re-evaluation using GPT-4.1 model,1620,358,358,0.6935,0.819,0.819,0.819
+2025-04-25T11:03:11.780369,baseline_GPT4.1_annotation_fix,PDF reports were missing annotated data but not 50 PDFs,1187,221,221,0.7287,0.843,0.843,0.843
+2025-04-25T12:49:20.661268,baseline_GPT4.1_corrected,Re-evaluation using GPT-4.1 model with missing ground_truth fixed and 49 PDFs,1237,231,231,0.7281,0.8426,0.8426,0.8426

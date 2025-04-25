@@ -26,18 +26,18 @@
     "SummaryInsights": "Källaren har hög fukthalt och risk för mikrobiella skador, och äldre golvbrunnar bör bytas vid renovering. Taket har mossa och saknar ramspikning enligt norm, vilket bör åtgärdas. Rörelsesprickor och torr träpanel på fasaden behöver ses över."
   },
   "ground_truth": {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Stockholm Alf 4",
+    "InspectionDate": "2024-05",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": false,
       "balcony": false,

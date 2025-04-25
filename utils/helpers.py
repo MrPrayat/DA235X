@@ -160,7 +160,10 @@ def is_text_pdf(url: str, min_chars=3500) -> bool:
 def is_appendix_page_gpt(image: Image.Image) -> bool:
     appendix_filter_prompt = (
         "You're reviewing a page from a Swedish housing inspection report. "
-        "Your task is to determine whether this page is an *appendix* or *general conditions section*, typically found at the end of the document.\n\n"
+        "Your task is to determine whether this page is an *appendix* or *general conditions section*, typically found at the end of the document.\n"
+        "Note that if it says the technical report itself is an appendix to another report then that is fine if that is explicitly mentioned."
+        "We are only interested in removing the appendix that belongs to the technical report.\n"
+        "We are interested in the inspection report regardless of it being an appendix to something else or not\n\n"
 
         "✅ Pages that **ARE** appendices include those labeled or titled with:\n"
         "- 'Bilaga'\n"

@@ -1,14 +1,14 @@
 {
-  "pdf_id": "3657963",
+  "pdf_id": "3670025",
   "model_output": {
-    "CadastralDesignation": "Älvdalen Idre 80:263",
-    "InspectionDate": "2021-07",
+    "CadastralDesignation": "Näsbypark 10:24",
+    "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -17,13 +17,13 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Inga större problem upptäcktes under inspektionen. Ingen fukt- eller asbestnärvaro noterades, och inga omedelbara renoveringsbehov identifierades."
+    "SummaryInsights": "Organiskt material togs bort och markplast installerades i krypgrunden för att minska fuktrisk. Fortsatt uppsamling av kondensvatten rekommenderas för att undvika fuktskador. Bristfälligt golvfall i dusch/toalett bör åtgärdas för att minska risken för fuktskador och missfärgningar."
   },
   "ground_truth": {
     "CadastralDesignation": false,

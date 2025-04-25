@@ -26,12 +26,12 @@
     "SummaryInsights": "Läckage i garagevind bör åtgärdas. Fasaden har mindre rötskador som behöver underhållas. Fortsatt teknisk undersökning av golvbjälklagets och krypgrundens skick rekommenderas för att säkerställa att inga fuktskador föreligger."
   },
   "ground_truth": {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Palsternackan 4",
+    "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
@@ -39,7 +39,7 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
       "källare": false,
       "bjälklag": false

@@ -26,20 +26,20 @@
     "SummaryInsights": "Fuktproblem har uppmätts i matkällaren och åtgärder för att minska fuktnivån bör vidtas. Kompletterande besiktning av yttertaket och grunden rekommenderas. Fasaden och dörren är i behov av målning och underhåll."
   },
   "ground_truth": {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Skebo 1:39",
+    "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
       "källare": false,
       "bjälklag": false

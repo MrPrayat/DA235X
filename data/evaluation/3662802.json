@@ -26,15 +26,15 @@
     "SummaryInsights": "Fasadpanelen har målningsbehov och riskerar fuktskador, vilket bör åtgärdas för att undvika rötskador. Duschen renoverades 2022 efter en vattenskada. Varmvattenberedare och vattenmätare har bytts ut."
   },
   "ground_truth": {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Vanneboda 1:13",
+    "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": false,
@@ -42,7 +42,7 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,

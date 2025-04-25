@@ -26,8 +26,8 @@
     "SummaryInsights": "Fasaden har visst bristande underhåll och behöver åtgärdas. Golvlarm eller golvbrunn för vattenläckage från tvättmaskin bör installeras. Eluttag i tak behöver åtgärdas."
   },
   "ground_truth": {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Sigtuna Steninge 8:933",
+    "InspectionDate": "2024-10",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -39,7 +39,7 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
       "källare": false,
       "bjälklag": false
