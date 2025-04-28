@@ -13,7 +13,14 @@ from utils.helpers import (
     normalize_model_output,
     generate_default_ground_truth,
     synthesize_final_json,
+    cost_usd
 )
+from utils.pricing import PRICES #ta bort om usd grejen fungerar
+from collections import defaultdict
+
+# === Constants ===
+token_meter = defaultdict(lambda: {"prompt": 0, "completion": 0, "cached": 0})
+MODEL_NAME = "gpt-4o"
 
 
 def save_evaluation_json(pdf_id: str, model_output: dict, output_folder="data/evaluation"):
@@ -117,17 +124,60 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
 
     for i, page_img in enumerate(images):
         print(f"Checking if page {i+1} is an appendix...")
-        if is_appendix_page_gpt(page_img):
+        is_appendix, usage = is_appendix_page_gpt(page_img, MODEL_NAME)
+
+        # Update cumulative totals
+        token_meter[pdf_id]["prompt"] += usage.prompt_tokens
+        token_meter[pdf_id]["completion"] += usage.completion_tokens
+        token_meter[pdf_id]["cached"] += usage.prompt_tokens_details.cached_tokens
+
+        # Calculate step cost
+        step_tokens = {
+            "prompt": usage.prompt_tokens,
+            "completion": usage.completion_tokens,
+            "cached": usage.prompt_tokens_details.cached_tokens,
+        }
+        step_cost = cost_usd(step_tokens, MODEL_NAME)
+        cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
+
+        # Appendix cost and cumulative tokens
+        print(f"🧮 Appendix cost: ${step_cost:.6f}")
+        print(f"📊 Cumulative usage for {pdf_id}: {token_meter[pdf_id]} (Total cost: ${cumulative_cost:.6f})")
+        print("-" * 70)  # nice separator
+
+
+        if is_appendix:
             print(f"Page {i+1} flagged as appendix. Skipping the rest of PDF {pdf_id}.")
             break
-    
+
         print(f"Processing page {i+1}/{len(images)}...")
-        raw = call_openai_image_json(page_img, prompt_text)
+        raw, usage = call_openai_image_json(page_img, prompt_text, MODEL_NAME)
+
+        # Update cumulative totals
+        token_meter[pdf_id]["prompt"] += usage.prompt_tokens
+        token_meter[pdf_id]["completion"] += usage.completion_tokens
+        token_meter[pdf_id]["cached"] += usage.prompt_tokens_details.cached_tokens
+
+        # Calculate step cost
+        step_tokens = {
+            "prompt": usage.prompt_tokens,
+            "completion": usage.completion_tokens,
+            "cached": usage.prompt_tokens_details.cached_tokens,
+        }
+        step_cost = cost_usd(step_tokens, model=MODEL_NAME)
+        cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
+
+        # Print step cost + cumulative tokens
+        print(f"🧮 Step cost: ${step_cost:.6f}")
+        print(f"📊 Cumulative usage for {pdf_id}: {token_meter[pdf_id]} (Total cost: ${cumulative_cost:.6f})")
+        print("-" * 70)
+
 
         if raw.startswith("```json"):
             raw = raw.strip("```json").strip("```").strip()
 
         try:
+            print(f"Token usage so far for {pdf_id}: {token_meter[pdf_id]}")
             parsed = json.loads(raw)
             all_results.append(parsed)
         except json.JSONDecodeError:
@@ -139,7 +189,27 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     with open(f"data/page_logs/{pdf_id}_pages.json", "w", encoding="utf-8") as f:
         json.dump(all_results, f, indent=2, ensure_ascii=False)
 
-    return synthesize_final_json(all_results)
+    final_json, usage = synthesize_final_json(all_results, MODEL_NAME)
+
+    # Update cumulative totals
+    token_meter[pdf_id]["prompt"] += usage.prompt_tokens
+    token_meter[pdf_id]["completion"] += usage.completion_tokens
+    token_meter[pdf_id]["cached"] += usage.prompt_tokens_details.cached_tokens
+
+    # Calculate step cost
+    step_tokens = {
+        "prompt": usage.prompt_tokens,
+        "completion": usage.completion_tokens,
+        "cached": usage.prompt_tokens_details.cached_tokens,
+    }
+    step_cost = cost_usd(step_tokens, model=MODEL_NAME)
+
+    # Print total token usage and cost
+    print(f"Final Synthesis cost: ${step_cost:.6f}")
+    print(f"Total cost for {pdf_id}: {token_meter[pdf_id]} (Total cost: ${cumulative_cost:.6f})")
+    print("-" * 70)
+
+    return final_json
 
 
 def run_pdf_tests(test_amount: int, skip: bool, inspection_urls_path: str) -> None:
