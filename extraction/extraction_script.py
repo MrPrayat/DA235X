@@ -186,9 +186,11 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
         cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
 
         # Print step cost + cumulative tokens
-        print(f"🧮 Step cost: ${step_cost:.6f}")
-        print(f"📊 Cumulative usage for {pdf_id}: {token_meter[pdf_id]} (Total cost: ${cumulative_cost:.6f})")
-        print("-" * 70)
+        print(f"🧩 Step complete for page {i+1}/{len(images)}")
+        print(f"   🧮 Step cost: ${step_cost:.6f}")
+        print(f"   📊 Tokens this step: Prompt={usage.prompt_tokens}, Completion={usage.completion_tokens}, Cached={usage.prompt_tokens_details.cached_tokens}")
+        print(f"   📈 Cumulative usage and cost for {pdf_id}: ${token_meter[pdf_id]} ${cumulative_cost:.6f}")
+        print("-" * 80)
 
 
         if raw.startswith("```json"):
@@ -223,9 +225,11 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
 
     # Print total token usage and cost
-    print(f"Final Synthesis cost: ${step_cost:.6f}")
-    print(f"Total cost for {pdf_id}: {token_meter[pdf_id]} (Total cost: ${cumulative_cost:.6f})")
-    print("-" * 70)
+    print("🧪 Final synthesis step completed!")
+    print(f"   🧮 Synthesis cost: ${step_cost:.6f}")
+    print(f"   📈 Final cumulative usage for {pdf_id}: {token_meter[pdf_id]}")
+    print(f"   💰 Final total cost: ${cumulative_cost:.6f}")
+    print("=" * 80)
 
     # Save usage data to CSV
     log_pdf_usage(
