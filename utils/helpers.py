@@ -6,10 +6,13 @@ import random
 import requests
 import fitz
 import json
+import csv
+import os
 from pdf2image import convert_from_bytes
 from PIL import Image
 from schema.schema import FIELDS, FIELD_DEFINITIONS
 from utils.pricing import PRICES
+from datetime import datetime
 
 
 # === GPT Helpers ===
@@ -250,3 +253,99 @@ def cost_usd(tokens: dict, model: str) -> float:
         (output_tokens / 1_000_000) * prices["output"]
     )
     return cost
+
+
+def log_pdf_usage(
+    csv_path: str,
+    pdf_id: str,
+    model: str,
+    extraction_strategy: str,
+    prompt_tokens: int,
+    completion_tokens: int,
+    cached_tokens: int,
+    total_cost_usd: float,
+    pages_extracted: int,
+):
+    """
+    Append a row to a CSV file logging the extraction run for one PDF.
+    Creates the file with header if not existing.
+    """
+    os.makedirs(os.path.dirname(csv_path), exist_ok=True)
+    file_exists = os.path.isfile(csv_path)
+
+    with open(csv_path, mode="a", newline="", encoding="utf-8") as csvfile:
+        fieldnames = [
+            "timestamp",
+            "pdf_id",
+            "model",
+            "extraction_strategy",
+            "prompt_tokens",
+            "completion_tokens",
+            "cached_tokens",
+            "total_cost_usd",
+            "pages_extracted",
+        ]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        if not file_exists:
+            writer.writeheader()
+
+        writer.writerow({
+            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "pdf_id": pdf_id,
+            "model": model,
+            "extraction_strategy": extraction_strategy,
+            "prompt_tokens": prompt_tokens,
+            "completion_tokens": completion_tokens,
+            "cached_tokens": cached_tokens,
+            "total_cost_usd": round(total_cost_usd, 6),
+            "pages_extracted": pages_extracted,
+        })
+
+
+def log_batch_summary(
+    csv_path: str,
+    batch_id: str,
+    model: str,
+    extraction_strategy: str,
+    num_pdfs: int,
+    prompt_tokens: int,
+    completion_tokens: int,
+    cached_tokens: int,
+    total_cost_usd: float,
+):
+    """
+    Append a row to a CSV file logging a batch extraction run.
+    Creates the file with header if not existing.
+    """
+    os.makedirs(os.path.dirname(csv_path), exist_ok=True)
+    file_exists = os.path.isfile(csv_path)
+
+    with open(csv_path, mode="a", newline="", encoding="utf-8") as csvfile:
+        fieldnames = [
+            "timestamp",
+            "batch_id",
+            "model",
+            "extraction_strategy",
+            "num_pdfs",
+            "prompt_tokens",
+            "completion_tokens",
+            "cached_tokens",
+            "total_cost_usd",
+        ]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        if not file_exists:
+            writer.writeheader()
+
+        writer.writerow({
+            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "batch_id": batch_id,
+            "model": model,
+            "extraction_strategy": extraction_strategy,
+            "num_pdfs": num_pdfs,
+            "prompt_tokens": prompt_tokens,
+            "completion_tokens": completion_tokens,
+            "cached_tokens": cached_tokens,
+            "total_cost_usd": round(total_cost_usd, 6),
+        })

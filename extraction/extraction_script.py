@@ -13,15 +13,32 @@ from utils.helpers import (
     normalize_model_output,
     generate_default_ground_truth,
     synthesize_final_json,
-    cost_usd
+    cost_usd,
+    log_pdf_usage,
+    log_batch_summary
 )
 from utils.pricing import PRICES #ta bort om usd grejen fungerar
 from collections import defaultdict
+from datetime import datetime
 
 # === Constants ===
-token_meter = defaultdict(lambda: {"prompt": 0, "completion": 0, "cached": 0})
 MODEL_NAME = "gpt-4o"
+EXTRACTION_STRATEGY = "page-by-page"
 
+# === Variables ===
+token_meter = defaultdict(lambda: {"prompt": 0, "completion": 0, "cached": 0})
+batch_token_meter = {"prompt": 0, "completion": 0, "cached": 0}
+num_pdfs_processed = 0
+
+# === Batch metadata ===
+start_time = datetime.now()
+batch_id = start_time.strftime("batch_%Y-%m-%d_%H%M")
+batch_pdf_dir = f"data/logs/per_pdf_costs/{batch_id}"
+batch_pdf_csv = os.path.join(batch_pdf_dir, "per_pdf_costs.csv")
+batch_summary_csv = "data/logs/batch_summaries.csv"
+
+# Create folders
+os.makedirs(batch_pdf_dir, exist_ok=True)
 
 def save_evaluation_json(pdf_id: str, model_output: dict, output_folder="data/evaluation"):
     """
@@ -59,6 +76,7 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
       3. Combine page-level JSON outputs into one.
     Returns a merged dictionary with the best guess for each field.
     """
+    global num_pdfs_processed
     try:
         response = requests.get(url)
         response.raise_for_status()
@@ -177,7 +195,6 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
             raw = raw.strip("```json").strip("```").strip()
 
         try:
-            print(f"Token usage so far for {pdf_id}: {token_meter[pdf_id]}")
             parsed = json.loads(raw)
             all_results.append(parsed)
         except json.JSONDecodeError:
@@ -209,6 +226,25 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     print(f"Final Synthesis cost: ${step_cost:.6f}")
     print(f"Total cost for {pdf_id}: {token_meter[pdf_id]} (Total cost: ${cumulative_cost:.6f})")
     print("-" * 70)
+
+    # Save usage data to CSV
+    log_pdf_usage(
+        csv_path=batch_pdf_csv,
+        pdf_id=pdf_id,
+        model=MODEL_NAME,
+        extraction_strategy=EXTRACTION_STRATEGY,  # or "page-by-page", "field-by-field"
+        prompt_tokens=token_meter[pdf_id]["prompt"],
+        completion_tokens=token_meter[pdf_id]["completion"],
+        cached_tokens=token_meter[pdf_id]["cached"],
+        total_cost_usd=cumulative_cost,
+        pages_extracted=len(images),
+    )
+
+    # Add total prompt, completion and cached tokens as well as total cost for the whole batch
+    batch_token_meter["prompt"] += token_meter[pdf_id]["prompt"]
+    batch_token_meter["completion"] += token_meter[pdf_id]["completion"]
+    batch_token_meter["cached"] += token_meter[pdf_id]["cached"]
+    num_pdfs_processed += 1
 
     return final_json
 
@@ -247,6 +283,32 @@ def run_pdf_tests(test_amount: int, skip: bool, inspection_urls_path: str) -> No
                 pdfs_read += 1
             else:
                 print(f"Extraction failed or empty for ID {pdf_id}")
+
+    # Calculate final batch cost
+    batch_total_cost = cost_usd(batch_token_meter, model=MODEL_NAME)
+
+    # Save batch summary
+    log_batch_summary(
+        csv_path=batch_summary_csv,
+        batch_id=batch_id,
+        model=MODEL_NAME,
+        extraction_strategy="multipage",
+        num_pdfs=num_pdfs_processed,
+        prompt_tokens=batch_token_meter["prompt"],
+        completion_tokens=batch_token_meter["completion"],
+        cached_tokens=batch_token_meter["cached"],
+        total_cost_usd=batch_total_cost,
+    )
+
+    # Final printout
+    print("=" * 80)
+    print(f"📦 Batch completed: {num_pdfs_processed} PDFs processed")
+    print(f"🧮 Batch Total Prompt tokens: {batch_token_meter['prompt']}")
+    print(f"🧮 Batch Total Completion tokens: {batch_token_meter['completion']}")
+    print(f"🧮 Batch Total Cached tokens: {batch_token_meter['cached']}")
+    print(f"💰 Batch Total Cost: ${batch_total_cost:.6f}")
+    print("=" * 80)
+
 
 
 def extract_specific_pdfs(pdf_ids: list[str], inspection_urls_path: str) -> None:

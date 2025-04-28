@@ -1,0 +1,3 @@
+timestamp,batch_id,model,extraction_strategy,num_pdfs,prompt_tokens,completion_tokens,cached_tokens,total_cost_usd
+2025-04-28 15:18:42,batch_2025-04-28_1511,gpt-4o,multipage,2,123287,7070,6656,0.34144
+2025-04-28 15:47:44,batch_2025-04-28_1539,gpt-4o,multipage,2,123277,7110,0,0.348473
