@@ -203,6 +203,7 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
         "cached": usage.prompt_tokens_details.cached_tokens,
     }
     step_cost = cost_usd(step_tokens, model=MODEL_NAME)
+    cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
 
     # Print total token usage and cost
     print(f"Final Synthesis cost: ${step_cost:.6f}")
