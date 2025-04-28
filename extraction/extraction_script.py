@@ -13,8 +13,32 @@ from utils.helpers import (
     normalize_model_output,
     generate_default_ground_truth,
     synthesize_final_json,
+    cost_usd,
+    log_pdf_usage,
+    log_batch_summary
 )
+from utils.pricing import PRICES #ta bort om usd grejen fungerar
+from collections import defaultdict
+from datetime import datetime
 
+# === Constants ===
+MODEL_NAME = "gpt-4o"
+EXTRACTION_STRATEGY = "page-by-page"
+
+# === Variables ===
+token_meter = defaultdict(lambda: {"prompt": 0, "completion": 0, "cached": 0})
+batch_token_meter = {"prompt": 0, "completion": 0, "cached": 0}
+num_pdfs_processed = 0
+
+# === Batch metadata ===
+start_time = datetime.now()
+batch_id = start_time.strftime("batch_%Y-%m-%d_%H%M")
+batch_pdf_dir = f"data/logs/per_pdf_costs/{batch_id}"
+batch_pdf_csv = os.path.join(batch_pdf_dir, "per_pdf_costs.csv")
+batch_summary_csv = "data/logs/batch_summaries.csv"
+
+# Create folders
+os.makedirs(batch_pdf_dir, exist_ok=True)
 
 def save_evaluation_json(pdf_id: str, model_output: dict, output_folder="data/evaluation"):
     """
@@ -52,6 +76,7 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
       3. Combine page-level JSON outputs into one.
     Returns a merged dictionary with the best guess for each field.
     """
+    global num_pdfs_processed
     try:
         response = requests.get(url)
         response.raise_for_status()
@@ -117,12 +142,56 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
 
     for i, page_img in enumerate(images):
         print(f"Checking if page {i+1} is an appendix...")
-        if is_appendix_page_gpt(page_img):
+        is_appendix, usage = is_appendix_page_gpt(page_img, MODEL_NAME)
+
+        # Update cumulative totals
+        token_meter[pdf_id]["prompt"] += usage.prompt_tokens
+        token_meter[pdf_id]["completion"] += usage.completion_tokens
+        token_meter[pdf_id]["cached"] += usage.prompt_tokens_details.cached_tokens
+
+        # Calculate step cost
+        step_tokens = {
+            "prompt": usage.prompt_tokens,
+            "completion": usage.completion_tokens,
+            "cached": usage.prompt_tokens_details.cached_tokens,
+        }
+        step_cost = cost_usd(step_tokens, MODEL_NAME)
+        cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
+
+        # Appendix cost and cumulative tokens
+        print(f"🧮 Appendix cost: ${step_cost:.6f}")
+        print(f"📊 Cumulative usage for {pdf_id}: {token_meter[pdf_id]} (Total cost: ${cumulative_cost:.6f})")
+        print("-" * 70)  # nice separator
+
+
+        if is_appendix:
             print(f"Page {i+1} flagged as appendix. Skipping the rest of PDF {pdf_id}.")
             break
-    
+
         print(f"Processing page {i+1}/{len(images)}...")
-        raw = call_openai_image_json(page_img, prompt_text)
+        raw, usage = call_openai_image_json(page_img, prompt_text, MODEL_NAME)
+
+        # Update cumulative totals
+        token_meter[pdf_id]["prompt"] += usage.prompt_tokens
+        token_meter[pdf_id]["completion"] += usage.completion_tokens
+        token_meter[pdf_id]["cached"] += usage.prompt_tokens_details.cached_tokens
+
+        # Calculate step cost
+        step_tokens = {
+            "prompt": usage.prompt_tokens,
+            "completion": usage.completion_tokens,
+            "cached": usage.prompt_tokens_details.cached_tokens,
+        }
+        step_cost = cost_usd(step_tokens, model=MODEL_NAME)
+        cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
+
+        # Print step cost + cumulative tokens
+        print(f"🧩 Step complete for page {i+1}/{len(images)}")
+        print(f"   🧮 Step cost: ${step_cost:.6f}")
+        print(f"   📊 Tokens this step: Prompt={usage.prompt_tokens}, Completion={usage.completion_tokens}, Cached={usage.prompt_tokens_details.cached_tokens}")
+        print(f"   📈 Cumulative usage and cost for {pdf_id}: ${token_meter[pdf_id]} ${cumulative_cost:.6f}")
+        print("-" * 80)
+
 
         if raw.startswith("```json"):
             raw = raw.strip("```json").strip("```").strip()
@@ -139,7 +208,49 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     with open(f"data/page_logs/{pdf_id}_pages.json", "w", encoding="utf-8") as f:
         json.dump(all_results, f, indent=2, ensure_ascii=False)
 
-    return synthesize_final_json(all_results)
+    final_json, usage = synthesize_final_json(all_results, MODEL_NAME)
+
+    # Update cumulative totals
+    token_meter[pdf_id]["prompt"] += usage.prompt_tokens
+    token_meter[pdf_id]["completion"] += usage.completion_tokens
+    token_meter[pdf_id]["cached"] += usage.prompt_tokens_details.cached_tokens
+
+    # Calculate step cost
+    step_tokens = {
+        "prompt": usage.prompt_tokens,
+        "completion": usage.completion_tokens,
+        "cached": usage.prompt_tokens_details.cached_tokens,
+    }
+    step_cost = cost_usd(step_tokens, model=MODEL_NAME)
+    cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
+
+    # Print total token usage and cost
+    print("🧪 Final synthesis step completed!")
+    print(f"   🧮 Synthesis cost: ${step_cost:.6f}")
+    print(f"   📈 Final cumulative usage for {pdf_id}: {token_meter[pdf_id]}")
+    print(f"   💰 Final total cost: ${cumulative_cost:.6f}")
+    print("=" * 80)
+
+    # Save usage data to CSV
+    log_pdf_usage(
+        csv_path=batch_pdf_csv,
+        pdf_id=pdf_id,
+        model=MODEL_NAME,
+        extraction_strategy=EXTRACTION_STRATEGY,  # or "page-by-page", "field-by-field"
+        prompt_tokens=token_meter[pdf_id]["prompt"],
+        completion_tokens=token_meter[pdf_id]["completion"],
+        cached_tokens=token_meter[pdf_id]["cached"],
+        total_cost_usd=cumulative_cost,
+        pages_extracted=len(images),
+    )
+
+    # Add total prompt, completion and cached tokens as well as total cost for the whole batch
+    batch_token_meter["prompt"] += token_meter[pdf_id]["prompt"]
+    batch_token_meter["completion"] += token_meter[pdf_id]["completion"]
+    batch_token_meter["cached"] += token_meter[pdf_id]["cached"]
+    num_pdfs_processed += 1
+
+    return final_json
 
 
 def run_pdf_tests(test_amount: int, skip: bool, inspection_urls_path: str) -> None:
@@ -176,6 +287,32 @@ def run_pdf_tests(test_amount: int, skip: bool, inspection_urls_path: str) -> No
                 pdfs_read += 1
             else:
                 print(f"Extraction failed or empty for ID {pdf_id}")
+
+    # Calculate final batch cost
+    batch_total_cost = cost_usd(batch_token_meter, model=MODEL_NAME)
+
+    # Save batch summary
+    log_batch_summary(
+        csv_path=batch_summary_csv,
+        batch_id=batch_id,
+        model=MODEL_NAME,
+        extraction_strategy="multipage",
+        num_pdfs=num_pdfs_processed,
+        prompt_tokens=batch_token_meter["prompt"],
+        completion_tokens=batch_token_meter["completion"],
+        cached_tokens=batch_token_meter["cached"],
+        total_cost_usd=batch_total_cost,
+    )
+
+    # Final printout
+    print("=" * 80)
+    print(f"📦 Batch completed: {num_pdfs_processed} PDFs processed")
+    print(f"🧮 Batch Total Prompt tokens: {batch_token_meter['prompt']}")
+    print(f"🧮 Batch Total Completion tokens: {batch_token_meter['completion']}")
+    print(f"🧮 Batch Total Cached tokens: {batch_token_meter['cached']}")
+    print(f"💰 Batch Total Cost: ${batch_total_cost:.6f}")
+    print("=" * 80)
+
 
 
 def extract_specific_pdfs(pdf_ids: list[str], inspection_urls_path: str) -> None:

@@ -6,19 +6,23 @@ import random
 import requests
 import fitz
 import json
+import csv
+import os
 from pdf2image import convert_from_bytes
 from PIL import Image
 from schema.schema import FIELDS, FIELD_DEFINITIONS
-from openai import OpenAI, RateLimitError
+from utils.pricing import PRICES
+from datetime import datetime
+
 
 # === GPT Helpers ===
 client = OpenAI()
 
-def call_openai_image_json(image: Image.Image, prompt: str, model: str = "gpt-4.1", retries=5, backoff=2) -> str:
+def call_openai_image_json(image: Image.Image, prompt: str, model: str, retries=5, backoff=2) -> tuple[str, dict]:
     """
     Calls the OpenAI chat completions API with a text prompt and image input.
     The prompt instructs the model to extract structured information from the image.
-    Returns the response content (expected to be JSON).
+    Returns the response content (expected to be JSON) and usage information.
     Retrying if rate limit error occurs.
     """
     base64_image = encode_image(image)
@@ -41,7 +45,9 @@ def call_openai_image_json(image: Image.Image, prompt: str, model: str = "gpt-4.
                 temperature=0,
                 top_p=0,
             )
-            return response.choices[0].message.content
+            output = response.choices[0].message.content
+            usage = response.usage
+            return output, usage
 
         except RateLimitError as e:
             wait_time = backoff * (2 ** attempt) + random.uniform(0, 1)
@@ -51,13 +57,14 @@ def call_openai_image_json(image: Image.Image, prompt: str, model: str = "gpt-4.
             print(f"GPT call failed with error: {e}")
             break
 
-    return ""
+    return "", None
 
 
-def synthesize_final_json(page_results: list, model="gpt-4.1", retries=5, backoff=2) -> dict:
+def synthesize_final_json(page_results: list, model: str, retries=5, backoff=2) -> tuple[dict, dict]:
     """
     Given a list of page-level JSONs, ask GPT-4o to synthesize them into one coherent JSON.
     Retries if rate-limited.
+    Returns a tuple of (result_json, usage_info).
     """
     print("Synthesizing from page-level results...")
 
@@ -91,10 +98,11 @@ def synthesize_final_json(page_results: list, model="gpt-4.1", retries=5, backof
             )
 
             output = response.choices[0].message.content
+            usage = response.usage
             if output.startswith("```json"):
                 output = output.strip("```json").strip("```").strip()
 
-            return json.loads(output)
+            return json.loads(output), usage
 
         except RateLimitError as e:
             wait_time = backoff * (2 ** attempt) + random.uniform(0, 1)
@@ -157,7 +165,7 @@ def is_text_pdf(url: str, min_chars=3500) -> bool:
     return False  # Default: treat as image-based if uncertain
 
 
-def is_appendix_page_gpt(image: Image.Image) -> bool:
+def is_appendix_page_gpt(image: Image.Image, model: str) -> tuple[bool, dict]:
     appendix_filter_prompt = (
         "You're reviewing a page from a Swedish housing inspection report. "
         "Your task is to determine whether this page is an *appendix* or *general conditions section*, typically found at the end of the document.\n"
@@ -182,8 +190,9 @@ def is_appendix_page_gpt(image: Image.Image) -> bool:
     )
 
 
-    raw_response = call_openai_image_json(image, appendix_filter_prompt)
-    return "yes" in raw_response.lower()
+    raw_response, usage = call_openai_image_json(image, appendix_filter_prompt, model)
+    is_appendix = "yes" in raw_response.lower()
+    return is_appendix, usage
 
 
 # === Normalization ===
@@ -222,3 +231,121 @@ def generate_default_ground_truth(model_output):
         if field != "SummaryInsights"  # Skip ground truth for SummaryInsights since we won't evaluate it
     }
 
+def cost_usd(tokens: dict, model: str) -> float:
+    """
+    Compute the estimated USD cost of an OpenAI call based on token counts.
+
+    Args:
+        tokens (dict): A dict with keys 'prompt', 'completion', 'cached'.
+        model (str): The AI model used.
+
+    Returns:
+        float: Estimated cost in USD.
+    """
+    prices = PRICES[model]
+    input_tokens = tokens["prompt"] - tokens["cached"]
+    cached_tokens = tokens["cached"]
+    output_tokens = tokens["completion"]
+
+    cost = (
+        (input_tokens / 1_000_000) * prices["input"] +
+        (cached_tokens / 1_000_000) * prices["cached input"] +
+        (output_tokens / 1_000_000) * prices["output"]
+    )
+    return cost
+
+
+def log_pdf_usage(
+    csv_path: str,
+    pdf_id: str,
+    model: str,
+    extraction_strategy: str,
+    prompt_tokens: int,
+    completion_tokens: int,
+    cached_tokens: int,
+    total_cost_usd: float,
+    pages_extracted: int,
+):
+    """
+    Append a row to a CSV file logging the extraction run for one PDF.
+    Creates the file with header if not existing.
+    """
+    os.makedirs(os.path.dirname(csv_path), exist_ok=True)
+    file_exists = os.path.isfile(csv_path)
+
+    with open(csv_path, mode="a", newline="", encoding="utf-8") as csvfile:
+        fieldnames = [
+            "timestamp",
+            "pdf_id",
+            "model",
+            "extraction_strategy",
+            "prompt_tokens",
+            "completion_tokens",
+            "cached_tokens",
+            "total_cost_usd",
+            "pages_extracted",
+        ]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        if not file_exists:
+            writer.writeheader()
+
+        writer.writerow({
+            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "pdf_id": pdf_id,
+            "model": model,
+            "extraction_strategy": extraction_strategy,
+            "prompt_tokens": prompt_tokens,
+            "completion_tokens": completion_tokens,
+            "cached_tokens": cached_tokens,
+            "total_cost_usd": round(total_cost_usd, 6),
+            "pages_extracted": pages_extracted,
+        })
+
+
+def log_batch_summary(
+    csv_path: str,
+    batch_id: str,
+    model: str,
+    extraction_strategy: str,
+    num_pdfs: int,
+    prompt_tokens: int,
+    completion_tokens: int,
+    cached_tokens: int,
+    total_cost_usd: float,
+):
+    """
+    Append a row to a CSV file logging a batch extraction run.
+    Creates the file with header if not existing.
+    """
+    os.makedirs(os.path.dirname(csv_path), exist_ok=True)
+    file_exists = os.path.isfile(csv_path)
+
+    with open(csv_path, mode="a", newline="", encoding="utf-8") as csvfile:
+        fieldnames = [
+            "timestamp",
+            "batch_id",
+            "model",
+            "extraction_strategy",
+            "num_pdfs",
+            "prompt_tokens",
+            "completion_tokens",
+            "cached_tokens",
+            "total_cost_usd",
+        ]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        if not file_exists:
+            writer.writeheader()
+
+        writer.writerow({
+            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "batch_id": batch_id,
+            "model": model,
+            "extraction_strategy": extraction_strategy,
+            "num_pdfs": num_pdfs,
+            "prompt_tokens": prompt_tokens,
+            "completion_tokens": completion_tokens,
+            "cached_tokens": cached_tokens,
+            "total_cost_usd": round(total_cost_usd, 6),
+        })
