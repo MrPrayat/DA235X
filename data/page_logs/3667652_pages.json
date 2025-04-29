@@ -211,7 +211,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -222,6 +222,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takets tätskikt är äldre och bör åtgärdas för att minska risken för fuktskador. Golvkonstruktionen riskerar fuktskador och mikrobiella skador kan uppstå."
+    "SummaryInsights": null
   }
 ]

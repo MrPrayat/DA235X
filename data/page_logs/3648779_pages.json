@@ -26,7 +26,7 @@
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": false,
+    "InspectionDate": "2022-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -72,6 +72,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden har mindre underhållsbehov och röta förekommer lokalt. Färgsläpp förekommer på vissa delar av sockeln."
+    "SummaryInsights": "Fasaden har mindre underhållsbehov och röta förekommer lokalt."
   }
 ]

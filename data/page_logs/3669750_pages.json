@@ -26,7 +26,7 @@
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": false,
+    "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -55,15 +55,15 @@
     "MoistureDamage": {
       "mentions_garage": true,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": true,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -72,10 +72,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Läckage i garagevind bör åtgärdas. Fasaden har mindre rötskador som behöver underhållas."
+    "SummaryInsights": "Läckage i garage bör åtgärdas. Justering av masonitskivor rekommenderas."
   },
   {
-    "CadastralDesignation": "Palsternackan 4",
+    "CadastralDesignation": "Palstermackan 4",
     "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -97,10 +97,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fortsatt teknisk undersökning av golvbjälklagets och krypgrundens skick rekommenderas för att säkerställa att inga fuktskador föreligger."
+    "SummaryInsights": "Krypgrund och bjälklag kräver fortsatt teknisk undersökning för att säkerställa konditionen."
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": "Palsternackan 4",
     "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,

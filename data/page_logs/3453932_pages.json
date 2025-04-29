@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen har rötskador och bör åtgärdas. Vissa fönster och dörrar har färgflagning och kittsläpp."
+    "SummaryInsights": "Fasadpanelen har rötskador och behöver åtgärdas."
   },
   {
     "CadastralDesignation": false,
@@ -197,7 +197,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Taket är i sämre skick och behöver läggas om inom snar framtid. Förbättrande åtgärder krävs vid vinkelränna och trasiga takpannor."
+    "SummaryInsights": "Takets äldre del är i dåligt skick och behöver omläggning inom snar framtid."
   },
   {
     "CadastralDesignation": false,
@@ -222,7 +222,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Plint/stolpe under altan har förskjutits och står snett. Entrédel/farstu har sjunkit och lutar."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,

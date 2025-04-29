@@ -1,6 +1,6 @@
 [
   {
-    "CadastralDesignation": "Arnö 1:80 Branthäll Karlberg 1",
+    "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -25,7 +25,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Arnö 1:80",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -100,7 +100,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Arnö 1:80",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -150,7 +150,7 @@
     "SummaryInsights": "Fasaden har små sprickor, småskador och färgsläpp som bör åtgärdas."
   },
   {
-    "CadastralDesignation": "Arnö 1:80",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "En liten del av takfoten är ej målad och takfotsbräda sitter löst, vilket bör åtgärdas. Moss på vindskivor och plåttak behöver tas bort."
+    "SummaryInsights": "Takfotsbräda sitter löst och bör åtgärdas."
   },
   {
     "CadastralDesignation": "Arnö 1:80",
@@ -225,7 +225,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,

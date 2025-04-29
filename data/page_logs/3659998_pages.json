@@ -36,7 +36,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -47,7 +47,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Pappen har bytts ut på tak och nytt räcke runt om trapphus har installerats."
   },
   {
     "CadastralDesignation": false,
@@ -62,7 +62,7 @@
     },
     "RenovationNeeds": {
       "roof": false,
-      "garage": false,
+      "garage": true,
       "facade": true,
       "balcony": false,
       "källare": false,
@@ -72,7 +72,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Sprickor i sockel och fasad samt behov av målningsunderhåll på taksargbrädor. Äldre golvbrunn i pannrum rekommenderas bytas ut vid framtida renovering."
+    "SummaryInsights": "Fasaden och garaget behöver underhåll. Fönsterpartierna på baksidan av garaget är i behov av byte eller underhåll."
   },
   {
     "CadastralDesignation": "Lammhult 33:1",
@@ -90,14 +90,14 @@
       "garage": false,
       "facade": false,
       "balcony": false,
-      "källare": true,
+      "källare": false,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Kontakt med takläggare rekommenderas för bedömning av takets skick. Åtgärder behövs för källarens fuktskydd och ventilation."
+    "SummaryInsights": "Takpapp bör kontrolleras och åtgärdas vid behov. Fuktproblem i garage och källare behöver utredas vidare."
   },
   {
     "CadastralDesignation": false,
@@ -122,6 +122,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takets papp behöver ses över och eventuellt åtgärdas av takläggare. Källarens installation bör förbättras med golvventilation och tätning runt anslutning till golv."
+    "SummaryInsights": "Tak och källare behöver åtgärdas för att förbättra konstruktionen och undvika framtida problem."
   }
 ]

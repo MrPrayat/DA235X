@@ -25,7 +25,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Rönninge 1:537",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -47,13 +47,13 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Köket renoverades 2015 och taket fick ny takvard 2021. Fasad målades om 2017 och nytt balkongräcke installerades 2018."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
     "InspectionDate": "2024-08",
     "MoistureDamage": {
-      "mentions_garage": true,
+      "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": true,
@@ -62,7 +62,7 @@
     },
     "RenovationNeeds": {
       "roof": true,
-      "garage": true,
+      "garage": false,
       "facade": false,
       "balcony": true,
       "källare": false,
@@ -72,10 +72,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Taket har äldre standard och teknisk livslängd är passerad, åtgärd rekommenderas. Balkongen kräver kontroll av tätskikt för att undvika fuktskador. Duschkabin i garage bör användas med försiktighet då tätskikt saknas."
+    "SummaryInsights": "Balkonggolvet behöver säkerställas för att undvika fuktskador. Taket har äldre standard och bör ses över."
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": "Rönninge 1:537",
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,

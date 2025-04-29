@@ -1,7 +1,7 @@
 [
   {
     "CadastralDesignation": false,
-    "InspectionDate": false,
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Kompletterande besiktning av yttertak och carporttak rekommenderas när taken är fria från snö/is. Skyddsbåge saknas vid befintlig gavelstege."
+    "SummaryInsights": "Yttertaket och carporten behöver kompletterande besiktning när de är fria från snö och is."
   },
   {
     "CadastralDesignation": false,
