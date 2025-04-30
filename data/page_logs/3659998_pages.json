@@ -36,7 +36,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -47,14 +47,14 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Pappen har bytts ut på tak och nytt räcke runt om trapphus har installerats."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
     "InspectionDate": "2022-03",
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": true,
+      "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
@@ -62,7 +62,7 @@
     },
     "RenovationNeeds": {
       "roof": false,
-      "garage": true,
+      "garage": false,
       "facade": true,
       "balcony": false,
       "källare": false,
@@ -72,7 +72,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden och garaget behöver underhåll. Fönsterpartierna på baksidan av garaget är i behov av byte eller underhåll."
+    "SummaryInsights": "Fasaden har sprickor och taksargbrädor är i behov av målningsunderhåll. Äldre golvbrunn rekommenderas bytas ut vid framtida renovering."
   },
   {
     "CadastralDesignation": "Lammhult 33:1",
@@ -90,14 +90,14 @@
       "garage": false,
       "facade": false,
       "balcony": false,
-      "källare": false,
+      "källare": true,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takpapp bör kontrolleras och åtgärdas vid behov. Fuktproblem i garage och källare behöver utredas vidare."
+    "SummaryInsights": "Kontakt med takläggare rekommenderas för bedömning av takets åtgärdsbehov. Åtgärder för att förbättra källarens fuktskydd och ventilation bör utföras."
   },
   {
     "CadastralDesignation": false,
@@ -122,6 +122,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tak och källare behöver åtgärdas för att förbättra konstruktionen och undvika framtida problem."
+    "SummaryInsights": "Takets pappbyte är bristfälligt utfört och bör bedömas av takläggare för vidare åtgärd. Källarens installation kan förbättras genom att montera golvdon och täta runt anslutning till golv."
   }
 ]

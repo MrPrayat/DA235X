@@ -188,7 +188,7 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": true,
       "källare": false,
       "bjälklag": false
@@ -197,7 +197,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Balkonger på gårdssidan är i nära förestående åtgärdsbehov."
+    "SummaryInsights": "Alla balkonger på gårdssidan samt fönster och flera utvändiga dörrar har nära förestående åtgärdsbehov. Även fasader behöver underhåll."
   },
   {
     "CadastralDesignation": false,
@@ -238,7 +238,7 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
       "källare": true,
       "bjälklag": false
@@ -247,7 +247,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Områden under källarplattan kan behöva åtgärdas i framtiden. Fuktisolering i källaren kan behöva genomföras runt 2050."
+    "SummaryInsights": "Områden under källarplattan kan behöva åtgärdas på sikt och omdränering/fuktisolering av källarväggar kan bli aktuellt runt 2050. Kommande renovering av putsade fasader bedöms behöva utföras om cirka 30 år."
   },
   {
     "CadastralDesignation": false,
@@ -263,7 +263,7 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": true,
       "källare": false,
       "bjälklag": false
@@ -272,7 +272,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fönster och balkonger behöver renoveras inom en snar framtid. Fasaden planeras för framtida underhåll."
+    "SummaryInsights": "Balkonger på gårdssidan har nära förestående reparationsbehov. Fönster är i mycket slitet skick och omedelbart renoveringsbehov föreligger, särskilt mot Norr Mälarstrand."
   },
   {
     "CadastralDesignation": false,
@@ -322,7 +322,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Renovering av badrum rekommenderas inom 5-6 år då de äldsta är ca 30 år gamla. Strategi bör upprättas för utbyte av VA-stammar i samband med framtida renoveringar."
   },
   {
     "CadastralDesignation": false,
@@ -347,7 +347,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Garageporten kommer behöva genomgå löpande underhåll."
+    "SummaryInsights": "Garageporten kommer behöva genomgå löpande underhåll. Vissa VA-installationer i lokalerna kan behöva bytas ut i framtiden."
   },
   {
     "CadastralDesignation": false,
@@ -372,7 +372,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Renovering av tätskikt i badrum rekommenderas inom 5–6 år. Spolning och rensning av spillvattenavloppen bör utföras inom något år och därefter med cirka 10 års intervall."
   },
   {
     "CadastralDesignation": false,
@@ -415,14 +415,39 @@
       "garage": false,
       "facade": true,
       "balcony": true,
-      "källare": true,
+      "källare": false,
       "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renovering av takterrasser och balkonger planeras. Fasad och källarväggar behöver åtgärdas."
+    "SummaryInsights": "Renovering av gårdsbjälklaget och fasader är planerade, samt reparation av balkonger och takterrasser rekommenderas."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Renovering av badrum planeras till ca 2029 för vissa lägenheter. Utbyte av värmesystem bedöms till 2042 och renovering av VA-stammar till 2060."
   },
   {
     "CadastralDesignation": false,
@@ -475,32 +500,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Stockholm Vattumannen 34",
+    "CadastralDesignation": "Stockholm Vätutormen 34",
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
@@ -522,6 +522,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden och bjälklaget behöver renoveras enligt planen."
+    "SummaryInsights": "Renovering av fasad och reparation av gårdsbjälklag planeras enligt underhållsplanen."
   }
 ]

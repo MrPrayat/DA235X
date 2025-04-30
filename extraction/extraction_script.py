@@ -23,7 +23,7 @@ from collections import defaultdict
 from datetime import datetime
 
 # === Constants ===
-MODEL_NAME = "gpt-4o"
+MODEL_NAME = "gpt-4.1"
 EXTRACTION_STRATEGY = "page-by-page"
 
 # === Variables ===
@@ -32,6 +32,7 @@ batch_token_meter = {"prompt": 0, "completion": 0, "cached": 0}
 num_pdfs_processed = 0
 
 # === Batch metadata ===
+
 start_time = datetime.now()
 batch_id = start_time.strftime("batch_%Y-%m-%d_%H%M")
 batch_pdf_dir = f"data/logs/per_pdf_costs/{batch_id}"

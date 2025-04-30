@@ -147,7 +147,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renoveringsåtgärder har utförts med balkongerna och taket över garagen behöver bytas ut inom närmaste framtid."
+    "SummaryInsights": "Tät­skikt på gårdsbjälklagen över garagen behöver bytas ut inom närmaste framtid. Renoveringsåtgärder har utförts med balkongerna."
   },
   {
     "CadastralDesignation": false,
@@ -187,7 +187,7 @@
     },
     "RenovationNeeds": {
       "roof": false,
-      "garage": false,
+      "garage": true,
       "facade": false,
       "balcony": false,
       "källare": false,
@@ -197,7 +197,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Gårdsbjälklagets tätskikt är i behov av renovering inom nära framtid."
+    "SummaryInsights": "Gårdsbjälklagets tätskikt över garaget har påtagliga läckage och behöver renoveras inom nära framtid. I samband med detta behöver även markanläggningen ovanpå åtgärdas."
   },
   {
     "CadastralDesignation": false,
@@ -222,13 +222,13 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takavvattning rekommenderas för re-lining inom några år."
+    "SummaryInsights": "Takavvattning rekommenderas att relinas inom några år. Takets livslängd innebär behov av kommande renovering eller utbyte inom minst 5 år."
   },
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
     "MoistureDamage": {
-      "mentions_garage": true,
+      "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
@@ -236,7 +236,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": true,
       "facade": false,
       "balcony": false,
@@ -247,7 +247,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renovering av garage och gårdsbjälklagets tätskikt rekommenderas."
+    "SummaryInsights": "Gårdsbjälklagets tätskikt behöver renoveras och garagegolvet åtgärdas vid behov. Vid renovering rekommenderas även byte av till- och frånluftsfläktarnas installationer."
   },
   {
     "CadastralDesignation": false,
@@ -272,7 +272,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Avloppen är i behov av renovering och rekommenderas att re-linas inom nära framtid."
+    "SummaryInsights": "Stamreglerventiler i källare rekommenderas att bytas inom 5 år. Synliga avloppsdelar i källarplanet bör bytas ut och re-lining av avlopp rekommenderas inom nära framtid."
   },
   {
     "CadastralDesignation": false,
@@ -322,7 +322,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Reparation av gårdsbjälklag och pelare i garage planeras. Smärre fasadreparationer och PCB-sanering är planerade. Takavvattning och PVC-duk ska bytas ut."
+    "SummaryInsights": "Reparation av gårdsbjälklag och pelare i garage planeras till 2017/18. Smärre punktreparationer av fasad och PCB-sanering ska utföras senast 2020. Relining av takavvattning och utbyte av PVC-duk planeras till 2022."
   },
   {
     "CadastralDesignation": false,
@@ -361,7 +361,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -372,6 +372,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket har renoverats och det finns omfattande underhållsbehov för gårdsbjälklagets tätskikt."
+    "SummaryInsights": "Omfattande underhållsbehov finns avseende gårdsbjälklagets tätskikt och avloppsstammar. PCB finns kvar i fogar och bör åtgärdas inom några år."
   }
 ]

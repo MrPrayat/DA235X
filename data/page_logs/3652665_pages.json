@@ -82,22 +82,22 @@
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,
-      "garage": false,
+      "garage": true,
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Åtgärder har utförts för att hantera fuktproblem i garage och bjälklag, inklusive installation av ventiler och byte av isolering och reglar."
   },
   {
     "CadastralDesignation": false,

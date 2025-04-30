@@ -32,7 +32,7 @@ def compute_summary_stats(results_dict):
     }
 
 
-def log_run_to_csv(results, run_name, notes="", log_file="data/logs/evaluation_log.csv"):
+def log_run_to_csv(results, run_name, log_file="data/logs/evaluation_log.csv"):
     """
     Logs the evaluation results to a CSV file.
     """
@@ -41,7 +41,6 @@ def log_run_to_csv(results, run_name, notes="", log_file="data/logs/evaluation_l
     new_row = {
         "timestamp": datetime.datetime.now().isoformat(),
         "run_name": run_name,
-        "notes": notes,
         "true_positives": summary["tp"],
         "false_positives": summary["fp"],
         "false_negatives": summary["fn"],
@@ -187,7 +186,7 @@ def main():
     print(f"Total Recall: {summary['recall']:.2f}")
     print(f"Total F1 Score: {summary['f1_score']:.2f}")
 
-    log_run_to_csv(results, run_name="baseline_GPT4o_v2_2", notes="Re-evaluation with fix of prints")
+    log_run_to_csv(results, run_name="baseline_GPT41_v2")
 
 
 if __name__ == "__main__":

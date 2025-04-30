@@ -97,7 +97,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen har bytts ut och tilläggsisolerats."
+    "SummaryInsights": "Fasadpanel har bytts ut och tilläggsisolerats. Ett fönster har bytts till 2-glas isoler och ytterdörrar har bytts ut."
   },
   {
     "CadastralDesignation": false,
@@ -147,7 +147,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takpannor och underlagspapp är gamla och behöver bytas. Färgsprickor på fasaden och balkongen bör åtgärdas."
+    "SummaryInsights": "Yttertaket har uppnått sin tekniska livslängd och bör åtgärdas. Fasad och balkong har färgsläpp och saknar räcke, vilket kräver underhåll."
   },
   {
     "CadastralDesignation": false,
@@ -161,18 +161,18 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": false,
       "balcony": false,
-      "källare": false,
+      "källare": true,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Kondensspår och missfärgning på råspont i taket tyder på fuktproblem och bör utredas vidare. Källaren har färg- och puts-släpp samt riskkonstruktioner som kräver fortsatt teknisk utredning."
   },
   {
     "CadastralDesignation": false,
@@ -197,6 +197,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket är äldre och har mossa, vilket kan leda till fuktskador. Källaren är en riskkonstruktion med fuktproblem."
+    "SummaryInsights": "Yttertaket är äldre och har mossa, vilket ökar risken för fuktskador och bör åtgärdas. Källaren är en riskkonstruktion med fukt- och mögelrisk, och fortsatt teknisk utredning rekommenderas för vinden."
   }
 ]

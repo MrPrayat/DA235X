@@ -111,7 +111,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -122,7 +122,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Taklagning på grund av fuktskada rekommenderas."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
@@ -147,7 +147,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen och snickerier är i behov av målning och underhåll för att förhindra fukt- och rötskador."
+    "SummaryInsights": "Fasadpanelen är i behov av målning och underhåll. Befintliga fönster är äldre och kan behöva ses över på grund av sämre tätning."
   },
   {
     "CadastralDesignation": false,
@@ -157,7 +157,7 @@
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takets livslängd kan ökas genom att mossa tas bort från takpannorna."
+    "SummaryInsights": "Taket är äldre och har minskat motstånd mot vatteninträngning, vilket kan leda till fuktskador. Det rekommenderas att mossa tas bort från takpannorna för att öka livslängden på taket."
   },
   {
     "CadastralDesignation": false,
@@ -188,7 +188,7 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": true,
       "källare": false,
       "bjälklag": false
@@ -197,7 +197,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Målning och underhåll rekommenderas för altan och balkong. Området närmast byggnader rekommenderas att vara fritt från växtlighet."
+    "SummaryInsights": "Målning och underhåll rekommenderas för altan och balkong. Området närmast byggnader bör hållas fritt från växtlighet."
   },
   {
     "CadastralDesignation": false,
@@ -208,7 +208,7 @@
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": true,
@@ -222,7 +222,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takpannor och underlagspapp är i dåligt skick och bör åtgärdas. Underhållsbehov finns för fönster, dörr och fasadpanel."
+    "SummaryInsights": "Taket har begränsad livslängd och bör underhållas, inklusive borttagning av mossa. Underhållsbehov finns även på fönster, dörr och fasadpanel."
   },
   {
     "CadastralDesignation": false,
@@ -297,61 +297,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Risk för fuktskador i badrum på grund av saknad väggbricka vid rörgenomföring och olämpligt placerat fönster. Rekommenderas att skydda fönstret mot vattenbegjutning."
   },
   {
     "CadastralDesignation": false,
     "InspectionDate": "2024-12",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

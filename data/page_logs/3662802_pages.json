@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden har färgsläpp och torrsprickor som bör åtgärdas."
+    "SummaryInsights": "Fasaden har färgsläpp och torrsprickor på paneler som bör åtgärdas. Mindre röta noteras i vindskivor."
   },
   {
     "CadastralDesignation": false,
@@ -222,6 +222,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen har målningsbehov och riskerar fuktskador. Torpargrund är känslig för fukt och kan orsaka mikrobiella skador."
+    "SummaryInsights": "Fasadpanelen har målningsbehov och riskerar fuktskador, vilket bör åtgärdas för att undvika rötskador."
   }
 ]

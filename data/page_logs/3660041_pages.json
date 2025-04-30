@@ -86,8 +86,8 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
-      "garage": true,
+      "roof": false,
+      "garage": false,
       "facade": false,
       "balcony": false,
       "källare": false,
@@ -97,7 +97,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takpappen har förstärkts runt skorstenen på taket. Ny garageport 2022."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,

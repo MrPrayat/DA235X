@@ -86,9 +86,9 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -97,7 +97,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertak och fasaden har renoverats tidigare, vilket indikerar tidigare behov av underhåll."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden har sprickor och putssläpp som bör åtgärdas. Ett hörn på en takpanna är trasig och behöver repareras."
+    "SummaryInsights": "Ett hörn på en takpanna är trasig och bör åtgärdas. Några sprickor och mindre putssläpp på fasaden behöver ses över."
   },
   {
     "CadastralDesignation": false,
@@ -238,15 +238,15 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
-      "källare": false,
+      "källare": true,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fasaden har sprickor som bör åtgärdas för att förhindra fuktinträngning. Källarens fuktskydd är äldre och kan behöva förbättras."
   }
 ]

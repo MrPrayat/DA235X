@@ -64,7 +64,7 @@
       "roof": true,
       "garage": false,
       "facade": false,
-      "balcony": true,
+      "balcony": false,
       "källare": false,
       "bjälklag": false
     },
@@ -72,10 +72,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Balkonggolvet behöver säkerställas för att undvika fuktskador. Taket har äldre standard och bör ses över."
+    "SummaryInsights": "Taket har äldre standard och teknisk livslängd är passerad, bör ses över. Fukt- och rinningsmärken förekommer i vind och tillbyggnad, kontroll rekommenderas."
   },
   {
-    "CadastralDesignation": "Rönninge 1:537",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,

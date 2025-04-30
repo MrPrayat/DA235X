@@ -75,7 +75,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Södra Ligården 28",
+    "CadastralDesignation": false,
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
@@ -147,7 +147,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanel och fönsteromfattningar har behov av lokal målning och underhåll."
+    "SummaryInsights": "Fasadpanel och fönsteromfattningar har lokalt målnings- och underhållsbehov. Träkonstruktioner riskerar fukt- och rötskador om målning inte utförs."
   },
   {
     "CadastralDesignation": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takpappen är äldre och kan leda till fuktskador. Taktäckningen bör åtgärdas."
+    "SummaryInsights": "Taket har felaktig taktäckning och äldre takpapp med begränsad livslängd, vilket bör åtgärdas för att undvika framtida fuktskador."
   },
   {
     "CadastralDesignation": false,
@@ -197,7 +197,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fuktskydd saknas i kökets diskbänkskåp och rörgenomföring i tvättstuga innebär ökad risk för fuktskador om inte golvbrunnen byts ut vid renovering."
   },
   {
     "CadastralDesignation": false,
@@ -239,7 +239,7 @@
       "roof": false,
       "garage": false,
       "facade": false,
-      "balcony": false,
+      "balcony": true,
       "källare": false,
       "bjälklag": false
     },
@@ -247,7 +247,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Balkongen har en enklare pappläggning utan avrinning och bör åtgärdas för att undvika vattenskador. Tät- och fuktskydd i badrum är felmonterat och rekommenderas att ses över."
   },
   {
     "CadastralDesignation": false,

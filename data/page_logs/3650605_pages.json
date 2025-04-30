@@ -30,7 +30,7 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
@@ -55,7 +55,7 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": true
@@ -72,11 +72,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tak och fasad behöver underhåll och tätning rekommenderas för att förhindra fuktproblem."
+    "SummaryInsights": "Tak och fasad har underhållsbehov, inklusive tätning och målning. Fuktskydd saknas under vissa diskbänkar och kyl/frys."
   },
   {
-    "CadastralDesignation": "Katrinelund 1:46",
-    "InspectionDate": "2024-11",
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -91,27 +91,27 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Förhöjda fuktvärden och mikrobiell påväxt har uppmätts mot blindbotten. Fortsatt teknisk undersökning av grund och bjälklag rekommenderas."
   },
   {
-    "CadastralDesignation": "Katrinelund 1:46",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -122,6 +122,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Otäthet vid genomföring på taket bör åtgärdas för att förhindra fuktskador."
   }
 ]
