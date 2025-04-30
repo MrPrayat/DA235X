@@ -26,14 +26,14 @@
     "SummaryInsights": "Yttertaket på hus och garage byttes till dubbelfalsad plåttak. Fasaden på baksidan byttes. Golvvärme installerades i flera områden. Krypgrundens klimat bör göras torrare genom att rensa bort organiskt material för att undvika fuktskador."
   },
   "ground_truth": {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Näsbypark 10:24",
+    "InspectionDate": "2024-12",
     "MoistureDamage": {
-      "mentions_garage": false,
+      "mentions_garage": true,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -42,7 +42,7 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
