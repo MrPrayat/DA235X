@@ -1,7 +1,7 @@
 [
   {
     "CadastralDesignation": false,
-    "InspectionDate": "2024-11",
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket och carporten behöver kompletterande besiktning när de är fria från snö och is."
+    "SummaryInsights": "Kompletterande besiktning av yttertak och carporttak rekommenderas när taken är fria från snö och is. Skyddsbåge saknas vid befintlig gavelstege."
   },
   {
     "CadastralDesignation": false,
@@ -247,7 +247,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Badrummet har äldre ytskikt/tätskikt vilket innebär en ökad risk för vattenskador, men inga förhöjda fuktindikationer noterades."
   },
   {
     "CadastralDesignation": false,

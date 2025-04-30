@@ -1,31 +1,6 @@
 [
   {
-    "CadastralDesignation": "Arnö 1:80",
-    "InspectionDate": "2024-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
+    "CadastralDesignation": "Arnö 1:80 Branthäll Karlberg 1",
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -75,7 +50,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -101,6 +76,31 @@
   },
   {
     "CadastralDesignation": false,
+    "InspectionDate": "2020-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -147,10 +147,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden har små sprickor, småskador och färgsläpp som bör åtgärdas."
+    "SummaryInsights": "Fasaden har små sprickor, småskador och färgsläpp som bör åtgärdas. Färgsläpp finns även på hussockeln."
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": "Arnö 1:80",
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -172,7 +172,32 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takfotsbräda sitter löst och bör åtgärdas."
+    "SummaryInsights": "En liten del av takfoten är ej målad och takfotsbräda sitter löst, vilket bör åtgärdas. Moss på vindskivor och plåttak behöver tas bort."
+  },
+  {
+    "CadastralDesignation": "Arnö 1:80",
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Spillskydd saknas under kyl/frys och tät botten saknas i diskbänkskåp, vilket bör åtgärdas för att undvika framtida skador."
   },
   {
     "CadastralDesignation": "Arnö 1:80",
@@ -200,32 +225,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Arnö 1:80",
-    "InspectionDate": "2024-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Arnö 1:80",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,

@@ -147,7 +147,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Altanen är i behov av underhåll. Rekommenderar kontakt med snickare för åtgärdsförslag."
+    "SummaryInsights": "Altanen är i behov av underhåll och några trallbrädor är rötskadade. Rekommenderas kontakt med snickare för åtgärdsförslag."
   },
   {
     "CadastralDesignation": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden behöver målas och underhållas för att förhindra fukt- och rötskador."
+    "SummaryInsights": "Fasadpanelen, vindskivor och trädeltaljer är i behov av målning och underhåll för att förebygga fukt- och rötskador."
   },
   {
     "CadastralDesignation": false,
@@ -197,7 +197,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takpannor och takfotsplåt behöver åtgärdas för att minska risken för fuktskador."
+    "SummaryInsights": "Yttertaket har brister såsom saknade takfotsplåtar och felaktigt placerade takpannor, vilket bör åtgärdas för att minska risken för fuktskador."
   },
   {
     "CadastralDesignation": false,
@@ -250,7 +250,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Stockholm Norr",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -279,10 +279,10 @@
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": true,
+      "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {

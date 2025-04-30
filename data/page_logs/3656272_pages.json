@@ -190,14 +190,14 @@
       "garage": false,
       "facade": false,
       "balcony": false,
-      "källare": false,
+      "källare": true,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Utreglad vägg i tvättstugan och äldre standard i duschrummet bör beaktas. Puts- och färgsläpp förekommer på vissa väggar i källaren."
   },
   {
     "CadastralDesignation": false,

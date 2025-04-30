@@ -86,18 +86,18 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Renoveringsbehov finns för takbeklädnad och underlagstak/bjälkar/vägg."
   },
   {
     "CadastralDesignation": false,
@@ -108,31 +108,6 @@
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -157,13 +132,13 @@
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_bjälklag": true,
+      "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -172,7 +147,32 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tak och fasad behöver underhåll för att förhindra fuktskador. Kontakta fackman för åtgärd av sprickor i fasaden."
+    "SummaryInsights": "Det rekommenderas att installera vattentät in­klädnad i diskbänkskåpet och att kontrollera vinden minst två gånger om året för att övervaka mikrobiell påväxt."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": true,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Tak och fasad behöver underhåll och åtgärder mot fuktskador. Äldre gjutjärnsbrunnar i källaren bör bytas ut vid framtida renovering."
   },
   {
     "CadastralDesignation": false,

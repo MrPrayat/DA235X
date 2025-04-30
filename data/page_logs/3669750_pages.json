@@ -26,7 +26,7 @@
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": "2025-01",
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -55,6 +55,31 @@
     "MoistureDamage": {
       "mentions_garage": true,
       "mentions_källare": false,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": true,
+      "facade": true,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Läckage i garagevind bör utredas och åtgärdas. Mindre rötskador på fasadens nedre del behöver åtgärdas."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
@@ -62,7 +87,7 @@
     },
     "RenovationNeeds": {
       "roof": false,
-      "garage": true,
+      "garage": false,
       "facade": false,
       "balcony": false,
       "källare": false,
@@ -72,35 +97,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Läckage i garage bör åtgärdas. Justering av masonitskivor rekommenderas."
+    "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Palstermackan 4",
-    "InspectionDate": "2025-01",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": true
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Krypgrund och bjälklag kräver fortsatt teknisk undersökning för att säkerställa konditionen."
-  },
-  {
-    "CadastralDesignation": "Palsternackan 4",
+    "CadastralDesignation": false,
     "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,

@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen och dörren är i behov av målning och underhåll."
+    "SummaryInsights": "Fasaden och dörren är i behov av målning och underhåll. Det rekommenderas även att montera tröskelbleck under dörren."
   },
   {
     "CadastralDesignation": false,
@@ -190,14 +190,14 @@
       "garage": false,
       "facade": false,
       "balcony": false,
-      "källare": false,
+      "källare": true,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fuktskador har uppmätts i matkällaren och åtgärder för att minska fuktbelastningen rekommenderas. Kompletterande besiktning av yttertaket bör göras när snön är borta."
   },
   {
     "CadastralDesignation": false,
@@ -216,13 +216,13 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Kompletterande besiktning rekommenderas när inspektionslucka installerats till krypgrunden. Orsaken till golvets ojämnhet bör kontrolleras vid nästa renovering av utrymmet."
   },
   {
     "CadastralDesignation": false,
@@ -279,10 +279,10 @@
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": true,
+      "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
