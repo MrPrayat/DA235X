@@ -26,8 +26,8 @@
     "SummaryInsights": "Inga fukt- eller asbestproblem upptäcktes. Inga omedelbara renoveringsbehov identifierades."
   },
   "ground_truth": {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Orrviken 2:22",
+    "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
