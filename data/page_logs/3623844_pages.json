@@ -133,7 +133,7 @@
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": true,
@@ -147,10 +147,10 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Fasadpanelen och plåttaket har underhållsbehov och viss rötskada har noterats. Åtgärder rekommenderas för att förlänga livslängden."
+    "SummaryInsights": "Fasadpanelen och plåttaket har underhållsbehov och färgsläpp noterades."
   },
   {
-    "CadastralDesignation": "Bolby 18:4",
+    "CadastralDesignation": false,
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
@@ -197,7 +197,7 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Fasaden och yttertaket bedöms vara i behov av åtgärder på grund av ålder och risk för fuktrelaterade skador. Eternit i grundplintar innehåller asbest och kräver fackmannamässig hantering vid rivning."
+    "SummaryInsights": "Takets plåtskruvar bör bytas ut. Fasaden har risk för fuktrelaterade skador och bör åtgärdas."
   },
   {
     "CadastralDesignation": "Bolby 18:4",

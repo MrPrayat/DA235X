@@ -97,7 +97,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Duschen renoverades 2022 efter en vattenskada. Varmvattenberedare och vattenmätare har bytts ut."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden har färgsläpp och torrsprickor som bör åtgärdas. Mindre röta noteras i vindskivor."
+    "SummaryInsights": "Fasaden har färgsläpp och torrsprickor som bör åtgärdas."
   },
   {
     "CadastralDesignation": false,
@@ -222,6 +222,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen har målningsbehov och riskerar fuktskador, vilket bör åtgärdas för att undvika rötskador."
+    "SummaryInsights": "Fasadpanelen har målningsbehov och riskerar fuktskador. Torpargrund är känslig för fukt och kan orsaka mikrobiella skador."
   }
 ]

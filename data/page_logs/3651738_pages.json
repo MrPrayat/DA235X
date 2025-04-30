@@ -1,1 +1,527 @@
-[]
+[
+  {
+    "CadastralDesignation": "Stockholm Vattuormen 34",
+    "InspectionDate": "2024-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Stockholm Vattuormen 34",
+    "InspectionDate": "2024-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Stockholm Vattuormen 34",
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": true,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Balkonger på gårdssidan är i nära förestående åtgärdsbehov."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Områden under källarplattan kan behöva åtgärdas i framtiden. Fuktisolering i källaren kan behöva genomföras runt 2050."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": true,
+      "balcony": true,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Fönster och balkonger behöver renoveras inom en snar framtid. Fasaden planeras för framtida underhåll."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": true,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Garageporten kommer behöva genomgå löpande underhåll."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2022-10",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": true,
+      "balcony": true,
+      "källare": true,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Renovering av takterrasser och balkonger planeras. Fasad och källarväggar behöver åtgärdas."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Stockholm Vattumannen 34",
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": true,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Fasaden och bjälklaget behöver renoveras enligt planen."
+  }
+]

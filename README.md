@@ -50,6 +50,7 @@ run_pdf_tests(
     test_amount=5,        # number of PDFs to run
     skip_existing=True,   # skip already extracted PDFs
     csv_path="data/inspection_urls.csv"
+    reextract_already_extracted_only
 )
 ```
 

@@ -57,7 +57,7 @@
       "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -72,7 +72,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fuktproblem har noterats i källarens gillestuga och utvändigt fuktskydd är bristfälligt. Rekommendation ges att ventilera vissa konstruktioner mekaniskt och att hålla eventuella problem under uppsikt."
+    "SummaryInsights": "Källaren behöver åtgärdas på grund av bristfälligt fuktskydd. Ventilationsförbättrande åtgärder rekommenderas."
   },
   {
     "CadastralDesignation": false,
@@ -126,7 +126,7 @@
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": false,
+    "InspectionDate": "2022-01",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -147,13 +147,13 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen är i behov av målning och underhåll för att öka livslängden på fasadbeklädnaden."
+    "SummaryInsights": "Fasadpanelen är i behov av målning och underhåll för att öka livslängden."
   },
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
     "MoistureDamage": {
-      "mentions_garage": false,
+      "mentions_garage": true,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tröskelbleck bör monteras under dörr på garagedel för att förhindra fuktskador. Fönster är i behov av målning och underhåll."
+    "SummaryInsights": "Tröskelbleck saknas under dörr på garagedel och rekommenderas att monteras. Fönster är i behov av målning och underhåll."
   },
   {
     "CadastralDesignation": false,
@@ -197,7 +197,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Altanräcke och träkonstruktioner behöver målas eller underhållas. Elanläggningen är äldre och bör kontrolleras av elektriker."
+    "SummaryInsights": "Altanräcke och träkonstruktioner är i behov av målning/underhåll."
   },
   {
     "CadastralDesignation": false,
@@ -222,7 +222,32 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fuktskydd saknas i kökets diskbänkskåp och under kyl och frys, installation av fuktskydd rekommenderas."
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
@@ -247,32 +272,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renovering av badrum rekommenderas på grund av ålder och slitage. Fördjupad undersökning av källarens golvkonstruktion föreslås på grund av förhöjda fuktvärden."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": true,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": true,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Renovering av tvättstuga/pannrum/dusch rekommenderas på grund av dåligt skick och skador i tätskikt. Källarens utvändiga fuktskydd bör förbättras."
+    "SummaryInsights": "Renovering av våtrummet rekommenderas på grund av dåligt skick och äldre ytskikt."
   },
   {
     "CadastralDesignation": false,
@@ -308,6 +308,31 @@
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {

@@ -75,7 +75,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": "Södra Ligården 28",
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
@@ -147,7 +147,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanel och fönsteromfattningar har lokalt målnings- och underhållsbehov. Träkonstruktioner riskerar fukt- och rötskador om målning inte utförs."
+    "SummaryInsights": "Fasadpanel och fönsteromfattningar har behov av lokal målning och underhåll."
   },
   {
     "CadastralDesignation": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Taktäckningen är felaktig och takpappen är äldre, vilket innebär ökad risk för fuktskador. Åtgärd av taket rekommenderas."
+    "SummaryInsights": "Takpappen är äldre och kan leda till fuktskador. Taktäckningen bör åtgärdas."
   },
   {
     "CadastralDesignation": false,
@@ -197,7 +197,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fuktskydd saknas i kökets diskbänkskåp, vilket bör åtgärdas. Rörgenomföring i tvättstuga innebär ökad risk för fuktskador om inte golvbrunnen är utbytt vid renovering."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
@@ -239,7 +239,7 @@
       "roof": false,
       "garage": false,
       "facade": false,
-      "balcony": true,
+      "balcony": false,
       "källare": false,
       "bjälklag": false
     },
@@ -247,11 +247,61 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Balkongen har en enklare pappläggning utan avrinning och bör åtgärdas för att undvika vattenskador. Tät- och skyddsåtgärder rekommenderas för våtrumsfönster."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
     "InspectionDate": "2020-12",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

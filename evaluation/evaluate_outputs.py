@@ -6,30 +6,49 @@ import datetime
 
 EVAL_FOLDER = "data/evaluation"
 
-def log_run_to_csv(results, run_name, notes="", log_file="data/logs/evaluation_log.csv"):
+
+def compute_summary_stats(results_dict):
     """
-    Logs the evaluation results to a CSV file.
+    Given a results dict with field-level TP/FP/FN,
+    compute global accuracy, precision, recall, and F1 score.
     """
-    # Calculate summary stats
-    total_tp = sum(c['tp'] for c in results.values())
-    total_fp = sum(c['fp'] for c in results.values())
-    total_fn = sum(c['fn'] for c in results.values())
+    total_tp = sum(c['tp'] for c in results_dict.values())
+    total_fp = sum(c['fp'] for c in results_dict.values())
+    total_fn = sum(c['fn'] for c in results_dict.values())
+
     precision = total_tp / (total_tp + total_fp) if (total_tp + total_fp) > 0 else 0
     recall = total_tp / (total_tp + total_fn) if (total_tp + total_fn) > 0 else 0
     f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
     accuracy = total_tp / (total_tp + total_fp + total_fn) if (total_tp + total_fp + total_fn) > 0 else 0
 
-    new_row = {
-        "timestamp": datetime.datetime.now().isoformat(),
-        "run_name": run_name,
-        "notes": notes,
-        "true_positives": total_tp,
-        "false_positives": total_fp,
-        "false_negatives": total_fn,
+    return {
+        "tp": total_tp,
+        "fp": total_fp,
+        "fn": total_fn,
         "accuracy": round(accuracy, 4),
         "precision": round(precision, 4),
         "recall": round(recall, 4),
         "f1_score": round(f1, 4)
+    }
+
+
+def log_run_to_csv(results, run_name, notes="", log_file="data/logs/evaluation_log.csv"):
+    """
+    Logs the evaluation results to a CSV file.
+    """
+    summary = compute_summary_stats(results)
+
+    new_row = {
+        "timestamp": datetime.datetime.now().isoformat(),
+        "run_name": run_name,
+        "notes": notes,
+        "true_positives": summary["tp"],
+        "false_positives": summary["fp"],
+        "false_negatives": summary["fn"],
+        "accuracy": summary["accuracy"],
+        "precision": summary["precision"],
+        "recall": summary["recall"],
+        "f1_score": summary["f1_score"]
     }
 
     # Append to CSV
@@ -52,15 +71,35 @@ def norm(x):
 
 
 def update_counts(key, pred, actual, results):
+    """
+    Updates TP, FP, FN counts for a single field.
+
+    Note: We do NOT track true negatives (TN) because this is an information
+    extraction task. Fields with a correct "false" prediction are simply not
+    counted as errors — they are not meaningful TNs in this context.
+
+    Including TNs would distort precision/recall, since most fields are often false,
+    which would artificially inflate accuracy without improving extraction quality.
+    """
+
     if actual is None:
         return
+
     if pred is None:
         results[key]["fn"] += 1
-    elif norm(pred) == norm(actual): # Normalize for comparison
+    elif norm(pred) == norm(actual):
         results[key]["tp"] += 1
     else:
-        results[key]["fp"] += 1
-        results[key]["fn"] += 1
+        pred_norm = norm(pred)
+        actual_norm = norm(actual)
+
+        if pred_norm == True and actual_norm == False:
+            results[key]["fp"] += 1
+        elif pred_norm == False and actual_norm == True:
+            results[key]["fn"] += 1
+        else:
+            results[key]["fp"] += 1
+            results[key]["fn"] += 1
 
 
 def evaluate_field_level(samples):
@@ -70,7 +109,6 @@ def evaluate_field_level(samples):
         truth = sample["ground_truth"]
 
         for key in truth:
-
             if key == "SummaryInsights":  # Skip because interesting for Booli but fuzzy to evaluate
                 continue
 
@@ -88,6 +126,7 @@ def evaluate_field_level(samples):
             else:
                 update_counts(key, pred, actual, results)
     return results
+
 
 def build_results_table(results):
     rows = []
@@ -112,6 +151,7 @@ def build_results_table(results):
 
     return pd.DataFrame(rows).sort_values(by="F1 Score", ascending=False)
 
+
 def load_eval_files():
     data = []
     for filename in os.listdir(EVAL_FOLDER):
@@ -122,27 +162,33 @@ def load_eval_files():
     return data
 
 
-samples = load_eval_files()
-# Sample below loads the latest 2 files in the evaluation folder
-# This is useful for testing and debugging
-# For another set of files, you can change the key in the sorted function
-# samples = sorted(load_eval_files(), key=lambda s: s["pdf_id"], reverse=True)[:2]
-results = evaluate_field_level(samples)
-table = build_results_table(results)
+def main():
+    samples = load_eval_files()
+    results = evaluate_field_level(samples)
 
-# Show dataframe as tableF
-print("\nEvaluation Results:\n")
-print(table.to_string(index=False))
-print("\n\n")
-print("Evaluation Summary:\n")
-print(f"Total Samples: {len(samples)}")
-print(f"Total Fields Evaluated: {len(results)}")
-print(f"Total True Positives: {sum(counts['tp'] for counts in results.values())}")
-print(f"Total False Positives: {sum(counts['fp'] for counts in results.values())}")
-print(f"Total False Negatives: {sum(counts['fn'] for counts in results.values())}")
-print(f"Total Accuracy: {table['Accuracy'].mean():.2f}")
-print(f"Total Precision: {table['Precision'].mean():.2f}")
-print(f"Total Recall: {table['Recall'].mean():.2f}")
-print(f"Total F1 Score: {table['F1 Score'].mean():.2f}")
+    if not results:
+        print("⚠️ No evaluation results found — make sure evaluation JSONs exist and are formatted correctly.")
+        return
 
-log_run_to_csv(results, run_name="baseline_GPT4.1", notes="Re-evaluation using GPT-4.1 model")
+    table = build_results_table(results)
+    summary = compute_summary_stats(results)
+
+    print("\nEvaluation Results:\n")
+    print(table.to_string(index=False))
+
+    print("\n\nEvaluation Summary:\n")
+    print(f"Total Samples: {len(samples)}")
+    print(f"Total Fields Evaluated: {len(results)}")
+    print(f"Total True Positives: {summary['tp']}")
+    print(f"Total False Positives: {summary['fp']}")
+    print(f"Total False Negatives: {summary['fn']}")
+    print(f"Total Accuracy: {summary['accuracy']:.2f}")
+    print(f"Total Precision: {summary['precision']:.2f}")
+    print(f"Total Recall: {summary['recall']:.2f}")
+    print(f"Total F1 Score: {summary['f1_score']:.2f}")
+
+    log_run_to_csv(results, run_name="baseline_GPT4o_v2_2", notes="Re-evaluation with fix of prints")
+
+
+if __name__ == "__main__":
+    main()

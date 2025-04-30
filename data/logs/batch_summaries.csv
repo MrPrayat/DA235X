@@ -2,3 +2,4 @@ timestamp,batch_id,model,extraction_strategy,num_pdfs,prompt_tokens,completion_t
 2025-04-28 15:18:42,batch_2025-04-28_1511,gpt-4o,multipage,2,123287,7070,6656,0.34144
 2025-04-28 15:47:44,batch_2025-04-28_1539,gpt-4o,multipage,2,123277,7110,0,0.348473
 2025-04-28 16:03:36,batch_2025-04-28_1559,gpt-4o,multipage,1,51462,3021,0,0.146
+2025-04-28 21:24:24,batch_2025-04-28_1656,gpt-4o,multipage,43,1760091,97942,0,4.939625

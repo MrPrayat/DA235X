@@ -26,7 +26,7 @@
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": "2024-12",
+    "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -54,7 +54,7 @@
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,

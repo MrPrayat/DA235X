@@ -1,1 +1,502 @@
-[]
+[
+  {
+    "CadastralDesignation": "Sundbyberg Sparven 15",
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Sundbyberg Sparven 15",
+    "InspectionDate": "2024-04",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Sundbyberg Sparven 15",
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-04",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Reparation av utvändig källartrappa på gatusidan rekommenderas inom 5 år."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": true,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Balkongerna bedöms vara i behov av renovering inom högst 10 år."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Återställningsarbeten behövs i hyreslokalen efter utbyte av vatteninstallationer i källarstråk."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-04",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Renovering av två badrum och utbyte av va-stammar rekommenderas inom en 10-årsperiod från 2026-2035."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": true,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Underhåll av balkonger planeras till 2033."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Planerat underhåll inkluderar utbyte av VA-installationer mellan 2026 och 2035 samt renovering av badrum i närtid."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": true,
+      "balcony": true,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Underhållsbehov finns på fasaderna och balkongerna."
+  },
+  {
+    "CadastralDesignation": "Sundbyberg Sparven 15",
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  }
+]

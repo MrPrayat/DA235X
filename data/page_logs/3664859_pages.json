@@ -157,7 +157,7 @@
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -205,13 +205,13 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -222,6 +222,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fortsatt teknisk utredning rekommenderas för att utreda och åtgärda fuktfläckar på underlagstaket i vindsutrymmet. Risk för läckage och vattenskador finns även i äldre våtutrymmen."
+    "SummaryInsights": null
   }
 ]

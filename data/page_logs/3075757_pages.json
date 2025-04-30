@@ -64,7 +64,7 @@
       "roof": true,
       "garage": false,
       "facade": true,
-      "balcony": true,
+      "balcony": false,
       "källare": false,
       "bjälklag": false
     },
@@ -72,7 +72,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Färg som släpper och röta noterades på fasaden, och mindre röta finns i balkongräcket. Skadad takpanna samt bristfällig nocktätning på taket bör åtgärdas."
+    "SummaryInsights": "Fasaden har färg som släpper och mindre röta, och taket har skadade takpannor som behöver åtgärdas."
   },
   {
     "CadastralDesignation": false,

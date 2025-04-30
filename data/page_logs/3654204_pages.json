@@ -147,7 +147,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Altanen är i behov av underhåll och några trallbrädor är rötskadade. Rekommenderas kontakt med snickare för åtgärdsförslag."
+    "SummaryInsights": "Altanen är i behov av underhåll. Rekommenderar kontakt med snickare för åtgärdsförslag."
   },
   {
     "CadastralDesignation": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen, vindskivor och trädeltaljer är i behov av målning och underhåll för att förebygga fukt- och rötskador."
+    "SummaryInsights": "Fasaden behöver målas och underhållas för att förhindra fukt- och rötskador."
   },
   {
     "CadastralDesignation": false,
@@ -222,7 +222,82 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Badrum och tvättstuga har äldre ytskikt/tätskikt vilket innebär ökad risk för vattenskador och bör ses över."
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Stockholm Norr",
+    "InspectionDate": "2024-12",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
@@ -251,7 +326,32 @@
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": "2024-12",
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

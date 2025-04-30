@@ -50,7 +50,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Bärnstenen 9",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket är över 40 år gammalt och mossa har noterats på delar av taket, vilket indikerar behov av åtgärd."
+    "SummaryInsights": "Yttertaket är av äldre datum och mossa noteras, vilket kan kräva åtgärder."
   },
   {
     "CadastralDesignation": false,
@@ -222,6 +222,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takets tätskikt är äldre och bör åtgärdas för att undvika framtida fuktskador. Våtutrymmenas skick ökar risken för läckage och rekommenderas att ses över."
+    "SummaryInsights": "Takets tätskikt är i dåligt skick och bör åtgärdas för att undvika framtida fuktskador."
   }
 ]

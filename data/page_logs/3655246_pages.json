@@ -86,18 +86,18 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": true
+      "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Åtgärder rekommenderas för underlagstak/bjälkar/vägg samt takbeklädnad."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
@@ -122,7 +122,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Avloppsslangen från diskmaskinen är inte fast förankrad och bör åtgärdas enligt leverantörens monteringsanvisning för att undvika läckage."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
@@ -141,20 +141,20 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": true
+      "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Det rekommenderas att installera vattentät inlåda i diskbänkskåpet och att kontrollera vinden minst två gånger per år på grund av mikrobiell påväxt."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": true,
+      "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
@@ -165,14 +165,14 @@
       "garage": false,
       "facade": true,
       "balcony": false,
-      "källare": true,
+      "källare": false,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tak och vindskivor behöver underhållas och målas för att undvika fuktskador. Äldre gjutjärnsbrunnar i källaren bör bytas ut vid framtida renovering för att undvika skador."
+    "SummaryInsights": "Tak och fasad behöver underhåll för att förhindra fuktskador. Kontakta fackman för åtgärd av sprickor i fasaden."
   },
   {
     "CadastralDesignation": false,

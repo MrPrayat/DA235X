@@ -1,6 +1,6 @@
 [
   {
-    "CadastralDesignation": "Stockholm Alf 4.",
+    "CadastralDesignation": "Stockholm Alf 4",
     "InspectionDate": "2024-05",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -50,7 +50,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": "Stockholm Alf 4.",
     "InspectionDate": "2024-05",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -305,7 +305,7 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
@@ -322,7 +322,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Taket har mossa och saknar ramspikning enligt norm, vilket bör åtgärdas. Rörelsesprickor och torr träpanel på fasaden behöver ses över."
+    "SummaryInsights": "Takets mossa och äldre takgenomföringsplåtar bör åtgärdas. Rörelsesprickor på fasaden behöver ses över."
   },
   {
     "CadastralDesignation": false,
@@ -365,14 +365,14 @@
       "garage": false,
       "facade": false,
       "balcony": false,
-      "källare": true,
+      "källare": false,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tvättstugan har renoveringsbehov och missfärgning i gillestugan kräver fortsatt teknisk utredning."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
@@ -422,7 +422,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Badrummet har renoveringsbehov med äldre golvbrunn, spricka i kakelfog och lös plastmatta. Diskbänkskåpet i köket är inte tätt och behöver åtgärdas."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
@@ -472,7 +472,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Källaren har hög fukthalt och risk för mikrobiella skador, och äldre golvbrunnar bör bytas vid renovering."
+    "SummaryInsights": "Källaren har hög fukthalt och behöver åtgärdas för att förhindra mikrobiell tillväxt. Äldre golvbrunnar bör bytas vid renovering för att undvika vattenskador."
   },
   {
     "CadastralDesignation": false,
@@ -500,8 +500,29 @@
     "SummaryInsights": null
   },
   {
-    "error": "Could not parse",
-    "raw_output": "{\n  \"CadastralDesignation\": \"Stockholm Alf 4.\",\n  \"InspectionDate\": \"2024-05\",\n  \"MoistureDamage\": {\n    \"mentions_garage\": false,\n    \"mentions_källare\": false,\n    \"mentions_roof\": false,\n    \"mentions_balcony\": false,\n    \"mentions_bjälklag\": false,\n    \"mentions_facade\": false\n  },\n  \"RenovationNeeds\": {\n    \"roof\": false,\n    \"garage\": false,\n    \"facade\": false,\n    \"balcony\": false,\n    \"källare\": false,\n    \"bjälklag\": false\n  },\n  \"AsbestosPresence\": {\n    \"Measured\": false,\n    \"presence\": false\n  },\n  \"SummaryInsights\": null\n}\n```\n**Note:** Moisture damage is mentioned in \"Souterrängplan, Gillestuga\" (elevated moisture values and damp stains), but none of the fixed locations (garage, källare, roof, balcony, bjälklag, facade) are explicitly referenced, so all are set to false. No explicit renovation needs or asbestos information is present."
+    "CadastralDesignation": "Stockholm Alf 4.",
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
