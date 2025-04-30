@@ -15,7 +15,8 @@ from utils.helpers import (
     synthesize_final_json,
     cost_usd,
     log_pdf_usage,
-    log_batch_summary
+    log_batch_summary,
+    load_image_pdf_ids
 )
 from utils.pricing import PRICES #ta bort om usd grejen fungerar
 from collections import defaultdict
@@ -253,10 +254,39 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     return final_json
 
 
-def run_pdf_tests(test_amount: int, skip: bool, inspection_urls_path: str) -> None:
+def process_single_pdf(pdf_id: str, url: str, skip: bool) -> bool:
+    """
+    Process a single PDF and return whether it was successfully processed.
+    """
+    if is_text_pdf(url):
+        print(f"Skipping text-based PDF: {pdf_id}")
+        return False
+
+    if skip:
+        # Skip if already evaluated for testing purposes
+        evaluation_path = os.path.join("data/evaluation", f"{pdf_id}.json")
+        if os.path.exists(evaluation_path):
+            print(f"Already evaluated: {pdf_id} — Skipping.")
+            return False
+
+    print(f"\nExtracting fields from PDF ID: {pdf_id} with url: {url}")
+    model_output = extract_fields_from_pdf_multipage(pdf_id, url)
+
+    if model_output:
+        normalized_output = normalize_model_output(model_output)
+        save_evaluation_json(pdf_id, normalized_output)
+        return True
+    else:
+        print(f"Extraction failed or empty for ID {pdf_id}")
+        return False
+
+
+def run_pdf_tests(test_amount: int, skip: bool, inspection_urls_path: str, reextract_already_extracted_only: bool) -> None:
     """
     Runs extraction on a set of image-based PDFs and saves evaluation-ready JSON files.
     """
+    image_pdf_ids = load_image_pdf_ids() if reextract_already_extracted_only else []
+
     pdfs_read = 0
     with open(inspection_urls_path, mode="r", encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
@@ -267,26 +297,12 @@ def run_pdf_tests(test_amount: int, skip: bool, inspection_urls_path: str) -> No
             pdf_id = row["id"]
             url = row["url"]
 
-            if is_text_pdf(url):
-                print(f"Skipping text-based PDF: {pdf_id}")
+            if image_pdf_ids and pdf_id not in image_pdf_ids:
+                print(f"Skipping non-whitelisted PDF: {pdf_id}")
                 continue
 
-            if skip:
-                # Skip if already evaluated for testing purposes
-                evaluation_path = os.path.join("data/evaluation", f"{pdf_id}.json")
-                if os.path.exists(evaluation_path):
-                    print(f"Already evaluated: {pdf_id} — Skipping.")
-                    continue
-
-            print(f"\nExtracting fields from PDF ID: {pdf_id} with url: {url}")
-            model_output = extract_fields_from_pdf_multipage(pdf_id, url)
-
-            if model_output:
-                normalized_output = normalize_model_output(model_output)
-                save_evaluation_json(pdf_id, normalized_output)
+            if process_single_pdf(pdf_id, url, skip):
                 pdfs_read += 1
-            else:
-                print(f"Extraction failed or empty for ID {pdf_id}")
 
     # Calculate final batch cost
     batch_total_cost = cost_usd(batch_token_meter, model=MODEL_NAME)

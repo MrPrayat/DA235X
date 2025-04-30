@@ -349,3 +349,16 @@ def log_batch_summary(
             "cached_tokens": cached_tokens,
             "total_cost_usd": round(total_cost_usd, 6),
         })
+
+
+def load_image_pdf_ids(path="data/image_pdf_ids.txt") -> set:
+    """
+    Loads a set of allowed PDF IDs from a text file.
+    Used to filter the dataset for image-only PDF evaluations.
+    """
+    try:
+        with open(path, encoding="utf-8") as f:
+            return set(line.strip() for line in f if line.strip())
+    except FileNotFoundError:
+        print(f"⚠️ Warning: image_pdf_ids.txt not found at {path}")
+        return set()
