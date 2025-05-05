@@ -14,10 +14,6 @@ from schema.schema import FIELDS, FIELD_DEFINITIONS
 from utils.pricing import PRICES
 from datetime import datetime
 
-
-# === GPT Helpers ===
-client = OpenAI()
-
 def call_openai_image_json(image: Image.Image, prompt: str, model: str, retries=5, backoff=2) -> tuple[str, dict]:
     """
     Calls the OpenAI chat completions API with a text prompt and image input.
@@ -253,6 +249,14 @@ def cost_usd(tokens: dict, model: str) -> float:
         (output_tokens / 1_000_000) * prices["output"]
     )
     return cost
+
+
+def gemini_cost_usd(model: str, prompt_tokens: int, completion_tokens: int) -> float:
+    price = PRICES[model]
+    return (
+        (prompt_tokens / 1_000_000) * price["input"]
+        + (completion_tokens / 1_000_000) * price["output"]
+    )
 
 
 def log_pdf_usage(
