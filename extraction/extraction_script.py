@@ -14,7 +14,8 @@ from utils.helpers import (
     is_appendix_page_gemini,
     normalize_model_output,
     generate_default_ground_truth,
-    synthesize_final_json,
+    synthesize_final_json_openai,
+    synthesize_final_json_gemini,
     cost_usd,
     log_pdf_usage,
     log_batch_summary,
@@ -238,18 +239,27 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     with open(f"data/page_logs/{pdf_id}_pages.json", "w", encoding="utf-8") as f:
         json.dump(all_results, f, indent=2, ensure_ascii=False)
 
-    final_json, usage = synthesize_final_json(all_results, MODEL_NAME)
+    # final_json, usage = synthesize_final_json_openai(all_results, MODEL_NAME)
+    final_json, usage = synthesize_final_json_gemini(all_results, MODEL_NAME)
 
     # Update cumulative totals
-    token_meter[pdf_id]["prompt"] += usage.prompt_tokens
-    token_meter[pdf_id]["completion"] += usage.completion_tokens
-    token_meter[pdf_id]["cached"] += usage.prompt_tokens_details.cached_tokens
+    token_meter[pdf_id]["prompt"] += usage["prompt_tokens"]
+    token_meter[pdf_id]["completion"] += usage["completion_tokens"]
+    token_meter[pdf_id]["cached"] += usage["cached_tokens"]
 
-    # Calculate step cost
+
+    # Calculate step cost using OpenAI
+    #step_tokens = {
+    #    "prompt": usage.prompt_tokens,
+    #    "completion": usage.completion_tokens,
+    #    "cached": usage.prompt_tokens_details.cached_tokens,
+    #}
+
+    # Calculate step cost using Gemini
     step_tokens = {
-        "prompt": usage.prompt_tokens,
-        "completion": usage.completion_tokens,
-        "cached": usage.prompt_tokens_details.cached_tokens,
+        "prompt": usage["prompt_tokens"],
+        "completion": usage["completion_tokens"],
+        "cached": usage["cached_tokens"],
     }
     step_cost = cost_usd(step_tokens, model=MODEL_NAME)
     cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
@@ -341,7 +351,7 @@ def run_pdf_tests(test_amount: int, skip: bool, inspection_urls_path: str, reext
         csv_path=batch_summary_csv,
         batch_id=batch_id,
         model=MODEL_NAME,
-        extraction_strategy="multipage",
+        extraction_strategy=EXTRACTION_STRATEGY,
         num_pdfs=num_pdfs_processed,
         prompt_tokens=batch_token_meter["prompt"],
         completion_tokens=batch_token_meter["completion"],

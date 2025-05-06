@@ -15,6 +15,7 @@ from utils.pricing import PRICES
 from datetime import datetime
 from google import genai
 from google.genai import types
+from google.genai import errors as gerrors
 
 
 # client = OpenAI()
@@ -64,27 +65,37 @@ def call_openai_image_json(image: Image.Image, prompt: str, model: str, retries=
 
     return "", None
 
-def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini-2.5-flash-preview-04-17") -> tuple[str, dict]:
+def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini-2.5-flash-preview-04-17", retries: int = 5, backoff: int = 2) -> tuple[str, dict]:
     """
     Send (prompt + single PNG image) to Gemini Flash, return (content, usage_dict).
     usage_dict keys = prompt_tokens, completion_tokens, cached_tokens (always 0).
     """
     png_bytes = encode_image_gemini(image)
-    response = _gemini_client.models.generate_content(
-        model=model,
-        contents=[
-            types.Part.from_bytes(
-                data=png_bytes,
-                mime_type='image/png',
-            ),
-            prompt
-        ],
-        config=genai.types.GenerateContentConfig(
-            thinking_config=genai.types.ThinkingConfig(
-                thinking_budget=1024
+    for attempt in range(retries):
+        try:
+            response = _gemini_client.models.generate_content(
+                model=model,
+                contents=[
+                    types.Part.from_bytes(
+                        data=png_bytes,
+                        mime_type='image/png',
+                    ),
+                    prompt
+                ],
+                config=genai.types.GenerateContentConfig(
+                    thinking_config=genai.types.ThinkingConfig(
+                        thinking_budget=1024
+                    )
+                )
             )
-        )
-    )
+        except gerrors.ClientError as e:
+            if e.code == 429:
+                wait_time = backoff * (2 ** attempt) + random.uniform(0, 1)
+                print(f"Rate limit hit (attempt {attempt+1}/{retries}). Retrying in {wait_time:.1f}s...")
+                time.sleep(wait_time)
+        except Exception as e:
+            print("Error calling Gemini API.")
+            return "", {}
 
     u = response.usage_metadata
     usage = {
@@ -111,7 +122,7 @@ def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini
     return response.text, usage
 
 
-def synthesize_final_json(page_results: list, model: str, retries=5, backoff=2) -> tuple[dict, dict]:
+def synthesize_final_json_openai(page_results: list, model: str, retries=5, backoff=2) -> tuple[dict, dict]:
     """
     Given a list of page-level JSONs, ask GPT-4o to synthesize them into one coherent JSON.
     Retries if rate-limited.
@@ -167,6 +178,71 @@ def synthesize_final_json(page_results: list, model: str, retries=5, backoff=2) 
             break
 
     return {}
+
+
+def synthesize_final_json_gemini(page_results: list, model: str, retries=5, backoff=2) -> tuple[dict, dict]:
+    """
+    Merge page‑level JSONs via Gemini Flash.
+    Returns (merged_json, usage_dict) and retries on 429 errors.
+    """
+    print("Synthesizing from page-level results...")
+
+    field_lines = [f'- "{key}": {FIELD_DEFINITIONS[key]}' for key in FIELDS]
+    json_template = "{\n" + ",\n".join([f'  "{key}": null' for key in FIELDS]) + "\n}"
+
+    prompt = (
+        "You are given a list of partial JSON outputs extracted from different pages of a housing inspection report.\n"
+        "Each JSON may contain correct or incorrect values, or have missing fields.\n"
+        "Your job is to reason through them and return a single, best-version JSON object.\n\n"
+        "Instructions:\n"
+        "- For all fields, use the most complete and accurate value.\n"
+        "- If a field is missing in all pages, return a reasonable default.\n"
+        "- **Always include 'SummaryInsights', even if no insights are found.**\n"
+        "- Return in exactly the JSON format shown below.\n\n"
+        "Field definitions:\n"
+        + "\n".join(field_lines) +
+        "\n\nReturn the final merged JSON:\n"
+        "```json\n" + json_template + "\n```\n"
+        f"Here is the list of page-level JSONs:\n\n"
+        f"{json.dumps(page_results, indent=2, ensure_ascii=False)}\n\n"
+        "Now return the final merged JSON object:"
+    )
+
+    for attempt in range(retries):
+        try:
+            response = _gemini_client.models.generate_content(
+                model=model,
+                contents=[prompt],
+            )
+            break  # success → exit loop
+        except gerrors.ClientError as e:
+            if e.code == 429:
+                wait = backoff * (2 ** attempt) + random.uniform(0, 1)
+                print(f"Rate‑limit (attempt {attempt+1}/{retries}) — sleeping {wait:.1f}s")
+                time.sleep(wait)
+                continue
+            raise  # other Gemini errors
+    else:
+        print("Gemini synthesis failed after retries.")
+        return {}, {"prompt_tokens": 0, "completion_tokens": 0, "cached_tokens": 0}
+
+    output = response.text.strip()
+    u = response.usage_metadata
+
+    usage = {
+        "prompt_tokens":     u.prompt_token_count or 0,
+        "completion_tokens": u.candidates_token_count or 0,
+        "cached_tokens":     0,
+    }
+
+    if output.startswith("```json"):
+        output = output.strip("```json").strip("```").strip()
+
+    try:
+        return json.loads(output), usage
+    except json.JSONDecodeError:
+        print("Could not decode JSON in synthesis.")
+        return {}, usage
 
 
 # === Image Utilities ===

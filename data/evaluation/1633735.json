@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Gårdsbjälklagets tätskikt och garagegolv har påtagliga läckage och behöver renoveras inom nära framtid. Tak, fasad, balkonger och källare har också planerade eller rekommenderade åtgärder, inklusive relining av takavvattning och PCB-sanering. Asbest förekommer i byggnaden och bör hanteras vid kommande renoveringar."
+    "SummaryInsights": "Fastigheten har omfattande underhållsbehov av gårdsbjälklaget över garagen (fukt/tätskikt), avloppsstammar och hissar. PCB-sanering av fasad/balkonger återstår och asbest finns i värmerörsisoleringar. Yttertaket och källarinstallationer har också renoveringsbehov inom några år."
   },
   "ground_truth": {
     "CadastralDesignation": "Sundbyberg Terränglöparen 9",
