@@ -7,6 +7,7 @@ import requests
 from schema.schema import FIELDS, FIELD_DEFINITIONS
 from utils.helpers import (
     call_openai_image_json,
+    call_gemini_image_json,
     get_images_from_pdf,
     is_text_pdf,
     is_appendix_page_gpt,
