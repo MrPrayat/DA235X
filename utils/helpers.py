@@ -13,6 +13,15 @@ from PIL import Image
 from schema.schema import FIELDS, FIELD_DEFINITIONS
 from utils.pricing import PRICES
 from datetime import datetime
+from google import genai
+from google.genai import types
+
+
+# client = OpenAI()
+
+gemini_api_key = os.getenv("GEMINI_API_KEY")
+_gemini_client = genai.Client(api_key=gemini_api_key)
+
 
 def call_openai_image_json(image: Image.Image, prompt: str, model: str, retries=5, backoff=2) -> tuple[str, dict]:
     """
@@ -20,7 +29,7 @@ def call_openai_image_json(image: Image.Image, prompt: str, model: str, retries=
     The prompt instructs the model to extract structured information from the image.
     Returns the response content (expected to be JSON) and usage information.
     Retrying if rate limit error occurs.
-    """
+    """    
     base64_image = encode_image(image)
     for attempt in range(retries):
         try:
@@ -54,6 +63,52 @@ def call_openai_image_json(image: Image.Image, prompt: str, model: str, retries=
             break
 
     return "", None
+
+def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini-2.5-flash-preview-04-17") -> tuple[str, dict]:
+    """
+    Send (prompt + single PNG image) to Gemini Flash, return (content, usage_dict).
+    usage_dict keys = prompt_tokens, completion_tokens, cached_tokens (always 0).
+    """
+    png_bytes = encode_image_gemini(image)
+    response = _gemini_client.models.generate_content(
+        model=model,
+        contents=[
+            types.Part.from_bytes(
+                data=png_bytes,
+                mime_type='image/png',
+            ),
+            prompt
+        ],
+        config=genai.types.GenerateContentConfig(
+            thinking_config=genai.types.ThinkingConfig(
+                thinking_budget=1024
+            )
+        )
+    )
+
+    u = response.usage_metadata
+    usage = {
+        "prompt_tokens":     u.prompt_token_count or 0,
+        "completion_tokens": u.candidates_token_count or 0,
+        "cached_tokens":     0,
+    }
+
+    cost = cost_usd(
+        {
+            "prompt": usage["prompt_tokens"],
+            "completion": usage["completion_tokens"],
+            "cached": usage["cached_tokens"]
+        },
+        model
+        )
+
+    #print("Usage: ", usage)
+    print("\n\n")
+    print(f"Tokens — prompt: ${usage['prompt_tokens']}, completion: ${usage['completion_tokens']}")
+    print(f"Estimated cost for checking appendix using Gemini 2.5 Flash: ${cost:.6f}")
+    
+    print("Usage:", usage)
+    return response.text, usage
 
 
 def synthesize_final_json(page_results: list, model: str, retries=5, backoff=2) -> tuple[dict, dict]:
@@ -131,6 +186,16 @@ def encode_image(image: Image.Image) -> str:
     return base64.b64encode(buffered.getvalue()).decode("utf-8")
 
 
+def encode_image_gemini(image: Image.Image) -> str:
+    """
+    Encodes a PIL Image object into a raw PNG bytes.
+    """
+    buffered = io.BytesIO()
+    image.save(buffered, format="PNG")
+    png_bytes = buffered.getvalue()
+    return png_bytes
+
+
 def is_text_pdf(url: str, min_chars=3500) -> bool:
     """
     Determines if a PDF is text-based by counting meaningful visible characters.
@@ -187,6 +252,36 @@ def is_appendix_page_gpt(image: Image.Image, model: str) -> tuple[bool, dict]:
 
 
     raw_response, usage = call_openai_image_json(image, appendix_filter_prompt, model)
+    is_appendix = "yes" in raw_response.lower()
+    return is_appendix, usage
+
+
+def is_appendix_page_gemini(image: Image.Image, model: str) -> tuple[bool, dict]:
+    appendix_filter_prompt = (
+        "You're reviewing a page from a Swedish housing inspection report. "
+        "Your task is to determine whether this page is an *appendix* or *general conditions section*, typically found at the end of the document.\n"
+        "Note that if it says the technical report itself is an appendix to another report then that is fine if that is explicitly mentioned."
+        "We are only interested in removing the appendix that belongs to the technical report.\n"
+        "We are interested in the inspection report regardless of it being an appendix to something else or not\n\n"
+
+        "✅ Pages that **ARE** appendices include those labeled or titled with:\n"
+        "- 'Bilaga'\n"
+        "- 'Villkor'\n"
+        "- 'Allmänna villkor'\n"
+        "- 'Appendix'\n"
+        "- 'Försäkringsvillkor'\n\n"
+
+        "❌ Pages that are **NOT** appendices include:\n"
+        "- 'Innehållsförteckning' (table of contents)\n"
+        "- Regular report content like summaries, diagrams, measurements\n\n"
+
+        "Respond strictly with one word:\n"
+        "- 'yes' → if the page clearly **is** an appendix\n"
+        "- 'no' → for all other pages, even if uncertain"
+    )
+
+
+    raw_response, usage = call_gemini_image_json(image, appendix_filter_prompt, model)
     is_appendix = "yes" in raw_response.lower()
     return is_appendix, usage
 

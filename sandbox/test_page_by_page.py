@@ -1,3 +1,4 @@
+# test_page_by_page.py
 import os
 from google import genai
 from google.genai import types
@@ -11,7 +12,7 @@ with open(r"C:\Users\user\Pictures\studentkort - kopia.jpg", 'rb') as f:
     image_bytes = f.read()
 
 response = client.models.generate_content(
-model='gemini-2.0-flash',
+model=MODEL_NAME,
 contents=[
     types.Part.from_bytes(
     data=image_bytes,

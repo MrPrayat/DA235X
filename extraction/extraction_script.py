@@ -10,6 +10,7 @@ from utils.helpers import (
     get_images_from_pdf,
     is_text_pdf,
     is_appendix_page_gpt,
+    is_appendix_page_gemini,
     normalize_model_output,
     generate_default_ground_truth,
     synthesize_final_json,
@@ -23,7 +24,8 @@ from collections import defaultdict
 from datetime import datetime
 
 # === Constants ===
-MODEL_NAME = "gpt-4.1"
+MODEL_NAME = "gemini-2.5-flash-preview-04-17"
+# MODEL_NAME = "gpt-4.1"
 EXTRACTION_STRATEGY = "page-by-page"
 
 # === Variables ===
@@ -144,18 +146,22 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
 
     for i, page_img in enumerate(images):
         print(f"Checking if page {i+1} is an appendix...")
-        is_appendix, usage = is_appendix_page_gpt(page_img, MODEL_NAME)
+        is_appendix, usage = is_appendix_page_gemini(page_img, MODEL_NAME)
+        # Update cumulative totals using attributes for OpenAI
+        # token_meter[pdf_id]["prompt"] += usage.prompt_tokens
+        # token_meter[pdf_id]["completion"] += usage.completion_tokens
+        # token_meter[pdf_id]["cached"] += usage.prompt_tokens_details.cached_tokens
 
-        # Update cumulative totals
-        token_meter[pdf_id]["prompt"] += usage.prompt_tokens
-        token_meter[pdf_id]["completion"] += usage.completion_tokens
-        token_meter[pdf_id]["cached"] += usage.prompt_tokens_details.cached_tokens
+        # Update cumulative totals using dict for Gemini 2.5 Flash
+        token_meter[pdf_id]["prompt"]     += usage["prompt_tokens"]
+        token_meter[pdf_id]["completion"] += usage["completion_tokens"]
+        token_meter[pdf_id]["cached"]     += usage["cached_tokens"]
 
         # Calculate step cost
         step_tokens = {
-            "prompt": usage.prompt_tokens,
-            "completion": usage.completion_tokens,
-            "cached": usage.prompt_tokens_details.cached_tokens,
+            "prompt": usage["prompt_tokens"],
+            "completion": usage["completion_tokens"],
+            "cached": usage["cached_tokens"],
         }
         step_cost = cost_usd(step_tokens, MODEL_NAME)
         cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
@@ -171,28 +177,49 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
             break
 
         print(f"Processing page {i+1}/{len(images)}...")
-        raw, usage = call_openai_image_json(page_img, prompt_text, MODEL_NAME)
+        raw, usage = call_gemini_image_json(page_img, prompt_text, MODEL_NAME)
 
-        # Update cumulative totals
-        token_meter[pdf_id]["prompt"] += usage.prompt_tokens
-        token_meter[pdf_id]["completion"] += usage.completion_tokens
-        token_meter[pdf_id]["cached"] += usage.prompt_tokens_details.cached_tokens
+        # Update cumulative totals using attributes for OpenAI
+        # token_meter[pdf_id]["prompt"] += usage.prompt_tokens
+        # token_meter[pdf_id]["completion"] += usage.completion_tokens
+        # token_meter[pdf_id]["cached"] += usage.prompt_tokens_details.cached_tokens
 
-        # Calculate step cost
+        # Update cumulative totals using dict for Gemini 2.5 Flash
+        token_meter[pdf_id]["prompt"]     += usage["prompt_tokens"]
+        token_meter[pdf_id]["completion"] += usage["completion_tokens"]
+        token_meter[pdf_id]["cached"]     += usage["cached_tokens"]
+
+
+        # Calculate step cost using attributes for OpenAI
+        #step_tokens = {
+        #    "prompt": usage.prompt_tokens,
+        #    "completion": usage.completion_tokens,
+        #    "cached": usage.prompt_tokens_details.cached_tokens,
+        #}
+
+        # Calculate step cost using attributes for Gemini 2.5 Flash
         step_tokens = {
-            "prompt": usage.prompt_tokens,
-            "completion": usage.completion_tokens,
-            "cached": usage.prompt_tokens_details.cached_tokens,
+            "prompt": usage["prompt_tokens"],
+            "completion": usage["completion_tokens"],
+            "cached": usage["cached_tokens"],
         }
         step_cost = cost_usd(step_tokens, model=MODEL_NAME)
         cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
 
-        # Print step cost + cumulative tokens
+        # Print step cost + cumulative tokens using OpenAI
+        # print(f"🧩 Step complete for page {i+1}/{len(images)}")
+        # print(f"   🧮 Step cost: ${step_cost:.6f}")
+        # print(f"   📊 Tokens this step: Prompt={usage.prompt_tokens}, Completion={usage.completion_tokens}, Cached={usage.prompt_tokens_details.cached_tokens}")
+        # print(f"   📈 Cumulative usage and cost for {pdf_id}: ${token_meter[pdf_id]} ${cumulative_cost:.6f}")
+        # print("-" * 80)
+
+        # Print step cost + cumulative tokens using OpenAI
         print(f"🧩 Step complete for page {i+1}/{len(images)}")
         print(f"   🧮 Step cost: ${step_cost:.6f}")
-        print(f"   📊 Tokens this step: Prompt={usage.prompt_tokens}, Completion={usage.completion_tokens}, Cached={usage.prompt_tokens_details.cached_tokens}")
+        print(f"   📊 Tokens this step: Prompt={usage['prompt_tokens']}, Completion={usage['completion_tokens']}, Cached={usage['cached_tokens']}")
         print(f"   📈 Cumulative usage and cost for {pdf_id}: ${token_meter[pdf_id]} ${cumulative_cost:.6f}")
         print("-" * 80)
+
 
 
         if raw.startswith("```json"):
