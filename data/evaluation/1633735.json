@@ -2,7 +2,7 @@
   "pdf_id": "1633735",
   "model_output": {
     "CadastralDesignation": "Sundbyberg Terränglöparen 9",
-    "InspectionDate": "2016-04",
+    "InspectionDate": "2016-03",
     "MoistureDamage": {
       "mentions_garage": true,
       "mentions_källare": false,
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Fastigheten har omfattande underhållsbehov av gårdsbjälklaget över garagen (fukt/tätskikt), avloppsstammar och hissar. PCB-sanering av fasad/balkonger återstår och asbest finns i värmerörsisoleringar. Yttertaket och källarinstallationer har också renoveringsbehov inom några år."
+    "SummaryInsights": "Större underhållsåtgärder behövs avseende gårdsbjälklag över garage på grund av fukt och läckage, samt reparation av garagepelare. Sanering av kvarvarande PCB-fogar, renovering av yttertak och balkonger, samt relining av avlopp och takavvattning rekommenderas. Även elinstallationer och hissar har identifierats som underhållsbehov."
   },
   "ground_truth": {
     "CadastralDesignation": "Sundbyberg Terränglöparen 9",

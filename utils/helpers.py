@@ -65,13 +65,14 @@ def call_openai_image_json(image: Image.Image, prompt: str, model: str, retries=
 
     return "", None
 
-def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini-2.5-flash-preview-04-17", retries: int = 5, backoff: int = 2) -> tuple[str, dict]:
+def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini-2.5-flash-preview-04-17", backoff: int = 3) -> tuple[str, dict]:
     """
     Send (prompt + single PNG image) to Gemini Flash, return (content, usage_dict).
     usage_dict keys = prompt_tokens, completion_tokens, cached_tokens (always 0).
     """
     png_bytes = encode_image_gemini(image)
-    for attempt in range(retries):
+    attempt = 0
+    while True:
         try:
             response = _gemini_client.models.generate_content(
                 model=model,
@@ -88,38 +89,40 @@ def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini
                     )
                 )
             )
+
+            u = response.usage_metadata
+            usage = {
+                "prompt_tokens":     u.prompt_token_count or 0,
+                "completion_tokens": u.candidates_token_count or 0,
+                "cached_tokens":     0,
+            }
+
+            cost = cost_usd(
+                {
+                    "prompt": usage["prompt_tokens"],
+                    "completion": usage["completion_tokens"],
+                    "cached": usage["cached_tokens"]
+                },
+                model
+                )
+
+            #print("Usage: ", usage)
+            print("\n\n")
+            print(f"Tokens — prompt: {usage['prompt_tokens']}, completion: {usage['completion_tokens']}")
+            print(f"Estimated cost for checking appendix using Gemini 2.5 Flash: ${cost:.6f}")
+            
+            print("Usage:", usage)
+            return response.text, usage
         except gerrors.ClientError as e:
             if e.code == 429:
                 wait_time = backoff * (2 ** attempt) + random.uniform(0, 1)
-                print(f"Rate limit hit (attempt {attempt+1}/{retries}). Retrying in {wait_time:.1f}s...")
+                print(f"Rate limit hit (attempt {attempt+1}). Retrying in {wait_time:.1f}s...")
+                print(f"Error: {e}")
+                attempt += 1
                 time.sleep(wait_time)
         except Exception as e:
             print("Error calling Gemini API.")
             return "", {}
-
-    u = response.usage_metadata
-    usage = {
-        "prompt_tokens":     u.prompt_token_count or 0,
-        "completion_tokens": u.candidates_token_count or 0,
-        "cached_tokens":     0,
-    }
-
-    cost = cost_usd(
-        {
-            "prompt": usage["prompt_tokens"],
-            "completion": usage["completion_tokens"],
-            "cached": usage["cached_tokens"]
-        },
-        model
-        )
-
-    #print("Usage: ", usage)
-    print("\n\n")
-    print(f"Tokens — prompt: ${usage['prompt_tokens']}, completion: ${usage['completion_tokens']}")
-    print(f"Estimated cost for checking appendix using Gemini 2.5 Flash: ${cost:.6f}")
-    
-    print("Usage:", usage)
-    return response.text, usage
 
 
 def synthesize_final_json_openai(page_results: list, model: str, retries=5, backoff=2) -> tuple[dict, dict]:
@@ -180,7 +183,7 @@ def synthesize_final_json_openai(page_results: list, model: str, retries=5, back
     return {}
 
 
-def synthesize_final_json_gemini(page_results: list, model: str, retries=5, backoff=2) -> tuple[dict, dict]:
+def synthesize_final_json_gemini(page_results: list, model: str, retries=6, backoff=3) -> tuple[dict, dict]:
     """
     Merge page‑level JSONs via Gemini Flash.
     Returns (merged_json, usage_dict) and retries on 429 errors.
@@ -355,7 +358,6 @@ def is_appendix_page_gemini(image: Image.Image, model: str) -> tuple[bool, dict]
         "- 'yes' → if the page clearly **is** an appendix\n"
         "- 'no' → for all other pages, even if uncertain"
     )
-
 
     raw_response, usage = call_gemini_image_json(image, appendix_filter_prompt, model)
     is_appendix = "yes" in raw_response.lower()

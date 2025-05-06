@@ -2,14 +2,14 @@
   "pdf_id": "2111992",
   "model_output": {
     "CadastralDesignation": "Stockholm Munin 5 & 6",
-    "InspectionDate": "2019-01",
+    "InspectionDate": "2018-10",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": true,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": true,
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Flera större renoveringsbehov föreligger, särskilt för gårdsbjälklag, fasader, källare, tak och balkonger. Fuktproblem har noterats i källare och bjälklag, och asbest förekommer i vissa delar. Utbyte av installationer och omfattande underhåll rekommenderas inom de närmaste åren."
+    "SummaryInsights": "Fastigheten bedöms ha omfattande renoveringsbehov rörande bjälklag, fasader, balkonger, källare, tak, fönster, samt VVS-, el- och hissystem. Fuktskador har noterats i källare, bjälklag och fasad, och förekomst av asbest har identifierats."
   },
   "ground_truth": {
     "CadastralDesignation": "Stockholm Munin 5 & 6",

@@ -187,7 +187,7 @@ def main():
     print(f"Total Recall: {summary['recall']:.2f}")
     print(f"Total F1 Score: {summary['f1_score']:.2f}")
 
-    log_run_to_csv(results, run_name="baseline_GPT4.1_v3", notes="Fixed issue with 2 PDFs were missing ground truth")
+    log_run_to_csv(results, run_name="geminit_2.5_flash_3_pdfs", notes="Test evaluation run")
 
 
 if __name__ == "__main__":

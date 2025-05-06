@@ -5,7 +5,7 @@
     "InspectionDate": "2020-12",
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": true,
       "mentions_balcony": true,
       "mentions_bjälklag": true,
@@ -17,13 +17,13 @@
       "facade": true,
       "balcony": true,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": false
+      "presence": true
     },
-    "SummaryInsights": "Taket har felaktig taktäckning och äldre takpapp med begränsad livslängd, vilket bör åtgärdas för att undvika framtida fuktskador. Fasadpanel och fönsteromfattningar har lokalt målnings- och underhållsbehov. Balkongen har en enklare pappläggning utan avrinning och bör åtgärdas för att undvika vattenskador."
+    "SummaryInsights": "Rapporten indikerar brister i tak, fasad, balkong och våtutrymmen som ökar risken för fuktskador, vilket kräver åtgärder. Även förekomst av asbest noterades."
   },
   "ground_truth": {
     "CadastralDesignation": "Kärra 69:110",
