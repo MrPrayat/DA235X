@@ -11,7 +11,6 @@ from utils.helpers import (
     get_images_from_pdf,
     is_text_pdf,
     is_appendix_page_gpt,
-    is_appendix_page_gemini,
     normalize_model_output,
     generate_default_ground_truth,
     synthesize_final_json_openai,
@@ -147,37 +146,6 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     all_results = []
 
     for i, page_img in enumerate(images):
-        print(f"Checking if page {i+1} is an appendix...")
-        is_appendix, usage = is_appendix_page_gemini(page_img, MODEL_NAME)
-        # Update cumulative totals using attributes for OpenAI
-        # token_meter[pdf_id]["prompt"] += usage.prompt_tokens
-        # token_meter[pdf_id]["completion"] += usage.completion_tokens
-        # token_meter[pdf_id]["cached"] += usage.prompt_tokens_details.cached_tokens
-
-        # Update cumulative totals using dict for Gemini 2.5 Flash
-        token_meter[pdf_id]["prompt"]     += usage["prompt_tokens"]
-        token_meter[pdf_id]["completion"] += usage["completion_tokens"]
-        token_meter[pdf_id]["cached"]     += usage["cached_tokens"]
-
-        # Calculate step cost
-        step_tokens = {
-            "prompt": usage["prompt_tokens"],
-            "completion": usage["completion_tokens"],
-            "cached": usage["cached_tokens"],
-        }
-        step_cost = cost_usd(step_tokens, MODEL_NAME)
-        cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
-
-        # Appendix cost and cumulative tokens
-        print(f"🧮 Appendix cost: ${step_cost:.6f}")
-        print(f"📊 Cumulative usage for {pdf_id}: {token_meter[pdf_id]} (Total cost: ${cumulative_cost:.6f})")
-        print("-" * 70)  # nice separator
-
-
-        if is_appendix:
-            print(f"Page {i+1} flagged as appendix. Skipping the rest of PDF {pdf_id}.")
-            break
-
         print(f"Processing page {i+1}/{len(images)}...")
         raw, usage = call_gemini_image_json(page_img, prompt_text, MODEL_NAME)
 

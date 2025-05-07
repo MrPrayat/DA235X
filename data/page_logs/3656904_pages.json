@@ -2,22 +2,6 @@
   {
     "CadastralDesignation": "Erikssund 2:4",
     "InspectionDate": "2023-03",
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Erikssund 2:4",
-    "InspectionDate": "2023-03",
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Erikssund 2:4",
-    "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -42,31 +26,6 @@
   },
   {
     "CadastralDesignation": "Erikssund 2:4",
-    "InspectionDate": "2023-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -130,7 +89,7 @@
       "roof": false,
       "garage": false,
       "facade": false,
-      "balcony": true,
+      "balcony": false,
       "källare": false,
       "bjälklag": false
     },
@@ -138,7 +97,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tröskelplåt saknas till altandörrar. Fönsterbleck saknas till ett fönster och uppvik saknas på fönsterbleckens ändar vid utbyggnaden."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": "Erikssund 2:4",
@@ -163,7 +122,82 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Flera brister relaterade till tätskikt och golvbrunnar noterades i tvättstuga, förråd, duschrum och inre hall. Kvalitetsdokument saknas för tvättstuga och duschrum."
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Erikssund 2:4",
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Erikssund 2:4",
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Tröskelplåt saknas till altandörrar. Fönsterbleck saknas till ett fönster och det saknas uppvik på fönsterbleckens ändar vid utbyggnaden utförd 2003."
+  },
+  {
+    "CadastralDesignation": "Erikssund 2:4",
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "I tvättstugan bör golvbrunnen åtgärdas då den är väggnära monterad. I förrådet saknas tätskikt på toppen av klacken och i duschrummet är brunnsduken felaktigt tillskuren och tätskikt bakom kakel och klinker är inte besiktningsbart. I inre hallen saknas tätskikt på golvet under varmvattenberedaren."
   },
   {
     "CadastralDesignation": "Erikssund 2:4",
@@ -248,13 +282,13 @@
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_bjälklag": true,
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -263,7 +297,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fönsterbleck saknas eller har felaktigt uppvik, vilket kan orsaka fuktskador i fasaden. Golvbrunnen i våtrummet är placerad nära vägg och bedöms vara felmonterad, vilket ökar risken för vattenskada."
+    "SummaryInsights": "Äldre våtrum (duschrum i utbyggnad utförd 2003) vars tekniska livslängd får anses vara uppnådd."
   },
   {
     "CadastralDesignation": "Erikssund 2:4",
@@ -293,6 +327,306 @@
   {
     "CadastralDesignation": "Erikssund 2:4",
     "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Erikssund 2:4",
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Erikssund 2:4",
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Erikssund 2:4",
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Erikssund 2:4",
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Erikssund 2:4",
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": true,
+      "presence": true
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

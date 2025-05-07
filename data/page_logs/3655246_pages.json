@@ -1,23 +1,32 @@
 [
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
     "SummaryInsights": null
   },
   {
     "CadastralDesignation": "Apan 19",
     "InspectionDate": "2023-09",
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -41,8 +50,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -66,38 +75,38 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Installation av hemlarm och vattenfelsbrytare rekommenderas. Lås på altandörr bör säkras och avloppsslang från diskmaskin bör förankras enligt anvisning."
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
@@ -113,11 +122,36 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Mindre mikrobiell påväxt har upptäckts på underlagstaket på vinden, vilket kan indikera fukt. Vinden bör hållas under uppsikt och kontrolleras minst två gånger per år. Vid ökad påväxt rekommenderas utredning av Anticimex."
+    "SummaryInsights": "Ett uppkopplat hemlarm rekommenderas. Ett lås som inte går att öppna inifrån utan nyckel rekommenderas för altan- och balkongdörrar. Installera en vattenfelsbrytare."
   },
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Det rekommenderas att installera vattentät inklädnad i diskbänksskåpet. Vinden bör hållas under uppsikt och kontrolleras regelbundet på grund av mikrobiell påväxt."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
@@ -127,9 +161,9 @@
       "mentions_facade": true
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": true,
       "bjälklag": false
@@ -138,10 +172,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Taket behöver rensas från mossa och skräp, vindskivor behöver underhåll/målning. Sprickor i fasaden bör åtgärdas av fackman. Golvbrunnar i källaren bör bytas vid framtida renovering."
+    "SummaryInsights": "Taket bör rensas från mossa och skräp. Sprickor och glipor i fasaden bör åtgärdas. Gjutjärnsbrunnar i källaren bör bytas ut vid framtida renovering."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2023-09",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -168,26 +202,77 @@
   {
     "CadastralDesignation": "Apan 19",
     "InspectionDate": "2023-09",
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
     "SummaryInsights": null
   },
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
     "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
-    "SummaryInsights": "Protokollet kan indikera risk för skada i badrummet, t.ex. att golvbrunnen behöver bytas. Det rekommenderas att installera underlägg till vitvaror och läckagedetektorer."
   },
   {
     "CadastralDesignation": null,
@@ -212,6 +297,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "För att minska risken för hussvamp rekommenderas att inspektera krypgrunden, leda bort regnvatten från hängrännorna, undvika förvaring på fuktiga källargolv/krypgrunder, sätta huv på skorstenen och undvika att bygga täta utrymmen i krypgrunden, källartrappan eller kattvinden."
+    "SummaryInsights": null
   }
 ]

@@ -25,8 +25,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Katrinelund 1:46",
-    "InspectionDate": null,
+    "CadastralDesignation": "C15019-Katrinelund 1:46",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -36,7 +36,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -47,21 +47,21 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Kondensmärken finns mot underlagstaket på ena vindsutrymmet. Radonkontroll bör övervägas och dokumentation för ventilationskontroll eftersöks."
+    "SummaryInsights": "Radonhalt i boendemiljön bör övervägas. Ventilationskontroll dokument eftersöks."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "C15019 - Katrinelund 1:46",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": true,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": true
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": true,
       "balcony": false,
@@ -72,11 +72,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takfot har underhållsbehov och tätning rekommenderas vid en genomföring. Delar av fasaden har målnings- och underhållsbehov."
+    "SummaryInsights": "Fasad delar har målningsbehov. Äldre fönster har underhållsbehov. Krypgrund bör kontrolleras/riskanalyseras."
   },
   {
-    "CadastralDesignation": "Katrinelund 1:46",
-    "InspectionDate": null,
+    "CadastralDesignation": "C15019-Katrinelund 1:46",
+    "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -97,10 +97,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Krypgrunden är en riskkonstruktion med förhöjda fuktvärden och mikrobiell påväxt mot blindbotten. En fortsatt teknisk undersökning av grund och golvbjälklag krävs."
+    "SummaryInsights": "För att säkert fastställa grundernas funktion och golvbjälklagets kondition krävs alltid en fortsatt teknisk undersökning."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": "C15019 - Katrinelund 1:46",
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -111,7 +111,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -122,6 +122,181 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "En otäthet har upptäckts vid en genomföring på taket som bör åtgärdas."
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "C15019 - Katrinelund 1:46",
+    "InspectionDate": "2024-11",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Åtgärdsbehov anses föreligga på grund av förhöjda fuktvärden. En mer omfattande undersökning måste utföras för att fastställa konstruktionens kondition och fuktstatus."
+  },
+  {
+    "CadastralDesignation": "C15019-Katrinelund 1:46",
+    "InspectionDate": "2024-11",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "C15019-Katrinelund 1:46",
+    "InspectionDate": "2024-11",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "C15019-Katrinelund 1:46",
+    "InspectionDate": "2024-11",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-11",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "C15019 - Katrinelund 1:46",
+    "InspectionDate": "2024-11",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
   }
 ]

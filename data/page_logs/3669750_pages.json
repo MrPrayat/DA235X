@@ -2,17 +2,26 @@
   {
     "CadastralDesignation": "Palsternackan 4",
     "InspectionDate": "2025-01",
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
     "SummaryInsights": null
   },
   {
@@ -20,15 +29,40 @@
     "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Palsternackan 4",
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
       "mentions_källare": true,
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": true,
-      "garage": true,
+      "garage": false,
       "facade": true,
       "balcony": false,
       "källare": false,
@@ -38,11 +72,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Läckage i yttertaket bör åtgärdas. Stuprör bör anslutas till markledning. Underlagstakets masonitskivor bör justeras och kompletteras."
+    "SummaryInsights": "Läckage i yttertak förekommer och bör åtgärdas. Underlagstakets masonitskivor bör justeras och kompletteras. Utvändigt målade ytor har ett generellt underhållsbehov."
   },
   {
-    "CadastralDesignation": "Palsternackan 4",
-    "InspectionDate": null,
+    "CadastralDesignation": "C15260 - Palsternackan 4",
+    "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -63,14 +97,189 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fortsatt teknisk undersökning krävs för att fastställa konditionen på golvkonstruktioner, väggsyllar och krypgrunden på grund av fukt- och mikrobiella risker."
+    "SummaryInsights": "För att säkert fastställa golvkonstruktionernas och väggsyllarnas kondition och utförande krävs alltid en fortsatt teknisk undersökning. För att säkert fastställa grundens funktion och golvbjälklagets kondition krävs alltid en fortsatt teknisk undersökning."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": "C15260-Palsternackan 4",
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "C15260-Palsternackan 4",
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Notera att en mer omfattande undersökning av konstruktionens kondition och fuktstatus måste utföras."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Palsternackan 4",
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "C15260-Palsternackan 4",
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "C15260-Palsternackan 4",
     "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Utvändiga åtgärder på källarytterväggar bör ses som naturliga och nödvändiga. Takbeklädnader av papp kräver regelbunden kontroll och underhåll."
+  },
+  {
+    "CadastralDesignation": "C15260 - Palsternackan 4",
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Det rekommenderas att alltid ta upp en lucka och inspektera grunden. Om våtutrymmet renoverades efter 1990 så bör golvbrunnen bytas och efter 2007 så skall den bytas. Gjutjärnsbrunnar skall dock alltid bytas."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,

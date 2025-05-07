@@ -50,7 +50,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "stockholm vattuormen 34",
+    "CadastralDesignation": null,
     "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
@@ -72,30 +72,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Statusbesiktningsprotokollet fokuserar på underhållsansvar för bostadsrättsföreningen. Detaljerade kalkyler för kommande underhåll har gjorts för de första 10 åren, med bedömningar för åtgärder på bygg- och installationsdelar upp till 50 år framåt, beräknat i dagens kostnadsläge."
-  },
-  {
-    "CadastralDesignation": "Stockholm Vattuormen 34",
-    "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
@@ -121,7 +97,32 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "VA-installationerna (avlopp, varm- och kallvatten) är i huvudsak utbytta ca 1993. Elinstallationernas service, centraler och huvudledningar byttes också ca 1993."
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": null,
@@ -138,33 +139,97 @@
       "roof": false,
       "garage": false,
       "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": true,
       "balcony": true,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Alla balkonger på gårdssidan är i nära förestående åtgärdsbehov, liksom alla fönster och flertalet utvändiga dörrar."
+    "SummaryInsights": "Fasader, balkonger och gårdsbjälklaget har renoverats."
   },
   {
-    "CadastralDesignation": "stockholm vattuormen 34",
+    "CadastralDesignation": false,
     "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
     "AsbestosPresence": {
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Badrum med tätskikt från stambytesåret kan behöva renoveras inom några år. Nya radonmätningar rekommenderas då mer än 10 år passerat sedan senaste mätningen."
+    "SummaryInsights": "Badrummen kan behöva renoveras inom några år. Radonmätningar rekommenderas att utföras på nytt. Vissa åtgärder avseende brister upptagna i OVK-protokollen har utförts."
   },
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
@@ -176,18 +241,25 @@
       "facade": true,
       "balcony": false,
       "källare": true,
-      "bjälklag": true
+      "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Ett område på 10-15 kvm av källargolvet bedöms behöva åtgärdas på sikt (antagit 2040). Omdränering/utbyte av fuktisolering för källaren antas behövas 2050. Yt- och tätskikt på gårdsbjälklaget samt tillhörande rörinstallationer bedöms behöva bytas ut mot slutet av kalkylperioden (ca 2060). Putsade fasader bedöms behöva renoveras om ca 30 år."
+    "SummaryInsights": "Ett område av källargolvet (10-15 kvm) kommer att behöva åtgärdas. Fasadrenovering bör utföras om ungefär 30 år. Omdränering/utbyte av fuktisolering kommer att behöva genomföras år 2050."
   },
   {
-    "CadastralDesignation": "stockholm vattuormen 34",
+    "CadastralDesignation": null,
     "InspectionDate": null,
-    "MoistureDamage": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
@@ -200,7 +272,32 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fönstren är i omedelbart renoveringsbehov med behov av rötskadelagningar. Balkonger mot gården har nära förestående reparationsbehov. Fasaden och fasadaltanerna behöver tekniskt underhåll i samband med kommande fasadrenovering."
+    "SummaryInsights": "Fasadaltanerna behöver tekniskt underhåll om ca 30 år. Balkongerna på gårdssidan har nära förestående reparationsbehov. Fönstren är slitna och i omedelbart renoveringsbehov, speciellt enheter mot Norr Mälarstrand."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": true,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Fönstren på gårdssidorna är i behov av renovering. En ommålning av trapphus och entré kan behöva utföras om ca 20-25 år. Torktumlaren och den ena tvättmaskinen i tvättstugan bör bytas ut inom nära framtid."
   },
   {
     "CadastralDesignation": null,
@@ -225,35 +322,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Badrummen bör renoveras inom 5-6 år. Avloppsinstallationerna kommer att behöva renoveras runt 2060. Elinstallationerna i lägenheterna behöver bytas ut i slutet av underhållsplanens kalkylperiod."
   },
   {
-    "CadastralDesignation": "stockholm vattuormen 34",
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Våtrummen bedöms behöva renoveras inom 5-6 år. Avloppsinstallationerna bedöms behöva renoveras runt 2060, sannolikt via re-lining. VA-stammar behöver renoveras löpande över tid och elinstallationernas huvudledningar behöver bytas i slutet av kalkylperioden."
-  },
-  {
-    "CadastralDesignation": "Stockholm Vattuormen 34",
+    "CadastralDesignation": null,
     "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
@@ -266,7 +338,7 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": true,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -275,7 +347,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Garageporten samt utsidorna av skyltfönster och entrédörrar till lokalerna kommer behöva löpande underhåll. El-huvudledningarna och vissa VA-installationer genom lokalerna bedöms behöva bytas ut."
+    "SummaryInsights": "Garageporten, skyltfönster och entrédörrar till lokalerna kommer att behöva löpande underhåll. Värmesystemet kan behöva bytas ut senast 2042."
   },
   {
     "CadastralDesignation": null,
@@ -300,11 +372,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Badrum bedöms vara tekniskt uttjänta inom 5-6 år och behöver renoveras. Spolning/rensning av spillvattenavloppen rekommenderas utföras inom något år och därefter med ungefär 10 års intervall."
+    "SummaryInsights": "Återstående obytta bottenavlopp behöver re-linas om ca 10 år. Badrum som senast renoverades ca 1993 bedöms vara tekniskt uttjänta inom 5-6 år och behöver renoveras. Utbyte av aggregatet för restaurangen bedöms behöva utföras ca 2060."
   },
   {
     "CadastralDesignation": null,
-    "InspectionDate": "2022-10",
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -325,10 +397,110 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "OVK utfördes senast oktober 2022, med smärre åtgärder utförda i januari 2024. Framtida OVK-besiktningar planeras med 3-6 års intervall. El-installationer och hissar har framtida utbytesbehov enligt underhållsplanen."
+    "SummaryInsights": "El-installationer i fastigheten kommer att behöva bytas ut runt år 2065. Belysningsarmaturer i allmänna utrymmen kommer att behöva bytas ut runt 2040 och 2065. Styr- och reglerutrustning för hissarna kommer att behöva bytas ut runt 2047."
   },
   {
     "CadastralDesignation": null,
+    "InspectionDate": "2024-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": true,
+      "balcony": true,
+      "källare": true,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Rapporten indikerar behov av omdränering av källarväggar, renovering av gårdsbjälklaget, putsrenovering av fasader, renovering av takterrasser och ommålning av fönster. Reparation av balkonger på gårdssidan rekommenderas också."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Planerad renovering av badrum, utbyte av värmesystem, belysningsarmaturer och hissmaskiner."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Nya radonmätningar behöver genomföras. OVK är inte godkänt för flertalet av de ingående ventilationssystemen, åtgärder behöver utföras."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Stockholm Vattuormen 34",
     "InspectionDate": "2024-01",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -350,89 +522,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Dokumentet listar planerade renoveringar och kostnader för olika delar av byggnaden, inklusive dränering av källare, fasad-, tak- och balkongrenoveringar samt fönster- och bjälklagsarbeten, med uppskattade tidsramar fram till 2072."
-  },
-  {
-    "CadastralDesignation": "Stockholm Vattuormen 34",
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Dokumentet listar planerade renoveringar av installationer (värme, avlopp/vatten, ventilation, el, hissar) samt badrumsrenoveringar i lägenheter och åtgärder i lokaler med uppskattade år och kostnader."
-  },
-  {
-    "CadastralDesignation": "Stockholm Vattuormen 34",
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Nya radonmätningar behöver genomföras. OVK är inte godkänt och nödvändiga åtgärder behöver utföras för att godkänd OVK ska finnas vid försäljningstidpunkten."
-  },
-  {
-    "CadastralDesignation": "Stockholm Vattuormen 34",
-    "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Stockholm Vattuormen 34",
-    "InspectionDate": "2024-01",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": true,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": true,
-      "balcony": false,
-      "källare": true,
-      "bjälklag": true
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Planen inkluderar åtgärder för dränering/fuktisolering och sättning under källargolv, reparation av gårdsbjälklag samt fasad- och putsarbeten."
+    "SummaryInsights": "Planering för dränering och fuktisolering, renovering av fasad inklusive fasadaltaner och byte av värmesystem rekommenderas. Fönster och fönsterdörrar bör också ses över."
   }
 ]

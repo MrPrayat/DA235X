@@ -18,3 +18,4 @@ timestamp,run_name,notes,true_positives,false_positives,false_negatives,accuracy
 2025-04-30T16:34:19.689094,baseline_GPT4.1_v3,Fixed issue with 2 PDFs were missing ground truth,1065,203,27,0.8224,0.8399,0.9753,0.9025
 2025-05-06T14:53:19.856037,geminit_2.5_flash_3_pdfs,Test evaluation run,57,33,1,0.6264,0.6333,0.9828,0.7703
 2025-05-07T14:47:41.045379,gemini_2.5_flash_43_pdfs_v1,Test evaluation run,979,247,42,0.7721,0.7985,0.9589,0.8714
+2025-05-07T21:47:50.870284,gemini_2.5_flash_43_pdfs_v1,Test evaluation run,972,278,46,0.75,0.7776,0.9548,0.8571

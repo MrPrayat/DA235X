@@ -1,6 +1,6 @@
 [
   {
-    "CadastralDesignation": "Stockholm Munin 5 & 6",
+    "CadastralDesignation": "Munin 5 & 6",
     "InspectionDate": "2018-10",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -52,14 +52,6 @@
   {
     "CadastralDesignation": "Stockholm Munin 5 & 6",
     "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -130,11 +122,36 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Avlopps- och vatteninstallationerna är av blandad ålder, och huvuddelen av bottenavloppen bedöms vara gamla."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": null,
-    "InspectionDate": "2018-12",
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -155,12 +172,19 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Inom nära framtid rekommenderas renovering av ytan och tätskiktet på de bakre gårdsbjälklagen."
+    "SummaryInsights": "De bakre gårdsbjälklagens yt- och tätskikt rekommenderas att renoveras."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
@@ -170,10 +194,10 @@
       "bjälklag": false
     },
     "AsbestosPresence": {
-      "Measured": false,
+      "Measured": true,
       "presence": true
     },
-    "SummaryInsights": "Resterande äldre badrum, fönster, VA/el-installationer, värmeventiler samt gårdsfasaderna ska renoveras/bytas ut. Asbest finns troligen i rörisoleringar och kaklade badrum."
+    "SummaryInsights": "Äldre badrum bör renoveras. Fönster renoveras. VA- och elinstallationer bytas ut. Värmeventiler bytas ut. Gårdsfasaderna renoveras."
   },
   {
     "CadastralDesignation": null,
@@ -198,7 +222,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renovering av golven i källaren samt tätskikt och konstruktiva åtgärder på gårdsbjälklaget i de bakre gårdarna behöver utföras. Partiella punktåtgärder på gårdsbjälklaget i stora gårdarna kommer att behöva utföras tidigare."
+    "SummaryInsights": "Renovering av golven i källaren bör genomföras inom ca 5 år. Omläggning av tätskikt samt vissa konstruktiva åtgärder för gårdsbjälklaget behöver utföras inom nära framtid."
   },
   {
     "CadastralDesignation": null,
@@ -208,7 +232,7 @@
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -223,7 +247,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Gatuhusens gårdssidor har puts i slitet eller mycket slitet skick som rekommenderas åtgärdas inom nära framtid. Gårdshusens puts i våningsplanen bedöms behöva omputsning om ca 6-7 år. Träpanelfasaden på sopbyggnaden behöver utvändig ommålning om ca 5 år."
+    "SummaryInsights": "Puts i våningsplanen på gatuhusens gårdssidor rekommenderas att knackas ned, omputsas samt avfärgas inom nära framtid. Kommande tätskiktsrenoveringar bör kombineras med förstärkningsåtgärder för stålbalksystemen till gårdsbjälklagen."
   },
   {
     "CadastralDesignation": null,
@@ -248,7 +272,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Åtgärder för tak, fasad och balkonger rekommenderas. Takplåten rekommenderas målas om, fasaden behöver putsrenoveras och takavvattning bytas ut i samband med detta. Balkongerna på gatusidan behöver underhåll parallellt med fasadrenovering, och fönstren i gårdshuset behöver ommålning."
+    "SummaryInsights": "Yttertaken rekommenderas ommålning inom ca 10 år. Fönstren i våningsplanen behöver ommålning och renovering. Gatufasaden och balkongerna kommer att renoveras parallellt vid nästa fasadrenovering."
   },
   {
     "CadastralDesignation": null,
@@ -265,20 +289,27 @@
       "roof": false,
       "garage": false,
       "facade": true,
-      "balcony": true,
-      "källare": true,
+      "balcony": false,
+      "källare": false,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fönster i trapphus är i behov av renovering. Fönster mot gatan och gården, samt fönsterdörrar till balkonger, rekommenderas ytskiktsbehandling eller ommålning inom några år i samband med kommande fönsteråtgärder. Källare i övrigt har ytskiktsmässigt slitet skick."
+    "SummaryInsights": "Ommålning av lokalfönster på gatusidan rekommenderas inom några år. Utvändig behandling av träfönster på gårdssidan till lokaler rekommenderas."
   },
   {
     "CadastralDesignation": null,
     "InspectionDate": null,
-    "MoistureDamage": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
@@ -287,8 +318,11 @@
       "källare": false,
       "bjälklag": true
     },
-    "AsbestosPresence": null,
-    "SummaryInsights": "Cirka hälften av badrummens yt- och tätskikt bedöms vara tekniskt uttjänta, och i vissa badrum är bakomliggande VA-installationer utdömda. Gårdsbjälklagsrenovering är planerad, vilket kan innebära följdåtgärder på förråden."
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Hälften av badrummen har tekniskt uttjänta ytskikt och tätskikt. Möjlighet till re-lining bör beaktas för badrum med moderna ytskikt men uttjänta VA-installationer. VA-stammar i köken bör bytas ut."
   },
   {
     "CadastralDesignation": null,
@@ -313,30 +347,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Ungefär hälften av elinstallationerna bedöms vara gamla och i behov av utbyte inom nära framtid. Vissa följdåtgärder behövs för VA-installationer inom lokalerna och luftomsättningen bedöms vara bristfällig i vissa lägenheter."
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": true,
-      "bjälklag": false
-    },
-    "AsbestosPresence": null,
-    "SummaryInsights": "Radiatorventiler, stamregleringsventiler i källaren, samtliga badrum från 1970-talet med tillhörande VA-stambyten och källarstråken för tappvatten bedöms vara i behov av utbyte eller renovering i nära framtid."
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
-    "SummaryInsights": "Fastighetens elserviser och delar av huvudledningarna är av äldre typ och rekommenderas att bytas ut inom några år. Installationer inne i lägenheterna bedöms också vara av äldre typ och snart tekniskt uttjänta."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": null,
@@ -361,10 +372,60 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "En omfattande renovering av den ena hissen bedöms behöva utföras inom ca 2-3 år på grund av frekventa driftstörningar."
+    "SummaryInsights": "Radiatorventiler bör bytas inom en snar framtid. Källarstråken för tappvatten rekommenderas att bytas."
   },
   {
     "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Frånluftskanalerna behöver rensas inom nära framtid. Fastigheternas elserviser och huvudledningar är av äldre typ och rekommenderas att bytas ut inom något år. Installationer inne i lägenheterna bedöms vara av äldre typ och snart tekniskt uttjänta."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "En omfattande renovering av hissen kommer att behöva utföras inom ca 2-3 år."
+  },
+  {
+    "CadastralDesignation": false,
     "InspectionDate": "2018-09",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -382,8 +443,11 @@
       "källare": true,
       "bjälklag": true
     },
-    "AsbestosPresence": null,
-    "SummaryInsights": "Flera renoveringsåtgärder är planerade, inklusive renovering av gårdsbjälklag, fasader och fönster. Även underhåll av balkonger, källare och takåtgärder samt badrums- och elinstallationer i lägenheter ingår i planen."
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Rapporten föreslår renovering av gårdsbjälklag, fasader och källargolv. Plåttaket bör ommålas och fönster bör renoveras."
   },
   {
     "CadastralDesignation": null,
@@ -408,11 +472,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Planerade åtgärder inkluderar byte av VA-stammar, re-lining och spolning av avlopp, byte av radiatorventiler och stamregleringsventiler samt renovering av fastighetsel och en hissmaskin."
+    "SummaryInsights": "Partiella VA-stambyten bör utföras. Vissa avlopp behöver relinas. Fastighetselen behöver bytas."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -422,7 +486,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": true,
       "balcony": false,
@@ -433,10 +497,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fastigheterna har genomgått flera renoveringar av fasad, fönster, tak, VA, el och hiss. Framtida underhållsbehov identifieras för inre gårdsbjälklagens tätskikt, fönster samt återstående äldre VA-installationer och tekniskt uttjänta badrum/wc:ar."
+    "SummaryInsights": "De inre gårdsbjälklagens tätskikt bör renoveras. Gatuhusens gårdsfasader och flertalet fönster bör också åtgärdas."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
@@ -458,6 +522,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaderna och troligen även tätskikten på de båda stora gårdarna förväntas behöva renoveras inom ett par år."
+    "SummaryInsights": "Frånluftskanalerna kommer att behöva rengöras inom ganska nära framtid. Gatufasaderna behöver troligen renoveras inom ett par år."
   }
 ]

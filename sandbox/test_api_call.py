@@ -2,13 +2,13 @@ import os
 from google import genai
 from utils.helpers import cost_usd
 
-model_name = "gemini-2.5-flash-preview-04-17"
+MODEL_NAME = "gemini-2.0-flash"
 
 gemini_api_key = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=gemini_api_key)
 
 response = client.models.generate_content(
-    model="gemini-2.5-flash-preview-04-17",
+    model=MODEL_NAME,
     contents="Explain how AI works in a few words",
     config=genai.types.GenerateContentConfig(
     thinking_config=genai.types.ThinkingConfig(

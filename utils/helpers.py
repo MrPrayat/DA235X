@@ -16,6 +16,7 @@ from datetime import datetime
 from google import genai
 from google.genai import types
 from google.genai import errors as gerrors
+import httpx
 
 
 # client = OpenAI()
@@ -75,27 +76,20 @@ def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini
     if data_len > 20_000_000:       # 20 MB
         print(f"⚠️ Page {i+1}: payload {data_len/1e6:.1f} MB > Gemini limit")
 
-    attempt = 0
-    while True:
+    MAX_RETRIES = 5
+    ATTEMPT = 0
+
+    for attempt in range(MAX_RETRIES):
         try:
-            response = _gemini_client.models.generate_content(
+            resp = _gemini_client.models.generate_content(
                 model=model,
                 contents=[
-                    types.Part.from_bytes(
-                        data=png_bytes,
-                        mime_type='image/png',
-                    ),
-                    prompt
-                ],
-                config=genai.types.GenerateContentConfig(
-                    thinking_config=genai.types.ThinkingConfig(
-                        thinking_budget=1024
-                    ),
-                    temperature=0
-                ),
+                    types.Part.from_bytes(data=png_bytes, mime_type="image/png"),
+                    prompt,
+                ]
             )
-
-            u = response.usage_metadata
+            # --- success ---
+            u = resp.usage_metadata
             usage = {
                 "prompt_tokens":     u.prompt_token_count or 0,
                 "completion_tokens": u.candidates_token_count or 0,
@@ -114,19 +108,26 @@ def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini
             #print("Usage: ", usage)
             print("\n\n")
             print(f"Tokens — prompt: {usage['prompt_tokens']}, completion: {usage['completion_tokens']}")
-            print(f"Estimated cost for checking appendix using Gemini 2.5 Flash: ${cost:.6f}")
+            print(f"Estimated cost for checking appendix using Gemini 2.0 Flash: ${cost:.6f}")
 
-            return response.text, usage
+            return resp.text, usage
         except gerrors.ClientError as e:
             if e.code == 429:
                 wait_time = backoff * (2 ** attempt) + random.uniform(0, 1)
                 print(f"Rate limit hit (attempt {attempt+1}). Retrying in {wait_time:.1f}s...")
                 print(f"Error: {e}")
-                attempt += 1
                 time.sleep(wait_time)
+        except httpx.TimeoutException:
+            wait = backoff * (2 ** attempt) + random.uniform(0, 1)
+            print(f"Timeout (attempt {attempt+1}). Sleeping {wait:.1f}s")
+            time.sleep(wait)
+            continue
         except Exception as e:
             print("Error calling Gemini API, error: ", e)
             return "", {}
+
+    print("🛑 give-up after retries")
+    return "", {"prompt_tokens":0,"completion_tokens":0,"cached_tokens":0}
 
 
 def synthesize_final_json_openai(page_results: list, model: str, retries=5, backoff=2) -> tuple[dict, dict]:
@@ -334,35 +335,6 @@ def is_appendix_page_gpt(image: Image.Image, model: str) -> tuple[bool, dict]:
 
 
     raw_response, usage = call_openai_image_json(image, appendix_filter_prompt, model)
-    is_appendix = "yes" in raw_response.lower()
-    return is_appendix, usage
-
-
-def is_appendix_page_gemini(image: Image.Image, model: str) -> tuple[bool, dict]:
-    appendix_filter_prompt = (
-        "You're reviewing a page from a Swedish housing inspection report. "
-        "Your task is to determine whether this page is an *appendix* or *general conditions section*, typically found at the end of the document.\n"
-        "Note that if it says the technical report itself is an appendix to another report then that is fine if that is explicitly mentioned."
-        "We are only interested in removing the appendix that belongs to the technical report.\n"
-        "We are interested in the inspection report regardless of it being an appendix to something else or not\n\n"
-
-        "✅ Pages that **ARE** appendices include those labeled or titled with:\n"
-        "- 'Bilaga'\n"
-        "- 'Villkor'\n"
-        "- 'Allmänna villkor'\n"
-        "- 'Appendix'\n"
-        "- 'Försäkringsvillkor'\n\n"
-
-        "❌ Pages that are **NOT** appendices include:\n"
-        "- 'Innehållsförteckning' (table of contents)\n"
-        "- Regular report content like summaries, diagrams, measurements\n\n"
-
-        "Respond strictly with one word:\n"
-        "- 'yes' → if the page clearly **is** an appendix\n"
-        "- 'no' → for all other pages, even if uncertain"
-    )
-
-    raw_response, usage = call_gemini_image_json(image, appendix_filter_prompt, model)
     is_appendix = "yes" in raw_response.lower()
     return is_appendix, usage
 

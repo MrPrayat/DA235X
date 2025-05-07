@@ -2,14 +2,81 @@
   {
     "CadastralDesignation": "Näsbypark 10:24",
     "InspectionDate": "2024-12",
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -55,39 +122,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
@@ -113,17 +147,17 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fuktvärden över kritisk nivå och mikrobiell tillväxt noterades i krypgrunden. Det rekommenderas att krypgrundens klimat blir torrare och att organiskt material rensas bort från marken."
+    "SummaryInsights": "Krypgrundens klimat bör bli torrare samt rensa grunden på organiskt material på marken. Kondensvatten från luftvärmepumpens utedel bör samlas upp."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -141,8 +175,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -163,10 +197,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Vid besiktningen noterades förhöjda fuktvärden i trossbotten. Det finns risk för högre fuktvärden under andra perioder av året, och det rekommenderas att hålla detta under uppsikt samt eventuellt installera en krypgrundsavfuktare."
+    "SummaryInsights": "Fuktvärden i trossbotten bör hållas under uppsikt. Om osäkerhet uppstår kan krypgrundsavfuktare installeras."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -191,7 +225,32 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
     "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
@@ -241,41 +300,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -296,17 +322,17 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fuktskydd saknas i diskbänksskåp, kontrollera vattenlarmet och byt batterier i förebyggande syfte."
+    "SummaryInsights": "Vissa isolerglas är äldre vilket betyder att tätningen mellan fönsterrutorna kan vara sämre. Fuktkvoten i takbjälkar uppmättes till 12%."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": true,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -321,7 +347,32 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Avstängningsventil på vattenmätaren är av bristfällig kvalitet och rekommenderas bytas. Träregelstommen på betongplattan riskerar drabbas av fuktskador."
+    "SummaryInsights": "Fuktskydd saknas i diskbänksskåp, vattenlarm finns men det är viktigt att kontrollera att vattenlarmet ligger rätt placerat och byta batterier i förebyggande syfte."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Rörmokare bör kontaktas för byte av avstängningsventilerna. Vattenlarm finns installerat för att upptäcka eventuellt läckage."
   },
   {
     "CadastralDesignation": null,
@@ -346,11 +397,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Bristfälligt golvfall i dusch/toalett medför ökad risk för fuktskador och bör åtgärdas."
+    "SummaryInsights": "Anmärkningar utgör en ökad risk för fuktskador i omkringliggande konstruktioner. Bristfälligt golvfall medför också ökad risk för att vatten blir stående i golvets lågpunkter, vilket kan orsaka missfärgningar på klinker/fogar samt att \"unken\" lukt uppstår.."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -371,10 +422,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fönstrets placering i badrummet utgör en risk för fuktskador. Det rekommenderas att skydda fönstret mot vattenbegjutning."
+    "SummaryInsights": "Fönstrets placering i våtutrymmet utgör en risk för fuktskador och rekommenderas att man skyddar fönstret mot vattenbegjutning."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -404,9 +455,34 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -453,21 +529,20 @@
     "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": true,
+      "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
-    "RenovationNeeds": null,
-    "AsbestosPresence": null,
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": null,
-    "RenovationNeeds": null,
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
     "AsbestosPresence": {
       "Measured": false,
       "presence": true
@@ -475,8 +550,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -507,7 +582,7 @@
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -522,6 +597,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fukt och mögel är vanligt i krypgrunder på grund av kondensation. Åtgärder som rekommenderas är installation av avfuktare, täckning av marken med plastfolie och att stänga ventiler i grundmurarna."
+    "SummaryInsights": null
   }
 ]
