@@ -8,11 +8,11 @@
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": false
+      "mentions_bjälklag": false,
+      "mentions_facade": true
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": true,
       "balcony": true,
@@ -21,9 +21,9 @@
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": false
+      "presence": true
     },
-    "SummaryInsights": "Fasadpanelen, dörrar och altanräcke är i behov av målning och underhåll för att öka livslängden. Kompletterande besiktning av taket rekommenderas när det är fritt från snö och is. Duschutrymmet har äldre ytskikt/tätskikt vilket ökar risken för vattenskador; installation av fuktskydd i köket rekommenderas."
+    "SummaryInsights": "The report highlights the need for exterior maintenance on the facade, doors, windows, and balcony. Several moisture-related risks and issues were identified, including aging wet areas, missing moisture protection in the kitchen, and an inaccessible floor drain requiring further inspection. Additional recommended actions include re-inspecting the roof and attic under clearer conditions."
   },
   "ground_truth": {
     "CadastralDesignation": "Österbybruk 1:344",

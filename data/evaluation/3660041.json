@@ -8,7 +8,7 @@
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Inga fuktskador eller renoveringsbehov noterades vid besiktningen. Inga tecken på asbest påträffades och ingen mätning utfördes. Fastigheten bedöms vara i gott skick."
+    "SummaryInsights": "Enligt säljaren köptes fastigheten 2016, köket renoverades 2017, takpappen har förstärkts runt skorstenen och en ny garageport installerades 2022."
   },
   "ground_truth": {
     "CadastralDesignation": "Traktorn 4",

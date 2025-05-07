@@ -25,28 +25,11 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
@@ -75,8 +58,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -100,107 +83,46 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": true,
       "balcony": false,
       "källare": false,
       "bjälklag": false
     },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Fasaden har färgsläpp och torrsprickor på paneler som bör åtgärdas. Mindre röta noteras i vindskivor."
+    "AsbestosPresence": null,
+    "SummaryInsights": "Mindre röta noteras i vindskivor. Fasad har färgsläpp och torrsprickor på paneler."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
+    "SummaryInsights": "Ventilationskanal i köket är ej inkopplad till köksfläkten. Spricka noteras i fönster i dusch."
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
     "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -222,6 +144,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen har målningsbehov och riskerar fuktskador, vilket bör åtgärdas för att undvika rötskador."
+    "SummaryInsights": "Fasadpanel och träkonstruktioner där målningsbehov finns riskerar fuktskador. Fortsatt teknisk utredning kan begäras för att klarlägga risk för väsentligt fel."
   }
 ]

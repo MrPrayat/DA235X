@@ -1,0 +1,18 @@
+timestamp,pdf_id,model,extraction_strategy,prompt_tokens,completion_tokens,cached_tokens,total_cost_usd,pages_extracted
+2025-05-06 17:37:49,1633735,gemini-2.5-flash-preview-04-17,page-by-page,27014,3011,0,0.005859,15
+2025-05-06 17:41:34,2111992,gemini-2.5-flash-preview-04-17,page-by-page,38039,4558,0,0.008441,21
+2025-05-06 17:44:45,2998892,gemini-2.5-flash-preview-04-17,page-by-page,26955,2593,0,0.005599,16
+2025-05-06 17:45:59,3075757,gemini-2.5-flash-preview-04-17,page-by-page,10007,1357,0,0.002315,10
+2025-05-06 17:47:59,3354050,gemini-2.5-flash-preview-04-17,page-by-page,18567,1985,0,0.003976,18
+2025-05-06 17:50:27,3453932,gemini-2.5-flash-preview-04-17,page-by-page,23579,2381,0,0.004965,22
+2025-05-06 17:52:02,3558644,gemini-2.5-flash-preview-04-17,page-by-page,13187,1354,0,0.00279,20
+2025-05-06 17:54:01,3578724,gemini-2.5-flash-preview-04-17,page-by-page,17005,1987,0,0.003743,18
+2025-05-06 17:56:55,3580522,gemini-2.5-flash-preview-04-17,page-by-page,24392,3075,0,0.005504,19
+2025-05-06 18:00:14,3623844,gemini-2.5-flash-preview-04-17,page-by-page,16889,1909,0,0.003679,17
+2025-05-06 18:01:21,3624149,gemini-2.5-flash-preview-04-17,page-by-page,10015,1326,0,0.002298,8
+2025-05-06 18:05:26,3626545,gemini-2.5-flash-preview-04-17,page-by-page,36473,4548,0,0.0082,20
+2025-05-06 18:08:39,3648302,gemini-2.5-flash-preview-04-17,page-by-page,29491,3418,0,0.006474,22
+2025-05-06 18:09:22,3648779,gemini-2.5-flash-preview-04-17,page-by-page,6420,851,0,0.001474,8
+2025-05-06 18:10:08,3648845,gemini-2.5-flash-preview-04-17,page-by-page,7557,885,0,0.001665,4
+2025-05-06 18:11:52,3649517,gemini-2.5-flash-preview-04-17,page-by-page,15125,1807,0,0.003353,16
+2025-05-06 18:13:10,3650605,gemini-2.5-flash-preview-04-17,page-by-page,10120,1457,0,0.002392,12

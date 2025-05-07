@@ -25,8 +25,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -52,6 +52,14 @@
   {
     "CadastralDesignation": "Ortala 4:17",
     "InspectionDate": "2024-03",
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -75,90 +83,31 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": false,
@@ -172,15 +121,15 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen har rötskador och bör åtgärdas, särskilt i nedre delen vid hörn nära pannrum."
+    "SummaryInsights": "Fasadpanelen har torksprickor och rötskadade delar i nedre hörn vid pannrummet, vilket indikerar behov av åtgärd."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
@@ -197,11 +146,36 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Taket är i sämre skick och behöver läggas om inom snar framtid. Förbättrande åtgärder krävs vid vinkelränna och trasiga takpannor."
+    "SummaryInsights": "Taket på husets äldre del bedöms vara i behov av takomläggning. Taket på tillbyggd del är i behov av översyn/förbättrande åtgärder på grund av trasiga takpannor och dålig täckning mot vinkelränna. Murad skorsten är i sämre skick med söndervittrade fogar."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": true,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Imkanal saknar brandisolering och kommer åtgärdas. Plint/stolpe under altan har förskjutits och entré/farstu har sjunkit och lutar."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -222,61 +196,19 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Plint/stolpe under altan har förskjutits och står snett. Entrédel/farstu har sjunkit och lutar."
+    "SummaryInsights": "Läckageskydd saknas under kyl och frysskåp samt i diskbänksskåp. Fogsläpp finns i klinkergolv i passage."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -297,31 +229,14 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Köparen kan begära en fortsatt teknisk utredning för att klarlägga risker för väsentligt fel som besiktningsmannen antecknat eller noterat vid besiktningen."
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
     "InspectionDate": "2024-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   }
 ]

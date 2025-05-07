@@ -25,8 +25,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -47,6 +47,14 @@
       "Measured": false,
       "presence": false
     },
+    "SummaryInsights": "Våtrum och isolerglasfönster har nått sin tekniska livslängd, vilket innebär att risken för skador ökar med åren. En besiktningsgenomgång rekommenderas för att förstå innebörden."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
@@ -75,41 +83,9 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
@@ -118,25 +94,22 @@
       "källare": false,
       "bjälklag": false
     },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Fasadpanelen och dörrar är i behov av målning och underhåll för att öka livslängden. Tröskelplåtar bör monteras för att minska risken för fukt- och rötskador."
+    "AsbestosPresence": null,
+    "SummaryInsights": "Fasadpanelen är i behov av mindre målning/underhåll. Dörrar rekommenderas målning och underhåll samt montering av tröskelplåtar."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": false
+      "mentions_bjälklag": false,
+      "mentions_facade": true
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -147,11 +120,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Kompletterande besiktning av taket rekommenderas när det är fritt från snö och is."
+    "SummaryInsights": "Yttertaket var frostigt vid besiktningen, en kompletterande besiktning rekommenderas när taket är fritt från snö och is. Vindens fuktvärden var under kritisk nivå, men fler landgångar och en ny besiktning av utrymmet rekommenderas."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -172,11 +145,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Altanräcke och träkonstruktioner är i behov av målning och underhåll."
+    "SummaryInsights": "Altanräcke och träkonstruktioner är i behov av målning/underhåll. Målning/underhåll av altan rekommenderas."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -200,8 +173,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -222,11 +195,19 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Duschutrymmet har äldre ytskikt/tätskikt vilket ökar risken för vattenskador. I köket rekommenderas installation av fuktskydd för att upptäcka eventuella läckage."
+    "SummaryInsights": "Äldre tätskikt i dusch medför ökad risk för vattenskada. Fuktskydd i diskbänksskåp saknas/är bristande och bör installeras."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -250,33 +231,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -297,11 +253,36 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen är i behov av målning och underhåll. Sprickor och färgsläpp finns i sockeln, vilket bör åtgärdas."
+    "SummaryInsights": "Fasadpanelen är i behov av målning/underhåll för att öka livslängden."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": true,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Dörrar och fönster är i behov av målning/underhåll. Stuprörens fals bör vändas utåt och lövsilar är spräckta."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -322,35 +303,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fuktskydd saknas i diskbänksskåp och under kyl/frys. Det rekommenderas att installera fuktskydd och montera avloppsslangen fackmässigt för att undvika fuktskador."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -372,11 +328,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Golvbrunnen är obesiktigad då den ej är åtkomlig under duschkabin. En kompletterande besiktning rekommenderas när brunnen är åtkomlig."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -400,8 +356,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -425,33 +381,19 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
     "AsbestosPresence": {
       "Measured": false,
-      "presence": false
+      "presence": true
     },
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

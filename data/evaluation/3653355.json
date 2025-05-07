@@ -5,14 +5,14 @@
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takets tätskikt är äldre och bör åtgärdas för att minska risken för fuktskador. Yttertaket är över 40 år gammalt och mossa har noterats på delar av taket. Våtutrymmenas standard är äldre och rörgenomföringar i golv följer ej dagens branschregler."
+    "SummaryInsights": "Risk för fuktskador noterades på tak, grundmurar och bjälklag i köket. Yttertaket är äldre, kondensvatten leds ej bort, och rörgenomföringar samt läckageskydd uppfyller ej gällande regler."
   },
   "ground_truth": {
     "CadastralDesignation": "Bärnstenen 9",

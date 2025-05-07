@@ -25,7 +25,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
     "InspectionDate": "2021-05",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -50,15 +50,15 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": true,
-      "mentions_balcony": false,
+      "mentions_balcony": true,
       "mentions_bjälklag": false,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": true,
@@ -72,11 +72,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Färg som släpper och röta noterades på fasaden, mindre röta i balkongräcket samt brister i takets nockpanna och taknocktätning bör åtgärdas."
+    "SummaryInsights": "Mindre röta och färgsläpp noterades på fasad. Golvet på altanen lutar kraftigt. Mindre röta noterades i balkongräcket. Otätheter och skadad takpanna noterades på yttertaket."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -107,7 +107,7 @@
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {

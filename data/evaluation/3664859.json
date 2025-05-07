@@ -6,7 +6,7 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
@@ -14,7 +14,7 @@
     "RenovationNeeds": {
       "roof": true,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fortsatt teknisk utredning rekommenderas för att utreda och åtgärda fuktfläckar på underlagstaket i vindsutrymmet."
+    "SummaryInsights": "Säljarinformationen listar utförda renoveringar (tak bytt 2023, fasad målad 2016). Mikrobiell påväxt och fuktfläckar noteras på vindens underlagstak och golv. Våtutrymmen har äldre standard och rörgenomföringar följer ej dagens branschregler."
   },
   "ground_truth": {
     "CadastralDesignation": "Stadsskogen 14:4",

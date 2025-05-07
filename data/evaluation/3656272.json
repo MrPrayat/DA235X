@@ -5,7 +5,7 @@
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": true,
+      "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
@@ -16,14 +16,14 @@
       "garage": false,
       "facade": false,
       "balcony": false,
-      "källare": true,
+      "källare": false,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Utreglad vägg i tvättstugan och äldre standard i duschrummet bör beaktas. Puts- och färgsläpp förekommer på vissa väggar i källaren."
+    "SummaryInsights": "Inga allvarliga problem noterades enligt extraherad data."
   },
   "ground_truth": {
     "CadastralDesignation": "Höckerkulla 2:31",

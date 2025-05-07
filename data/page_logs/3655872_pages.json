@@ -1,7 +1,7 @@
 [
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -27,31 +27,14 @@
   {
     "CadastralDesignation": "Österbybruk 1:170",
     "InspectionDate": "2024-10",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
@@ -72,68 +55,49 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Källarens gillestuga har höga fuktnivåer och rekommenderas att ventileras mekaniskt. Utvändigt fuktskydd i källaren är bristfälligt och bör åtgärdas."
+    "SummaryInsights": "Höga fuktvärden uppmättes i källarens gillestuga. Vid renovering av gillestugan rekommenderas fuktsäkra material och mekanisk ventilation."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
       "källare": false,
       "bjälklag": false
     },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
+    "AsbestosPresence": null,
+    "SummaryInsights": "Fasadpanelen är i behov av målning/underhåll för att öka livslängden."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
-      "mentions_garage": false,
+      "mentions_garage": true,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": false,
@@ -147,36 +111,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen är i behov av målning och underhåll för att öka livslängden på fasadbeklädnaden."
+    "SummaryInsights": "Tröskelbleck saknas under garagedörr och fönsterbleck saknas på garagedel, vilket rekommenderas åtgärdas för att förhindra fuktskador. Stuprör är inte anslutna till markledning vilket kan leda till fuktbelastning på grundmur/sockel, och det är viktigt att leda bort vatten från byggnaden."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": true,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": true,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Tröskelbleck bör monteras vid garagedörren för att förhindra fuktskador. Fönster är i behov av målning och underhåll."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -191,42 +130,40 @@
       "facade": false,
       "balcony": true,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Altanräcke och träkonstruktioner behöver målas eller underhållas. Elanläggningen är äldre och bör kontrolleras av elektriker."
+    "SummaryInsights": "Mikrobiell påväxt finns på underlagstak/takbjälkar, åtgärder för att minska fukttillförsel och täta vindsbjälklaget rekommenderas. Altanräcke och träkonstruktioner på altan är i behov av målning/underhåll."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
+    "SummaryInsights": "Fuktskydd saknas i diskbänksskåp samt under kyl och frys. För att upptäcka eventuella läckage rekommenderas att installera ett fuktskydd."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Fuktskydd saknas i kökets diskbänkskåp samt under kyl och frys, vilket bör åtgärdas genom installation av fuktskydd."
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
+    "SummaryInsights": "Renovering av badrum/WC rekommenderas. En fördjupad undersökning av källarplanets vägg- och golvkonstruktioner rekommenderas på grund av uppmätta fuktvärden."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
@@ -247,35 +184,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renovering av badrum rekommenderas på grund av ålder och slitage. Fördjupad undersökning av källarens golvkonstruktion rekommenderas på grund av förhöjda fuktvärden."
+    "SummaryInsights": "Källarens utvändiga fuktskydd behöver förbättras. Renovering av våtutrymmet i källaren rekommenderas då det är äldre och har passerat sin tekniska livslängd."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": true,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": true,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Renovering av tvättstuga/pannrum/dusch rekommenderas på grund av dåligt skick och åldrat tätskikt. Källarens utvändiga fuktskydd bör förbättras."
-  },
-  {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
     "InspectionDate": "2024-10",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -300,12 +212,12 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": true,
       "mentions_facade": false
@@ -325,14 +237,25 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -345,38 +268,13 @@
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": false
+      "presence": true
     },
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

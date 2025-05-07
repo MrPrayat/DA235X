@@ -1,12 +1,12 @@
 {
   "pdf_id": "3659998",
   "model_output": {
-    "CadastralDesignation": "Lammhult 33:1",
+    "CadastralDesignation": "G22299 - Lammhult 33:1",
     "InspectionDate": "2022-03",
     "MoistureDamage": {
       "mentions_garage": true,
       "mentions_källare": true,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
@@ -14,7 +14,7 @@
     "RenovationNeeds": {
       "roof": true,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": true,
       "bjälklag": false
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takets pappbyte är bristfälligt utfört och kontakt med takläggare rekommenderas för bedömning av åtgärdsbehov. Åtgärder för att förbättra källarens fuktskydd och ventilation bör utföras. Fasaden har sprickor och är i behov av målningsunderhåll."
+    "SummaryInsights": "Inspektionen noterar brister i taket som bör åtgärdas samt ålderstiget fuktskydd i källaren med noterad fukt i vägg. Äldre fönsterpartier och golvbrunn rekommenderas bytas ut, och bristande vattenavledning vid fönster/rörgenomförningar bör ses över."
   },
   "ground_truth": {
     "CadastralDesignation": "Lammhult 33:1",

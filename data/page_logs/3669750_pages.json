@@ -2,66 +2,32 @@
   {
     "CadastralDesignation": "Palsternackan 4",
     "InspectionDate": "2025-01",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": "2025-01",
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
-      "mentions_garage": true,
-      "mentions_källare": false,
+      "mentions_garage": false,
+      "mentions_källare": true,
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": true
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": true,
       "facade": true,
       "balcony": false,
@@ -72,17 +38,17 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Läckage i garagevind bör utredas och åtgärdas. Mindre rötskador på fasadens nedre del behöver åtgärdas."
+    "SummaryInsights": "Läckage i yttertaket bör åtgärdas. Stuprör bör anslutas till markledning. Underlagstakets masonitskivor bör justeras och kompletteras."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": "2025-01",
+    "CadastralDesignation": "Palsternackan 4",
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -97,14 +63,14 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fortsatt teknisk undersökning krävs för att fastställa konditionen på golvkonstruktioner, väggsyllar och krypgrunden på grund av fukt- och mikrobiella risker."
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
     "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,

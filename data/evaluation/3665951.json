@@ -4,7 +4,7 @@
     "CadastralDesignation": "Skebo 1:39",
     "InspectionDate": "2025-01",
     "MoistureDamage": {
-      "mentions_garage": false,
+      "mentions_garage": true,
       "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
@@ -16,14 +16,14 @@
       "garage": false,
       "facade": true,
       "balcony": false,
-      "källare": true,
-      "bjälklag": true
+      "källare": false,
+      "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": false
+      "presence": true
     },
-    "SummaryInsights": "Fuktskador har uppmätts i matkällaren och åtgärder för att minska fuktbelastningen rekommenderas. Fasaden och dörren är i behov av målning och underhåll. Kompletterande besiktning av yttertaket och krypgrunden rekommenderas."
+    "SummaryInsights": "Huset är i förväntat skick för sin ålder (ca 1750) med en del renoveringsbehov kopplat till ålder och byggnadssätt. Köparen rekommenderas att ta del av hela protokollet och eventuellt göra en besiktningsgenomgång. Farstubron har rötskador och lutar, en fördjupad undersökning rekommenderas. Fasaden och dörrar är i behov av målning/underhåll, och tröskelbleck saknas under dörr. Fuktvärden över kritisk nivå uppmättes i matkällaren. För att undvika detta bör grundens klimat bli torrare, läs Anticimex faktablad för tips och råd. Grund har ej besiktigats pga saknad inspektionslucka. Rekommenderas kompletterande besiktning när lucka installeras. För att upptäcka eventuella läckage i köket rekommenderas installation av fuktskydd. Vattenlarm bör installeras under varmvattenberedaren. Golvfall mot golvbrunnen i dusch/toalett är bristfälligt utanför duschzonen."
   },
   "ground_truth": {
     "CadastralDesignation": "Skebo 1:39",

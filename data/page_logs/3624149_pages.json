@@ -2,26 +2,9 @@
   {
     "CadastralDesignation": "Brunnsnäs 1:92",
     "InspectionDate": "2024-06",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
@@ -97,7 +80,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Avloppsrör till infiltrationen har gått isär och vatten mynnar ut i grunden. Fritt stående vatten noteras lokalt i plintgrunden."
   },
   {
     "CadastralDesignation": "Brunnsnäs 1:92",
@@ -107,7 +90,7 @@
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {

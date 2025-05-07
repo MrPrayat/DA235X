@@ -5,7 +5,7 @@
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": true,
       "mentions_balcony": true,
       "mentions_bjälklag": true,
@@ -21,9 +21,9 @@
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": false
+      "presence": true
     },
-    "SummaryInsights": "Taket är äldre och har minskat motstånd mot vatteninträngning, vilket kan leda till fuktskador. Underhåll och målning rekommenderas för fasad, altan och balkong. Fönster och dörrar är äldre och kan behöva ses över för bättre tätning."
+    "SummaryInsights": "Planerade åtgärder inkluderar målning/oljning av farstukvist och lagning runt takkupan under 2024. Området närmast huset rekommenderas att vara fritt från växtlighet på grund av risk för fukt och skador på grundmur/dränering. Fasaden är i behov av målning/underhåll på grund av risk för fukt- och rötskador. Befintliga isolerglasfönster är äldre med sämre tätning. Taket bedöms ha begränsad livslängd med risk för vatteninträngning och fuktskador. Det rekommenderas att mossa tas bort från takpannorna. Målning och underhåll rekommenderas för altan/balkong och fasad för att öka livslängden. Växtlighet närmast byggnaden bör tas bort och stuprör avslutas bort från huslivet för att minska fuktbelastning. Tröskelbleck är skadat med otätheter och underhållsbehov finns på fönster/dörr och fasad. Yttertaket är äldre med begränsad livslängd och saknar läkt/takfotsplåt, vilket ökar risk för fuktskador. Mossväxt på taket bör tas bort för att öka livslängden. Våtutrymmet har äldre ytskikt/tätskikt med ökad risk för vattenskador i omkringliggande konstruktioner. En kompletterande besiktning rekommenderas när en inspektionslucka till vindsutrymmet installerats. Rörgenomföring i vägg under kommod saknar väggbricka vilket medför risk för fuktskador. Fönster i badzon är olämpligt placerat och rekommenderas skyddas mot vattenbegjutning. WC-stolen är lös vilket medför risk för vattenskador."
   },
   "ground_truth": {
     "CadastralDesignation": "Lännersta 22:10",

@@ -2,26 +2,17 @@
   {
     "CadastralDesignation": "Erikssund 2:4",
     "InspectionDate": "2023-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Erikssund 2:4",
+    "InspectionDate": "2023-03",
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
@@ -75,57 +66,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Erikssund 2:4",
-    "InspectionDate": "2023-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Erikssund 2:4",
-    "InspectionDate": "2023-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Erikssund 2:4",
+    "CadastralDesignation": null,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -189,7 +130,7 @@
       "roof": false,
       "garage": false,
       "facade": false,
-      "balcony": false,
+      "balcony": true,
       "källare": false,
       "bjälklag": false
     },
@@ -197,7 +138,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tätskikt saknas på flera ställen, bland annat i duschrum, tvättstuga och under varmvattenberedaren. Kvalitetsdokument saknas för våtrum."
+    "SummaryInsights": "Tröskelplåt saknas till altandörrar. Fönsterbleck saknas till ett fönster och uppvik saknas på fönsterbleckens ändar vid utbyggnaden."
   },
   {
     "CadastralDesignation": "Erikssund 2:4",
@@ -222,7 +163,32 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Badrummet är äldre och saknar kvalitetsdokument, och tätskiktet bakom kakel och klinker är inte besiktningsbart. I köket saknas tät botten i diskbänkskåpet och droppskydd under kyl/frys."
+    "SummaryInsights": "Flera brister relaterade till tätskikt och golvbrunnar noterades i tvättstuga, förråd, duschrum och inre hall. Kvalitetsdokument saknas för tvättstuga och duschrum."
+  },
+  {
+    "CadastralDesignation": "Erikssund 2:4",
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": "Erikssund 2:4",
@@ -282,13 +248,13 @@
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": false
+      "mentions_bjälklag": false,
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -297,7 +263,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fönsterbleck saknas eller har felaktigt uppvik, vilket kan orsaka fuktskador i fasaden. Golvbrunnen i våtrummet är placerad nära vägg och bedöms vara felmonterad, vilket ökar risken för vattenskada."
   },
   {
     "CadastralDesignation": "Erikssund 2:4",

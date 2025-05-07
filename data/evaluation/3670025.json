@@ -4,26 +4,26 @@
     "CadastralDesignation": "Näsbypark 10:24",
     "InspectionDate": "2024-12",
     "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_garage": true,
+      "mentions_källare": true,
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
-      "garage": true,
-      "facade": true,
+      "roof": false,
+      "garage": false,
+      "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": true
+      "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": false
+      "presence": true
     },
-    "SummaryInsights": "Yttertaket på hus och garage byttes till dubbelfalsad plåt, fasadpanelen på baksidan byttes och uppvärmningssystemet ersattes med bergvärme. Organiskt material togs bort och markplast installerades i krypgrunden för att minska fuktrisk. Det rekommenderas att fortsätta samla upp kondensvatten från luftvärmepumpen."
+    "SummaryInsights": "Fuktvärden över kritisk nivå och mikrobiell tillväxt noterades i krypgrunden. Det rekommenderas att krypgrundens klimat blir torrare och att organiskt material rensas bort från marken."
   },
   "ground_truth": {
     "CadastralDesignation": "Näsbypark 10:24",

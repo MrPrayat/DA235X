@@ -9,21 +9,21 @@
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": true,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": false,
-      "garage": true,
+      "garage": false,
       "facade": true,
       "balcony": true,
       "källare": true,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": false
+      "presence": true
     },
-    "SummaryInsights": "Källaren uppvisar höga fuktnivåer och bristfälligt utvändigt fuktskydd, vilket bör åtgärdas. Fasadpanelen och altanräcke behöver målas och underhållas, och tröskelbleck bör monteras vid garagedörren för att förhindra fuktskador. Renovering av badrum och tvättstuga/pannrum/dusch rekommenderas på grund av ålder och slitage."
+    "SummaryInsights": "Höga fuktvärden uppmättes i källarens gillestuga. Vid renovering av gillestugan rekommenderas fuktsäkra material och mekanisk ventilation."
   },
   "ground_truth": {
     "CadastralDesignation": "Österbybruk 1:170",

@@ -25,8 +25,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Bandverket 68",
+    "InspectionDate": "2022-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -50,7 +50,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
     "InspectionDate": "2022-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -72,6 +72,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden har mindre underhållsbehov och röta förekommer lokalt. Färgsläpp förekommer på vissa delar av sockeln."
+    "SummaryInsights": "Fasad har mindre underhållsbehov, röta förekommer lokalt. Färgsläpp förekommer på sockel."
   }
 ]

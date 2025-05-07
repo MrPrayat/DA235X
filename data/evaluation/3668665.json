@@ -9,7 +9,7 @@
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": false,
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden har visst bristande underhåll och bör ses över. Golvlarm eller golvbrunn för vattenläckage från tvättmaskin bör installeras. Eluttag i taket är bristfälligt och behöver åtgärdas."
+    "SummaryInsights": "Vissa delar av fasaden är rötaskad och viss bristande underhåll noterades. Lättåtkomlig avstängning för vatten till tvättmaskin saknas och golvbrunn eller larm för vattenläckage bör finnas. Eluttag i tak är bristfällig."
   },
   "ground_truth": {
     "CadastralDesignation": "Sigtuna Steninge 8:933",

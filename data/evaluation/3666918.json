@@ -6,13 +6,13 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
-      "mentions_roof": true,
-      "mentions_balcony": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fuktskydd under kyl/frys bör åtgärdas och vattentät in­kädnad i diskbänkskåp rekommenderas. Ventilationen i badrum och boytor behöver förbättras. Vid takrenovering kan det vara aktuellt att byta underlagspapp och läkt. Gjutjärnsbrunnen i källaren riskerar att rosta sönder och bör bytas ut vid framtida renovering för att undvika fuktskador."
+    "SummaryInsights": "Marken lutar mot huset och bör åtgärdas, vilket kan orsaka fuktskador; se till att marken lutar bort från huset. Grunden bör rensas från organiskt material. Avloppsslang från diskmaskin är inte fast förankrad och bör förankras. Äldre gjutjärnsbrunn i källaren riskerar fuktskador och bör bytas ut vid framtida renovering. Källaren var ej färdigställd vid besiktningstillfället och bör göras åtkomlig för framtida besiktningar. Äldre avloppsrör bör räknas med att behöva bytas ut; kontakt med fackman rekommenderas för kontroll och åtgärd. Det rekommenderas att installera en vindslucka med nedfällbar stege för att möjliggöra inspektion av vinden. Använd gummiskrapa för att avlägsna vatten på golvet och se över/förbättra ventilationen i utrymmet. Svängradien på köksblandaren bör begränsas. Vattentät inklädnad saknas i diskbänksskåpet och under kyl/frys, vilket rekommenderas. För ökad säkerhet rekommenderas fönsterlås, hemlarm, brandfilt, timer vid laddning av elektronik, fler brandvarnare och en utrymningsplan."
   },
   "ground_truth": {
     "CadastralDesignation": "Vallentuna-Mörby 1:76",

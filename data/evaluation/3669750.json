@@ -4,15 +4,15 @@
     "CadastralDesignation": "Palsternackan 4",
     "InspectionDate": "2025-01",
     "MoistureDamage": {
-      "mentions_garage": true,
-      "mentions_källare": false,
+      "mentions_garage": false,
+      "mentions_källare": true,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": true
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": true,
       "facade": true,
       "balcony": false,
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Läckage i garagevind bör utredas och åtgärdas. Mindre rötskador på fasadens nedre del behöver åtgärdas."
+    "SummaryInsights": "Takläckage identifierades och åtgärder rekommenderas för tak och stuprör. Vidare teknisk undersökning av golvkonstruktioner och krypgrund behövs på grund av misstänkta fukt- och mikrobiella problem."
   },
   "ground_truth": {
     "CadastralDesignation": "Palsternackan 4",

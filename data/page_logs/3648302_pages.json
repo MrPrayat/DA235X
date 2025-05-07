@@ -1,6 +1,14 @@
 [
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
+    "InspectionDate": "2024-11",
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Röjeln 6",
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -25,7 +33,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": "Röjelin 6",
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -75,32 +83,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": "2024-11",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -147,6 +130,14 @@
       "Measured": false,
       "presence": false
     },
+    "SummaryInsights": "Marken faller mot huset, viss missfärgning finns på trossbotten och plintgrunden är en känd riskkonstruktion. Se även riskanalys 3.1."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": "2024-11",
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
@@ -155,32 +146,7 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Fönsterbleck saknas på uterum och bör åtgärdas för att förhindra framtida skador."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": "2024-11",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
@@ -197,10 +163,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket har äldre pannor med moss påväxt och underlagspappen är torr och spröd. Hängrännorna behöver rensas på skräp."
+    "SummaryInsights": "Äldre takpannor och underlagspapp är i dåligt skick. Hängrännorna behöver rensas och lövsilar saknas på stuprör."
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": "Röjeln 6",
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -225,7 +191,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": "Röjeln 6",
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -241,16 +207,16 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Diskbänkskåpet saknar tät botten och golvet i pannrummet sviktar med en gammal golvbrunn under laminatgolvet. Tvättstugan har en äldre, rostskadad gjutjärnsgolvbrunn."
+    "SummaryInsights": "Golvet sviktar i pannrummet och en äldre rostskadad golvbrunn finns i tvättstugan. Tät botten saknas i diskbänksskåpet."
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -300,7 +266,15 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
+    "InspectionDate": "2024-11",
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -312,7 +286,7 @@
     },
     "RenovationNeeds": {
       "roof": false,
-      "garage": false,
+      "garage": true,
       "facade": false,
       "balcony": false,
       "källare": false,
@@ -322,35 +296,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Självdragsventiler saknas i garage och förråd. Äldre rostskadade gjutjärnsgolvbrunnar finns. Vinden ej besiktningsbar pga att det inte finns någon vindslucka."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": "2024-11",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
+    "CadastralDesignation": "Röjeln 6",
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -375,28 +324,11 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
     "InspectionDate": "2024-11",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   }
 ]

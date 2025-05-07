@@ -1,0 +1,7 @@
+timestamp,pdf_id,model,extraction_strategy,prompt_tokens,completion_tokens,cached_tokens,total_cost_usd,pages_extracted
+2025-05-06 15:01:40,1633735,gemini-2.5-flash-preview-04-17,page-by-page,1048,195,0,0.000274,15
+2025-05-06 15:06:08,2111992,gemini-2.5-flash-preview-04-17,page-by-page,37734,4220,0,0.008192,21
+2025-05-06 15:09:43,2998892,gemini-2.5-flash-preview-04-17,page-by-page,28355,2940,0,0.006017,16
+2025-05-06 15:11:04,3075757,gemini-2.5-flash-preview-04-17,page-by-page,10259,1607,0,0.002503,10
+2025-05-06 15:13:10,3354050,gemini-2.5-flash-preview-04-17,page-by-page,18529,2059,0,0.004015,18
+2025-05-06 15:15:53,3453932,gemini-2.5-flash-preview-04-17,page-by-page,23892,2534,0,0.005104,22

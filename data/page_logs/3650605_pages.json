@@ -25,18 +25,18 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": "2024-11",
+    "CadastralDesignation": "Katrinelund 1:46",
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -47,16 +47,16 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Kondensmärken finns mot underlagstaket på ena vindsutrymmet. Radonkontroll bör övervägas och dokumentation för ventilationskontroll eftersöks."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": "2024-11",
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
+      "mentions_roof": true,
+      "mentions_balcony": true,
       "mentions_bjälklag": false,
       "mentions_facade": true
     },
@@ -72,11 +72,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tak och fasad har underhållsbehov, inklusive tätning och målning. Fuktskydd saknas under vissa diskbänkar och kyl/frys."
+    "SummaryInsights": "Takfot har underhållsbehov och tätning rekommenderas vid en genomföring. Delar av fasaden har målnings- och underhållsbehov."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Katrinelund 1:46",
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -91,16 +91,16 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": true
+      "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Förhöjda fuktvärden och mikrobiell påväxt har uppmätts mot blindbotten. Fortsatt teknisk undersökning av grund och bjälklag rekommenderas."
+    "SummaryInsights": "Krypgrunden är en riskkonstruktion med förhöjda fuktvärden och mikrobiell påväxt mot blindbotten. En fortsatt teknisk undersökning av grund och golvbjälklag krävs."
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -122,6 +122,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Otäthet vid genomföring på taket bör åtgärdas för att förhindra fuktskador."
+    "SummaryInsights": "En otäthet har upptäckts vid en genomföring på taket som bör åtgärdas."
   }
 ]

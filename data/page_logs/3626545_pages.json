@@ -50,8 +50,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
+    "CadastralDesignation": "Sundbyberg Sparven 15",
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -72,10 +72,85 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Statusbesiktningsprotokollet beskriver planerat fastighetsunderhåll upp till 50 år framåt, med detaljerade kostnadskalkyler för de första 10 åren baserade på dagens kostnadsläge."
   },
   {
     "CadastralDesignation": "Sundbyberg Sparven 15",
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
@@ -97,102 +172,13 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fastigheten har genomgått partiella stambyten, badrumsrenovering, takbyte samt utbyte av tvättstugemaskiner. Nära förestående underhållsbehov avser fönster samt utbyte av delar av el- och VA-installationer."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": "2024-05",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": "2024-05",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": "2024-05",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Nära förestående underhållsbehov finns avseende fönstren, delar av elinstallationer samt vissa äldre vatteninstallationer och badrum."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
+    "CadastralDesignation": null,
+    "InspectionDate": "2024-04",
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
     "AsbestosPresence": {
       "Measured": false,
       "presence": true
@@ -200,8 +186,101 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "En reparation av källartrappan på gatusidan rekommenderas inom ca 5 år. Utbyte av källarväggars fuktisolering på gårdssidan planeras preliminärt till ca år 2045."
+  },
+  {
+    "CadastralDesignation": null,
     "InspectionDate": "2024-04",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": false,
+      "balcony": true,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Balkongerna bedöms vara i behov av renovering inom högst 10 år. Fönster och fönsterdörrar är i slitet skick och i nära förestående behov av renovering."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": null,
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Två källardörrar i slitet skick rekommenderas renoveras. Maskinparken i tvättstugan antas behöva bytas ut mellan 2025 och 2033."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Ett badrum bedöms ha omedelbart utbytesbehov. Två badrum med tillhörande VA-stammar antas behöva renoveras inom 2 år. Åtgärder för övriga badrum planeras inom kommande 10-årsperiod."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": "2024-05",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -222,82 +301,82 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Reparation av utvändig källartrappa på gatusidan rekommenderas inom 5 år."
+    "SummaryInsights": "Utbyte av radiatorventiler rekommenderas inom några år. Gamla värmestammar i badrum bör bytas ut tidigare än 2055. Vissa återställningsarbeten behövs i hyreslokalen i källarplan."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": "2024-04",
+    "CadastralDesignation": null,
+    "InspectionDate": "2024-05",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Värmesystemets ventiler i källaren är gamla och rekommenderas bytas ut snart. En budget finns avsatt för utbyte av stående vatten-/avloppsstammar 2026-2035."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Huvudledningar till befintliga lägenheter rekommenderas att bytas ut inom några år. Elinstallationer i badrummen bör bytas i samband med kommande renoveringar."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
       "facade": false,
       "balcony": true,
-      "källare": false,
+      "källare": true,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Balkongerna bedöms vara i behov av renovering inom högst 10 år. Fönstren är i slitet skick och nära förestående behov av renovering."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": "2024-05",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": "2024-05",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Två badrum med tillhörande VA-stammar behöver renoveras inom två år. Övriga badrum kommer att behöva renoveras inom en tioårsperiod."
+    "SummaryInsights": "Rapporten identifierar renoveringsbehov för gårdskällarvägg (omdränering bedömd 2045), balkonger (underhåll 2033) och badrum (renovering 2025)."
   },
   {
     "CadastralDesignation": false,
@@ -326,7 +405,32 @@
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": "2024-04",
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Kommande underhållsbehov finns avseende fönstren, elinstallationer samt i övrigt löpande underhåll. Ett stort antal gamla vatteninstallationer i källarplan bedöms vara tekniskt uttjänta och behöver bytas ut."
+  },
+  {
+    "CadastralDesignation": null,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -338,8 +442,8 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
-      "balcony": false,
+      "facade": true,
+      "balcony": true,
       "källare": false,
       "bjälklag": false
     },
@@ -347,35 +451,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renovering av två badrum och utbyte av va-stammar rekommenderas inom nära framtid. Spillvattenavloppen bör rensas med ca 10 års intervall."
+    "SummaryInsights": "Underhållsbehov identifieras på fasaderna, balkongerna och eventuellt dräneringen på gatusidan enligt underhållsplanens kalkylperiod."
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": "2024-05",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Elinstallationer i badrum bör bytas ut i samband med kommande renoveringar."
-  },
-  {
-    "CadastralDesignation": false,
+    "CadastralDesignation": "Sundbyberg Sparven 15",
     "InspectionDate": "2024-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -388,81 +467,6 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
-      "balcony": true,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Underhåll av balkongplattor och räcken rekommenderas till 2033. Renovering av badrum planeras till 2025."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": "2024-05",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Utbyte av radiator- och stamregleringsventiler rekommenderas till 2025. Elinstallationer bör bytas ut omkring 2027. Partiellt VA-stambyte planeras till 2025."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": true,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Yttertaket kommer att bytas ut och vissa fönster samt elinstallationer behöver underhållas inom de närmaste åren."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
       "facade": true,
       "balcony": true,
       "källare": false,
@@ -472,31 +476,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Underhållsbehov finns på både fasaderna och balkongerna mot slutet av kalkylperioden, och löpande uppdateringar av åtgärder rekommenderas med högst 10 års intervall."
-  },
-  {
-    "CadastralDesignation": "Sundbyberg Sparven 15",
-    "InspectionDate": "2024-05",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": true,
-      "garage": false,
-      "facade": true,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Renovering av tak och fasader planeras enligt underhållsplanen."
+    "SummaryInsights": "Planerade åtgärder inkluderar dränering, fuktisolering, renovering av balkonger och fönster/fönsterdörrar samt renovering av badrum i två lägenheter. Allmän avsättning avser gårdsfasad."
   }
 ]

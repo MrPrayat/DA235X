@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fördjupad undersökning av krypgrunden rekommenderas för att utreda sand- och fuktinträngning."
+    "SummaryInsights": "En fördjupad undersökning rekommenderas för att utreda fukt i krypgrunden. Fortsatt teknisk utredning krävs för att klarlägga risk för väsentliga fel."
   },
   "ground_truth": {
     "CadastralDesignation": "Almby 11:228",

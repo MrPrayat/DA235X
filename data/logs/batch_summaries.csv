@@ -6,3 +6,8 @@ timestamp,batch_id,model,extraction_strategy,num_pdfs,prompt_tokens,completion_t
 2025-04-30 14:48:02,batch_2025-04-30_1306,gpt-4.1,page-by-page,43,1768732,102446,0,4.357032
 2025-05-06 13:33:37,batch_2025-05-06_1319,gemini-2.5-flash-preview-04-17,page-by-page,1,27233,3237,0,0.006027
 2025-05-06 14:48:18,batch_2025-05-06_1436,gemini-2.5-flash-preview-04-17,page-by-page,3,93379,10280,0,0.020175
+2025-05-06 16:50:40,batch_2025-05-06_1647,gemini-2.5-flash-preview-04-17,page-by-page,1,27103,3108,0,0.00593
+2025-05-07 11:29:40,batch_2025-05-07_1129,gemini-2.5-flash-preview-04-17,page-by-page,17,299774,35863,0,0.066482
+2025-05-07 13:12:20,batch_2025-05-07_1312,gemini-2.5-flash-preview-04-17,page-by-page,14,326883,37886,0,0.071765
+2025-05-07 14:28:35,batch_2025-05-07_1415,gemini-2.5-flash-preview-04-17,page-by-page,6,121623,13006,0,0.026047
+2025-05-07 14:46:36,batch_2025-05-07_1433,gemini-2.5-flash-preview-04-17,page-by-page,6,127452,13050,0,0.026948

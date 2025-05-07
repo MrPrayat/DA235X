@@ -8,14 +8,14 @@
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": false
+      "mentions_bjälklag": false,
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
-      "balcony": false,
+      "facade": true,
+      "balcony": true,
       "källare": false,
       "bjälklag": false
     },
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Badrummet är äldre och saknar kvalitetsdokument, och tätskiktet bakom kakel och klinker är inte besiktningsbart. Tätskikt saknas på flera ställen, bland annat i duschrum, tvättstuga och under varmvattenberedaren. I köket saknas tät botten i diskbänkskåpet och droppskydd under kyl/frys."
+    "SummaryInsights": "Fastigheten uppvisar brister relaterade till tätskikt och golvbrunnar i våtrum, vilket ökar risken för vattenskador. Dessutom noterades avvikelser med fönsterbleck och tröskelplåtar som kan leda till fuktskador i fasad och vid altandörrar."
   },
   "ground_truth": {
     "CadastralDesignation": "Erikssund 2:4",

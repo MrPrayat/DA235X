@@ -8,11 +8,11 @@
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Takets tätskikt är äldre och bör åtgärdas för att minska risken för fuktskador. Golvkonstruktionen riskerar fuktskador på grund av markfukt."
+    "SummaryInsights": "Läckageskydd saknas i diskbänksskåpets botten. Golvbrunn i dusch på övre plan ej bytt vid renovering. Köpare kan begära fortsatt teknisk utredning för att klarlägga om risk för väsentligt fel som besiktningsmannen antecknat i riskanalysen och under okulära noteringar finns eller inte."
   },
   "ground_truth": {
     "CadastralDesignation": "Heden 17:12",

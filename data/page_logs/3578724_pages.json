@@ -1,27 +1,10 @@
 [
   {
-    "CadastralDesignation": false,
+    "CadastralDesignation": null,
     "InspectionDate": "2024-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
@@ -75,7 +58,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": null,
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -125,7 +108,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": null,
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -133,7 +116,7 @@
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": true,
@@ -147,10 +130,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket är äldre med flera brister såsom trasiga pannor och missfärgningar, och bör åtgärdas. Fasadpanel har lokal rötskada och färgsläpp som behöver ses över."
+    "SummaryInsights": "Lokalt rötskadad panel på fasad och färgspräng noterades. Yttertaket är äldre med mossa, missfärgat takfotsprång, trasiga takpannor och saknar fotplåt."
   },
   {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": null,
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -172,7 +155,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tätbotten i kökets diskbänkskåp är bristfälligt tätad och äldre våtrum med vissa risker noterades. Fönster i badrummets duschzon är olämpligt placerat."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": "Täby Gullrankan 20",
@@ -197,7 +180,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket har åldersslitage och risk för läckage, och fasaden har rötskador som kan orsaka fuktskador. Åtgärder rekommenderas för både tak och fasad."
+    "SummaryInsights": "Yttertaket behöver åtgärdas på grund av ålder och slitage med risk för läckage. Fasaden har rötskador och risk för fuktinträngning med skador i bakomliggande vägg."
   },
   {
     "CadastralDesignation": "Täby Gullrankan 20",

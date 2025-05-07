@@ -5,14 +5,14 @@
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -21,9 +21,9 @@
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": false
+      "presence": true
     },
-    "SummaryInsights": "Kompletterande besiktning av yttertak och carporttak rekommenderas när taken är fria från snö och is. Skyddsbåge saknas vid befintlig gavelstege. Badrummet har äldre ytskikt/tätskikt vilket innebär en ökad risk för vattenskador, men inga förhöjda fuktindikationer noterades."
+    "SummaryInsights": "Risk för fuktrelaterade skador identifierades vid husgrund (kondensvatten), i krypgrunden (saknad markplast, marklut) samt i våtrum (rörgenomföring, tröskel). Även risk för fukt under diskbänk samt lösa klinker i entréhallen noterades. Kompletterande besiktning av tak/vind och carport rekommenderas."
   },
   "ground_truth": {
     "CadastralDesignation": "Bo 24:22",

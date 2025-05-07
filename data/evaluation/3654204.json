@@ -4,11 +4,11 @@
     "CadastralDesignation": "Fresta-Smedby 1:20",
     "InspectionDate": "2024-12",
     "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_garage": true,
+      "mentions_källare": true,
       "mentions_roof": true,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_balcony": true,
+      "mentions_bjälklag": true,
       "mentions_facade": true
     },
     "RenovationNeeds": {
@@ -17,13 +17,13 @@
       "facade": true,
       "balcony": true,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket har brister och bör åtgärdas för att minska risken för fuktskador. Fasadpanelen och trädeltaljer behöver målas och underhållas för att förebygga skador. Altanen är i behov av underhåll och vissa trallbrädor är rötskadade."
+    "SummaryInsights": "Fastigheten uppvisar fuktproblem i krypgrund och sidovind, vilket medför risk för mikrobiell påväxt. Underhållsåtgärder rekommenderas för fasad, yttertak och altan. Äldre våtrum utgör en generell risk för framtida vattenskador."
   },
   "ground_truth": {
     "CadastralDesignation": "Fresta-Smedby 1:20",

@@ -8,7 +8,7 @@
       "mentions_källare": true,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_bjälklag": false,
       "mentions_facade": true
     },
     "RenovationNeeds": {
@@ -17,13 +17,13 @@
       "facade": true,
       "balcony": false,
       "källare": true,
-      "bjälklag": true
+      "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tak och fasad behöver underhåll och åtgärder mot fuktskador. Äldre gjutjärnsbrunnar i källaren bör bytas ut vid framtida renovering. Det rekommenderas att kontrollera vinden regelbundet och installera vattentät in­klädnad i diskbänkskåpet."
+    "SummaryInsights": "Inspektionen visar på mindre mikrobiell påväxt på vinden och indikationer på fukt i källaren/krypgrunden. Det finns behov av underhåll/renovering av tak, fasad och källare. Rekommendationer ges gällande säkerhet, vattenfelsbrytare och förebyggande åtgärder mot hussvamp."
   },
   "ground_truth": {
     "CadastralDesignation": "Apan 19",

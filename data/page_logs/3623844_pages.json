@@ -2,51 +2,17 @@
   {
     "CadastralDesignation": "Bolby 18:4",
     "InspectionDate": "2024-09",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Bobby 18:4",
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
+    "CadastralDesignation": "Bolby 18:4",
+    "InspectionDate": null,
+    "MoistureDamage": null,
+    "RenovationNeeds": null,
+    "AsbestosPresence": null,
     "SummaryInsights": null
   },
   {
@@ -76,7 +42,7 @@
   },
   {
     "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": false,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -101,7 +67,7 @@
   },
   {
     "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": false,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -126,64 +92,14 @@
   },
   {
     "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": true
-    },
-    "RenovationNeeds": {
-      "roof": true,
-      "garage": false,
-      "facade": true,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": true
-    },
-    "SummaryInsights": "Fasadpanelen har underhållsbehov och viss rötskada. Plåttaket är äldre och har uppnått sin tekniska livslängd, underhåll rekommenderas."
-  },
-  {
-    "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Duschrum har uppnått sin tekniska livslängd och saknar moderna skydd, och fuktskydd saknas under kyl/frys och diskbänk."
-  },
-  {
-    "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": false,
+    "InspectionDate": null,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": true,
@@ -197,7 +113,57 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Yttertakets plåtskruvar bör kontrolleras och eventuellt bytas ut. Fasadpanel och träkonstruktioner har risk för fuktskador och kan behöva åtgärdas."
+    "SummaryInsights": "Taket har uppnått sin tekniska livslängd med otäta spikar och rötskadade vindskivor. Fasadpanelen har underhållsbehov med färgsläpp och rötskada."
+  },
+  {
+    "CadastralDesignation": "Bolby 18:4",
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Duschrummet är äldre och den tekniska livslängden är uppnådd. Fuktskydd saknas under kyl/frys och i diskbänksskåp. Isoleringen täpper till takfotsventilationen på vinden."
+  },
+  {
+    "CadastralDesignation": "Bolby 18:4",
+    "InspectionDate": null,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": "Grundplintar bedöms innehålla eternit, fackman bör kontaktas vid åtgärd. Äldre yttertak uppnår sin beräknade livslängd och bör åtgärdas."
   },
   {
     "CadastralDesignation": "Bolby 18:4",

@@ -71,6 +71,10 @@ def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini
     usage_dict keys = prompt_tokens, completion_tokens, cached_tokens (always 0).
     """
     png_bytes = encode_image_gemini(image)
+    data_len = len(png_bytes)
+    if data_len > 20_000_000:       # 20 MB
+        print(f"⚠️ Page {i+1}: payload {data_len/1e6:.1f} MB > Gemini limit")
+
     attempt = 0
     while True:
         try:
@@ -86,8 +90,9 @@ def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini
                 config=genai.types.GenerateContentConfig(
                     thinking_config=genai.types.ThinkingConfig(
                         thinking_budget=1024
-                    )
-                )
+                    ),
+                    temperature=0
+                ),
             )
 
             u = response.usage_metadata
@@ -110,8 +115,7 @@ def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini
             print("\n\n")
             print(f"Tokens — prompt: {usage['prompt_tokens']}, completion: {usage['completion_tokens']}")
             print(f"Estimated cost for checking appendix using Gemini 2.5 Flash: ${cost:.6f}")
-            
-            print("Usage:", usage)
+
             return response.text, usage
         except gerrors.ClientError as e:
             if e.code == 429:
@@ -121,7 +125,7 @@ def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini
                 attempt += 1
                 time.sleep(wait_time)
         except Exception as e:
-            print("Error calling Gemini API.")
+            print("Error calling Gemini API, error: ", e)
             return "", {}
 
 
@@ -159,7 +163,6 @@ def synthesize_final_json_openai(page_results: list, model: str, retries=5, back
             response = client.chat.completions.create(
                 model=model,
                 messages=[{"role": "user", "content": prompt}],
-                temperature=0
             )
 
             output = response.choices[0].message.content

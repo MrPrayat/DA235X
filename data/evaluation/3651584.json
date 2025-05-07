@@ -1,7 +1,7 @@
 {
   "pdf_id": "3651584",
   "model_output": {
-    "CadastralDesignation": "Gaddebö 1:4",
+    "CadastralDesignation": "Gaddebo 1:4",
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -17,13 +17,13 @@
       "facade": true,
       "balcony": true,
       "källare": true,
-      "bjälklag": true
+      "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fuktskador och rötskador har noterats i vind, bjälklag, balkong och källare, och underhållsbehov finns på dessa områden. Kompletterande besiktning rekommenderas för torpargrund och yttertak. Fasad och dörrar behöver målas och underhållas, och källarens fuktskydd bör förbättras."
+    "SummaryInsights": "Fastigheten uppvisar risker för fuktskador relaterade till grund/källare och våtutrymmen, samt generellt underhållsbehov för fasad, fönster och balkong/farstukvist. Kompletterande besiktningar av tak, krypgrund och altan rekommenderas."
   },
   "ground_truth": {
     "CadastralDesignation": "Gaddebo 1:4",
