@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3664859",
+  "model_output": {
+    "CadastralDesignation": "Stadsskogen 14:4",
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": true,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Säljarinformationen listar utförda renoveringar (tak bytt 2023, fasad målad 2016). Mikrobiell påväxt och fuktfläckar noteras på vindens underlagstak och golv. Våtutrymmen har äldre standard och rörgenomföringar följer ej dagens branschregler."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Stadsskogen 14:4",
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    }
+  }
+}

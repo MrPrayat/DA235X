@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3662802",
+  "model_output": {
+    "CadastralDesignation": "Vanneboda 1:13",
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": true,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Fastigheten uppvisar behov av renovering av fasad, med bland annat färgsläpp, torrsprickor och mindre röta vid vindskivor. Fasadpanel riskerar fuktskador vid behov av målning. Mindre anmärkningar gäller ventilation i kök samt spricka i fönster i dusch."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Vanneboda 1:13",
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    }
+  }
+}

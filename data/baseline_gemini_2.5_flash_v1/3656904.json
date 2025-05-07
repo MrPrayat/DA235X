@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3656904",
+  "model_output": {
+    "CadastralDesignation": "Erikssund 2:4",
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": true,
+      "balcony": true,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Fastigheten uppvisar brister relaterade till tätskikt och golvbrunnar i våtrum, vilket ökar risken för vattenskador. Dessutom noterades avvikelser med fönsterbleck och tröskelplåtar som kan leda till fuktskador i fasad och vid altandörrar."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Erikssund 2:4",
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    }
+  }
+}

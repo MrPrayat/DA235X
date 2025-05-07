@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3655872",
+  "model_output": {
+    "CadastralDesignation": "Österbybruk 1:170",
+    "InspectionDate": "2024-10",
+    "MoistureDamage": {
+      "mentions_garage": true,
+      "mentions_källare": true,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": true,
+      "balcony": true,
+      "källare": true,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": "Höga fuktvärden uppmättes i källarens gillestuga. Vid renovering av gillestugan rekommenderas fuktsäkra material och mekanisk ventilation."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Österbybruk 1:170",
+    "InspectionDate": "2024-10",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": true,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    }
+  }
+}

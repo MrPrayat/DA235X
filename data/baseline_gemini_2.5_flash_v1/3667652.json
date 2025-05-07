@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3667652",
+  "model_output": {
+    "CadastralDesignation": "Heden 17:12",
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Läckageskydd saknas i diskbänksskåpets botten. Golvbrunn i dusch på övre plan ej bytt vid renovering. Köpare kan begära fortsatt teknisk utredning för att klarlägga om risk för väsentligt fel som besiktningsmannen antecknat i riskanalysen och under okulära noteringar finns eller inte."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Heden 17:12",
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    }
+  }
+}

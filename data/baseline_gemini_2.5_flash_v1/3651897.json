@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3651897",
+  "model_output": {
+    "CadastralDesignation": "Rönninge 1:537",
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Spår av fukt noterades under tvättstugan, orsak och omfattning bör fastställas. Golvbrunnen i badrummet bör eventuellt justeras av fackman. Förhöjd fuktighet och mikrobiell påväxt har noterats i krypgrunden. Kontakt med fackman för rekommendation på åtgärder rekommenderas."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Rönninge 1:537",
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    }
+  }
+}

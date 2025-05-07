@@ -23,5 +23,11 @@ PRICES = {
         "input": 0.15,
         "cached input": 0.00,
         "output": 0.6
+    },
+    "gemini-2.0-flash":
+    {
+        "input": 0.10,
+        "cached input": 0.00,
+        "output": 0.4
     }
 }

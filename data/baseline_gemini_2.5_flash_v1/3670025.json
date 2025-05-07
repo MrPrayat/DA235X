@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3670025",
+  "model_output": {
+    "CadastralDesignation": "Näsbypark 10:24",
+    "InspectionDate": "2024-12",
+    "MoistureDamage": {
+      "mentions_garage": true,
+      "mentions_källare": true,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": "Fuktvärden över kritisk nivå och mikrobiell tillväxt noterades i krypgrunden. Det rekommenderas att krypgrundens klimat blir torrare och att organiskt material rensas bort från marken."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Näsbypark 10:24",
+    "InspectionDate": "2024-12",
+    "MoistureDamage": {
+      "mentions_garage": true,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3669725",
+  "model_output": {
+    "CadastralDesignation": "Stockholm Alf 4",
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": true,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Fastigheten har renoveringsbehov på tak, fasad och i källaren, inklusive äldre våtrum och dränering. Förhöjda fuktvärden och fuktfläckar noterades i källaren, vilket kräver vidare utredning av fackman. Mindre anmärkningar gällande taksäkerhet och belysning finns också."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Stockholm Alf 4",
+    "InspectionDate": "2024-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    }
+  }
+}

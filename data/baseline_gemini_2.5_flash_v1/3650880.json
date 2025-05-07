@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3650880",
+  "model_output": {
+    "CadastralDesignation": "Österbybruk 1:344",
+    "InspectionDate": "2024-11",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": true
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": true,
+      "balcony": true,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": "The report highlights the need for exterior maintenance on the facade, doors, windows, and balcony. Several moisture-related risks and issues were identified, including aging wet areas, missing moisture protection in the kitchen, and an inaccessible floor drain requiring further inspection. Additional recommended actions include re-inspecting the roof and attic under clearer conditions."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Österbybruk 1:344",
+    "InspectionDate": "2024-11",
+    "MoistureDamage": {
+      "mentions_garage": true,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": true,
+      "facade": true,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    }
+  }
+}

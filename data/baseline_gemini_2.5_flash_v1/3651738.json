@@ -1,0 +1,52 @@
+{
+  "pdf_id": "3651738",
+  "model_output": {
+    "CadastralDesignation": "Stockholm Vattuormen 34",
+    "InspectionDate": "2024-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": true,
+      "facade": true,
+      "balcony": true,
+      "källare": true,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": "Fastigheten har identifierade renoveringsbehov för fasad, balkonger, källare, bjälklag, tak och garage, samt fönster, våtrum och vissa installationer. Fuktskador har noterats i källaren. Vidare behöver nya radonmätningar göras, och åtgärder krävs för att uppnå godkänd OVK."
+  },
+  "ground_truth": {
+    "CadastralDesignation": "Stockholm Vattuormen 34",
+    "InspectionDate": "2024-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "garage": false,
+      "källare": false,
+      "roof": false,
+      "balcony": false,
+      "bjälklag": false,
+      "facade": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    }
+  }
+}
