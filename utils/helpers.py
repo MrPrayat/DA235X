@@ -16,13 +16,15 @@ from datetime import datetime
 from google import genai
 from google.genai import types
 from google.genai import errors as gerrors
+from mistralai import Mistral
 import httpx
 
 
 # client = OpenAI()
 
 gemini_api_key = os.getenv("GEMINI_API_KEY")
-_gemini_client = genai.Client(api_key=gemini_api_key)
+#_gemini_client = genai.Client(api_key=gemini_api_key)
+_MISTRAL_CLIENT = Mistral(api_key=os.getenv("MISTRAL_API_KEY"))
 
 
 def call_openai_image_json(image: Image.Image, prompt: str, model: str, retries=5, backoff=2) -> tuple[str, dict]:
@@ -128,6 +130,47 @@ def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini
 
     print("🛑 give-up after retries")
     return "", {"prompt_tokens":0,"completion_tokens":0,"cached_tokens":0}
+
+
+def call_mistral_image_json(image: Image.Image, prompt: str, model: str = "mistral-medium-2505", retries: int = 3, backoff: float = 1.0) -> tuple[str, dict]:
+    """
+    Send (prompt + single PNG image) to Mistral Flash, return (content, usage_dict).
+    usage_dict keys = prompt_tokens, completion_tokens, cached_tokens.
+    """
+    png_b64 = encode_image(image)
+
+    for attempt in range(retries):
+        try:
+            resp = _MISTRAL_CLIENT.chat.complete(
+                model=model,
+                messages=[{
+                    "role": "user",
+                    "content": [
+                        {"type": "text",  "text": prompt},
+                        {"type": "image_url", "image_url": f"data:image/png;base64,{png_b64}"}
+                    ]
+                }],
+                temperature=0,
+            )
+            # success
+            u = resp.usage
+            usage = {
+                "prompt_tokens":     u.prompt_tokens,
+                "completion_tokens": u.completion_tokens,
+                "cached_tokens":     0,
+            }
+            return resp.choices[0].message.content, usage
+
+        except Exception as e:
+            # simple retry on any exception
+            if attempt < retries-1:
+                wait = backoff * (2**attempt)
+                print(f"[Mistral] error on attempt {attempt+1}: {e}. retrying in {wait:.1f}s…")
+                time.sleep(wait)
+                continue
+            else:
+                print(f"[Mistral] failed after {retries} attempts: {e}")
+                return "", {"prompt_tokens":0,"completion_tokens":0,"cached_tokens":0}
 
 
 def synthesize_final_json_openai(page_results: list, model: str, retries=5, backoff=2) -> tuple[dict, dict]:
@@ -251,6 +294,75 @@ def synthesize_final_json_gemini(page_results: list, model: str, retries=6, back
         print("Could not decode JSON in synthesis.")
         return {}, usage
 
+
+def synthesize_final_json_mistral(page_results: list, model: str = "mistral-medium-2505", retries: int = 4, backoff: float = 1.0) -> tuple[dict, dict]:
+    """
+    Merge page-level JSONs via Mistral.
+    Returns (merged_json, usage_dict), retrying on errors.
+    """
+    print("Synthesizing from page-level results with Mistral…")
+
+    # build the standard prompt
+    field_lines   = [f'- "{k}": {FIELD_DEFINITIONS[k]}' for k in FIELDS]
+    json_tmpl     = "{\n" + ",\n".join([f'  "{k}": null' for k in FIELDS]) + "\n}"
+    prompt_header = (
+        "You are given a list of partial JSON outputs extracted from different pages of a housing inspection report.\n"
+        "Each JSON may contain correct or incorrect values, or have missing fields.\n"
+        "Your job is to reason through them and return a single, best-version JSON object.\n\n"
+        "Instructions:\n"
+        "- For all fields, use the most complete and accurate value.\n"
+        "- If a field is missing in all pages, return a reasonable default.\n"
+        "- **Always include 'SummaryInsights', even if no insights are found.**\n"
+        "- Return in exactly the JSON format shown below.\n\n"
+        "Field definitions:\n"
+        + "\n".join(field_lines)
+        + "\n\nReturn the final merged JSON:\n"
+        "```json\n" + json_tmpl + "\n```\n"
+        f"Here is the list of page-level JSONs:\n\n"
+        f"{json.dumps(page_results, indent=2, ensure_ascii=False)}\n\n"
+        "Now return the final merged JSON object:"
+    )
+
+    # retry loop
+    for attempt in range(retries):
+        try:
+            resp = _MISTRAL_CLIENT.chat.complete(
+                model=model,
+                messages=[{"role": "user", "content": prompt_header}]
+            )
+            break
+        except Exception as e:
+            if attempt < retries - 1:
+                wait = backoff * (2 ** attempt) + random.random()
+                print(f"[Mistral] synthesis error on attempt {attempt+1}: {e}. retrying in {wait:.1f}s…")
+                time.sleep(wait)
+            else:
+                print("[Mistral] synthesis failed after retries:", e)
+                # return empty + zero usage
+                return {}, {"prompt_tokens":0,"completion_tokens":0,"cached_tokens":0}
+
+    # extract text + usage
+    output = resp.choices[0].message.content.strip()
+    ut     = resp.usage
+    usage  = {
+        "prompt_tokens":     ut.prompt_tokens,
+        "completion_tokens": ut.completion_tokens,
+        "cached_tokens":     0,
+    }
+
+    # strip fences if present
+    if output.startswith("```json"):
+        output = output.strip("```json").strip("```").strip()
+
+    # parse
+    try:
+        final = json.loads(output)
+    except json.JSONDecodeError:
+        print("[Mistral] could not decode JSON in synthesis.")
+        final = {}
+
+    return final, usage
+    
 
 # === Image Utilities ===
 def get_images_from_pdf(pdf_bytes, dpi=200):

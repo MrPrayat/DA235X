@@ -5,25 +5,25 @@
     "InspectionDate": "2016-03",
     "MoistureDamage": {
       "mentions_garage": true,
-      "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_källare": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": true,
       "facade": true,
-      "balcony": false,
-      "källare": true,
+      "balcony": true,
+      "källare": false,
       "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Rapporten rekommenderar reparation av gårdsbjälklag, fasad inklusive PCB-sanering, byte av PVC-duk på taket samt renovering av avlopp i källaren. Yttertaken behöver renoveras och tätskiktet i gårdsbjälklaget behöver åtgärdas. Det finns kvarvarande PCB i fogar."
+    "SummaryInsights": "Fastigheten består av 6 lamellhus med bostäder, lokaler och garage. Byggnaderna är i modern standard med förråd, driftsutrymmen, garage, lokaler och bostäder. Grundmurar av betong till berg och bärande väggar, bjälklag och pelare av armerad betong. Asbest finns i värmeörsisoleringar i källarplanen och bör provtagas. Renovering av gårdsbjälklaget och markanläggningen behöver nyanläggas. Åtgärder behövs för fuktgenomslag i källarytterväggar. Reparation av gårdsbjälklag och fasad samt PCB-sanering av garage är planerade åtgärder."
   },
   "ground_truth": {
     "CadastralDesignation": "Sundbyberg Terränglöparen 9",

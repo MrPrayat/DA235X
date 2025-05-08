@@ -8,6 +8,7 @@ from schema.schema import FIELDS, FIELD_DEFINITIONS
 from utils.helpers import (
     call_openai_image_json,
     call_gemini_image_json,
+    call_mistral_image_json,
     get_images_from_pdf,
     is_text_pdf,
     is_appendix_page_gpt,
@@ -15,6 +16,7 @@ from utils.helpers import (
     generate_default_ground_truth,
     synthesize_final_json_openai,
     synthesize_final_json_gemini,
+    synthesize_final_json_mistral,
     cost_usd,
     log_pdf_usage,
     log_batch_summary,
@@ -25,7 +27,7 @@ from collections import defaultdict
 from datetime import datetime
 
 # === Constants ===
-MODEL_NAME = "gemini-2.0-flash"
+MODEL_NAME = "mistral-medium-2505"
 # MODEL_NAME = "gpt-4.1"
 EXTRACTION_STRATEGY = "page-by-page"
 
@@ -147,7 +149,7 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
 
     for i, page_img in enumerate(images):
         print(f"Processing page {i+1}/{len(images)}...")
-        raw, usage = call_gemini_image_json(page_img, prompt_text, MODEL_NAME)
+        raw, usage = call_mistral_image_json(page_img, prompt_text, MODEL_NAME)
 
         # Update cumulative totals using attributes for OpenAI
         # token_meter[pdf_id]["prompt"] += usage.prompt_tokens
@@ -208,7 +210,8 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
         json.dump(all_results, f, indent=2, ensure_ascii=False)
 
     # final_json, usage = synthesize_final_json_openai(all_results, MODEL_NAME)
-    final_json, usage = synthesize_final_json_gemini(all_results, MODEL_NAME)
+    # final_json, usage = synthesize_final_json_gemini(all_results, MODEL_NAME)
+    final_json, usage = synthesize_final_json_mistral(all_results, MODEL_NAME)
 
     # Update cumulative totals
     token_meter[pdf_id]["prompt"] += usage["prompt_tokens"]

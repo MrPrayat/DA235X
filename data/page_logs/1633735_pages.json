@@ -1,6 +1,6 @@
 [
   {
-    "CadastralDesignation": "Terränglöparen 9",
+    "CadastralDesignation": "Sundbyberg Terränglöparen 9",
     "InspectionDate": "2016-04",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -25,7 +25,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": "Sundbyberg Terränglöparen 9",
     "InspectionDate": "2016-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -47,11 +47,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Besiktningen utförd 17 mars 2016 visade inga större brister, men det rekommenderas att lägga till grund för talan om jordabalken."
   },
   {
     "CadastralDesignation": "Sundbyberg Terränglöparen 9",
-    "InspectionDate": null,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -72,36 +72,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fastigheten består av 6 lamellhus med bostäder, lokaler och garage. Byggnaderna är i modern standard med förråd, driftsutrymmen, garage, lokaler och bostäder. Grundmurar av betong till berg och bärande väggar, bjälklag och pelare av armerad betong."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -137,81 +112,6 @@
     },
     "RenovationNeeds": {
       "roof": false,
-      "garage": true,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": true
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Tätskikten på gårdsbjälklagen över garagen behöver bytas ut inom nära framtid. Elinstallationerna och hissmaskiner med styr- och reglerutrustningar behöver ses över inom ca 10 år."
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": true
-    },
-    "SummaryInsights": "Viss sanering har utförts i samband med utbyte av fönsterbågar, men det återstår 7 380 löpmeter PCB-fog att inventera."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": true
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Gårdsbjälklagets tätskikt är drygt 45 år och i behov av renovering inom nära framtid. I samband med renovering av gårdsbjälklagets tätskikt kommer hela markanläggningen / finplaneringen uppepå behöva nyanläggas."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": true,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -222,7 +122,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Invändig takavvattning rekommenderas relining inom några år. Utbyte av tätningslister samt genomgång av fönstren rekommenderas utföras om ca 10 år."
+    "SummaryInsights": "Renovering av badrum har genomförts ca 1998-1999. Vattenradiatorer är genomgående renoverade. Värmeproduktionen är ansluten till fjärrvärme."
   },
   {
     "CadastralDesignation": false,
@@ -247,39 +147,14 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Gårdsbjälklagets tätskikt behöver renoveras eller repareras inom något år. I samband med renoveringarna rekommenderas även till- och frånluftsfläktarnas installationer bytas ut."
+    "SummaryInsights": "Byggnaden har genomgått omfattande renoveringar, inklusive byte av fönster, entrepartier, luftfläktmotorer, utrustning i värmecentralen, badrum, styr- och reglerutrustning, och yttertak. I övrigt har bara löpande underhåll utförts. Några nära förestående underhållsbehov finns främst avseende tekniskt uttjänta avloppsinstallationer, på ca 10 års sikt elinstallationerna och hissmaskiner med styr- och reglerutrustning samt de flesta fläktenheterna."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": null,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": true,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Stamregleringsventiler i källare rekommenderas att bytas inom ca 5 år. Avloppen rekommenderas att relinas inom nära framtid. Synliga delar i källarplanet bör bytas ut."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
@@ -295,13 +170,38 @@
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": false
+      "presence": true
     },
-    "SummaryInsights": "Elinstallationer i lägenheternas badrum och wc:ar bör bytas i samband med renoveringar. VA-stambyte rekommenderas."
+    "SummaryInsights": "Asbest finns i värmeörsisoleringar i källarplanen och bör provtagas. Skyddsrummet har skyddsrumbesiktning utförd för några år sedan. Inventering av PCB har utförts, men inga ytterligare åtgärder har nämnts."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": "2016-03",
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": true,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": true,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Renovering av gårdsbjälklaget och markanläggningen behöver nyanläggas. Åtgärder behövs för fuktgenomslag i källarytterväggar."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -311,22 +211,22 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
-      "garage": true,
-      "facade": true,
-      "balcony": false,
-      "källare": true,
-      "bjälklag": true
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": true,
+      "källare": false,
+      "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Rapporten rekommenderar reparation av gårdsbjälklag, fasad inklusive PCB-sanering, byte av PVC-duk på taket samt renovering av avlopp i källaren."
+    "SummaryInsights": "Balkongerna är genomgående indragna och därigenom ganska väderskyddade. Utbyte av tätningslister samt genomgång av fönstren för öppnings- / stängningsfunktioner rekommenderas utföra om ca 10 år."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -350,28 +250,128 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "VVS-installationer som fjärrvärmeundercentraler och radiatorventiler har lång återstående teknisk livslängd. Avloppen är generellt i behov av renovering, särskilt om de inte har renoverats sedan 1998/1999."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": true,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Garageportar godkända och besiktigade till januari 2017. Hissmaskiner mm bedöms ha knappt 10 år till rekommenderat utbyte."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2016-03",
+    "MoistureDamage": {
+      "mentions_garage": true,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": true,
+      "facade": true,
       "balcony": false,
       "källare": false,
       "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": true
+      "presence": false
     },
-    "SummaryInsights": "Yttertaken behöver renoveras och tätskiktet i gårdsbjälklaget behöver åtgärdas. Det finns kvarvarande PCB i fogar."
+    "SummaryInsights": "Reparation av gårdsbjälklag och fasad samt PCB-sanering av garage är planerade åtgärder. Utbyte av takavvattning, PVC-duk, tätningslister, maskinpark, stamregleringsventiler, avlopp och luftbehandlingsaggregat är också planerade."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Renovering av 42 hissar planeras till ca 2025 med en kostnad på ca 21 000 kkr."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Fastigheten har genomgått omfattande renoveringar under 1969-1970, inklusive yttertaken, badrum, maskinparken, och värmesystemet. Åtgärder behövs för att betrakta underhållet som normalt periodiskt fastighetsunderhåll. Om det efter förvärvet återstår lägenheter att upplåta med hyresrätt, bör en framtida årlig underhållsavsättning för sådana göras med ca 2-3 000:-/lägenhet."
   }
 ]
