@@ -47,32 +47,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": true,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": true,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Nockpannor och nocktätning täcker bristfälligt på den södra sidan och bör åtgärdas. En skadad takpanna noterades i anslutning till nocken och bör bytas."
+    "SummaryInsights": "Besiktningen genomfördes 2021-05-21 och inga akuta åtgärder krävs enligt rapporten. Besiktningsmannen ansvarar inte för fel och är inte skyldig att betala för skador som uppstår efter besiktningen."
   },
   {
     "CadastralDesignation": false,
@@ -97,7 +72,32 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Äldre golvbrunn av gjutjärn i tvättstugan bör åtgärdas då gjutjärnet rostar och otätheter kan bildas. Golvbrunnen i badrummet bör bytas ut då den inte byttes i samband med klinkersättningen, vilket avviker från gällande branschregler. Golvfallet saknas i duschrummet och bör åtgärdas."
+    "SummaryInsights": "Inga akuta åtgärder behövs enligt besiktningsmannen. Byggnaden är i normalt ålderskomligt skick med vissa mindre noteringar såsom färg som släpper på fasaden och mindre röta på vissa noterade ställen."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Plastmattan på golvet bör bytas och tekniskt avskrivet på grund av ålder. Gjutjärnsrör och äldre golvbrunnar bör uppmärksammas för att förhindra framtida fuktskador."
   },
   {
     "CadastralDesignation": false,
@@ -105,9 +105,59 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Risk för mikrobiell tillväxt på grund av fukt och temperaturvariationer i betongplattan. Övervägandebesiktningar rekommenderas."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": true,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": true,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Överlåtelsebesiktningen omfattar en okulär besiktning av fastighetens huvudbyggnad, samt vidbyggd del av hus samt garage, carport eller förråd samt den mark som ansluter till byggnad som har teknisk betydelse för den besiktade byggnaden."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -146,56 +196,6 @@
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": true
     },
     "SummaryInsights": null
   },

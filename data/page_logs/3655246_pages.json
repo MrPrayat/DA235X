@@ -25,7 +25,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Apan 19",
+    "CadastralDesignation": "Kumla 692 32",
     "InspectionDate": "2023-09",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -47,6 +47,31 @@
       "Measured": false,
       "presence": false
     },
+    "SummaryInsights": "Inga specifika renoveringsåtgärder nämns i rapporten. Besiktningen gäller som underlag vid köp/försäljning av fastigheten."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
     "SummaryInsights": null
   },
   {
@@ -80,31 +105,6 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
-      "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
@@ -122,11 +122,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Ett uppkopplat hemlarm rekommenderas. Ett lås som inte går att öppna inifrån utan nyckel rekommenderas för altan- och balkongdörrar. Installera en vattenfelsbrytare."
+    "SummaryInsights": "Inspektionen rekommenderar installation av ett hemlarm och ett larm för vattenfelsbrytare. Dessutom rekommenderas att montera ett läs på altandörren och att avloppsslang från diskmaskinen ska vara fastmonterad för att förhindra eventuell läckage."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -141,38 +141,38 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Det rekommenderas att installera vattentät inklädnad i diskbänksskåpet. Vinden bör hållas under uppsikt och kontrolleras regelbundet på grund av mikrobiell påväxt."
+    "SummaryInsights": "Fuktproblem har upptäckts i underlagstaket och det rekommenderas att kontrollera vinden minst två gånger om året. Det rekommenderas även att hålla vinden under uppsikt för att se om påväxten ökar."
   },
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": true,
+      "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": true
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
-      "källare": true,
+      "källare": false,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Taket bör rensas från mossa och skräp. Sprickor och glipor i fasaden bör åtgärdas. Gjutjärnsbrunnar i källaren bör bytas ut vid framtida renovering."
+    "SummaryInsights": "Taket har moss- och skräpväxt som kan leda till fuktskador och takkonstruktionen kan vilka vilket kan resultera i mikrobiella skador. Fasaden har sprickor och glipor som ökar risken för fuktskador och i bakomvarande konstruktioner. Kontakta fackman för rätt åtgärd och lösning."
   },
   {
     "CadastralDesignation": false,
@@ -250,8 +250,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -272,14 +272,14 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Det finns risk för att en skada kan uppstå i badrummet, bör du kontakta en branchspecialist. Det är viktigt att montera underlägget rätt. Är det felaktigt monterat kan det förvärra skadorna, till exempel om underlägget inte är tillräckligt inskujet under diskmaskinen."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": true,
+      "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
@@ -297,6 +297,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Det rekommenderas att kontrollera och åtgärda brandvarnare och brandsläckare samt att se över husets försäkringar. Det rekommenderas även att undvika husvamp genom att inspektera krypgrunder och se till att regnvatten leds bort från huset."
   }
 ]

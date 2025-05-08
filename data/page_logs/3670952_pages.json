@@ -1,6 +1,6 @@
 [
   {
-    "CadastralDesignation": "Orrviken 2:22",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -22,7 +22,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Kontroll av golvkonstruktion utfördes i förrådsutrymme. Övergolv i övriga rum förutsätts vara utförda på samma sätt som i detta."
   },
   {
     "CadastralDesignation": false,
@@ -72,10 +72,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fuktmätningar i träregel visar på fuktkvot på 14% på distans och 13% respektive 8,1% i träregel."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -91,12 +91,12 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Byggnaden har fuktproblem i betongplattan och behöver åtgärdas för att förhindra fortsatt skada. Golvkonstruktionen är utförande enligt byggnadens ålder och behöver inte renoveras för närvarande."
   }
 ]

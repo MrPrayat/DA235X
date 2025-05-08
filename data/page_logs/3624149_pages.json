@@ -1,6 +1,6 @@
 [
   {
-    "CadastralDesignation": "Brunnsnäs 1:92",
+    "CadastralDesignation": "Dundervägen 18, 134 61 Ingarö",
     "InspectionDate": "2024-06",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -22,32 +22,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Brunnsnäs 1:92",
-    "InspectionDate": "2024-06",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
+    "SummaryInsights": "Denna besiktning är utförd på uppdrag av säljaren. En köpare bör göra en egen undersökning och överta detta besiktningsutlåtande för att utföra en köparenomgång."
   },
   {
     "CadastralDesignation": "Brunnsnäs 1:92",
@@ -72,10 +47,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "En okulär besiktning av huvudbyggnaden och fuktmätning genomfördes. Besiktningsmannen ansvarar för fel och är skyldig att betala för krav som reklameras framställts senare än två år efter att uppdraget avslutats."
   },
   {
-    "CadastralDesignation": "Brunnsnäs 1:92",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-06",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -97,35 +72,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Avloppsrör till infiltrationen har gått isär, vatten mynnar ut i grunden. Avloppsrör till toatanken saknar täcklock vid grenröret. Fritt stående vatten noteras lokalt."
+    "SummaryInsights": "Byggnaden var vid besiktningstillfället fullt möblerad. Besiktning har skett av de delar som varit normalt åtkomliga utan omflyttning av möbler och belamrade ytor. Bakomliggande ytor ingår i köparens undersökningsplikt."
   },
   {
-    "CadastralDesignation": "Brunnsnäs 1:92",
-    "InspectionDate": "2024-06",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": true,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-06",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -147,10 +97,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Avloppsrör till infiltrationen har gått isär i en skarv och vattnet mynnar ut i grunden. Det finns en tydlig avloppslukt i utrymmet. Fritt stående vatten noteras lokalt."
   },
   {
-    "CadastralDesignation": "Brunnsnäs 1:92",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-06",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -172,10 +122,60 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Risken för framtida skador på grund av fuktbelastning och dålig ventilation är framträdande, särskilt i bostaden och på vinden. Det rekommenderas att åtgärda dessa problem för att förhindra kondensering och mögelpåväxt."
   },
   {
-    "CadastralDesignation": "Brunnsnäs 1:92",
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-06",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Överlåtelsebesiktningen omfattar sammanfattningsvis av fem delar: tillhandahållna handlingar, okulär besiktning, riskanalys, eventuell rekommendation om fortsatt teknisk utredning och ett besiktningsutlåtande. Besiktningsmannen ska även ha betydelse vid förhandling om de villkor som ska gälla för fastighetköpet och kan utföras till ett dolda fel försäkring."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-06",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Besiktningsmannen är skyldig att ersätta den skada som besiktningsmannen orsakar uppdragsgivaren genom vårdslöshet eller försummelse vid utförandet av överlåtelsebesiktningen. Besiktningsmannens ansvar är dock begränsat till det lägsta av följande belopp: a) Skillnaden mellan fastighetens värde vid överlåtelsetillfället med respektive utan fel i besiktningsutlåtandet. b) Den ersättning som uppdragsgivaren i förekommande fall utgett och varit skyldig att utge till annan till följd av fel i besiktningsutlåtandet. c) 15 prisbasbelopp enligt lagen allmän försäkring vid den tidpunkt då avtal om överlåtelsebesiktning träffades."
+  },
+  {
+    "CadastralDesignation": false,
     "InspectionDate": "2024-06",
     "MoistureDamage": {
       "mentions_garage": false,

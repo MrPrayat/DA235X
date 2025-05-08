@@ -1,6 +1,6 @@
 [
   {
-    "CadastralDesignation": "Lännersta 22:10",
+    "CadastralDesignation": "Saltsjö-Boo",
     "InspectionDate": "2024-11",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -25,8 +25,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -47,7 +47,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Huset kräver kontinuerligt underhåll då alla byggnadsdelar utsätts för dagligt slitage. Det rekommenderas att följa besiktningsprotokollet och göra en telefongenomgång av besiktningsmannen."
   },
   {
     "CadastralDesignation": false,
@@ -75,8 +75,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": false,
-    "InspectionDate": null,
+    "CadastralDesignation": "Varudeklarerat Säljare",
+    "InspectionDate": "1997",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -97,18 +97,18 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Huset är en villa med två våningar, byggd 1997. Det har energiglas, frånluftsvärmepump, krypgrund med ovanliggande träbjälklag, trädgårdstomt och fristående garage med förråd."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,
@@ -122,11 +122,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Området närmast huset rekommenderas att vara fritt från växtlighet."
+    "SummaryInsights": "Växter finns i anslutning till byggnaden. När det finns rabatter och växter nära byggnaden finns risk att fukt stannar kvar i väggarna. Detta kan i sin tur orsaka invändiga fuktskador. Växternas rötter kan också skada grundmuren och sätta dräneringsledningarna ur funktion. Området närmast huset rekommenderas att vara fritt från växtlighet."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -147,7 +147,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen/Snickerier/Takfot är i behov av målning/underhåll. För att öka livslängden på fasadbeklädnaden rekommenderas målning och underhåll."
+    "SummaryInsights": "Fasadbeklädnaden och träkonstruktioner är i behov av målning och underhåll för att förhindra fukt- och rötskador. Isolerglas är äldre och bör bytas ut för att förbättra tätheten mellan fönsterrutorna."
   },
   {
     "CadastralDesignation": false,
@@ -157,7 +157,7 @@
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -172,14 +172,14 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Yttertaket är äldre och har minskat motstånd mot vatteninträngning, vilket kan leda till fuktskador. Det rekommenderas att mossan tas bort från takpannorna för att öka livslängden på taket."
+    "SummaryInsights": "Taket är äldre och har läckage samt takfotsskador, vilket kan leda till fuktskador och mikrobiell tillväxt. Det rekommenderas att mossan tas bort från takpannorna."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": true,
+      "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": true,
       "mentions_bjälklag": false,
@@ -197,21 +197,21 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "För att öka livslängden rekommenderas målning och underhåll av altan och balkong. Området närmast byggnader rekommenderas att vara fritt från växtlighet. Installationen av krypgrundsavfuktare bör servas årligen med filterbyte och kontroll."
+    "SummaryInsights": "Det finns risk för fuktskador på altan och fasad, och det rekommenderas att installera en krypgrundsavfuktare för att minska fuktkvoten i krypgrunden. Vaxter nära byggnaden kan orsaka fuktskador och bör vara fritt från växtlighet."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -222,11 +222,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "För att öka livslängden på taket rekommenderas att mossan tas bort från takpannorna."
+    "SummaryInsights": "Rapporten indikerar risk för fuktskador i väggkonstruktionen på grund av otätheter och bristfällig fuktskydd. Det rekommenderas att kontrollera och förbättra fuktkvoten i väggkonstruktionen samt att undersöka och åtgärda eventuella mikrobiella skador."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -247,11 +247,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Våtutrymmet har äldre ytskikt och rörgenomföringar i golv, vilket innebär en ökad risk för vattenskador. Det rekommenderas att installera en inspektionslucka till vindsutrymmet."
+    "SummaryInsights": "Vindutrymmet saknar lucka och rekommenderas att en kompletterande besiktning görs vid en inspektionslucka installerats. Våtutrymmet har äldre yt-/tätskikt och rörgenomföringar i golv, vilket kan innebära en ökad risk för vattenskador."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": null,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -297,10 +297,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fönster i badrummet bör skyddas mot vattenbegjutning. WC-stolen bör åtgärdas på grund av fuktrisk."
+    "SummaryInsights": "Fuktindikering i utrymmet gav inga förhöjda fuktindikationer. Rörgenomföring i vägg under kommod saknar väggbricka, vilket medför en ökad risk för att vatten tränger i i omkringliggande konstruktioner och orsakar fuktskador. Det rekommenderas att skydda fönstret mot vattenbegjutning för att minska risken för fuktskador på fönster och väggkonstruktion."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -325,8 +325,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
@@ -341,17 +341,17 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inspektionen visar på fuktisolering och dräneringsledning i huset. Bjälklag har synliga skador och behöver åtgärdas. Det finns även risk för mikrobiell tillväxt vid vissa förhållanden."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -372,22 +372,22 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Rapporten nämner behovet av att rengöra takmaterialet från väderskydd och att åtgärda bjälklaget på grund av grundläggningstypen."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
-      "mentions_garage": false,
+      "mentions_garage": true,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,
-      "garage": false,
+      "garage": true,
       "facade": false,
       "balcony": false,
       "källare": false,
@@ -397,186 +397,11 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inspektionen visar på fukt- och skador i garaget som bör åtgärdas. Asbest förekommer i byggnaden och bör hanteras enligt protokoll."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": true
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": true
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -620,7 +445,182 @@
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": true
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": "Varudeklarerat Säljare",
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": true,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": true,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Fukt och dagvattenledning i garaget behöver åtgärdas. Byggnaden har ett dolt fel som kräver noggrann besiktning innan köpet."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
     },
     "SummaryInsights": null
   },
@@ -647,6 +647,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Varudeklarerat rekommenderar att köpare kontaktar försäkringsbolaget direkt för ersättning vid skador efter köp. Dokumentationen om bostadens skick underlättar värderingsprocessen och minskar risken för utdragna prisdiskussioner."
   }
 ]

@@ -26,7 +26,7 @@
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": "2024-12",
+    "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -47,14 +47,39 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inga specifika renoveringsåtgärder nämns i rapporten, men det föreslås en fördjupande undersökning."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektionen visar på fuktisolering och dräneringsledning i källaryttervägg samt fuktisolering och dräneringsledning i bjälklag. Det rekommenderas att åtgärda dessa problem för att förhindra framtida skador."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": true,
@@ -72,31 +97,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
+    "SummaryInsights": "Rapporten nämner att det finns risk för mikrobiell tillväxt vid 75% relativ fuktighet. Det finns även en notering om att det kan förekomma radon i byggnadsmaterial från 1920-talet till 1970-talet."
   }
 ]

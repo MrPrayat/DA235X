@@ -1,55 +1,5 @@
 [
   {
-    "CadastralDesignation": null,
-    "InspectionDate": "2024-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": "2024-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
     "CadastralDesignation": "Täby Gullrankan 20",
     "InspectionDate": "2024-08",
     "MoistureDamage": {
@@ -72,32 +22,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": "2024-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
+    "SummaryInsights": "Denna besiktning är utförd på uppdrag av säljaren. Observera att du som köpare har en egen långtgående undersökningsplikt! För att uppfylla en del av din undersökningsplikt och för att juridiskt överta detta besiktningsutlåtande krävs att du kontaktar besiktningsföretaget för utförande av en köpargenomgång."
   },
   {
     "CadastralDesignation": "Täby Gullrankan 20",
@@ -130,15 +55,140 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "En okulär besiktning av huvudbyggnad med fuktkontroll inklusive energideklaration genomfördes. Inga specifika renoveringsbehov eller fuktskador nämndes i rapporten."
+  },
+  {
+    "CadastralDesignation": "Täby Gullrankan 20",
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Huset är i behov av omfattande renoveringar och underhåll. Det finns inga akuta fuktskador men flera områden som behöver åtgärdas, inklusive tak, fönster, ventilation och värmepump."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektionen visade på behov av åtgärder för bjälklaget. Det rekommenderas att åtgärda eventuella brister i utlåtandet."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Det finns inga specifika åtgärder som behöver vidtas enligt rapporten. Vissa delar som takpannor och fuktmätning under gränsvärde bör dock övervakas."
+  },
+  {
+    "CadastralDesignation": "Täby Gullrankan 20",
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Besiktningen visar på normalt slitage och inga akuta åtgärder behövs. Det finns dock en riskanalys för golvbrunnar i badrummet."
+  },
+  {
+    "CadastralDesignation": "Täby Gullrankan 20",
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": true
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -147,10 +197,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanelen vid stuprör bör åtgärdas på grund av rötskador, se riskanalys. Taket är äldre och bör besiktas vidare."
+    "SummaryInsights": "Risk för läckage från yttertaket och bakomliggande fuktskador i fasaden. Risk för fukt och eventuella fuktrelaterade skador i bakomliggande väggar."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -175,32 +225,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Täby Gullrankan 20",
-    "InspectionDate": "2024-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": true,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": true
-    },
-    "RenovationNeeds": {
-      "roof": true,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Äldre tak behöver åtgärdas på grund av åldersslitage och risk för läckage. Våtrum har uppnått sin tekniska livslängd och fönster är olämpligt placerade i våtzonen. Rötskador i fasaden ökar risken för fuktrelaterade skador."
-  },
-  {
-    "CadastralDesignation": "Täby Gullrankan 20",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -222,7 +247,82 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Överlåtelsebesiktningen omfattar tillhandahållande av information från säljaren, okulär besiktning, riskanalys om sådan är påkallad samt eventuell rekommendation om fortsatt utredning. Resultatet sammanställs i ett besiktningsutlåtande."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": true,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektionen rekommenderar en riskanalys för att bedöma påtaglig risk för väsentligt fel i den okulära besiktningen. Fortsatt teknisk utredning avseende ett förhållande som inte kunnat klarläggas vid den okulära besiktningen föreslås även."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Besiktningsmannen är skyldig att ersätta den skada som besiktningsmannen orsakar uppdragsgivaren genom värdelöshet eller försäkelse vid utförandet av överlåtelsebesiktningen. Besiktningsmannen är skyldig att genomföra besiktning med särskild villkor om överlåtelsebesiktning."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektionen visar på behov av åtgärder i källaren, inklusive undersökning av köparens undersökningsplikts och möjlighet till uppdragsavtal för besiktningsmannen."
   },
   {
     "CadastralDesignation": false,
@@ -272,32 +372,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": "2024-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
+    "SummaryInsights": "Rapporten innehåller tekniska livslängder för olika byggnadsdelar och byggkonstruktioner, med anmärkning om att livslängduppgifterna är baserade på Meddelande M84:10 från Statens Institut för Byggnadsforskning och SABO-avskrivningsregler."
   },
   {
     "CadastralDesignation": "Täby Gullrankan 20",
@@ -322,90 +397,15 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fuktkontroll visar att relativ fuktighet och fuktkvot är under kritiska värden. Inga akuta åtgärder krävs."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Täby Gullrankan 20",
-    "InspectionDate": "2024-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": true
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": "2024-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": true,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": "2024-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": true,
       "mentions_facade": true
@@ -416,13 +416,13 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fuktmätning har utförts under gränsytan och bjälklagsbotten, vilket indikerar behov av åtgärder för att förhindra fuktproblem."
   },
   {
     "CadastralDesignation": "Täby Gullrankan 20",
@@ -430,9 +430,9 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": false,
+      "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -447,6 +447,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fuktmätning utfördes under gränsvärde på bjälklag 4. Golvbrunnen är delvis täckt/fogad med mjukfog."
   }
 ]

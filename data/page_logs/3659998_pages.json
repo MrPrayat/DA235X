@@ -25,7 +25,32 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Lammhult 33:1",
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Huset förvärvades 2019 av nuvarande ägare. Pappersisolering har bytts ut på taket och i samband med detta även huv till köksfläkt. Installerat fiber. Nytt räcke runt om trapphus på entreplan samt att mycket utvändiga trädgårds åtgärder utförts."
+  },
+  {
+    "CadastralDesignation": false,
     "InspectionDate": "2022-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -47,10 +72,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inspektionen visar att äldre golvbrunnar bör bytas ut i renoverat utrymme, spygatt bör anslutas till tätskikt i duschplats och otätade rörgenomföringar bör tätas. Bristerna avviker från branschstandard och kan leda till mikrobiell tillväxt eller skada på anslutande organiskt material."
   },
   {
-    "CadastralDesignation": "G22299 - Lammhult 33:1",
+    "CadastralDesignation": false,
     "InspectionDate": "2022-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -59,156 +84,6 @@
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Äldre golvbrunn i dusch/tvätt rekommenderas att bytas ut vid framtida renovering. Fönster i duschzon bör skyddas med duschdraperi."
-  },
-  {
-    "CadastralDesignation": "G22299-Lammhult 33:1",
-    "InspectionDate": "2022-03",
-    "MoistureDamage": {
-      "mentions_garage": true,
-      "mentions_källare": true,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": true,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Pappvåder på taket glipar och anslutningen till plåtdetaljer bedöms vara bristfälligt utfört. Det rekommenderas att ta kontakt med takläggare. Installationen av Nivellsystem kan förbättras genom att montera golvdon samt att täta runt anslutningen till golv."
-  },
-  {
-    "CadastralDesignation": "G22299 - Lammhult 33:1",
-    "InspectionDate": "2022-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": true,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": true,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Pappvåder glipar i skarvar på taket och det rekommenderas att kontakta en takläggare för bedömning. Installationen i källaren/allrum kan förbättras genom att montera golvdon och täta runt anslutning till golv."
-  },
-  {
-    "CadastralDesignation": "G22299-Lammhult 33:1",
-    "InspectionDate": "2022-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": true,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "G22299 - Lammhult 33:1",
-    "InspectionDate": "2022-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "G22299- Lammhult 33:1",
-    "InspectionDate": "2022-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": true,
-      "mentions_roof": true,
-      "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": false,
@@ -222,10 +97,35 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Utvändiga åtgärder på källarytterväggar bör ses som naturligt och nödvändigt. Vinden bör undersökas noggrant avseende mikrobiella skador. Takbeklädnader av papp kräver regelbunden kontroll och underhåll."
+    "SummaryInsights": "Det rekommenderas att kontakta takläggare för bedömning av utförd åtgärd och vidare åtgärdsbehov. Källaren har äldre fuktskadat dagvattensystem och dräneringssystem som bör åtgärdas för att undvika framtida fuktproblem."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
+    "InspectionDate": "2022-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": true,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": true,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Det hade kunnat ställts större fackmannamässiga krav på nyligen utfört pappbyte. Pappväder gliper i skarvar samt att anslutningen till plåtdetaljer och taksarg bedöms vara enklare/bristfälligt utfört samt att det har spikats genom pappen. Det rekommenderas att kontakta med takläggare för bedömning av utförd åtgård och vidare åtgärds behov. Källare/allrum: Installation kan förbättras genom att montera golvdon (tillufts ventilation) samt att täta runt anslutning till golv för att skapa bättre undertryck i golvkonstruktionen. Ta kontakt med fackman för åtgärd."
+  },
+  {
+    "CadastralDesignation": false,
     "InspectionDate": "2022-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -247,10 +147,110 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "I våtrum som renoverades efter 1990 bör golvbrunnen bytas, och de som renoverades efter 2007 ska bytas. Gjutjärnsbrunnar ska alltid bytas."
+    "SummaryInsights": "Stickprovskontroll visade fuktkvot på 10 % i gipsbeklädnad. Det kritiska gränsvärdet för mikrobiell tillväxt brukar anges till ca 16-17% fuktkvot (FK)."
   },
   {
-    "CadastralDesignation": "G22299-Lammhult 33:1.",
+    "CadastralDesignation": false,
+    "InspectionDate": "2022-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektionen visar på behov av åtgärder för att förbättra tillgängligheten, såsom att installera hissen eller ramper. Det finns även behov av att åtgärda synliga skador och slitage på vissa delar av byggnaden."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2022-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektionen visar på behovet av att informera uppdragsgivare om bedömningsprotokollet och dess tillgänglighet. Det finns även rekommendationer om att köparen bör informeras om köpargenomgång och dess innehåll."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2022-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektionen visar på mikrobiell skada i källaren som kräver åtgärder för att förhindra fuktinträngning och förbättra ventilationen. Det rekommenderas även att utreda luftkvaliteten i källarytterväggarna."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2022-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": "Inspektionen visar på risk för fuktskador i bjälklaget och närvaro av asbest i vissa delar av byggnaden. Det rekommenderas att vidta åtgärder för att kontrollera och åtgärda fuktproblemen samt hantera asbest enligt gällande protokoll."
+  },
+  {
+    "CadastralDesignation": false,
     "InspectionDate": "2022-03",
     "MoistureDamage": {
       "mentions_garage": false,

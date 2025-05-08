@@ -1,5 +1,55 @@
 [
   {
+    "CadastralDesignation": "Ortalavägen 245 Väddö",
+    "InspectionDate": "2024-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Denna besiktning är utförd på uppdrag av säljaren. Observera att du som köpare har en egen långtgående undersökningsplikt."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
     "CadastralDesignation": "Ortala 4:17",
     "InspectionDate": "2024-03",
     "MoistureDamage": {
@@ -22,7 +72,32 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "En okulär besiktning av huvudbyggnaden genomfördes den 2024-03-15 klockan 13:00. Besiktningsmannen ansvarar för att genomföra besiktningen och är skyldig att betala för eventuella krav som reklameras inom två år efter att uppdraget avslutats."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2022",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Huset byggdes till början av 2000-talet och har en ny avloppsanläggning från 2022. Vid stort vattenuttag kan det hända att vattnet sinar."
   },
   {
     "CadastralDesignation": false,
@@ -47,86 +122,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Ortala 4:17",
-    "InspectionDate": "2024-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
+    "SummaryInsights": "Inga akuta åtgärder krävs, men det rekommenderas att göra en ny besiktning inom en snar framtid för att säkerställa att inga nya brister har uppstått."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": null,
+    "InspectionDate": "2002",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -147,7 +147,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Byggnaden är från 1904 med tillbyggnader till 2002. Den har en trädgård och naturtomt, torpargrund/krypgrund, träpanel på fasaden och sadeltak med lertegel samt plåttak. Ventilationen är självdragsventilation/mekanisk frånluft och värmesystemet består av vattenburen värme med bergvärmepump och braskamin."
   },
   {
     "CadastralDesignation": false,
@@ -158,12 +158,12 @@
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasadpanel på husets äldre del är lite mera siten, urblekt med torrsprickor på solutsatta sidor. Vissa fönster/fönsterdörrar har lite färgflagning och kittsläpp. Råtskada finns i nedre delen av hörn i anslutning till pannrum."
+    "SummaryInsights": "Fasaden på husets äldre del är lite mera sliten, urblekt med torrsprickor på solutsatta sidor. Fönster/fönsterdörrar har lite färgflagning och kittsläpp."
   },
   {
     "CadastralDesignation": false,
@@ -180,7 +180,7 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
@@ -197,82 +197,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Taket på husets äldre del bör omläggas inom snar framtid. Taket på tillbyggda delen är i behov av översyn och förbättrande åtgärder, inklusive byte av trasiga takpannor."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Imkanal (rör från köksfläkt) saknar brandisolering och kommer åtgärdas. Plint/stolpe under altan har förskjutits och står snett. Entrédel/farstu har sjunkit och lutar."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "WC är utfört utan tätskikt på golv samt tröskelförhöjning och golvbrunnen i duschen är placerad för nära vägg. Rörgenomföringar i golv för tappvatten i tvättstugan avviker från dagens krav."
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
+    "SummaryInsights": "Taket på husets tillbyggda del är i behov av översyn/förbättrade åtgärder, i anslutning till vinkelränna finns trasiga takpannor samt takpannor med dålig täckning mot vinkelränna. Övre del av murad skorsten är i dåligt skick, söndervittrade fogar och tegelstenar."
   },
   {
     "CadastralDesignation": false,
@@ -280,7 +205,57 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
-      "mentions_roof": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Det finns en risk för att djur kan ta sig in i krypgrunden. Byggspill bör tas bort och luckan för inångshålet bör stängas. Imkanalen saknar brandisolering."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inga akuta åtgärder behövs enligt besiktningsrapporten. Små skador på ytskikt och inredning orsakade av åldersskäl eller normalt slitage noteras, men inget särskilt behöver göras här."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
@@ -298,6 +273,31 @@
       "presence": false
     },
     "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Huset är äldre än 100 år och det kan finnas skador som inte går att upptäcka vid en okulär besiktning. Torpar/krypgrunder är riskkonstruktioner för uppkomst av mikrobiella skador. Det finns risk för fuktskador vid nederbörd i underliggande konstruktioner och orsakas fuktskador. Det finns risk för tätskikt/yttskikt i utrymmet har försämrats med åren vilket ökar risken för läckage och att vattenrelaterade skador uppstår."
   },
   {
     "CadastralDesignation": false,
@@ -325,8 +325,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -372,32 +372,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
+    "SummaryInsights": "Överlåtelsebesiktningen omfattar en omsorgsfull okulär besiktning av fastigheten och dess tillgångliga utrymmen. Besiktningen sker utan några hjälpmedel och omfattar inte installationer såsom el, värme, vatten, sanitet, maskinell utrustning, mekanisk ventilation, rökgångar eller eldstäder. Besiktningen omfattar inte heller energideklaration, miljöinventering, undersökning som kräver ingrepp i byggnaden, provtryckning, radonmätning, fuktmätning eller annan mätning."
   },
   {
     "CadastralDesignation": false,
@@ -422,11 +397,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Besiktningsmannen rekommenderar en riskanalys för att bedöma behovet av teknisk utredning och eventuella åtgärder för fastighetens skick."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": null,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -447,11 +422,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Besiktningsmannen är skyldig att kontrollera riktigheten av de handlingar och upplysningar om fastigheten som han mottar i samband med överlåtelsebesiktningen. Besiktningsmannen är skyldig att ersätta den skada som besiktningsmannen orsakar uppdragsgivaren genom vårdslöshet eller försämmelse vid utförandet av överlåtelsebesiktningen."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": null,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -472,11 +447,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Uppdragsgivaren ska tillhandahålla de handlingar rörande fastigheten som besiktningsmannen behöver och även i övrigt lämna för överlåtelsebesiktningen nödvändiga upplysningar om fastigheten. Besiktningsmannen är skyldig att genomföra besiktningsåtgärd som innebär att han utsätter sig för fara."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -497,32 +472,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": true,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": true
-    },
-    "SummaryInsights": "Byte av träpanel på fasad kan behövas."
+    "SummaryInsights": "Uppdragsgivaren har rätt att överlåta besiktningsutlåtandet till en ny ägare och bör betala för överlåtelsebesiktningen inom 10 dagar från fakturadatum. Om betalning inte sker i rätt tid, har uppdragsgivaren dröjsmålsränta att betala."
   },
   {
     "CadastralDesignation": false,
@@ -547,6 +497,56 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Rapporten nämner asbest i asfaboard och rekommenderar åtgärder för avloppsluftare och dagvattenledning."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": "Rapporten anger livslängder för olika byggnadsdelar och konstruktioner, med hänvisning till Meddelande M84:10 från Statens Institut för Byggnadsforskning. Asbestcementplattor och asbestcementskivor nämns med livslängder på 30 år."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": "Rapporten anger livslängder för olika byggnadsdelar och konstruktioner, med särskilt fokus på asbestcementplattor och takkonstruktioner. Renovering och underhållsintervall rekommenderas för att säkerställa byggnadens livslängd."
   }
 ]

@@ -1,31 +1,6 @@
 [
   {
-    "CadastralDesignation": "Källsätter 1:1",
-    "InspectionDate": "2023-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
+    "CadastralDesignation": "Håkan Norén Källsätter 1:1",
     "InspectionDate": "2023-08",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -51,11 +26,11 @@
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": null,
+    "InspectionDate": "2023-08",
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_källare": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
@@ -72,7 +47,57 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fuktfläckar samt mikrobiell påväxt noterades på underlagstakets insida. Äldre insektsangrepp förekommer i utrymmet."
+    "SummaryInsights": "En uppdragsbekräftelse har överlämnats till beställaren och en genomgång av uppdragsbekräftelsen har gjorts. Besiktningsmannen ansvarar för att betala för krav som inte skyldigt betalas av fastighetsägaren."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektionen visar att det finns vissa brister i utlåtandet, såsom att besiktningsmannen inte kan göra ansvariga bedömningar för eventuella brister. Det finns även en rekommendation att åtgärda fuktfläcken på underlagstaket i ett av rummen."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": false,
@@ -147,32 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": true,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
+    "SummaryInsights": "Risk för fuktrelaterade skador i källaren på grund av vattentrymmenas ålder. Det finns också risk för läckage och skador i golv- och väggkonstruktioner."
   },
   {
     "CadastralDesignation": false,
@@ -197,11 +197,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Överlåtelsebesiktningen omfattar en sammanfattning av tillhandahållna handlingar, en okulär besiktning, riskanalys om sådan är påkallad samt eventuell rekommendation om fortsatt teknisk utredning. Resultatet av överlåtelsebesiktningen sammanställs i ett besiktningsutlåtande."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -222,11 +222,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Rapporten diskuterar ansvar och villkor för tilläggsuppdrag och överlåtelsebesiktningar, samt krav på skadeståndsskyldighet vid fel. Det finns inga specifika renoveringsåtgärder som nämns direkt."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": null,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -244,14 +244,14 @@
       "bjälklag": false
     },
     "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
+      "Measured": true,
+      "presence": true
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Asbest har påträffats i skivor på byggnaden. Det rekommenderas att ventilationssystemet städas och att vissa takytor repareras."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": null,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -272,7 +272,7 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Rapporten nämner behovet av att byta takpapp på läglutande/platta takkonstruktioner efter 20 år och att byta takpannor på betong/tegel efter 30 år. Det finns även rekommendationer för byte av vissa typer av fönster och dörrar efter 25-40 år."
   },
   {
     "CadastralDesignation": false,
@@ -297,7 +297,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "På grund av stickprovsmässig undersökning krävs en mer omfattande undersökning av konstruktionens kondition och fuktstatus."
+    "SummaryInsights": "Risk för mikrobiell tillväxt föreligger i bastu om den relativa fuktigheten i träporer och omgivande luften är över ca 75%, vilket i furuvirke motsvarar en fuktkvot på 17%. En stickprovsmätning av fuktkvot är utförd i aktuell konstruktion."
   },
   {
     "CadastralDesignation": false,
@@ -322,10 +322,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "För att säkert fastställa konstruktionens kondition och fuktstatus måste en mer omfattande undersökning utföras."
+    "SummaryInsights": "Risk för mikrobiell tillväxt förekommer, om den relativa fuktigheten i träbjälklag och omgivande luften är över ca 75%, vilket i furuvirke motsvarar en fuktkvot på 17%. Stickprovsmässig undersökning är utförd och för att säkert fastställa konstruktionens kondition och fuktstatus måste en mer omfattande undersökning utföras."
   },
   {
-    "CadastralDesignation": "Källsätter 1, 611 94 Nyköping",
+    "CadastralDesignation": "Nyköping Nyköpings kommun 1:611",
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -347,11 +347,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Energideklarationen visar att byggnaden har en energiklass D med en energianvändning på 97 kWh/m² och år. Det rekommenderas att uppgradera till energiklass C med en energianvändning på 90 kWh/m² och år. Specifik energianvändning är 54 kWh/m² och år."
   },
   {
-    "CadastralDesignation": "Källsätter 1:1",
-    "InspectionDate": null,
+    "CadastralDesignation": "Södermanland Nyköping Källsätter 1:1",
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -373,106 +373,6 @@
       "presence": false
     },
     "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": "2201-01",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Installation av vattenbesparande duschmunstycke och vattenbesparande kranmunstycke rekommenderas."
   },
   {
     "CadastralDesignation": false,
@@ -498,5 +398,105 @@
       "presence": false
     },
     "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Installation av vattenbesparande duschmunstycke och vattenbesparande kranmunstycke (\"perlator\"/\"sparlator\")."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "En energideklaration krävs för att upprätta en energibesiktning på plats. Byggnadens energiprestanda, referensvärden och åtgärdsrapport i energideklarationen följer med en bilaga."
   }
 ]

@@ -25,8 +25,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -36,9 +36,9 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -47,16 +47,16 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Huset har renoverat taket 2015 och fasaden ommålades 2017. Ny fränluftsvärmepump och radiatorer installerades 2021. Inga kända brister eller fel i huset."
   },
   {
-    "CadastralDesignation": "Rönninge 1:537",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
       "mentions_roof": false,
-      "mentions_balcony": false,
+      "mentions_balcony": true,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
@@ -64,132 +64,7 @@
       "roof": false,
       "garage": false,
       "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Fuktskador i krypgrund bör fastställas med orsak och omfattning. Tätskikt på balkong bör säkerställas."
-  },
-  {
-    "CadastralDesignation": "A29559 - Rönninge 1:537",
-    "InspectionDate": "2024-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": true,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Fukthalt och mikrobiell påväxt har noterats i krypgrunden. Kontakt med fackman rekommenderas för åtgärder."
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Kontakt med fackman för rekommendation på åtgärder rekommenderas för konstruktionens kondition och fuktstatus."
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": true
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "A29559 - Rönninge 1:537",
-    "InspectionDate": "2024-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": true
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "A29559-Rönninge 1:537",
-    "InspectionDate": "2024-08",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": true,
-      "mentions_roof": true,
-      "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": true
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
+      "balcony": true,
       "källare": true,
       "bjälklag": false
     },
@@ -197,7 +72,32 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Utvändiga åtgärder på källarytterväggarna skall ses som naturligt och nödvändig efter denna tidsperiod."
+    "SummaryInsights": "Inspektionen visar på fuktproblem i källaren och på balkongen. Renovering av golvbrunnar och avloppsrör rekommenderas."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Krypgrunden har en riskkonstruktion med avseende på fukt- och mikrobiella skador. Kontroll av fuktindikering, golvfall och stickprovskontroll av eluttag har utförts i våtutrymmen och kök. Eventuella avvikelser anges i besiktningskommentarerna."
   },
   {
     "CadastralDesignation": false,
@@ -222,11 +122,111 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "En mer omfattande undersökning rekommenderas för att säkert fastställa konstruktionens kondition och fuktstatus."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": true,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": true,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": "Inspektionen visar på behov av åtgärder i garaget på grund av byggnadstekniska undersökningar. Det finns även en risk för asbest i vissa material."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": true
+    },
+    "SummaryInsights": "Rapporten nämner förekomst av asbest och behovet av att kontrollera avloppssystemet. Det finns även information om radon och dess potentiella risker."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektionen visar på mikrobiella skador på yttertakets insida och läckage genom yttertaket. Det finns även risk för mikrobiella skador på grund av otätheter i vindsbjälklaget. Det rekommenderas att undersöka och åtgärda dessa problem."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-08",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektionen visar att det finns risk för fuktskador i vissa konstruktioner, särskilt i torpargrund/krypgrund och äldre badrum. Det rekommenderas att vidta åtgärder för att kontrollera och åtgärda fuktproblemen samt att inspektera grunden för att undvika mikrobiell tillväxt."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-08",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

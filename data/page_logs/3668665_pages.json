@@ -22,10 +22,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Denna besiktning är utförd på uppdrag av säljaren. Köparen har en egen långtgående undersökningsplikt och bör utföra en köparbesiktning inom 6 månader efter genomförd besiktning."
   },
   {
-    "CadastralDesignation": "Sigtuna Steninge 8:933",
+    "CadastralDesignation": "Siguna Steninge 8:933",
     "InspectionDate": "2024-10",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -47,10 +47,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "En okulär besiktning av huvudbyggnaden samt eventuella tilläggsuppdrag, som till exempel fuktkontroll, areamätning, radonindikering, eller besiktning av sidobyggnad med mera. Dess uppdrag redovisas som en bilaga till utlåtandet alternativt i ett separat utlåtande."
   },
   {
-    "CadastralDesignation": "Sigtuna Steninge 8:933",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-10",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -72,10 +72,60 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inspektionen visade att byggnaden var i normalt skick med hänsyn till byggnadens ålder och byggnadssätt. Inga betydelse felaktigheter återgivna, men det rekommenderas att uppdragsgivaren snarast och helst inom sjö dagar meddelar besiktningsmannen vad som enligt uppdragsgivaren skall ändras i utlåtandet."
   },
   {
     "CadastralDesignation": "Sigtuna Steninge 8:933",
+    "InspectionDate": "2024-10",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Vissa delar av rötaskade behöver åtgärdas enligt uppstigningsanordning saknas."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2024-10",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Vattenläckage från tvättmaskin bör åtgärdas och eluttag i taket är bristfälligt."
+  },
+  {
+    "CadastralDesignation": false,
     "InspectionDate": "2024-10",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -97,10 +147,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inga specifika renoveringsåtgärder nämns i rapporten, men det finns synliga skador på fasaden som bör undersökas närmare."
   },
   {
-    "CadastralDesignation": "Sigtuna Steninge 8:933",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-10",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -122,10 +172,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Överlåtelsebesiktningen ska genomföras av en sakkunnig besiktningsman och innehålla tillhandahållande av information, okulär besiktning, riskanalys samt rekommendation om fortsatt utredning."
   },
   {
-    "CadastralDesignation": "Sigtuna Steninge 8:933",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-10",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -147,60 +197,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Besiktningsmännen är skyldiga att konsultera med särskilda villkor om överlåtelsebesiktning och ska arkivera en kopia av besiktningsutlåtandet under två år från det att uppdraget slutförts. Uppdragsgivaren ska se till att samtliga utrymmen och ytor är tillgängliga för besiktning."
   },
   {
-    "CadastralDesignation": "Sigtuna Steninge 8:933",
-    "InspectionDate": "2024-10",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Sigtuna Steninge 8:933",
-    "InspectionDate": "2024-10",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Sigtuna Steninge 8:933",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-10",
     "MoistureDamage": {
       "mentions_garage": false,

@@ -22,7 +22,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Denna besiktning är utförd på uppdrag av säljaren. Köparen bör kontakta Independa för utföra en egen undersökning och juridisk överta besiktningsutlåtande."
   },
   {
     "CadastralDesignation": false,
@@ -72,7 +72,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "En okulär besiktning av huvudbyggnaden genomfördes den 2024-12-03. Besiktningsmannen är skyldig att betala för krav som reklamerats inom två år efter att uppdraget avslutats."
   },
   {
     "CadastralDesignation": false,
@@ -97,11 +97,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fastigheten köptes 2020, nytt kök 2021 och fasaden målades 2023."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -122,11 +122,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inga akuta åtgärder krävs, men det rekommenderas att göra en mera detaljerad undersökning avseende eventuella brister i utlåtandet."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": false,
+    "InspectionDate": "2006",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -172,11 +172,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Sand/fukt har trängt in i öppning i grundfundamentet 8Till vänster i bild)."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -197,10 +197,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inga akuta åtgärder behövs enligt rapporten. Rörgenomföring i golv bör följa brannschregler."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -222,7 +222,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "För att utreda orsaken, omfattning och åtgärd till att sand/fukt trängt in i krypgrunden, rekommenderas att en fördjupad undersökning utförs."
+    "SummaryInsights": "En fördjupad undersökning rekommenderas för att utreda orsaken, omfattningen och åtgärder för att sand/fukt tränger in i krypgrunden."
   },
   {
     "CadastralDesignation": false,
@@ -272,11 +272,36 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Överlåtelsebesiktningen omfattar en okulär besiktning av fastighetens huvudsakliga byggnader, inklusive synliga ytor och mark. Besiktningen sker utan ingrepp i byggnader och omfattar inte installationer eller dolda fel. Om besiktningsmannen bedömer att det finns risk för fel som inte framkommit vid den okulära besiktningen, ska detta redovisas i en riskanalys."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": null,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Besiktningsmannen rekommenderar en riskanalys för att bedöma fastighetens skick och en fortsatt teknisk utredning för att klargöra eventuella fel. Besiktningsutlåtandet innehåller även en riskanalys och rekommendation om fortsatt teknisk utredning."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -322,11 +347,36 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Uppdragsgivaren ska se till att samtliga utrymmen och ytor är tillgängliga för besiktning. Besiktningsmannen är inte skyldig att genomföra besiktning om inte tillgång till utrymmen och ytor är möjlig. Besiktningsmannen ska även vara observant på att förhållanden kan ändras eller försämras under den tid som förflyter mellan besiktning och fastighetsköp."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": null,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Uppdragsgivaren ska erlägga betalning för överlåtelsebesiktningen inom 10 dagar från fakturadatum. Om betalning inte erläggs i rätt tid, har besiktningsmannen rätt att kräva att uppdragsgivaren betalar eller om uppdragsgivarens dröjsmål med betalningen utgör ett väsentligt avtalsbrott, häva uppdragsavtalet."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -371,56 +421,6 @@
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": true,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": true
     },
     "SummaryInsights": null
   }

@@ -1,7 +1,7 @@
 [
   {
     "CadastralDesignation": "KARLSTAD KNOPPEN 4",
-    "InspectionDate": null,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -22,7 +22,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Denna besiktning är utförd på uppdrag av säljaren. Observera att du som köpare har en egen långtgående undersökningsplikt. För att uppfylla en del av din undersökningsplikt och för att juridiskt överta detta besiktningsutlåtande krävs att du kontakter SUSTERA för utföra en köparenomgång."
   },
   {
     "CadastralDesignation": false,
@@ -72,11 +72,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Uppdraget utfors enbart villkor for overlatelsebesiktning for saljare enligt SBR modellen. Besiktningen skickade via mejl den 2024-07-08. Besiktningsmannen ansvarar inte for fel och ar inte skyldig att betala for krav som reklamerats respektive framstallts senare."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": false,
+    "InspectionDate": "2001",
     "MoistureDamage": {
       "mentions_garage": true,
       "mentions_källare": false,
@@ -97,57 +97,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "I garaget uppmättes förhöjda fuktvärden i syll, vilket bör åtgärdas genom att frilägga väggskivor i nederkant för att försöka torka ut syll."
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
+    "SummaryInsights": "Garaget har fuktproblem och åtgärder har utförts för att förhindra ytterligare skador. Vissa renoveringar har utförts, såsom byte av takfönster och fasadpanel, men inga specifika åtgärder för närvarande."
   },
   {
     "CadastralDesignation": false,
@@ -172,24 +122,74 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Byggnaden är uppförd i 1 1/2 plan och byggnadsåret är 1963. Det finns en notering om att besiktningsmännen bedömer att det finns några fel eller brister i utrymmet eller byggnadsdelen."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Källaren har fuktproblem med krypgrund och krypgrundsavfuktare som behöver åtgärdas. Betongplattan är en känd riskkonstruktion och bör analyseras vidare."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektion av övre plan visar att övriga sidovindar går inte besiktiga, vilket kräver inspektionslucka. Kakel och klinker med el-golvvärme i duschen bör fixas över brunnsmanschetten."
+  },
+  {
+    "CadastralDesignation": false,
     "InspectionDate": "2024-07",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_balcony": true,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
       "facade": false,
-      "balcony": false,
+      "balcony": true,
       "källare": false,
       "bjälklag": false
     },
@@ -197,11 +197,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Betongplatta på mark med ovantätande träreglar/syllar är en känd riskkonstruktion. Risk för kemisk lukt i bostaden. Risk för vattenskador i omkringliggande konstruktioner med fukt, mögel och eller rötrelaterade skador."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -247,11 +247,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inspektionen rekommenderar att besiktningsmännen ska utbildas för att kunna utföra teknisk utredning av överlåtelsebesiktningar. Dessutom bör uppdragsgivare och besiktningsmän komma överens om att besiktningsmännen ska utföra teknisk utredning, förutsatt att detta medges av fastighetens ägare."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -272,14 +272,14 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Besiktningsmannen är skyldig att inneha en giltig konsultansvarsförsäkring med särskilda villkor om överlåtelsebesiktning. Besiktningsmannen ska arkivera en kopia av besiktningsutlåtandet under minst två år från det att uppdraget slutförts. Uppdragsgivaren ska se till att samtliga utrymmen och ytor är tillgängliga för besiktning. Det innebär att de ska vara lättåtkomliga och fria från skrymmande bohag."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
@@ -297,7 +297,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inspektionen visar att det finns risk för fukt i källaren och att det kan finnas asbest i byggnaden. Det rekommenderas att utföra en riskanalys och vidta åtgärder för att minska risken för fukt och att undersöka förekomsten av asbest."
   },
   {
     "CadastralDesignation": false,
@@ -326,7 +326,7 @@
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": null,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -347,7 +347,7 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Byggmaterial och konstruktioner har begränsad livslängd. Livslängdsuppgifter för olika byggnadsdelar finns bland annat i Meddelande M84:10 Statens Institut för Byggnadsforskning."
   },
   {
     "CadastralDesignation": false,
@@ -362,7 +362,7 @@
     },
     "RenovationNeeds": {
       "roof": false,
-      "garage": false,
+      "garage": true,
       "facade": false,
       "balcony": false,
       "källare": false,
@@ -372,7 +372,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "En fortsatt teknisk utredning rekommenderas för att avgöra orsak och omfattning till förhöjd fuktkvot i ytterväggssyll i ekonomidelen av garaget."
+    "SummaryInsights": "Fuktmätning i entreplan garage visar en fuktkvot på 22,5% vilket överstiger den rekommenderade gränsen på 17%. En teknisk utredning rekommenderas för att avgöra orsak och omfatta åtgärder för att förhindra fuktkvot i ytterväggssyll."
   },
   {
     "CadastralDesignation": false,

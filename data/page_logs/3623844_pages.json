@@ -1,6 +1,6 @@
 [
   {
-    "CadastralDesignation": "Bolby 18:4",
+    "CadastralDesignation": false,
     "InspectionDate": "2024-09",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -22,11 +22,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Denna besiktning är utförd på uppdrag av säljaren. Observera att du som köpare har en egen långtgående undersökningsplikt. För att uppfylla en del av din undersökningsplikt och för att juridiskt överta detta besiktningsutlåtande krävs att du kontakter Sustera för utföra en köpargenomgång."
   },
   {
-    "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -53,7 +53,7 @@
     "CadastralDesignation": "Bolby 18:4",
     "InspectionDate": "2024-09",
     "MoistureDamage": {
-      "mentions_garage": false,
+      "mentions_garage": true,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
@@ -62,7 +62,7 @@
     },
     "RenovationNeeds": {
       "roof": false,
-      "garage": false,
+      "garage": true,
       "facade": false,
       "balcony": false,
       "källare": false,
@@ -72,11 +72,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "En genomgång av uppdragsbekräftelsen samt villkor gjordes innan påbörjad överlåtelsebesiktning. Huvudbyggnad + vidbyggd del av hus såsom carport, förråd eller garage omfattas."
   },
   {
     "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -97,11 +97,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Renoveringar som behövs inkluderar byte av elcentral ca 2021, byte av dusch och toalett från 1992, samt byte av altan byggd ca 1988."
   },
   {
     "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
+    "InspectionDate": "1973",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -122,18 +122,18 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Byggnaden är ett fritidshus i 1 plan, byggt 1973. Taket är sadeltak med plåtbeklädnad, fasaden är träpanel, grunden är plintgrund/krypgrund, och fönstren är 2-glas kopplade. Uppvärmningen sker med direktverkande el och ventilationen är självdrag. Vattnet kommer från sommarvatten, men det finns inget avlopp."
   },
   {
-    "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": true,
@@ -145,13 +145,38 @@
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": true
+      "presence": false
     },
-    "SummaryInsights": "Fasadpanelen har underhållsbehov och rötskador, plåttaket är äldre och vindskivorna är rötskadade. Dörrar är äldre med underhållsbehov."
+    "SummaryInsights": "Fasadpaneler har underhållsbehov, färgsläpp och någon rötskada noterades. Plåttaket är äldre och den tekniska livslängden är uppnådd."
   },
   {
     "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
+    "InspectionDate": "2017-07",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Tapetläpp förekommer på väggar, bedöms vara under måligt underarbete och ej någon underliggande skada. Fuktskydden saknas under kyl/frys och i diskbänksskåp. Vattenrör är ej klamrade och äldre standard, golvmattan saknar uppvik mot väggar och runt avloppsrör."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -173,31 +198,6 @@
       "presence": false
     },
     "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": true,
-      "mentions_roof": true,
-      "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": true
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": true
-    },
-    "SummaryInsights": "Takets plåtskruvar/spikar bör gås igenom och bytas ut/kompletteras. Organiskt material bör rensas bort från grunden."
   },
   {
     "CadastralDesignation": false,
@@ -225,8 +225,58 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": true,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Rapporten beskriver allmänna villkor för överlåtelsebesiktning och nämner att besiktningsmannen ska utföra en okulär och byggnadsteknisk besiktning. Det rekommenderas att köparen undersöker om det finns en köparens undersökningsplikt enligt 19 § 2 stycket jordabalken (1970:994)."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Överlåtelsebesiktningen omfattar olika installationer och delar av byggnaden, inklusive mekanisk ventilation, uppvärmning, vatten- och avloppssystem, pool, maskinell utrustning, rökgångar, eldstäder, energideklaration, dock, stödmurar, staket, altaner, terrasser och uterum. Det ingår även undersökning av ingrepp i byggnaden, provtryckning, radonmätning, fuktmätning och mätning. Besiktningsmannen ska redovisa resultatet i ett besiktningsutlåtande och informera om byggnadens fysiska skick vid besiktningstillfället. Uppdragsgivaren ska förse besiktningsmannen med nödvändig information och tillgång till byggnaden."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -250,32 +300,7 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Bolby 18:4",
+    "CadastralDesignation": false,
     "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
@@ -301,7 +326,7 @@
   },
   {
     "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
+    "InspectionDate": "2017-09",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -322,86 +347,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inspektionsmannen har ansvar för att säkerställa tillgången till dokument och information om fastigheten. Besiktningsmannen har inte ansvar för att säkerställa att samtliga delar av fastigheten är tillgängliga för granskning. Uppdragsgivaren bör omsorgsfullt granska besiktningsrapporten efter att ha tagit emot den och omedelbart rapportera eventuella felaktigheter eller brister till besiktningsmannen."
   },
   {
-    "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Bolby 18:4",
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -421,6 +371,56 @@
     "AsbestosPresence": {
       "Measured": false,
       "presence": true
+    },
+    "SummaryInsights": "Asbest, asfaltimpregnerad skiva, nämns som ett material som bör åtgärdas. Fuktskikt och fuktkvot bör också kontrolleras för att förhindra fuktinträngning och avdunstning."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": null
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
     },
     "SummaryInsights": null
   }

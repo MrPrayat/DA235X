@@ -1,6 +1,31 @@
 [
   {
-    "CadastralDesignation": "Erikssund 2:4",
+    "CadastralDesignation": "Erikssund 2:4 Karin Månsdotters allé 156, 193 91 Sigtuna",
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Denna besiktning är utförd på uppdrag av säljaren. Observera att du som köpare har en egen långtgående undersökningsplikt. Vid en köparenomgång gäller samma villkor och ansvar som vid en separat köparbesiktning."
+  },
+  {
+    "CadastralDesignation": false,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -47,10 +72,35 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "En okulär besiktning av huvudbyggnaden inklusive energideklaration, sidobyggnad och okulär el- och VA-kontroll planeras. Besiktningen kommer att utföras av Johan Svensson och Patrik Gotthold."
   },
   {
-    "CadastralDesignation": "Erikssund 2:4",
+    "CadastralDesignation": false,
+    "InspectionDate": "2006-05",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": true,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Garaget behöver renoveras och fasaden på huset och garaget målades 2021. Det finns inga större problem med tex vatten eller fukt."
+  },
+  {
+    "CadastralDesignation": false,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -72,10 +122,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inga akuta åtgärder behövs enligt rapporten. Värme och avloppssystem fungerar bra, liksom vattenbrunnen och kakelugnen. Inga problem med fukt eller mögel har noterats."
   },
   {
-    "CadastralDesignation": "Erikssund 2:4",
+    "CadastralDesignation": false,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -97,10 +147,35 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Byggnaden har fullt möblerad besiktningstillfälle och besiktningen har skett av de delar som varit normalt åtkomliga utan omflyttning av möbler och belamrade ytor. Det finns inga direkta noteringar om behov av renovering eller åtgärder."
   },
   {
-    "CadastralDesignation": "Erikssund 2:4",
+    "CadastralDesignation": false,
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Sockeln är delvis död av altaner och lucka saknas till grunden, grunden utgår ur beskrivningen. Fönsterbleck saknas till ett fönster och taket är snötäckt och inte beskrivningsbart."
+  },
+  {
+    "CadastralDesignation": false,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -122,10 +197,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Golvbrunnar är väggnära monterade och brunnsduken är synlig under klinkers. Klinker på golv från 2008, tätskikt bakom klinker är inte besiktningsbart. Helkaklat 2008, tätskikt bakom kakel och klinker är inte besiktningsbart."
   },
   {
-    "CadastralDesignation": "Erikssund 2:4",
+    "CadastralDesignation": false,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -147,10 +222,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inga specifika renoveringsåtgärder nämns i rapporten, men det rekommenderas att kontrollera tillskurningsbesiktning och kvalitetsdokument."
   },
   {
-    "CadastralDesignation": "Erikssund 2:4",
+    "CadastralDesignation": false,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -172,116 +247,41 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Tröskelplåt saknas till altandörrar. Fönsterbleck saknas till ett fönster och det saknas uppvik på fönsterbleckens ändar vid utbyggnaden utförd 2003."
+    "SummaryInsights": "Vinden är parallellisolerad och saknar besiktningsmöjligheter. Taket är snötäckt och inte besiktningsbart."
   },
   {
-    "CadastralDesignation": "Erikssund 2:4",
-    "InspectionDate": "2023-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "I tvättstugan bör golvbrunnen åtgärdas då den är väggnära monterad. I förrådet saknas tätskikt på toppen av klacken och i duschrummet är brunnsduken felaktigt tillskuren och tätskikt bakom kakel och klinker är inte besiktningsbart. I inre hallen saknas tätskikt på golvet under varmvattenberedaren."
-  },
-  {
-    "CadastralDesignation": "Erikssund 2:4",
-    "InspectionDate": "2023-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Erikssund 2:4",
-    "InspectionDate": "2023-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Erikssund 2:4",
-    "InspectionDate": "2023-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Erikssund 2:4",
+    "CadastralDesignation": false,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": true,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Taket har missfärgningar och tätskiktet på klackar är i dåligt skick. Kvalitetsdokument saknas och klinker på golv från 2007 är i dåligt skick."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": true,
       "mentions_bjälklag": true,
       "mentions_facade": false
     },
@@ -291,16 +291,16 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Äldre våtrum (duschrum i utbyggnad utförd 2003) vars tekniska livslängd får anses vara uppnådd."
+    "SummaryInsights": "Torpargrunden har risk för mikrobiella skador och bör isoleras. Bjälklaget behöver åtgärdas för att undvika fuktskador och mögel."
   },
   {
-    "CadastralDesignation": "Erikssund 2:4",
+    "CadastralDesignation": false,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -320,12 +320,12 @@
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": false
+      "presence": true
     },
-    "SummaryInsights": null
+    "SummaryInsights": "När markytor närmast huset lutar mot grunden så ökar fuktbelastningen vilket kan skada organiska material som tex trägolv och väggsyllar."
   },
   {
-    "CadastralDesignation": "Erikssund 2:4",
+    "CadastralDesignation": false,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -372,10 +372,35 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Överlåtelsebesiktningen omfattar en sammanfattning av fastighetens fysiska skick och rekommenderar en omsorgsfull okulär besiktning av fastigheten, inklusive tillgängliga utrymmen som synliga ytor och mark."
   },
   {
-    "CadastralDesignation": "Erikssund 2:4",
+    "CadastralDesignation": false,
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": true,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektionen omfattar en teknisk bedömning av byggnadens skick, inklusive installationer och energideklaration. Det finns en påtaglig risk för väsentliga fel, vilket kräver en riskanalys och fortsatt teknisk utredning."
+  },
+  {
+    "CadastralDesignation": false,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -397,14 +422,14 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Besiktningsmannen är skyldig att ersätta den skada som uppdragsgivaren genom värdeslöshet eller försämmelse vid utförandet av överlåtelsebesiktningen. Besiktningsmannens skadeståndsskyldighet är begränsad till det lägsta av följande belopp: a) Skilnaden mellan fastighetens värde vid överlåtelsetillfället med respektive utan fel i besiktningsutlåtandet. b) Den ersättning som uppdragsgivaren i förekommande fall utgått och varit skyldig att utge till annan till följd av fel i besiktnings-utlåtandet. c) 15 prisbasbelopp enligt lagen allmän försäkring vid den tidpunkt då avtal om överlåtelsebesiktning träffades."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
@@ -422,60 +447,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inspektionen visar att det finns en undersökningsplikt för köparen att utreda eventuella fel i fastigheten. Det rekommenderas att säljaren ger särskilt utlåtande om kända fel. Uppdragsgivaren ska även se till att besiktningsmannen har rätt att vid behov träffa samman med förvärvaren för att redovisa besiktningsutlåtandet."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": "2023-03",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Erikssund 2:4",
+    "CadastralDesignation": false,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -497,10 +472,10 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Rapporten nämner asbest i takpannor och att vissa delar av byggnaden har slitage eller behöver åtgärdas, såsom avloppsluftare och vissa takdelar."
   },
   {
-    "CadastralDesignation": "Erikssund 2:4",
+    "CadastralDesignation": false,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -522,32 +497,7 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "Erikssund 2:4",
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
+    "SummaryInsights": "Rapporten anger livslängder för olika byggnadsdelar och konstruktioner, med särskild hänsyn till asbestcementskivor/eternitskivor och avskrivningsregler enligt SABO."
   },
   {
     "CadastralDesignation": false,
@@ -575,8 +525,8 @@
     "SummaryInsights": null
   },
   {
-    "CadastralDesignation": "Erikssund 2:4",
-    "InspectionDate": null,
+    "CadastralDesignation": "Sigtuna 193 91 Sigtuna",
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -594,13 +544,13 @@
       "bjälklag": false
     },
     "AsbestosPresence": {
-      "Measured": true,
-      "presence": true
+      "Measured": false,
+      "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Elinstallationen är äldre och har inte varit problematisk, men det rekommenderas att en behörig fackman utför en kontroll för att säkerställa säkerheten."
   },
   {
-    "CadastralDesignation": null,
+    "CadastralDesignation": false,
     "InspectionDate": "2023-03",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -622,11 +572,61 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inga särskilda åtgärder eller onormala problem noterades. Det förekommer problem med elinstallationen i fastigheten."
+  },
+  {
+    "CadastralDesignation": "Erikssund 2:4",
+    "InspectionDate": false,
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Avloppet har fungerat bra, det har inte varit några problem med text stopp i avloppet."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": null,
+    "InspectionDate": "2023-03",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Ingen vidare rekommendation nämns i rapporten."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": false,
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

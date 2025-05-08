@@ -36,7 +36,7 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
+      "roof": true,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -47,93 +47,68 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Taket erhöll ny takpapp 2019, arbetet utfördes av entreprenör. Badrummet är renoverat, årtal okänt."
-  },
-  {
-    "CadastralDesignation": null,
-    "InspectionDate": "2022-11",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": true,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Fasaden har mindre underhållsbehov och röta förekommer lokalt. Mindre underhållsbehov förekommer i vissa fönsterparti."
+    "SummaryInsights": "Huset är ett 1-planshus grundlagt med platta på mark och byggt 1973. Taket behöver renoveras och badrummet är renoverat årtal okänt."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": false,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": false,
-    "InspectionDate": null,
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": false,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": null,
     "InspectionDate": "2022-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": true
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Fuktindikering har utförts i våtutrymmena och köket utan att någon onormal fuktindikation har erhållits. Taket är snöbelagt och besiktning av detta är därför ej möjligt."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2022-11",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektionen visar att besiktningsförrättaren ska lämna utlåtande om byggnadens skick och identifiera särskilda risker. Det finns inga specifika åtgärder eller renoveringsbehov som nämns i texten."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2022-11",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,
@@ -154,6 +129,31 @@
     "InspectionDate": "2022-11",
     "MoistureDamage": {
       "mentions_garage": false,
+      "mentions_källare": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": true,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektionen visar på mikrobiella skador i vind och källare, vilket kräver åtgärder för att förhindra ytterligare skador och hälsorisker. Det rekommenderas att undersöka och åtgärda fuktproblemen i källarytterväggar och bjälklag."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2022-11",
+    "MoistureDamage": {
+      "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
@@ -166,17 +166,17 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": false
+      "presence": true
     },
-    "SummaryInsights": "Golvbrunnen bör bytas om våtutrymmet renoverades efter 1990 och skall bytas om renoveringen skedde efter 2007. Gjutjärnsbrunnar skall alltid bytas."
+    "SummaryInsights": "Fukt- och rötskador i träbjälklag behöver åtgärdas. Fönster av äldre typ bör bytas ut. Golvbrunnar bör bytas enligt rekommendationer."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": "2022-11",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

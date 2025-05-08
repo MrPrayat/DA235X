@@ -22,11 +22,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inga specifika renoveringsåtgärder nämns i rapporten. Besiktningen fokuserar på fastighetens allmänna skick och mätare."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -47,18 +47,18 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Huset är möblerat vid besiktningstillfället och har genomgått vissa renoveringar, såsom badrummet 2008 och tvättutrymmet 2022. Braskamin monterades 2010 och ny fränluftsvärmepump 2022. Inga akuta åtgärder nämns i rapporten."
   },
   {
     "CadastralDesignation": "Palsternackan 4",
     "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": true,
+      "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": true,
@@ -72,86 +72,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Läckage i yttertak förekommer och bör åtgärdas. Underlagstakets masonitskivor bör justeras och kompletteras. Utvändigt målade ytor har ett generellt underhållsbehov."
-  },
-  {
-    "CadastralDesignation": "C15260 - Palsternackan 4",
-    "InspectionDate": "2025-01",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "För att säkert fastställa golvkonstruktionernas och väggsyllarnas kondition och utförande krävs alltid en fortsatt teknisk undersökning. För att säkert fastställa grundens funktion och golvbjälklagets kondition krävs alltid en fortsatt teknisk undersökning."
-  },
-  {
-    "CadastralDesignation": "C15260-Palsternackan 4",
-    "InspectionDate": "2025-01",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": true,
-      "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": null
-  },
-  {
-    "CadastralDesignation": "C15260-Palsternackan 4",
-    "InspectionDate": "2025-01",
-    "MoistureDamage": {
-      "mentions_garage": false,
-      "mentions_källare": false,
-      "mentions_roof": false,
-      "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": false
-    },
-    "RenovationNeeds": {
-      "roof": false,
-      "garage": false,
-      "facade": false,
-      "balcony": false,
-      "källare": false,
-      "bjälklag": false
-    },
-    "AsbestosPresence": {
-      "Measured": false,
-      "presence": false
-    },
-    "SummaryInsights": "Notera att en mer omfattande undersökning av konstruktionens kondition och fuktstatus måste utföras."
+    "SummaryInsights": "Fuktfläckar förekommer på underlagstak av board i vind och på taket. Utvändigt målade ytor har ett normalt underhållsbehov samt mindre rötskador förekommer lokalt på nedre delen av träpanel."
   },
   {
     "CadastralDesignation": false,
-    "InspectionDate": false,
+    "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
@@ -172,7 +97,57 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Fuktindikering har utförts i våtutrymmena och det rekommenderas att kontrollera konstruktion i bilaga 1. Stickprovsmässig kontroll av jordade eluttag utfördes utan anmärkning."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": true,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Bilden visar del av vinden med missfärgningar/påväxt på tråbottenbrädor i grunden. Renovering av bjälklag rekommenderas."
+  },
+  {
+    "CadastralDesignation": false,
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": false,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": true,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": false,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": true
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "En omfattande undersökning är nödvändig för att säkerställa konstruktionens kondition och fuktstatus, särskilt för träbjälklaget."
   },
   {
     "CadastralDesignation": "Palsternackan 4",
@@ -195,16 +170,41 @@
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": true
+      "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Tillbyggnaden saknar konventionell riskkonstruktion och har därför inte utförts."
   },
   {
-    "CadastralDesignation": "C15260-Palsternackan 4",
+    "CadastralDesignation": false,
+    "InspectionDate": "2025-01",
+    "MoistureDamage": {
+      "mentions_garage": true,
+      "mentions_källare": false,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
+      "mentions_facade": false
+    },
+    "RenovationNeeds": {
+      "roof": false,
+      "garage": true,
+      "facade": false,
+      "balcony": false,
+      "källare": false,
+      "bjälklag": false
+    },
+    "AsbestosPresence": {
+      "Measured": false,
+      "presence": false
+    },
+    "SummaryInsights": "Inspektionen rekommenderar att besiktningsförrättaren ska kontrollera läckage i garaget och att ägaren bör vidta åtgärder för att förhindra framtida vattenskador."
+  },
+  {
+    "CadastralDesignation": false,
     "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": false,
+      "mentions_källare": true,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
@@ -222,18 +222,18 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inspektionen visar på behov av åtgärder för fukt och radon i vissa delar av byggnaden. Det finns även information om asbest i byggnaden."
   },
   {
-    "CadastralDesignation": "C15260-Palsternackan 4",
+    "CadastralDesignation": false,
     "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
-      "mentions_facade": true
+      "mentions_bjälklag": false,
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,
@@ -247,10 +247,10 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Utvändiga åtgärder på källarytterväggar bör ses som naturliga och nödvändiga. Takbeklädnader av papp kräver regelbunden kontroll och underhåll."
+    "SummaryInsights": "Inspektionen visar på fuktproblem i källaren som kräver åtgärder. Det rekommenderas även att undersöka och åtgärda mikrobiella skador i källaren."
   },
   {
-    "CadastralDesignation": "C15260 - Palsternackan 4",
+    "CadastralDesignation": false,
     "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
@@ -272,11 +272,11 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Det rekommenderas att alltid ta upp en lucka och inspektera grunden. Om våtutrymmet renoverades efter 1990 så bör golvbrunnen bytas och efter 2007 så skall den bytas. Gjutjärnsbrunnar skall dock alltid bytas."
+    "SummaryInsights": "Inspektionen visar att det finns risk för fuktskador i bjälklaget och att det är viktigt att kontrollera och åtgärda detta. Det rekommenderas också att inspektera och åtgärda eventuella skador på klinkers på träbjälklag."
   },
   {
-    "CadastralDesignation": null,
-    "InspectionDate": null,
+    "CadastralDesignation": false,
+    "InspectionDate": "2025-01",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,

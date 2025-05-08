@@ -13,3 +13,6 @@ timestamp,batch_id,model,extraction_strategy,num_pdfs,prompt_tokens,completion_t
 2025-05-07 14:46:36,batch_2025-05-07_1433,gemini-2.5-flash-preview-04-17,page-by-page,6,127452,13050,0,0.026948
 2025-05-07 21:44:25,batch_2025-05-07_2055,gemini-2.0-flash,page-by-page,43,3405715,166234,0,0.407065
 2025-05-08 16:53:43,batch_2025-05-08_1650,mistral-medium-2505,page-by-page,1,49536,4039,0,0.027892
+2025-05-08 17:04:35,batch_2025-05-08_1655,mistral-medium-2505,page-by-page,5,263005,20076,0,0.145354
+2025-05-08 17:16:45,batch_2025-05-08_1709,mistral-medium-2505,page-by-page,5,262695,19661,0,0.1444
+2025-05-08 18:39:07,batch_2025-05-08_1722,mistral-medium-2505,page-by-page,43,2543835,193254,0,1.404042
