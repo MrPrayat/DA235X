@@ -29,5 +29,11 @@ PRICES = {
         "input": 0.10,
         "cached input": 0.00,
         "output": 0.4
-    }
+    },
+    "pixtral-large-latest":
+    {
+        "input": 2,
+        "cached input": 0,
+        "output": 6
+    },
 }
