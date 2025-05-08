@@ -32,8 +32,14 @@ PRICES = {
     },
     "pixtral-large-latest":
     {
-        "input": 2,
+        "input": 2.00,
         "cached input": 0,
-        "output": 6
+        "output": 6.00
     },
+    "mistral-medium-2505":
+    {
+        "input": 0.4,
+        "cached input": 0.00,
+        "output": 2.00
+    }
 }
