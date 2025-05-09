@@ -5,7 +5,7 @@
     "InspectionDate": "2016-03",
     "MoistureDamage": {
       "mentions_garage": true,
-      "mentions_källare": true,
+      "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": true,
@@ -14,8 +14,8 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": true,
-      "facade": true,
-      "balcony": true,
+      "facade": false,
+      "balcony": false,
       "källare": false,
       "bjälklag": true
     },
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Byggnaden har genomgått omfattande renoveringar, men det finns behov av att byta ut taket på gårdsbyggnaden, renovera gårdsbjälklagets tätskikt, och utföra PCB-sanering av garage. Asbest finns i värmeörsisoleringar i källarplanen och bör provtagas. Inga akuta åtgärder krävs enligt rapporten, men planerade åtgärder inkluderar reparation av fasad och utbyte av avlopp."
+    "SummaryInsights": "Gårdsbjälklagets tätskikt behöver renoveras inom nära framtid, avloppsstammarna bör re-linas och PCB i fogar måste saneras. Yttertaken och hissarna kommer att behöva åtgärdas inom några år."
   },
   "ground_truth": {
     "CadastralDesignation": "Sundbyberg Terränglöparen 9",

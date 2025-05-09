@@ -1,0 +1,5 @@
+timestamp,pdf_id,model,extraction_strategy,prompt_tokens,completion_tokens,cached_tokens,total_cost_usd,pages_extracted
+2025-05-09 14:19:20,1633735,mistral-medium-2505,multipage,49520,3964,0,0.027736,15
+2025-05-09 14:21:18,2111992,mistral-medium-2505,multipage,69123,5414,0,0.038477,21
+2025-05-09 14:22:48,2998892,mistral-medium-2505,multipage,52522,3926,0,0.028861,16
+2025-05-09 14:23:42,3075757,mistral-medium-2505,multipage,32930,2543,0,0.018258,10

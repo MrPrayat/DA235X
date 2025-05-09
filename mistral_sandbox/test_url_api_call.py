@@ -28,12 +28,6 @@ messages = [
     }
 ]
 
-# Get the chat response
-chat_response = client.chat.complete(
-    model=model,
-    messages=messages
-)
-
 print("chat_response.usage.prompt_tokens: ", chat_response.usage.prompt_tokens)
 print("chat_response.usage.completion_tokens: ", chat_response.usage.completion_tokens)
 print("chat_response.usage.total_tokens: ", chat_response.usage.total_tokens)

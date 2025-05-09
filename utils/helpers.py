@@ -173,6 +173,65 @@ def call_mistral_image_json(image: Image.Image, prompt: str, model: str = "mistr
                 return "", {"prompt_tokens":0,"completion_tokens":0,"cached_tokens":0}
 
 
+def call_mistral_multipage(url: str, prompt: str, model: str, retries: int = 3, backoff: float = 1.0) -> tuple[str, dict]:
+    """
+    Send (prompt+URL) to Mistral API and return raw text and usage
+    """
+    
+    for attempt in range(retries):
+        try:
+            resp = _MISTRAL_CLIENT.chat.complete(
+                model=model,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": prompt
+                            },
+                            {
+                                "type": "document_url",
+                                "document_url": url
+                            }
+                        ]
+                    }
+                ],
+                temperature=0,
+            )
+            
+            u = resp.usage
+            usage = {
+                "prompt_tokens":     u.prompt_tokens,
+                "completion_tokens": u.completion_tokens,
+                "cached_tokens":     0,
+            }
+            return resp.choices[0].message.content, usage
+        except Exception as e:
+            # simple retry on any exception
+            if attempt < retries-1:
+                wait = backoff * (2**attempt)
+                print(f"[Mistral] error on attempt {attempt+1}: {e}. retrying in {wait:.1f}s…")
+                time.sleep(wait)
+                continue
+            else:
+                print(f"[Mistral] failed after {retries} attempts: {e}")
+                return "", {"prompt_tokens":0,"completion_tokens":0,"cached_tokens":0}
+    
+    
+    response = client.chat(
+                                model=MODEL_NAME,
+                                messages=messages,
+                                temperature=0)
+    
+    token_cost = {
+        "prompt": response.usage.prompt_tokens,
+        "cached": 0,
+        "completion": response.usage.completion_tokens,
+    }
+
+    print("token_cost: $", cost_usd(token_cost, model))
+
 def synthesize_final_json_openai(page_results: list, model: str, retries=5, backoff=2) -> tuple[dict, dict]:
     """
     Given a list of page-level JSONs, ask GPT-4o to synthesize them into one coherent JSON.

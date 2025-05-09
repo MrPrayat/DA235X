@@ -47,7 +47,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Besiktningen visade att bostadsrättsföreningen har underhållsansvar för åtgärder på huvudbyggnaden. Det finns inga akuta åtgärder men det rekommenderas att överlämna dokumentation för ritningsstudier till den som erhåller byggnaderna."
+    "SummaryInsights": "Besiktningen utförd den 5 oktober 2018 visade att bostadsrättsföreningen har underhållsansvar för åtgärder på sådana åtgärder beskrivits. Det finns inga akuta åtgärder som behöver vidtas."
   },
   {
     "CadastralDesignation": "Stockholm Munin 5 & 6",
@@ -72,16 +72,16 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Byggnaden har driftsutrymmen, tvättstuga och förråd i källaren som behöver åtgärdas. Grundmurar av natursten är pålade med betong."
+    "SummaryInsights": "Byggnaden har driftsutrymmen, tvättstuga och förråd i källaren som behöver åtgärdas. Grundmuren av natursten är betongad med sannolikt lera."
   },
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
     "MoistureDamage": {
-      "mentions_garage": true,
+      "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
-      "mentions_balcony": true,
+      "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
@@ -97,7 +97,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Inspektionen visar på fuktproblem i garaget och på balkongerna, vilket kräver åtgärder. Balkongerna av kompositmaterial behöver även renoveras."
+    "SummaryInsights": "Balkonger av kompositmaterial behöver åtgärdas. Gårdsytor och fasader har vissa underhållsbehov."
   },
   {
     "CadastralDesignation": false,
@@ -122,7 +122,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Inspektionen visar på behov av underhåll och reparationer i flera områden, inklusive köksinredning, badrum/duschrum, WC, tvättstuga, källare, förråd och installationsutrymmen. Det finns även behov av åtgärder för sophantering och maskinpark i huvudsak mellan 2010-2014."
   },
   {
     "CadastralDesignation": false,
@@ -147,13 +147,13 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": null
+    "SummaryInsights": "Installationerna är av varierande åldrar, med vissa som är utbytta och andra som är från 1935-40. Vindslägenheterna har mekanisk fränluft med köksfläkt och restaurangen har mekanisk fränluft med separat fläktenhet."
   },
   {
     "CadastralDesignation": false,
     "InspectionDate": false,
     "MoistureDamage": {
-      "mentions_garage": false,
+      "mentions_garage": true,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Byggnaden behöver renovering av gårdsbjälklag och tätskiktsrenovering av gatufasad och putsats."
+    "SummaryInsights": "Byggnaden har vissa renoveringsåtgärder såsom partiella va-stambyten, utbyte av vissa elinstallationer och troligen gårdshusfasader. Det rekommenderas att gårdsbjälklagens yt- och tätskiktsrenoveras."
   },
   {
     "CadastralDesignation": false,
@@ -197,7 +197,7 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Renovering av äldre badrum, byte av kvarvarande äldre VA-installationer och elinstallationer, samt byte av värmeventiler och gårdsfasader rekommenderas. Ny energideklaration behöver utföras under 2019."
+    "SummaryInsights": "Renovering av äldre badrum, byte av äldre VA-installationer och elinstallationer, samt byte av värmeventiler och gårdsfasader rekommenderas. Ny energideklaration behöver utföras under 2019."
   },
   {
     "CadastralDesignation": false,
@@ -233,12 +233,12 @@
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": true,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
       "källare": false,
       "bjälklag": true
@@ -247,7 +247,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renovering av bjälklag behövs på grund av rostangrepp och för att utföra tätskiktsrenoveringar. Fasader behöver renoveras inom 10 år."
+    "SummaryInsights": "Renovering av fasader och bjälklag rekommenderas. Fasader behöver renoveras inom 10 år och bjälklag bör åtgärdas."
   },
   {
     "CadastralDesignation": false,
@@ -256,7 +256,7 @@
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
-      "mentions_balcony": false,
+      "mentions_balcony": true,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
@@ -272,7 +272,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Balkonger på gatufasaden av Hagagatan 52 är i normalt skick och rekommenderas att åtgärdas var 10 år. Piskbalkonger på gårdshusets gårdssida bör underhållas parallellt med nära fasadrenovering."
+    "SummaryInsights": "Balkonger på gårdssidan bedöms vara i normalt skick, men rekommenderas att avlägsnas och utföra parallellt med nästa fasadrenovering. Piskbalkonger på gatuhusets gårdssida bör också underhållas parallellt med nästa fasadrenovering."
   },
   {
     "CadastralDesignation": false,
@@ -372,7 +372,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Radiatorventilerna bör bytas ut inom ganska nära framtid och stamregleringsventilerna i källarplanet bör utsträckas. Vissa avloppssystem bör bytas ut inom nära framtid."
+    "SummaryInsights": "Radiatorventilerna bör bytas ut i nära framtid och även äldre lägenheter kan behöva utbyte. Stamregleringsventilerna i källarplanet bör utsträckas och värmesystemet har en generellt längre teknisk livslängd än övriga installationer. Avloppssystemet behöver bytas ut inom nära framtid, särskilt badrumsavloppen."
   },
   {
     "CadastralDesignation": false,
@@ -397,7 +397,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Ventilationssystemet i lokalerna är inte godkänt enligt OVK-protokoll och behöver åtgärdas till 2022 eller 2023. Mekanisk fränluft med separat fläkt behövs i restaurangen. Gasinstallationer bör ha förhållandevis betydande återstående teknisk livslängd."
+    "SummaryInsights": "Ventilationssystemet i hyreslokalerna är av äldre typ och rekommenderas att bytas ut inom några år. Mekanisk fränluft med köksfläkt och pax-fläktar i badrum rekommenderas i lägenheterna."
   },
   {
     "CadastralDesignation": false,
@@ -422,7 +422,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Hissarna är godkända och besiktigade till december 2018. Ett av hissrummen är tillgängligt och har en tillgänglig servicehandbok. Det andra hissrummet har viss modernisering utförts 2013, men det är rimligt att tro att en omfattande renovering av hissarna kommer att behöva utföras inom ca 2-3 år."
+    "SummaryInsights": "Hissarna är godkända och besiktigade till december 2018. Ett av hissrummen är tillgängligt och har en tillgänglig servicehandbok. Det andra hissrummet har viss modernisering utförts 2013, men det är rimligt att tro att en omfattande renovering av hissen kommer att behöva utföras inom ca 2-3 år."
   },
   {
     "CadastralDesignation": false,
@@ -472,7 +472,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renovering av 1 hiss maskin mm planeras ca 2020. Utbyte av radiatorventiler och stamregleringsventiler planeras ca 2019/-21."
+    "SummaryInsights": "Renovering av 1 hiss maskin mm planeras ca 2020. Utbyte av radiatorventiler och stamregleringsventiler planeras ca 2019-2021."
   },
   {
     "CadastralDesignation": false,
@@ -497,7 +497,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renovering av gårdsbjälklagen förutsätter att befintliga bärande stålbalkar byts ut eller förstärks, utan att blästras/rostskyddsbehandlas."
+    "SummaryInsights": "Renovering av gårdsbjälklagen förutsätter att befintliga bärande stålbalkar byts ut eller förstärks, utan att blästras eller rostskyddsbehandlas."
   },
   {
     "CadastralDesignation": false,
@@ -522,6 +522,6 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Enligt protokollet behöver fränluftskanalerna rengöras inom ganska nära framtid. Gatufasaderna behöver renoveras och troligen även tätskikten på de båda stora gårdarna."
+    "SummaryInsights": "Enligt protokollet behöver fränluftskanalerna rengöras inom ganska nära framtid. Gatufasaderna behöver renoveras och tätskikten på de bågge stora gårdarna behöver åtgärdas."
   }
 ]

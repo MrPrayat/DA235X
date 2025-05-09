@@ -22,7 +22,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Teknisk statusbesiktning som utgör bilaga till föreningens ekonomiska plan."
+    "SummaryInsights": null
   },
   {
     "CadastralDesignation": "Sundbyberg Terränglöparen 9",
@@ -47,7 +47,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Besiktningen utfördes 17 mars 2016 och omfattade en okulär översyn av byggnads- och installationsdelar. Vid besiktningen var det soligt och ca +8 grader C. Inga akuta åtgärder krävs enligt rapporten."
+    "SummaryInsights": "Besiktningen utförd 17 mars 2016 visade inga större brister, men det rekommenderas att lägga till grund för talan om jordabalken."
   },
   {
     "CadastralDesignation": "Sundbyberg Terränglöparen 9",
@@ -72,7 +72,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fastigheten består av 6 lamellhus med källare/suterräng, entréplan och 4-6 våningar. Byggnaden är i modern standard och har bostäder, lokaler, garage och förråd. Grundläggningen är av betong till berg och stommen består av bärande väggar, bjälklag och pelare av armerad betong."
+    "SummaryInsights": "Fastigheten består av 6 lamellhus med bostäder, lokaler och garage. Byggnaderna är i modern standard med förråd, driftsutrymmen, garage, lokaler och bostäder. Grundmurar av betong till berg och bärande väggar, bjälklag och pelare av armerad betong."
   },
   {
     "CadastralDesignation": false,
@@ -122,7 +122,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renovering av badrum har genomförts ca 1998-1999. Vattenradiatorer är genomgående renoverade. Vissa avvikelser förekommer mellan lägenheterna."
+    "SummaryInsights": "Renovering av badrum har genomförts ca 1998-1999. Vattenradiatorer och installationer i huvudsak från byggnadsåret. Värmeproduktionen är ansluten till fjärrvärme."
   },
   {
     "CadastralDesignation": false,
@@ -147,7 +147,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Byggnaden har genomgått omfattande renoveringar, inklusive byte av fönster, entrepartier, luftfläktmotorer, badrum, styr- och reglerutrustning, och utrustning i fastighetstvättstugor. Det finns dock behov av att byta ut taket på gårdsbyggnaden inom en nära framtid."
+    "SummaryInsights": "Byggnaden har genomgått omfattande renoveringar sedan 1969, inklusive byte av fönster, entrepartier, värmesystem, badrum, styr- och reglerutrustning, samt tak. Det finns dock behov av att byta ut gårdsbjälklagen inom en nära framtid."
   },
   {
     "CadastralDesignation": false,
@@ -172,7 +172,7 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Asbest finns i värmeörsisoleringar i källarplanen och bör provtagas. Inventering av PCB har utförts och sanering behövs i samband med utbyte av fönsterbågar."
+    "SummaryInsights": "Asbest finns i värmeörsisoleringar i källarplanen och bör provtagas. Skyddsrummet har flera skyddsrum i bruk och behöver skyddsrumsbesiktning. Inventering av PCB har utförts och viss sanering behövs."
   },
   {
     "CadastralDesignation": false,
@@ -197,7 +197,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Renovering av gårdsbjälklagets tätskikt behöver utföras inom en nära framtid. Inget åtgärdsbehov för markdelar, stomme, eller fasad."
+    "SummaryInsights": "Gårdsbjälklaget är i behov av renovering inom nära framtid. I samband med renovering av gårdsbjälklagets tätskikt kommer hela markanläggningen / finplaneringen uppepå behöva nyanläggas."
   },
   {
     "CadastralDesignation": false,
@@ -241,13 +241,13 @@
       "facade": false,
       "balcony": false,
       "källare": false,
-      "bjälklag": false
+      "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Lägenheterna har en teknisk livslängd på ca 15 år, med undantag för vissa delar som wc:arnas plastgolv som bytts ut. Det rekommenderas en årlig avsättning för underhåll om ca 2-3 000:- per lägenhet."
+    "SummaryInsights": "Gårdsbjälklaget i garaget behöver renoveras eller repareras. Det rekommenderas även att byta till- och frånluftsfläktarnas installationsutrymmen."
   },
   {
     "CadastralDesignation": false,
@@ -272,7 +272,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "VVS-installationer som fjärrvärmeundercentraler och radiatorventiler har lång återstående teknisk livslängd. Avloppen är generellt i behov av renovering, särskilt om de inte har renoverats sedan 1998/1999."
+    "SummaryInsights": "VVS-installationer som fjärrvärmeundercentraler och radiatorventiler är utbytta ca 1998 och har lång återstående teknisk livslängd. Avloppen är generellt i behov av renovering, med rekommendationer för ett komplett VA-stambyte inom 15 år."
   },
   {
     "CadastralDesignation": false,
@@ -322,7 +322,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Reparation av gårdsbjälklag och fasad samt PCB-sanering av garage är planerade åtgärder. Utbyte av takavvattning, PVC-duk, tätningslister, maskinpark, stamregleringsventiler, avlopp och luftbehandlingsaggregat är också planerade."
+    "SummaryInsights": "Renovering av gårdsbjälklag och fasad samt byte av takavvattning och PVC-duk planeras. Utbyte av maskinpark i tvättstugor och stamregleringsventiler för värme är också planerat."
   },
   {
     "CadastralDesignation": false,

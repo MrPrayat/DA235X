@@ -9,7 +9,7 @@
       "mentions_roof": false,
       "mentions_balcony": true,
       "mentions_bjälklag": true,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": false,
@@ -21,9 +21,9 @@
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": true
+      "presence": false
     },
-    "SummaryInsights": "Besiktningen visar på fuktproblem i garaget, balkonger och bjälklag, vilket kräver åtgärder. Renovering av källare, bjälklag, fasader och balkonger rekommenderas. Asbest har påträffats i byggnaden, vilket kräver ytterligare utredning."
+    "SummaryInsights": "Besiktningen visar på behov av renovering av flera områden, inklusive källare, bjälklag, fasader och balkonger. Fuktproblem har identifierats i garage och bjälklag, och renoveringsåtgärder rekommenderas inom nära framtid. Asbest har inte påträffats, men underhållsbehov finns för installationer och ventilationssystem."
   },
   "ground_truth": {
     "CadastralDesignation": "Stockholm Munin 5 & 6",

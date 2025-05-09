@@ -20,10 +20,10 @@
       "bjälklag": true
     },
     "AsbestosPresence": {
-      "Measured": false,
+      "Measured": true,
       "presence": false
     },
-    "SummaryInsights": "Byggnaden har flera fuktrelaterade problem, inklusive takpapp med minskat vattenmotstånd, risk för fuktskador på balkongen och fuktisolering i bjälklaget. Det rekommenderas att åtgärda taket, balkongen och bjälklaget samt underhålla fasaden för att förhindra framtida skador."
+    "SummaryInsights": "Byggnaden har flera fuktrelaterade problem, inklusive risk för fuktskador på taket, balkongen och bjälklaget. Det rekommenderas att åtgärda takpappen, skydda balkongen och renovera bjälklaget för att förhindra mikrobiell tillväxt. Fasaden har också målningbehov för att förhindra fukt- och rötskador."
   },
   "ground_truth": {
     "CadastralDesignation": "Kärra 69:110",

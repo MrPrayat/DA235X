@@ -9,6 +9,7 @@ from utils.helpers import (
     call_openai_image_json,
     call_gemini_image_json,
     call_mistral_image_json,
+    call_mistral_multipage,
     get_images_from_pdf,
     is_text_pdf,
     is_appendix_page_gpt,
@@ -75,7 +76,7 @@ def save_evaluation_json(pdf_id: str, model_output: dict, output_folder="data/ev
     print(f"Saved evaluation file: {out_path}")
 
 
-def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
+def extract_fields_from_pdf_page_by_page(pdf_id: str, url: str) -> dict:
     """
     Extracts structured data from all pages of an image-based PDF:
       1. Convert each page to image.
@@ -261,7 +262,125 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     batch_token_meter["cached"] += token_meter[pdf_id]["cached"]
     num_pdfs_processed += 1
 
-    return final_json
+    return final_json, usage
+
+
+def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> tuple[dict, dict]:
+    """
+    Extracts structured data from all pages of an image-based PDF:
+        1. Send the entire PDF to the AI model
+        2. Return the normalized JSON output and the usage data.
+    """
+    global num_pdfs_processed
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+    except requests.RequestException as error:
+        print(f"Error fetching PDF: {error}")
+        return {}, {}
+
+    pdf_bytes = response.content
+    images = get_images_from_pdf(pdf_bytes, dpi=200)
+    if not images:
+        print("No images extracted from PDF.")
+        return {}, {}
+    elif len(images) < 4:
+        print(f"Skipping PDF with ID {pdf_id}: too short ({len(images)} pages).")
+        return {}, {}
+
+    field_lines = [f'- "{key}": {FIELD_DEFINITIONS[key]}' for key in FIELDS]
+    json_template = "{\n" + ",\n".join([f'  "{key}": null' for key in FIELDS]) + "\n}"
+
+    prompt_text = (
+        "You are analyzing a page from a Swedish housing inspection report. "
+        "Extract the following fields if they are clearly visible. "
++       "If a field is not mentioned or not applicable, set it to false."
+
+        "Field definitions:\n"
+        + "\n".join(field_lines) + "\n\n"
+
+        "Instructions:\n"
+        "- Return the extracted values in **exactly** the JSON format shown below.\n"
+        "- For all fields, use false if the information is not present or readable.\n\n"
+
+        "- For InspectionDate:\n"
+        "  • Only extract the **year and month**, in the format YYYY-MM.\n\n"
+
+        "- For MoistureDamage:\n"
+        "    • Use the object format with fixed keys:\n"
+        "        - mentions_garage, mentions_källare, mentions_roof, mentions_balcony, mentions_bjälklag, mentions_facade.\n"
+        "    • Each value must be true if water damage or moisture issues are clearly mentioned in that location, else false.\n\n"
+
+
+        "- For RenovationNeeds:\n"
+        "   • Only use the following fixed keys: 'roof', 'garage', 'facade', 'balcony', 'källare', 'bjälklag'.\n"
+        "   • Set each value to true only if there is a **clear and direct statement** indicating the need for renovation in that area.\n"
+        "   • Use true for phrases like 'slitage', 'dåligt skick', 'bör åtgärdas', or specific plans/timelines for future renovation.\n"
+        "   • If the area is mentioned but no issue is present, or if it is not mentioned at all, set to false.\n\n"
+
+
+        "- For AsbestosPresence:\n"
+        "  • 'presence': true if asbestos is mentioned, false if unmentioned.\n"
+        "  • 'Measured': true if there is explicit mention of measurement or testing.\n\n"
+
+        "- For SummaryInsights:\n"
+        "  • Write a short free-text summary of 1–3 clearly stated renovation actions.\n"
+        "  • Use plain Swedish, max 1–2 sentences.\n"
+        "  • Only include this if specific, actionable renovations are mentioned.\n"
+        "  • Set to null if nothing actionable is described.\n"
+
+        "Return exactly the following JSON format:\n"
+        "```json\n" + json_template + "\n```"
+    )
+
+    final_json, usage = call_mistral_multipage(url, prompt_text, MODEL_NAME)
+
+    if final_json.startswith("```json"):
+            final_json = final_json.strip("```json").strip("```").strip()
+            parsed_final_json = json.loads(final_json)
+
+    # Update cumulative totals
+    token_meter[pdf_id]["prompt"] += usage["prompt_tokens"]
+    token_meter[pdf_id]["completion"] += usage["completion_tokens"]
+    token_meter[pdf_id]["cached"] += usage["cached_tokens"]
+
+
+    # Calculate step cost using Gemini
+    step_tokens = {
+        "prompt": usage["prompt_tokens"],
+        "completion": usage["completion_tokens"],
+        "cached": usage["cached_tokens"],
+    }
+    step_cost = cost_usd(step_tokens, model=MODEL_NAME)
+    cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
+
+    # Print total token usage and cost
+    print("🧪 Final  step completed!")
+    print(f"   🧮 Synthesis cost: ${step_cost:.6f}")
+    print(f"   📈 Final cumulative usage for {pdf_id}: {token_meter[pdf_id]}")
+    print(f"   💰 Final total cost: ${cumulative_cost:.6f}")
+    print("=" * 80)
+
+    # Save usage data to CSV
+    log_pdf_usage(
+        csv_path=batch_pdf_csv,
+        pdf_id=pdf_id,
+        model=MODEL_NAME,
+        extraction_strategy=EXTRACTION_STRATEGY,  # or "page-by-page", "field-by-field"
+        prompt_tokens=token_meter[pdf_id]["prompt"],
+        completion_tokens=token_meter[pdf_id]["completion"],
+        cached_tokens=token_meter[pdf_id]["cached"],
+        total_cost_usd=cumulative_cost,
+        pages_extracted=len(images),
+    )
+
+    # Add total prompt, completion and cached tokens as well as total cost for the whole batch
+    batch_token_meter["prompt"] += token_meter[pdf_id]["prompt"]
+    batch_token_meter["completion"] += token_meter[pdf_id]["completion"]
+    batch_token_meter["cached"] += token_meter[pdf_id]["cached"]
+    num_pdfs_processed += 1
+
+    return parsed_final_json
 
 
 def process_single_pdf(pdf_id: str, url: str, skip: bool) -> bool:
@@ -283,8 +402,7 @@ def process_single_pdf(pdf_id: str, url: str, skip: bool) -> bool:
     model_output = extract_fields_from_pdf_multipage(pdf_id, url)
 
     if model_output:
-        normalized_output = normalize_model_output(model_output)
-        save_evaluation_json(pdf_id, normalized_output)
+        save_evaluation_json(pdf_id, model_output)
         return True
     else:
         print(f"Extraction failed or empty for ID {pdf_id}")
@@ -354,9 +472,10 @@ def extract_specific_pdfs(pdf_ids: list[str], inspection_urls_path: str) -> None
 
             url = row["url"]
             print(f"\nRe-extracting PDF ID: {pdf_id} with url: {url}")
-            model_output = extract_fields_from_pdf_multipage(pdf_id, url)
+            model_output = extract_fields_from_pdf_page_by_page(pdf_id, url)
 
             if model_output:
+                print("model_output", model_output)
                 normalized_output = normalize_model_output(model_output)
                 save_evaluation_json(pdf_id, normalized_output)
             else:
