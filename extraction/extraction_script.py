@@ -29,7 +29,7 @@ from datetime import datetime
 # === Constants ===
 MODEL_NAME = "mistral-medium-2505"
 # MODEL_NAME = "gpt-4.1"
-EXTRACTION_STRATEGY = "page-by-page"
+EXTRACTION_STRATEGY = "multipage"
 
 # === Variables ===
 token_meter = defaultdict(lambda: {"prompt": 0, "completion": 0, "cached": 0})
