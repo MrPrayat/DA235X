@@ -4,26 +4,26 @@
     "CadastralDesignation": "Stockholm Munin 5 & 6",
     "InspectionDate": "2018-10",
     "MoistureDamage": {
-      "mentions_garage": true,
+      "mentions_garage": false,
       "mentions_källare": true,
       "mentions_roof": false,
-      "mentions_balcony": true,
+      "mentions_balcony": false,
       "mentions_bjälklag": true,
-      "mentions_facade": true
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,
-      "garage": true,
+      "garage": false,
       "facade": true,
-      "balcony": true,
+      "balcony": false,
       "källare": true,
       "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": false
+      "presence": true
     },
-    "SummaryInsights": "Besiktningen visar på behov av renovering av flera områden, inklusive källare, bjälklag, fasader och balkonger. Fuktproblem har identifierats i garage och bjälklag, och renoveringsåtgärder rekommenderas inom nära framtid. Asbest har inte påträffats, men underhållsbehov finns för installationer och ventilationssystem."
+    "SummaryInsights": "Renovering av gårdsbjälklagens tätskikt och gårdsfasader samt utbyte av äldre VA- och elinstallationer rekommenderas inom nära framtid. Asbest förekommer i rörisoleringar och kan finnas i fogar i kaklade badrum."
   },
   "ground_truth": {
     "CadastralDesignation": "Stockholm Munin 5 & 6",

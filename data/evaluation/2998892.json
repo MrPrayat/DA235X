@@ -1,15 +1,15 @@
 {
   "pdf_id": "2998892",
   "model_output": {
-    "CadastralDesignation": "Hisings Kärra 69:110",
+    "CadastralDesignation": "Kärra 69:110",
     "InspectionDate": "2020-12",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": true,
-      "mentions_balcony": true,
+      "mentions_balcony": false,
       "mentions_bjälklag": true,
-      "mentions_facade": false
+      "mentions_facade": true
     },
     "RenovationNeeds": {
       "roof": true,
@@ -20,10 +20,10 @@
       "bjälklag": true
     },
     "AsbestosPresence": {
-      "Measured": true,
+      "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Byggnaden har flera fuktrelaterade problem, inklusive risk för fuktskador på taket, balkongen och bjälklaget. Det rekommenderas att åtgärda takpappen, skydda balkongen och renovera bjälklaget för att förhindra mikrobiell tillväxt. Fasaden har också målningbehov för att förhindra fukt- och rötskador."
+    "SummaryInsights": "Taket har felaktig taktäckning och risk för läckage, fasaden har målningsbehov för att undvika fuktskador, och balkongen har risk för vattenskador om glaspartiet inte är stängt."
   },
   "ground_truth": {
     "CadastralDesignation": "Kärra 69:110",

@@ -18,3 +18,4 @@ timestamp,batch_id,model,extraction_strategy,num_pdfs,prompt_tokens,completion_t
 2025-05-08 18:39:07,batch_2025-05-08_1722,mistral-medium-2505,page-by-page,43,2543835,193254,0,1.404042
 2025-05-09 14:05:55,batch_2025-05-09_1403,mistral-medium-2505,multipage,1,49399,3873,0,0.027506
 2025-05-09 15:18:58,batch_2025-05-09_1518,mistral-medium-2505,multipage,1,8287,265,0,0.003845
+2025-05-09 15:21:01,batch_2025-05-09_1519,mistral-medium-2505,multipage,5,58265,1297,0,0.0259

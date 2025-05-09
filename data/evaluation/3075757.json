@@ -4,16 +4,16 @@
     "CadastralDesignation": "Linköping Vindruvan 18",
     "InspectionDate": "2021-05",
     "MoistureDamage": {
-      "mentions_garage": true,
+      "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": false,
+      "mentions_roof": true,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": false,
-      "garage": true,
+      "roof": true,
+      "garage": false,
       "facade": false,
       "balcony": false,
       "källare": false,
@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "En genomgång av uppdragsbeskrivningen gjordes och besiktningsmannen ansvarar för fel och är skyldig att betala för krav som reklameras inom två år efter att uppdraget avslutats. Inga större renoveringsbehov nämns i rapporten, men det finns vissa mindre noteringar såsom att fönster/dörrar bör bytas ut på grund av isolerglas och att yttertaket bör bytas ut inom 40 år. Risk för mikrobiell tillväxt på grund av fukt och temperaturvariationer på betongplattan. Fortsatt teknisk utredning rekommenderas för att klargöra risker för besiktningsmannen och för att överlåta beslut till ägaren."
+    "SummaryInsights": "Yttertaket behöver åtgärdas på grund av otätheter och skadade takpannor. Altanen är inte byggd av fackman och har röta i räcket samt kraftig lutning på golvet."
   },
   "ground_truth": {
     "CadastralDesignation": "Linköping Vindruvan 18",
