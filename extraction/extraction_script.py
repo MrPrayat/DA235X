@@ -337,7 +337,7 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> tuple[dict, dict
 
     if final_json.startswith("```json"):
             final_json = final_json.strip("```json").strip("```").strip()
-            parsed_final_json = json.loads(final_json)
+            final_json = json.loads(final_json)
 
     # Update cumulative totals
     token_meter[pdf_id]["prompt"] += usage["prompt_tokens"]
@@ -380,7 +380,7 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> tuple[dict, dict
     batch_token_meter["cached"] += token_meter[pdf_id]["cached"]
     num_pdfs_processed += 1
 
-    return parsed_final_json
+    return final_json
 
 
 def process_single_pdf(pdf_id: str, url: str, skip: bool) -> bool:

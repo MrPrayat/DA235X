@@ -187,7 +187,7 @@ def main():
     print(f"Total Recall: {summary['recall']:.2f}")
     print(f"Total F1 Score: {summary['f1_score']:.2f}")
 
-    log_run_to_csv(results, run_name="gemini_2.5_flash_43_pdfs_v1", notes="Test evaluation run")
+    log_run_to_csv(results, run_name="mistral-medium-2505_flash_42_pdfs_multipage_v1", notes="One PDF could not be extracted due to too many tokens (40 pages)")
 
 
 if __name__ == "__main__":
