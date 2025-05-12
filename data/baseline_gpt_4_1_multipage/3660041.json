@@ -1,20 +1,20 @@
 {
-  "pdf_id": "3665951",
+  "pdf_id": "3660041",
   "model_output": {
-    "CadastralDesignation": "Skebo 1:39",
-    "InspectionDate": "2025-01",
+    "CadastralDesignation": "Traktorn 4",
+    "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
-      "mentions_källare": true,
+      "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false
@@ -23,23 +23,23 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Fasaden och dörrar är i behov av underhåll och målning. Mindre rötskador finns lokalt på fasaden, åtgärder rekommenderas för att öka livslängden."
+    "SummaryInsights": null
   },
   "ground_truth": {
-    "CadastralDesignation": "Skebo 1:39",
-    "InspectionDate": "2025-01",
+    "CadastralDesignation": "Traktorn 4",
+    "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
       "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
-      "mentions_facade": true
+      "mentions_facade": false
     },
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": true,
+      "facade": false,
       "balcony": false,
       "källare": false,
       "bjälklag": false

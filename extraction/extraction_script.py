@@ -21,7 +21,7 @@ from collections import defaultdict
 from datetime import datetime
 
 # === Constants ===
-MODEL_NAME = "gpt-4o"
+MODEL_NAME = "gpt-4.1"
 EXTRACTION_STRATEGY = "multipage"
 
 # === Variables ===

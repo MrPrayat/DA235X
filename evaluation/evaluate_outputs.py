@@ -187,7 +187,7 @@ def main():
     print(f"Total Recall: {summary['recall']:.2f}")
     print(f"Total F1 Score: {summary['f1_score']:.2f}")
 
-    log_run_to_csv(results, run_name="gpt-4o_flash_43_pdf_multipage", notes="")
+    log_run_to_csv(results, run_name="gpt-4.1_flash_43_pdf_multipage", notes="")
 
 
 if __name__ == "__main__":
