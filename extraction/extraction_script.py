@@ -134,10 +134,6 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
 
     final_json, usage = call_openai_multipage(pdf_id, prompt_text, MODEL_NAME)
 
-    print(f"Final JSON for PDF ID {pdf_id}:\n{final_json}")
-    print(f"PDF with id {pdf_id}: OpenAI usage: {usage}")
-
-
     try:
         final_json = json.loads(final_json)
     except json.JSONDecodeError:
