@@ -3,7 +3,7 @@ from extraction.extraction_script import run_pdf_tests
 
 def main():
     inspection_urls_path = os.path.join("data", "inspection_urls.csv")
-    test_amount = 1
+    test_amount = 5
     skip_existing = False
     reextract_already_extracted_only = True
 
