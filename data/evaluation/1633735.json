@@ -1,29 +1,29 @@
 {
   "pdf_id": "1633735",
   "model_output": {
-    "CadastralDesignation": "Sundbyberg Terränglöparen 9",
+    "CadastralDesignation": false,
     "InspectionDate": "2016-03",
     "MoistureDamage": {
       "mentions_garage": true,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": true,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": true,
-      "facade": true,
+      "facade": false,
       "balcony": false,
-      "källare": true,
+      "källare": false,
       "bjälklag": true
     },
     "AsbestosPresence": {
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Rapporten rekommenderar reparation av gårdsbjälklag, fasad inklusive PCB-sanering, byte av PVC-duk på taket samt renovering av avlopp i källaren. Yttertaken behöver renoveras och tätskiktet i gårdsbjälklaget behöver åtgärdas. Det finns kvarvarande PCB i fogar."
+    "SummaryInsights": "Gårdsbjälklaget behöver renoveras inom en snar framtid på grund av läckage. Garaget har behov av reparationer, speciellt i pelarna."
   },
   "ground_truth": {
     "CadastralDesignation": "Sundbyberg Terränglöparen 9",

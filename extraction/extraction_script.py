@@ -1,8 +1,6 @@
 import os
 import csv
 import json
-import random
-import time
 import requests
 from schema.schema import FIELDS, FIELD_DEFINITIONS
 from utils.helpers import (
@@ -12,8 +10,7 @@ from utils.helpers import (
     is_text_pdf,
     normalize_model_output,
     generate_default_ground_truth,
-    synthesize_final_json_openai,
-    synthesize_final_json_gemini,
+    call_openai_multipage,
     cost_usd,
     log_pdf_usage,
     log_batch_summary,
@@ -24,15 +21,13 @@ from collections import defaultdict
 from datetime import datetime
 
 # === Constants ===
-MODEL_NAME = "gemini-2.0-flash"
-# MODEL_NAME = "gpt-4.1"
-EXTRACTION_STRATEGY = "page-by-page"
+MODEL_NAME = "gpt-4o"
+EXTRACTION_STRATEGY = "multipage"
 
 # === Variables ===
 token_meter = defaultdict(lambda: {"prompt": 0, "completion": 0, "cached": 0})
 batch_token_meter = {"prompt": 0, "completion": 0, "cached": 0}
 num_pdfs_processed = 0
-
 # === Batch metadata ===
 
 start_time = datetime.now()
@@ -137,82 +132,21 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     )
 
 
-    print(f"Processing PDF with id: {pdf_id}")
-    raw, usage = call_gemini_image_json(page_img, prompt_text, MODEL_NAME)
+    final_json, usage = call_openai_multipage(pdf_id, prompt_text, MODEL_NAME)
 
-    # Update cumulative totals using attributes for OpenAI
-    # token_meter[pdf_id]["prompt"] += usage.prompt_tokens
-    # token_meter[pdf_id]["completion"] += usage.completion_tokens
-    # token_meter[pdf_id]["cached"] += usage.prompt_tokens_details.cached_tokens
+    print(f"Final JSON for PDF ID {pdf_id}:\n{final_json}")
+    print(f"PDF with id {pdf_id}: OpenAI usage: {usage}")
 
-    # Update cumulative totals using dict for Gemini 2.5 Flash
-    token_meter[pdf_id]["prompt"]     += usage["prompt_tokens"]
-    token_meter[pdf_id]["completion"] += usage["completion_tokens"]
-    token_meter[pdf_id]["cached"]     += usage["cached_tokens"]
-
-
-    # Calculate step cost using attributes for OpenAI
-    #step_tokens = {
-    #    "prompt": usage.prompt_tokens,
-    #    "completion": usage.completion_tokens,
-    #    "cached": usage.prompt_tokens_details.cached_tokens,
-    #}
-
-    # Calculate step cost using attributes for Gemini 2.5 Flash
-    step_tokens = {
-        "prompt": usage["prompt_tokens"],
-        "completion": usage["completion_tokens"],
-        "cached": usage["cached_tokens"],
-    }
-    step_cost = cost_usd(step_tokens, model=MODEL_NAME)
-    cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
-
-    # Print step cost + cumulative tokens using OpenAI
-    # print(f"🧩 Step complete for page {i+1}/{len(images)}")
-    # print(f"   🧮 Step cost: ${step_cost:.6f}")
-    # print(f"   📊 Tokens this step: Prompt={usage.prompt_tokens}, Completion={usage.completion_tokens}, Cached={usage.prompt_tokens_details.cached_tokens}")
-    # print(f"   📈 Cumulative usage and cost for {pdf_id}: ${token_meter[pdf_id]} ${cumulative_cost:.6f}")
-    # print("-" * 80)
-
-    # Print step cost + cumulative tokens using OpenAI
-    print(f"🧩 Step complete for page {i+1}/{len(images)}")
-    print(f"   🧮 Step cost: ${step_cost:.6f}")
-    print(f"   📊 Tokens this step: Prompt={usage['prompt_tokens']}, Completion={usage['completion_tokens']}, Cached={usage['cached_tokens']}")
-    print(f"   📈 Cumulative usage and cost for {pdf_id}: ${token_meter[pdf_id]} ${cumulative_cost:.6f}")
-    print("-" * 80)
-
-
-
-    if raw.startswith("```json"):
-        raw = raw.strip("```json").strip("```").strip()
 
     try:
-        parsed = json.loads(raw)
-        all_results.append(parsed)
+        final_json = json.loads(final_json)
     except json.JSONDecodeError:
-        print(f"Page {i+1}: Could not parse JSON. Raw output:\n{raw}")
-        all_results.append({"error": "Could not parse", "raw_output": raw})
-
-    # ✅ NEW: Save per-page logs to disk
-    os.makedirs("data/page_logs", exist_ok=True)
-    with open(f"data/page_logs/{pdf_id}_pages.json", "w", encoding="utf-8") as f:
-        json.dump(all_results, f, indent=2, ensure_ascii=False)
-
-    # final_json, usage = synthesize_final_json_openai(all_results, MODEL_NAME)
-    final_json, usage = synthesize_final_json_gemini(all_results, MODEL_NAME)
+        print(f"PDF with id {pdf_id}: Could not parse JSON. Raw output:\n{final_json}")
 
     # Update cumulative totals
     token_meter[pdf_id]["prompt"] += usage["prompt_tokens"]
     token_meter[pdf_id]["completion"] += usage["completion_tokens"]
     token_meter[pdf_id]["cached"] += usage["cached_tokens"]
-
-
-    # Calculate step cost using OpenAI
-    #step_tokens = {
-    #    "prompt": usage.prompt_tokens,
-    #    "completion": usage.completion_tokens,
-    #    "cached": usage.prompt_tokens_details.cached_tokens,
-    #}
 
     # Calculate step cost using Gemini
     step_tokens = {
@@ -256,10 +190,6 @@ def process_single_pdf(pdf_id: str, url: str, skip: bool) -> bool:
     """
     Process a single PDF and return whether it was successfully processed.
     """
-    if is_text_pdf(url):
-        print(f"Skipping text-based PDF: {pdf_id}")
-        return False
-
     if skip:
         # Skip if already evaluated for testing purposes
         evaluation_path = os.path.join("data/evaluation", f"{pdf_id}.json")

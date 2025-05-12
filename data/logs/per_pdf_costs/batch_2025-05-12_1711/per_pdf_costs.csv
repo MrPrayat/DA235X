@@ -1,0 +1,2 @@
+timestamp,pdf_id,model,extraction_strategy,prompt_tokens,completion_tokens,cached_tokens,total_cost_usd,pages_extracted
+2025-05-12 17:11:24,1633735,gpt-4o,multipage,12445,208,0,0.030081,15

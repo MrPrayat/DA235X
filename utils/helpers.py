@@ -8,6 +8,7 @@ import fitz
 import json
 import csv
 import os
+import httpx
 from pdf2image import convert_from_bytes
 from PIL import Image
 from schema.schema import FIELDS, FIELD_DEFINITIONS
@@ -16,10 +17,19 @@ from datetime import datetime
 from google import genai
 from google.genai import types
 from google.genai import errors as gerrors
-import httpx
+from pathlib import Path
 
 
-# client = OpenAI()
+# Cache file for OpenAI file IDs
+CACHE_PATH = Path("data") / "file_id_cache.json"
+file_id_map = json.loads(CACHE_PATH.read_text())
+
+# Load file IDs for OpenAI loading once at module-import time
+with open(CACHE_PATH, "r") as f:
+    FILE_ID_MAP = json.load(f)
+
+# OpenAI client
+client = OpenAI()
 
 gemini_api_key = os.getenv("GEMINI_API_KEY")
 _gemini_client = genai.Client(api_key=gemini_api_key)
@@ -65,6 +75,67 @@ def call_openai_image_json(image: Image.Image, prompt: str, model: str, retries=
             break
 
     return "", None
+
+
+def call_openai_multipage(pdf_id: str, prompt: str, model_name: str, retries: int = 3, backoff: float = 1.0) -> tuple[str, dict]:
+    """
+    Multipage extraction in one shot:
+      - References your previously-uploaded PDF by file_id.
+      - Sends the prompt to the model.
+    Returns (raw_output_text, usage_dict).
+    """
+
+    if pdf_id not in FILE_ID_MAP:
+        raise KeyError(f"No file_id cached for PDF {pdf_id}")
+    
+    file_id = FILE_ID_MAP[pdf_id]
+
+    for attempt in range(retries):
+        try:
+            response = client.responses.create(
+                model=model_name,
+                input=[{
+                    "role": "user",
+                    "content": [
+                        {"type": "input_file", "file_id": file_id},
+                        {"type": "input_text", "text": prompt},
+                    ]
+                }]
+            )
+
+            u = response.usage
+            usage = {
+                "prompt_tokens": u.input_tokens,
+                "cached_tokens": u.input_tokens_details.cached_tokens,
+                "completion_tokens": u.output_tokens,
+                "total_tokens": u.total_tokens
+            }
+
+            # The model wraps JSON in ```json …```, so strip fences if present
+            raw = response.output_text
+            if raw.startswith("```json"):
+                raw = raw.removeprefix("```json").removesuffix("```").strip()
+
+            return raw, usage
+
+        except gerrors.ClientError as e:
+            if e.code == 429:
+                wait_time = backoff * (2 ** attempt) + random.uniform(0, 1)
+                print(f"Rate limit hit (attempt {attempt+1}). Retrying in {wait_time:.1f}s...")
+                print(f"Error: {e}")
+                time.sleep(wait_time)
+        except httpx.TimeoutException:
+            wait = backoff * (2 ** attempt) + random.uniform(0, 1)
+            print(f"Timeout (attempt {attempt+1}). Sleeping {wait:.1f}s")
+            time.sleep(wait)
+            continue
+        except Exception as e:
+            print("Error calling OpenAI API, error: ", e)
+            return "", {}
+
+    print("🛑 give-up after retries")
+    return "", {"prompt_tokens":0,"completion_tokens":0,"cached_tokens":0}
+    
 
 def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini-2.5-flash-preview-04-17", backoff: int = 3) -> tuple[str, dict]:
     """
