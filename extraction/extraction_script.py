@@ -10,7 +10,6 @@ from utils.helpers import (
     call_gemini_image_json,
     get_images_from_pdf,
     is_text_pdf,
-    is_appendix_page_gpt,
     normalize_model_output,
     generate_default_ground_truth,
     synthesize_final_json_openai,
