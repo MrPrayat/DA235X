@@ -8,13 +8,12 @@ from schema.schema import FIELDS, FIELD_DEFINITIONS
 from utils.helpers import (
     call_openai_image_json,
     call_gemini_image_json,
+    call_gemini_multipage,
     get_images_from_pdf,
     is_text_pdf,
-    is_appendix_page_gpt,
     normalize_model_output,
     generate_default_ground_truth,
     synthesize_final_json_openai,
-    synthesize_final_json_gemini,
     cost_usd,
     log_pdf_usage,
     log_batch_summary,
@@ -27,7 +26,7 @@ from datetime import datetime
 # === Constants ===
 MODEL_NAME = "gemini-2.0-flash"
 # MODEL_NAME = "gpt-4.1"
-EXTRACTION_STRATEGY = "page-by-page"
+EXTRACTION_STRATEGY = "multipage"
 
 # === Variables ===
 token_meter = defaultdict(lambda: {"prompt": 0, "completion": 0, "cached": 0})
@@ -89,18 +88,12 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
         print(f"Error fetching PDF: {error}")
         return {}
 
-    pdf_bytes = response.content
-    images = get_images_from_pdf(pdf_bytes, dpi=200)
-    if not images:
-        print("No images extracted from PDF.")
-        return {}
-    elif len(images) < 4:
-        print(f"Skipping PDF with ID {pdf_id}: too short ({len(images)} pages).")
-        return {}
-
     field_lines = [f'- "{key}": {FIELD_DEFINITIONS[key]}' for key in FIELDS]
     json_template = "{\n" + ",\n".join([f'  "{key}": null' for key in FIELDS]) + "\n}"
 
+    pdf_bytes = response.content
+    images = get_images_from_pdf(pdf_bytes, dpi=200) # only used to know # of pages
+    
     prompt_text = (
         "You are analyzing a page from a Swedish housing inspection report. "
         "Extract the following fields if they are clearly visible. "
@@ -143,87 +136,18 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
         "```json\n" + json_template + "\n```"
     )
 
-    all_results = []
+    final_json, usage = call_gemini_multipage(url, prompt_text, MODEL_NAME)
 
-    for i, page_img in enumerate(images):
-        print(f"Processing page {i+1}/{len(images)}...")
-        raw, usage = call_gemini_image_json(page_img, prompt_text, MODEL_NAME)
+    
+    if final_json.startswith("```json"):
+        final_json = final_json.strip("```json").strip("```").strip()
 
-        # Update cumulative totals using attributes for OpenAI
-        # token_meter[pdf_id]["prompt"] += usage.prompt_tokens
-        # token_meter[pdf_id]["completion"] += usage.completion_tokens
-        # token_meter[pdf_id]["cached"] += usage.prompt_tokens_details.cached_tokens
-
-        # Update cumulative totals using dict for Gemini 2.5 Flash
-        token_meter[pdf_id]["prompt"]     += usage["prompt_tokens"]
-        token_meter[pdf_id]["completion"] += usage["completion_tokens"]
-        token_meter[pdf_id]["cached"]     += usage["cached_tokens"]
-
-
-        # Calculate step cost using attributes for OpenAI
-        #step_tokens = {
-        #    "prompt": usage.prompt_tokens,
-        #    "completion": usage.completion_tokens,
-        #    "cached": usage.prompt_tokens_details.cached_tokens,
-        #}
-
-        # Calculate step cost using attributes for Gemini 2.5 Flash
-        step_tokens = {
-            "prompt": usage["prompt_tokens"],
-            "completion": usage["completion_tokens"],
-            "cached": usage["cached_tokens"],
-        }
-        step_cost = cost_usd(step_tokens, model=MODEL_NAME)
-        cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
-
-        # Print step cost + cumulative tokens using OpenAI
-        # print(f"🧩 Step complete for page {i+1}/{len(images)}")
-        # print(f"   🧮 Step cost: ${step_cost:.6f}")
-        # print(f"   📊 Tokens this step: Prompt={usage.prompt_tokens}, Completion={usage.completion_tokens}, Cached={usage.prompt_tokens_details.cached_tokens}")
-        # print(f"   📈 Cumulative usage and cost for {pdf_id}: ${token_meter[pdf_id]} ${cumulative_cost:.6f}")
-        # print("-" * 80)
-
-        # Print step cost + cumulative tokens using OpenAI
-        print(f"🧩 Step complete for page {i+1}/{len(images)}")
-        print(f"   🧮 Step cost: ${step_cost:.6f}")
-        print(f"   📊 Tokens this step: Prompt={usage['prompt_tokens']}, Completion={usage['completion_tokens']}, Cached={usage['cached_tokens']}")
-        print(f"   📈 Cumulative usage and cost for {pdf_id}: ${token_meter[pdf_id]} ${cumulative_cost:.6f}")
-        print("-" * 80)
-
-
-
-        if raw.startswith("```json"):
-            raw = raw.strip("```json").strip("```").strip()
-
-        try:
-            parsed = json.loads(raw)
-            all_results.append(parsed)
-        except json.JSONDecodeError:
-            print(f"Page {i+1}: Could not parse JSON. Raw output:\n{raw}")
-            all_results.append({"error": "Could not parse", "raw_output": raw})
-
-    # ✅ NEW: Save per-page logs to disk
-    os.makedirs("data/page_logs", exist_ok=True)
-    with open(f"data/page_logs/{pdf_id}_pages.json", "w", encoding="utf-8") as f:
-        json.dump(all_results, f, indent=2, ensure_ascii=False)
-
-    # final_json, usage = synthesize_final_json_openai(all_results, MODEL_NAME)
-    final_json, usage = synthesize_final_json_gemini(all_results, MODEL_NAME)
-
-    # Update cumulative totals
-    token_meter[pdf_id]["prompt"] += usage["prompt_tokens"]
+    # Update cumulative totals using dict for Gemini Flash
+    token_meter[pdf_id]["prompt"]     += usage["prompt_tokens"]
     token_meter[pdf_id]["completion"] += usage["completion_tokens"]
-    token_meter[pdf_id]["cached"] += usage["cached_tokens"]
+    token_meter[pdf_id]["cached"]     += usage["cached_tokens"]
 
-
-    # Calculate step cost using OpenAI
-    #step_tokens = {
-    #    "prompt": usage.prompt_tokens,
-    #    "completion": usage.completion_tokens,
-    #    "cached": usage.prompt_tokens_details.cached_tokens,
-    #}
-
-    # Calculate step cost using Gemini
+    # Calculate step cost using attributes for Gemini Flash
     step_tokens = {
         "prompt": usage["prompt_tokens"],
         "completion": usage["completion_tokens"],
@@ -231,6 +155,11 @@ def extract_fields_from_pdf_multipage(pdf_id: str, url: str) -> dict:
     }
     step_cost = cost_usd(step_tokens, model=MODEL_NAME)
     cumulative_cost = cost_usd(token_meter[pdf_id], model=MODEL_NAME)
+
+    try:
+        final_json = json.loads(final_json)
+    except json.JSONDecodeError:
+        print(f"Could not parse JSON. Raw output:\n{final_json}")
 
     # Print total token usage and cost
     print("🧪 Final synthesis step completed!")
@@ -351,7 +280,7 @@ def extract_specific_pdfs(pdf_ids: list[str], inspection_urls_path: str) -> None
 
             url = row["url"]
             print(f"\nRe-extracting PDF ID: {pdf_id} with url: {url}")
-            model_output = extract_fields_from_pdf_multipage(pdf_id, url)
+            model_output = extract_fields_from_pdf_page_by_page(pdf_id, url)
 
             if model_output:
                 normalized_output = normalize_model_output(model_output)

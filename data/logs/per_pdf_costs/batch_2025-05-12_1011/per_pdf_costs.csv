@@ -1,0 +1,3 @@
+timestamp,pdf_id,model,extraction_strategy,prompt_tokens,completion_tokens,cached_tokens,total_cost_usd,pages_extracted
+2025-05-12 10:11:59,1633735,gemini-2.0-flash,multipage,0,0,0,0.0,15
+2025-05-12 10:12:23,2111992,gemini-2.0-flash,multipage,0,0,0,0.0,21

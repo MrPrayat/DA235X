@@ -77,7 +77,6 @@ def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini
         print(f"⚠️ Page {i+1}: payload {data_len/1e6:.1f} MB > Gemini limit")
 
     MAX_RETRIES = 5
-    ATTEMPT = 0
 
     for attempt in range(MAX_RETRIES):
         try:
@@ -108,7 +107,7 @@ def call_gemini_image_json(image: Image.Image, prompt: str, model: str = "gemini
             #print("Usage: ", usage)
             print("\n\n")
             print(f"Tokens — prompt: {usage['prompt_tokens']}, completion: {usage['completion_tokens']}")
-            print(f"Estimated cost for checking appendix using Gemini 2.0 Flash: ${cost:.6f}")
+            print(f"Estimated cost for checking evaluating page using Gemini 2.X Flash: ${cost:.6f}")
 
             return resp.text, usage
         except gerrors.ClientError as e:
@@ -187,69 +186,43 @@ def synthesize_final_json_openai(page_results: list, model: str, retries=5, back
     return {}
 
 
-def synthesize_final_json_gemini(page_results: list, model: str, retries=6, backoff=3) -> tuple[dict, dict]:
+def call_gemini_multipage(url: str, prompt: str, model: str, retries: int = 3, backoff: float = 1) -> tuple[str, dict]:
     """
-    Merge page‑level JSONs via Gemini Flash.
-    Returns (merged_json, usage_dict) and retries on 429 errors.
+    Send (prompt+URL) to Gemini API and return raw text and usage
     """
-    print("Synthesizing from page-level results...")
 
-    field_lines = [f'- "{key}": {FIELD_DEFINITIONS[key]}' for key in FIELDS]
-    json_template = "{\n" + ",\n".join([f'  "{key}": null' for key in FIELDS]) + "\n}"
-
-    prompt = (
-        "You are given a list of partial JSON outputs extracted from different pages of a housing inspection report.\n"
-        "Each JSON may contain correct or incorrect values, or have missing fields.\n"
-        "Your job is to reason through them and return a single, best-version JSON object.\n\n"
-        "Instructions:\n"
-        "- For all fields, use the most complete and accurate value.\n"
-        "- If a field is missing in all pages, return a reasonable default.\n"
-        "- **Always include 'SummaryInsights', even if no insights are found.**\n"
-        "- Return in exactly the JSON format shown below.\n\n"
-        "Field definitions:\n"
-        + "\n".join(field_lines) +
-        "\n\nReturn the final merged JSON:\n"
-        "```json\n" + json_template + "\n```\n"
-        f"Here is the list of page-level JSONs:\n\n"
-        f"{json.dumps(page_results, indent=2, ensure_ascii=False)}\n\n"
-        "Now return the final merged JSON object:"
-    )
-
+    doc_data = httpx.get(url).content
+    
     for attempt in range(retries):
         try:
-            response = _gemini_client.models.generate_content(
+            resp = _gemini_client.models.generate_content(
                 model=model,
-                contents=[prompt],
+                contents=[
+                    types.Part.from_bytes(
+                        data=doc_data,
+                        mime_type="application/pdf",
+                    ),
+                    prompt],
             )
-            break  # success → exit loop
-        except gerrors.ClientError as e:
-            if e.code == 429:
-                wait = backoff * (2 ** attempt) + random.uniform(0, 1)
-                print(f"Rate‑limit (attempt {attempt+1}/{retries}) — sleeping {wait:.1f}s")
+            
+            u = resp.usage_metadata
+            usage = {
+                "prompt_tokens":     u.prompt_token_count or 0,
+                "completion_tokens": u.candidates_token_count or 0,
+                "cached_tokens":     0,
+            }
+            return resp.text, usage
+        except Exception as e:
+            # simple retry on any exception
+            if attempt < retries-1:
+                wait = backoff * (2**attempt)
+                print(f"[Gemini] error on attempt {attempt+1}: {e}. retrying in {wait:.1f}s…")
                 time.sleep(wait)
                 continue
-            raise  # other Gemini errors
-    else:
-        print("Gemini synthesis failed after retries.")
-        return {}, {"prompt_tokens": 0, "completion_tokens": 0, "cached_tokens": 0}
+            else:
+                print(f"[Gemini] failed after {retries} attempts: {e}")
+                return "", {"prompt_tokens":0,"completion_tokens":0,"cached_tokens":0}
 
-    output = response.text.strip()
-    u = response.usage_metadata
-
-    usage = {
-        "prompt_tokens":     u.prompt_token_count or 0,
-        "completion_tokens": u.candidates_token_count or 0,
-        "cached_tokens":     0,
-    }
-
-    if output.startswith("```json"):
-        output = output.strip("```json").strip("```").strip()
-
-    try:
-        return json.loads(output), usage
-    except json.JSONDecodeError:
-        print("Could not decode JSON in synthesis.")
-        return {}, usage
 
 
 # === Image Utilities ===
@@ -307,36 +280,6 @@ def is_text_pdf(url: str, min_chars=3500) -> bool:
         print(f"Error checking PDF: {e}")
 
     return False  # Default: treat as image-based if uncertain
-
-
-def is_appendix_page_gpt(image: Image.Image, model: str) -> tuple[bool, dict]:
-    appendix_filter_prompt = (
-        "You're reviewing a page from a Swedish housing inspection report. "
-        "Your task is to determine whether this page is an *appendix* or *general conditions section*, typically found at the end of the document.\n"
-        "Note that if it says the technical report itself is an appendix to another report then that is fine if that is explicitly mentioned."
-        "We are only interested in removing the appendix that belongs to the technical report.\n"
-        "We are interested in the inspection report regardless of it being an appendix to something else or not\n\n"
-
-        "✅ Pages that **ARE** appendices include those labeled or titled with:\n"
-        "- 'Bilaga'\n"
-        "- 'Villkor'\n"
-        "- 'Allmänna villkor'\n"
-        "- 'Appendix'\n"
-        "- 'Försäkringsvillkor'\n\n"
-
-        "❌ Pages that are **NOT** appendices include:\n"
-        "- 'Innehållsförteckning' (table of contents)\n"
-        "- Regular report content like summaries, diagrams, measurements\n\n"
-
-        "Respond strictly with one word:\n"
-        "- 'yes' → if the page clearly **is** an appendix\n"
-        "- 'no' → for all other pages, even if uncertain"
-    )
-
-
-    raw_response, usage = call_openai_image_json(image, appendix_filter_prompt, model)
-    is_appendix = "yes" in raw_response.lower()
-    return is_appendix, usage
 
 
 # === Normalization ===
