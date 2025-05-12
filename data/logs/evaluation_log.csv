@@ -20,3 +20,4 @@ timestamp,run_name,notes,true_positives,false_positives,false_negatives,accuracy
 2025-05-07T14:47:41.045379,gemini_2.5_flash_43_pdfs_v1,Test evaluation run,979,247,42,0.7721,0.7985,0.9589,0.8714
 2025-05-07T21:47:50.870284,gemini_2.5_flash_43_pdfs_v1,Test evaluation run,972,278,46,0.75,0.7776,0.9548,0.8571
 2025-05-12T10:30:37.044382,gemini_2.0_flash_43_pdfs_multipage_v1,No notes...,1079,163,47,0.8371,0.8688,0.9583,0.9113
+2025-05-12T11:25:52.521394,gemini_2.5_flash_43_pdfs_multipage_v1,No notes...,1065,197,29,0.8249,0.8439,0.9735,0.9041

@@ -1,18 +1,18 @@
 {
-  "pdf_id": "3653355",
+  "pdf_id": "3648845",
   "model_output": {
-    "CadastralDesignation": "Bärnstenen 9",
-    "InspectionDate": "2024-11",
+    "CadastralDesignation": "Kringlan 3",
+    "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,
@@ -23,21 +23,21 @@
       "Measured": false,
       "presence": false
     },
-    "SummaryInsights": "Taket är gammalt med minskat motstånd mot vatteninträngning. Fuktrisker finns vid grunden, i äldre våtutrymmen samt under köksbänken."
+    "SummaryInsights": null
   },
   "ground_truth": {
-    "CadastralDesignation": "Bärnstenen 9",
-    "InspectionDate": "2024-11",
+    "CadastralDesignation": "Kringlan 3",
+    "InspectionDate": "2024-12",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": false,
       "balcony": false,

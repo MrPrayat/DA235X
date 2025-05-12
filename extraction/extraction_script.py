@@ -24,7 +24,7 @@ from collections import defaultdict
 from datetime import datetime
 
 # === Constants ===
-MODEL_NAME = "gemini-2.0-flash"
+MODEL_NAME = "gemini-2.5-flash-preview-04-17"
 # MODEL_NAME = "gpt-4.1"
 EXTRACTION_STRATEGY = "multipage"
 

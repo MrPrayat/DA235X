@@ -187,7 +187,7 @@ def main():
     print(f"Total Recall: {summary['recall']:.2f}")
     print(f"Total F1 Score: {summary['f1_score']:.2f}")
 
-    log_run_to_csv(results, run_name="gemini_2.0_flash_43_pdfs_multipage_v1", notes="No notes...")
+    log_run_to_csv(results, run_name="gemini_2.5_flash_43_pdfs_multipage_v1", notes="No notes...")
 
 
 if __name__ == "__main__":
