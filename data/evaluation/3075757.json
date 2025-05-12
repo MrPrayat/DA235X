@@ -8,7 +8,7 @@
       "mentions_källare": false,
       "mentions_roof": true,
       "mentions_balcony": false,
-      "mentions_bjälklag": true,
+      "mentions_bjälklag": false,
       "mentions_facade": false
     },
     "RenovationNeeds": {
@@ -21,9 +21,9 @@
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": true
+      "presence": false
     },
-    "SummaryInsights": "Nockpannor och nocktätning täcker bristfälligt på den södra sidan och bör åtgärdas. En skadad takpanna noterades i anslutning till nocken och bör bytas. Äldre golvbrunn av gjutjärn i tvättstugan bör åtgärdas då gjutjärnet rostar och otätheter kan bildas. Golvbrunnen i badrummet bör bytas ut då den inte byttes i samband med klinkersättningen, vilket avviker från gällande branschregler. Golvfallet saknas i duschrummet och bör åtgärdas."
+    "SummaryInsights": "Takets ålder och skick innebär risk för inträngande vatten och bör ses över."
   },
   "ground_truth": {
     "CadastralDesignation": "Linköping Vindruvan 18",

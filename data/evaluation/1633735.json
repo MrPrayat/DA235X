@@ -23,7 +23,7 @@
       "Measured": false,
       "presence": true
     },
-    "SummaryInsights": "Gårdsbjälklaget behöver renoveras inom en snar framtid på grund av läckage. Garaget har behov av reparationer, speciellt i pelarna."
+    "SummaryInsights": "Gårdsbjälklagets tätskikt har påtagliga läckage och behöver renoveras snart. Garage behöver också omfattande renovering och reglingssystemet i garage föreslås bytas ut inom kort."
   },
   "ground_truth": {
     "CadastralDesignation": "Sundbyberg Terränglöparen 9",

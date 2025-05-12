@@ -6,7 +6,7 @@
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": true,
-      "mentions_roof": true,
+      "mentions_roof": false,
       "mentions_balcony": false,
       "mentions_bjälklag": false,
       "mentions_facade": true
@@ -14,16 +14,16 @@
     "RenovationNeeds": {
       "roof": false,
       "garage": false,
-      "facade": false,
+      "facade": true,
       "balcony": false,
-      "källare": false,
+      "källare": true,
       "bjälklag": false
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": true
+      "presence": false
     },
-    "SummaryInsights": "En fortsatt teknisk utredning rekommenderas för att utreda orsaken till mikrobiell påväxt i vindsutrymmet. Köket är utrivet och utrymmet är under renovering. Altandörren stänger bristfälligt. Spricka noteras i fönster."
+    "SummaryInsights": "Fasaden har sprickor som medför risk för fuktskador och bör åtgärdas. Källarens fuktskydd är äldre och kan leda till fuktproblem."
   },
   "ground_truth": {
     "CadastralDesignation": "Åkerby 3:4",

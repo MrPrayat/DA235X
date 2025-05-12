@@ -12,10 +12,10 @@
       "mentions_facade": false
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": true,
-      "balcony": true,
+      "balcony": false,
       "källare": true,
       "bjälklag": true
     },
@@ -23,7 +23,7 @@
       "Measured": true,
       "presence": true
     },
-    "SummaryInsights": "Fastigheten behöver genomgå flera renoveringar. Det inkluderar renovering av gårdsbjälklag, fasader och källargolv. Plåttaket bör ommålas och fönster bör renoveras. Asbest kan förekomma och har mätts."
+    "SummaryInsights": "Renovering rekommenderas för källare, fasad, och bjälklag på grund av skador och slitage."
   },
   "ground_truth": {
     "CadastralDesignation": "Stockholm Munin 5 & 6",

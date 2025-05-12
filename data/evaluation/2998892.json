@@ -1,18 +1,18 @@
 {
   "pdf_id": "2998892",
   "model_output": {
-    "CadastralDesignation": "Kärra 69:110",
+    "CadastralDesignation": false,
     "InspectionDate": "2020-12",
     "MoistureDamage": {
       "mentions_garage": false,
       "mentions_källare": false,
-      "mentions_roof": true,
-      "mentions_balcony": true,
-      "mentions_bjälklag": true,
+      "mentions_roof": false,
+      "mentions_balcony": false,
+      "mentions_bjälklag": false,
       "mentions_facade": true
     },
     "RenovationNeeds": {
-      "roof": true,
+      "roof": false,
       "garage": false,
       "facade": true,
       "balcony": false,
@@ -21,9 +21,9 @@
     },
     "AsbestosPresence": {
       "Measured": false,
-      "presence": true
+      "presence": false
     },
-    "SummaryInsights": "Fasadpanel, fönster och fönsteromfattningar har lokalt målning/underhållsbehov. Fasadbeklädnad och träkonstruktioner där målningsbehov finns riskerar att få fukt- och rötskador på grund av sämre vattenavvisande förmåga. Taktäckningen över utvändigt förråd och entréhall bör åtgärdas på grund av felaktig taktäckning. Även takpappen behöver åtgärdas på grund av dess ålder. Fuktskydd saknas i diskbänksskåp och bör installeras. Rörgenomföringar i golv och golvbrunn i tvättstugan bör åtgärdas fackmässigt. Fönster i våtutrymme bör skyddas mot vattenbegjutning. Risk för vattenskador på balkongen om glaspartiet inte är stängt."
+    "SummaryInsights": "Fasadpanelen har behov av underhåll och målningsarbete för att förebygga fuktskador."
   },
   "ground_truth": {
     "CadastralDesignation": "Kärra 69:110",

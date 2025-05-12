@@ -13,3 +13,4 @@ timestamp,batch_id,model,extraction_strategy,num_pdfs,prompt_tokens,completion_t
 2025-05-07 14:46:36,batch_2025-05-07_1433,gemini-2.5-flash-preview-04-17,page-by-page,6,127452,13050,0,0.026948
 2025-05-07 21:44:25,batch_2025-05-07_2055,gemini-2.0-flash,page-by-page,43,3405715,166234,0,0.407065
 2025-05-12 17:11:24,batch_2025-05-12_1711,gpt-4o,multipage,1,12445,208,0,0.030081
+2025-05-12 17:14:54,batch_2025-05-12_1712,gpt-4o,multipage,5,66105,1036,0,0.159096
