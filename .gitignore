@@ -1,0 +1,9 @@
+batch_metrics.csv
+results.csv
+batch_costs.csv
+data/logs/evaluation_log.csv
+field_metrics_compiled.csv
+make_fields_csv.py
+data/logs/per_pdf_costs/batch_2025-05-14_1447/per_pdf_costs.csv
+unambiguous_batch_metrics.csv
+unambiguous_field_metrics_compiled.csv
