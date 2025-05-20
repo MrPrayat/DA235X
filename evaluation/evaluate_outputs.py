@@ -5,7 +5,7 @@ import pandas as pd
 import datetime
 
 EVAL_FOLDER = "data/evaluation"
-
+UNAMBIGUOUS_FIELDS = {"CadastralDesignation", "InspectionDate"}
 
 def compute_summary_stats(results_dict):
     """
@@ -36,6 +36,7 @@ def log_run_to_csv(results, run_name, notes="", log_file="data/logs/evaluation_l
     """
     Logs the evaluation results to a CSV file.
     """
+    print("⚙️  Writing log to:", os.path.abspath(log_file))
     summary = compute_summary_stats(results)
 
     new_row = {
@@ -72,19 +73,28 @@ def norm(x):
 
 def update_counts(key, pred, actual, results):
     """
-    Updates TP, FP, FN counts for a single field.
-
-    Note: We do NOT track true negatives (TN) because this is an information
-    extraction task. Fields with a correct "false" prediction are simply not
-    counted as errors — they are not meaningful TNs in this context.
-
-    Including TNs would distort precision/recall, since most fields are often false,
-    which would artificially inflate accuracy without improving extraction quality.
+    Updated for Booli's evaluation logic:
+    - Null prediction is only a false negative.
+    - Wrong (non-null) prediction is only a false positive (no double-counting).
+    - Only applies to string fields, not booleans!
     """
 
     if actual is None:
+        # Do not penalize, skip: No ground truth, can't say anything
         return
 
+    # Handle for string-valued fields
+    if key.lower() in UNAMBIGUOUS_FIELDS:
+        if pred is None:
+            results[key]["fn"] += 1
+        elif norm(pred) == norm(actual):
+            results[key]["tp"] += 1
+        else:
+            # Wrong, non-null prediction: only FP
+            results[key]["fp"] += 1
+        return  # Done with string fields
+
+    # Existing boolean/other field logic
     if pred is None:
         results[key]["fn"] += 1
     elif norm(pred) == norm(actual):
@@ -98,8 +108,10 @@ def update_counts(key, pred, actual, results):
         elif pred_norm == False and actual_norm == True:
             results[key]["fn"] += 1
         else:
+            # For booleans, default: both (should rarely happen, but for legacy)
             results[key]["fp"] += 1
             results[key]["fn"] += 1
+
 
 
 def evaluate_field_level(samples):
@@ -171,12 +183,13 @@ def main():
         return
 
     table = build_results_table(results)
-    summary = compute_summary_stats(results)
 
-    print("\nEvaluation Results:\n")
+    # Full results as before
+    print("\nEvaluation Results (All Fields):\n")
     print(table.to_string(index=False))
 
-    print("\n\nEvaluation Summary:\n")
+    summary = compute_summary_stats(results)
+    print("\n\nEvaluation Summary (All Fields):\n")
     print(f"Total Samples: {len(samples)}")
     print(f"Total Fields Evaluated: {len(results)}")
     print(f"Total True Positives: {summary['tp']}")
@@ -187,7 +200,30 @@ def main():
     print(f"Total Recall: {summary['recall']:.2f}")
     print(f"Total F1 Score: {summary['f1_score']:.2f}")
 
-    log_run_to_csv(results, run_name="gpt-4.1_flash_43_pdf_multipage", notes="")
+    # --- Unambiguous fields only ---
+    unambiguous_table = table[table["Field"].isin(UNAMBIGUOUS_FIELDS)]
+    print("\nEvaluation Results (Unambiguous Fields Only):\n")
+    print(unambiguous_table.to_string(index=False))
+
+    # Summarize unambiguous fields
+    tp_u = unambiguous_table["TP"].sum()
+    fp_u = unambiguous_table["FP"].sum()
+    fn_u = unambiguous_table["FN"].sum()
+    precision_u = tp_u / (tp_u + fp_u) if (tp_u + fp_u) else 0
+    recall_u    = tp_u / (tp_u + fn_u) if (tp_u + fn_u) else 0
+    f1_u        = (2 * precision_u * recall_u) / (precision_u + recall_u) if (precision_u + recall_u) else 0
+    accuracy_u  = tp_u / (tp_u + fp_u + fn_u) if (tp_u + fp_u + fn_u) else 0
+
+    print("\n\nEvaluation Summary (Unambiguous Fields Only):\n")
+    print(f"Total True Positives: {tp_u}")
+    print(f"Total False Positives: {fp_u}")
+    print(f"Total False Negatives: {fn_u}")
+    print(f"Total Accuracy: {accuracy_u:.2f}")
+    print(f"Total Precision: {precision_u:.2f}")
+    print(f"Total Recall: {recall_u:.2f}")
+    print(f"Total F1 Score: {f1_u:.2f}")
+
+    log_run_to_csv(results, run_name="gemini_2.5_flash_43_pdfs_v1", notes="TEST Unambiguous fields only, no double counting for string fields.")
 
 
 if __name__ == "__main__":
